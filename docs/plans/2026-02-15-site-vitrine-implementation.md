@@ -76,9 +76,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "LeadMind AI — Conseil & Formation IA pour l'Assurance",
+  title: "LeadMind AI — Conseil & Formation IA pour l'Assurance et la Finance",
   description:
-    "Cabinet spécialisé en formation et solutions IA pour les assureurs, mutuelles et institutions financières.",
+    "Cabinet spécialisé en formation et solutions IA pour les professionnels de l'assurance et de la finance : actuaires, comptables, asset managers, analystes, data scientists et plus.",
 };
 
 export default function RootLayout({
@@ -253,8 +253,8 @@ Create `src/dictionaries/fr.json`:
     "cta": "Prendre rendez-vous"
   },
   "hero": {
-    "title": "L'IA au service de l'actuariat et de la finance",
-    "subtitle": "Formation opérationnelle et solutions IA sur-mesure pour les assureurs, mutuelles et institutions financières.",
+    "title": "L'IA au service de l'assurance et de la finance",
+    "subtitle": "Formation opérationnelle et solutions IA sur-mesure pour les métiers techniques de l'assurance et de la finance : actuaires, comptables, asset managers, analystes financiers, data scientists et bien d'autres.",
     "cta_primary": "Prendre rendez-vous",
     "cta_secondary": "Nos formations"
   },
@@ -268,7 +268,7 @@ Create `src/dictionaries/fr.json`:
       },
       {
         "title": "Agents IA Métier",
-        "description": "Développement d'agents intelligents adaptés à vos processus actuariels et financiers."
+        "description": "Développement d'agents intelligents adaptés à vos processus métier en assurance et finance."
       },
       {
         "title": "Automatisation Solvabilité 2",
@@ -291,7 +291,7 @@ Create `src/dictionaries/fr.json`:
       },
       {
         "title": "Connaissance métier",
-        "description": "Double compétence actuariat et IA — nous parlons votre langage.",
+        "description": "Double compétence assurance/finance et IA — nous parlons le langage de vos métiers techniques.",
         "stat": "50+",
         "stat_label": "professionnels formés"
       },
@@ -304,13 +304,13 @@ Create `src/dictionaries/fr.json`:
     ]
   },
   "cta_section": {
-    "title": "Prêt à transformer votre actuariat ?",
-    "subtitle": "Discutons de vos enjeux IA lors d'un appel de 30 minutes.",
+    "title": "Prêt à transformer vos métiers avec l'IA ?",
+    "subtitle": "Actuaires, comptables, analystes, data scientists — discutons de vos enjeux IA lors d'un appel de 30 minutes.",
     "button": "Réserver un créneau"
   },
   "about": {
     "mission_title": "Notre mission",
-    "mission_text": "Rendre l'IA accessible et opérationnelle pour les professionnels de l'assurance et de la finance. Ni consultant IA généraliste, ni actuaire amateur en IA — nous combinons les deux expertises.",
+    "mission_text": "Rendre l'IA accessible et opérationnelle pour l'ensemble des métiers techniques de l'assurance et de la finance — actuaires, comptables, gestionnaires d'actifs, analystes quantitatifs, data scientists, IT et bien d'autres. Ni consultant IA généraliste, ni technicien sans vision métier — nous combinons expertise sectorielle et maîtrise technologique.",
     "founder_title": "Fondateur",
     "founder_name": "[Nom du fondateur]",
     "founder_bio": "[Bio du fondateur — parcours actuariat + IA]",
@@ -324,7 +324,7 @@ Create `src/dictionaries/fr.json`:
   },
   "formations": {
     "hero_title": "Formations & Services",
-    "hero_subtitle": "Un catalogue adapté aux professionnels de l'assurance et de la finance",
+    "hero_subtitle": "Un catalogue adapté à tous les métiers techniques de l'assurance et de la finance",
     "formations_title": "Formations",
     "services_title": "Services",
     "process_title": "Notre approche",
@@ -381,8 +381,8 @@ Create `src/dictionaries/en.json`:
     "cta": "Book a call"
   },
   "hero": {
-    "title": "AI for actuarial science and finance",
-    "subtitle": "Hands-on training and custom AI solutions for insurers, mutuals, and financial institutions.",
+    "title": "AI for insurance and finance professionals",
+    "subtitle": "Hands-on training and custom AI solutions for technical roles in insurance and finance: actuaries, accountants, asset managers, financial analysts, data scientists and more.",
     "cta_primary": "Book a call",
     "cta_secondary": "Our training programs"
   },
@@ -396,7 +396,7 @@ Create `src/dictionaries/en.json`:
       },
       {
         "title": "Custom AI Agents",
-        "description": "Intelligent agents tailored to your actuarial and financial processes."
+        "description": "Intelligent agents tailored to your business processes in insurance and finance."
       },
       {
         "title": "Solvency 2 Automation",
@@ -419,7 +419,7 @@ Create `src/dictionaries/en.json`:
       },
       {
         "title": "Domain knowledge",
-        "description": "Dual actuarial and AI expertise — we speak your language.",
+        "description": "Dual insurance/finance and AI expertise — we speak the language of your technical roles.",
         "stat": "50+",
         "stat_label": "professionals trained"
       },
@@ -432,13 +432,13 @@ Create `src/dictionaries/en.json`:
     ]
   },
   "cta_section": {
-    "title": "Ready to transform your actuarial practice?",
-    "subtitle": "Let's discuss your AI challenges in a 30-minute call.",
+    "title": "Ready to transform your work with AI?",
+    "subtitle": "Actuaries, accountants, analysts, data scientists — let's discuss your AI challenges in a 30-minute call.",
     "button": "Book a slot"
   },
   "about": {
     "mission_title": "Our mission",
-    "mission_text": "Making AI accessible and operational for insurance and finance professionals. Neither a generalist AI consultant nor an amateur actuary dabbling in AI — we combine both expertises.",
+    "mission_text": "Making AI accessible and operational for all technical roles in insurance and finance — actuaries, accountants, asset managers, quantitative analysts, data scientists, IT professionals and beyond. Neither a generalist AI consultant nor a technician without business insight — we combine sector expertise with technological mastery.",
     "founder_title": "Founder",
     "founder_name": "[Founder name]",
     "founder_bio": "[Founder bio — actuarial + AI background]",
@@ -452,7 +452,7 @@ Create `src/dictionaries/en.json`:
   },
   "formations": {
     "hero_title": "Training & Services",
-    "hero_subtitle": "A catalog tailored to insurance and finance professionals",
+    "hero_subtitle": "A catalog tailored to all technical roles in insurance and finance",
     "formations_title": "Training programs",
     "services_title": "Services",
     "process_title": "Our approach",
@@ -558,7 +558,142 @@ git commit -m "feat: add i18n system with FR/EN dictionaries and middleware"
 
 ---
 
-## Task 4: Create UI components (Button, Card, Container, Badge)
+## Task 4: Generate UI mockups with Stitch MCP
+
+**Files:**
+- Create: `docs/design/stitch-screens.md` (screen IDs and links reference)
+
+> **Prerequisite:** Tasks 1-3 completed (project scaffolded, design tokens defined, i18n dictionaries ready).
+> **Output:** Validated mockups for all 4 pages, serving as visual reference for Tasks 5-12.
+
+**Step 1: Create a Stitch project**
+
+Use `mcp__stitch__create_project` to create a new project:
+- Title: `LeadMind AI — Site Vitrine`
+
+Save the returned `projectId` for all subsequent calls.
+
+**Step 2: Generate Home page mockup**
+
+Use `mcp__stitch__generate_screen_from_text` with:
+- `projectId`: (from Step 1)
+- `deviceType`: `DESKTOP`
+- `prompt`:
+
+```
+Corporate landing page for LeadMind AI, an AI consulting firm for insurance and finance professionals (actuaries, accountants, asset managers, financial analysts, data scientists, IT).
+
+Design system: Navy (#1a365d) primary, Teal (#0d9488) accent, white background, Inter font.
+
+Sections from top to bottom:
+1. HEADER: Sticky white bar with "LeadMind AI" logo left, nav links (Accueil, À propos, Formations & Services, Contact), language switcher (FR/EN), teal CTA button "Prendre rendez-vous"
+2. HERO: Full-width navy background, large white headline "L'IA au service de l'assurance et de la finance", subtitle mentioning technical roles (actuaries, accountants, asset managers, analysts, data scientists), two buttons: teal "Prendre rendez-vous" + outlined white "Nos formations". Subtle gradient accent on the right.
+3. LOGO BAR: Light gray strip with scrolling client placeholder logos (Assureur A, Mutuelle B, Banque C, etc.)
+4. SERVICES: White section, centered title "Nos expertises", 4 cards in a row — Formation Claude Code, Agents IA Métier, Automatisation Solvabilité 2, Conseil Stratégique IA. Each card with title + short description.
+5. WHY US: Light gray section, "Pourquoi LeadMind AI ?", 3 columns with large animated numbers (10+, 50+, 30+), stat labels, titles and descriptions.
+6. CTA BANNER: Navy section, "Prêt à transformer vos métiers avec l'IA ?", subtitle listing target roles, teal button.
+7. FOOTER: Navy background, 3 columns (brand + tagline, navigation links, contact info), bottom bar with copyright + legal links.
+
+Style: Professional, clean, modern SaaS feel. No illustrations. Generous whitespace. Cards have subtle hover shadow.
+```
+
+**Step 3: Generate Home page mobile variant**
+
+Use `mcp__stitch__generate_screen_from_text` with:
+- `deviceType`: `MOBILE`
+- `prompt`: Same as Step 2 but add: `Mobile responsive version. Hamburger menu. Single column layout. Stacked cards. Collapsed logo bar.`
+
+**Step 4: Generate About page mockup**
+
+Use `mcp__stitch__generate_screen_from_text` with:
+- `deviceType`: `DESKTOP`
+- `prompt`:
+
+```
+About page for LeadMind AI. Same design system (Navy #1a365d, Teal #0d9488, Inter font).
+
+Sections:
+1. MISSION: White section, centered h1 "Notre mission", paragraph about making AI accessible for all technical roles in insurance and finance (actuaries, accountants, asset managers, quant analysts, data scientists, IT).
+2. FOUNDER: Light gray section, circular photo placeholder on the left, name and bio on the right.
+3. VALUES: White section, 3 cards — Expertise, Pragmatisme, Impact mesurable. Each with title + description.
+4. STATS: Navy banner, 3 large teal numbers (10+, 50+, 30+) with labels.
+
+Same header/footer as Home page.
+```
+
+**Step 5: Generate Formations & Services page mockup**
+
+Use `mcp__stitch__generate_screen_from_text` with:
+- `deviceType`: `DESKTOP`
+- `prompt`:
+
+```
+Training & Services page for LeadMind AI. Same design system.
+
+Sections:
+1. PAGE HERO: Navy background, h1 "Formations & Services", subtitle "Un catalogue adapté à tous les métiers techniques de l'assurance et de la finance".
+2. FORMATIONS: White section, h2 "Formations", 2 cards with teal "Formation" badge — Claude Code training, Agents IA training.
+3. SERVICES: White section, h2 "Services", 2 cards with navy "Service" badge — Solvabilité 2 automation, AI Strategy consulting.
+4. PROCESS TIMELINE: Light gray section, h2 "Notre approche", 4 numbered circles in a row (1-Audit, 2-Formation, 3-Implémentation, 4-Support). Each with title and short description.
+5. CTA: Teal button "Demander un devis".
+
+Same header/footer as Home page.
+```
+
+**Step 6: Generate Contact page mockup**
+
+Use `mcp__stitch__generate_screen_from_text` with:
+- `deviceType`: `DESKTOP`
+- `prompt`:
+
+```
+Contact page for LeadMind AI. Same design system.
+
+Sections:
+1. CONTACT FORM: White section, h1 "Contactez-nous", subtitle, form fields (Nom, Email, Entreprise, Objet dropdown, Message textarea), teal submit button. Max-width 600px centered.
+2. CALENDLY: Light gray section, h2 "Ou réservez directement un créneau", embedded Calendly widget placeholder (rounded border).
+3. CONTACT INFO: White section, 3 columns — Email, LinkedIn, Location (Paris, France).
+
+Same header/footer as Home page.
+```
+
+**Step 7: Review and iterate**
+
+- Use `mcp__stitch__list_screens` to list all generated screens.
+- Review each screen visually. If adjustments are needed, use `mcp__stitch__edit_screens` with specific feedback (e.g., "Make the CTA button larger", "Add more spacing between cards").
+- Optionally use `mcp__stitch__generate_variants` on the Home page to explore color or layout alternatives.
+
+**Step 8: Document screen references**
+
+Create `docs/design/stitch-screens.md`:
+
+```markdown
+# Stitch Mockups — LeadMind AI Site Vitrine
+
+**Project ID:** [projectId]
+
+| Page | Device | Screen ID | Status |
+|------|--------|-----------|--------|
+| Home | Desktop | [screenId] | Validated |
+| Home | Mobile | [screenId] | Validated |
+| About | Desktop | [screenId] | Validated |
+| Formations | Desktop | [screenId] | Validated |
+| Contact | Desktop | [screenId] | Validated |
+
+## Design decisions
+- [Notes from review iterations]
+```
+
+**Step 9: Commit**
+
+```bash
+git add docs/design/
+git commit -m "feat: generate Stitch UI mockups for all 4 pages (desktop + mobile)"
+```
+
+---
+
+## Task 5: Create UI components (Button, Card, Container, Badge)
 
 **Files:**
 - Create: `src/components/ui/Button.tsx`
@@ -736,7 +871,7 @@ git commit -m "feat: add UI components — Button, Card, Container, Badge"
 
 ---
 
-## Task 5: Create animation utilities (Framer Motion wrappers)
+## Task 6: Create animation utilities (Framer Motion wrappers)
 
 **Files:**
 - Create: `src/components/ui/FadeIn.tsx`
@@ -897,7 +1032,7 @@ git commit -m "feat: add Framer Motion animation utilities — FadeIn, StaggerCh
 
 ---
 
-## Task 6: Create Header and Footer layout components
+## Task 7: Create Header and Footer layout components
 
 **Files:**
 - Create: `src/components/layout/Header.tsx`
@@ -1097,7 +1232,7 @@ export function Footer({ footer, nav, locale }: FooterProps) {
           <div>
             <h3 className="text-lg font-bold">LeadMind AI</h3>
             <p className="mt-2 text-sm text-gray-300">
-              Conseil & Formation IA pour l&apos;Assurance
+              Conseil & Formation IA pour l&apos;Assurance et la Finance
             </p>
           </div>
           <div>
@@ -1143,7 +1278,7 @@ git commit -m "feat: add Header and Footer layout components with mobile nav"
 
 ---
 
-## Task 7: Create locale layout and root redirect
+## Task 8: Create locale layout and root redirect
 
 **Files:**
 - Create: `src/app/[locale]/layout.tsx`
@@ -1220,7 +1355,7 @@ git commit -m "feat: add locale layout with Header/Footer and root redirect"
 
 ---
 
-## Task 8: Build Home page sections
+## Task 9: Build Home page sections
 
 **Files:**
 - Create: `src/app/[locale]/page.tsx`
@@ -1240,7 +1375,7 @@ import { render, screen } from "@testing-library/react";
 import Hero from "@/components/sections/Hero";
 
 const heroDict = {
-  title: "L'IA au service de l'actuariat",
+  title: "L'IA au service de l'assurance et de la finance",
   subtitle: "Formation et solutions IA",
   cta_primary: "Prendre rendez-vous",
   cta_secondary: "Nos formations",
@@ -1567,7 +1702,7 @@ git commit -m "feat: build Home page — Hero, LogoBar, Services, WhyLeadMind, C
 
 ---
 
-## Task 9: Build About page
+## Task 10: Build About page
 
 **Files:**
 - Create: `src/app/[locale]/a-propos/page.tsx`
@@ -1775,7 +1910,7 @@ git commit -m "feat: build About page — Mission, Founder, Values, Stats sectio
 
 ---
 
-## Task 10: Build Formations/Services page
+## Task 11: Build Formations/Services page
 
 **Files:**
 - Create: `src/app/[locale]/formations/page.tsx`
@@ -1979,7 +2114,7 @@ git commit -m "feat: build Formations page — Hero, FormationsList, ProcessTime
 
 ---
 
-## Task 11: Build Contact page (Formspree + Calendly)
+## Task 12: Build Contact page (Formspree + Calendly)
 
 **Files:**
 - Create: `src/app/[locale]/contact/page.tsx`
@@ -2256,7 +2391,7 @@ git commit -m "feat: build Contact page — ContactForm (Formspree), CalendlyEmb
 
 ---
 
-## Task 12: Add SEO metadata and JSON-LD
+## Task 13: Add SEO metadata and JSON-LD
 
 **Files:**
 - Modify: `src/app/[locale]/layout.tsx` (add per-locale metadata)
@@ -2374,7 +2509,7 @@ git commit -m "feat: add SEO metadata, Open Graph, hreflang, and JSON-LD structu
 
 ---
 
-## Task 13: Final integration test and cleanup
+## Task 14: Final integration test and cleanup
 
 **Files:**
 - Run all tests
@@ -2435,14 +2570,15 @@ git commit -m "chore: final cleanup, remove unused defaults, verify all pages"
 | 1 | Dependencies + Tailwind tokens + Analytics | 8 |
 | 2 | Jest testing infrastructure | 5 |
 | 3 | I18n (middleware + dictionaries) | 6 |
-| 4 | UI components (Button, Card, Container, Badge) | 6 |
-| 5 | Framer Motion animation utilities | 4 |
-| 6 | Header + Footer layout | 6 |
-| 7 | Locale layout + root redirect | 5 |
-| 8 | Home page (5 sections) | 11 |
-| 9 | About page (4 sections) | 4 |
-| 10 | Formations page (3 sections) | 6 |
-| 11 | Contact page (Formspree + Calendly) | 9 |
-| 12 | SEO metadata + JSON-LD | 4 |
-| 13 | Final integration + cleanup | 6 |
-| **Total** | | **80 steps** |
+| **4** | **Stitch UI mockups (4 pages desktop + 1 mobile)** | **9** |
+| 5 | UI components (Button, Card, Container, Badge) | 6 |
+| 6 | Framer Motion animation utilities | 4 |
+| 7 | Header + Footer layout | 6 |
+| 8 | Locale layout + root redirect | 5 |
+| 9 | Home page (5 sections) | 11 |
+| 10 | About page (4 sections) | 4 |
+| 11 | Formations page (3 sections) | 6 |
+| 12 | Contact page (Formspree + Calendly) | 9 |
+| 13 | SEO metadata + JSON-LD | 4 |
+| 14 | Final integration + cleanup | 6 |
+| **Total** | | **89 steps** |
