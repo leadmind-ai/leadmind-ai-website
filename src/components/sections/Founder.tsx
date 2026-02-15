@@ -20,7 +20,7 @@ export default function Founder({ title, name, bio }: FounderProps) {
             <div className="mt-8 flex flex-col items-center gap-8 md:flex-row">
               <div className="relative h-48 w-48 flex-shrink-0 overflow-hidden rounded-full bg-gray-100">
                 <Image
-                  src="/images/icon-square.png"
+                  src="/images/herman.png"
                   alt="Herman Njouonang"
                   fill
                   className="object-cover"
