@@ -1,7 +1,24 @@
+import type { Metadata } from "next";
 import { getDictionary, type Locale } from "@/lib/i18n";
+import { createMetadata } from "@/lib/metadata";
 import { Container } from "@/components/ui/Container";
 import { ContactForm } from "@/components/forms/ContactForm";
 import CalendlyEmbed from "@/components/sections/CalendlyEmbed";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const dict = await getDictionary(locale as Locale);
+  return createMetadata({
+    title: `LeadMind AI — ${dict.contact.title}`,
+    description: dict.contact.subtitle,
+    locale: locale as Locale,
+    path: "/contact",
+  });
+}
 
 export default async function ContactPage({
   params,
