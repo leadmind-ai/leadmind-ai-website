@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://leadmind-ai.com
+
+# Sitemaps
+Sitemap: https://leadmind-ai.com/sitemap.xml
