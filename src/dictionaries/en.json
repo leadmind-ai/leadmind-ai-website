@@ -1,0 +1,121 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Training & Services",
+    "contact": "Contact",
+    "cta": "Book a call"
+  },
+  "hero": {
+    "title": "AI for insurance and finance professionals",
+    "subtitle": "Hands-on training and custom AI solutions for technical roles in insurance and finance: actuaries, accountants, asset managers, financial analysts, data scientists and more.",
+    "cta_primary": "Book a call",
+    "cta_secondary": "Our training programs"
+  },
+  "services": {
+    "title": "Our expertise",
+    "subtitle": "Concrete solutions to accelerate your AI transformation",
+    "items": [
+      {
+        "title": "Claude Code & Agentic Coding Training",
+        "description": "Train your teams on cutting-edge AI tools. Operational proficiency in 2 days."
+      },
+      {
+        "title": "Custom AI Agents",
+        "description": "Intelligent agents tailored to your business processes in insurance and finance."
+      },
+      {
+        "title": "Solvency 2 Automation",
+        "description": "Automate your regulatory reporting and SCR calculations with robust AI pipelines."
+      },
+      {
+        "title": "AI Strategy Consulting",
+        "description": "Guiding your leadership in defining and executing your AI roadmap."
+      }
+    ]
+  },
+  "why": {
+    "title": "Why LeadMind AI?",
+    "pillars": [
+      {
+        "title": "Technical expertise",
+        "description": "Advanced mastery of LLMs, AI agents, and modern development frameworks.",
+        "stat": "10+",
+        "stat_label": "years of experience"
+      },
+      {
+        "title": "Domain knowledge",
+        "description": "Dual insurance/finance and AI expertise — we speak the language of your technical roles.",
+        "stat": "50+",
+        "stat_label": "professionals trained"
+      },
+      {
+        "title": "Measurable results",
+        "description": "Demonstrable ROI on every engagement. Concrete deliverables, not slides.",
+        "stat": "30+",
+        "stat_label": "projects delivered"
+      }
+    ]
+  },
+  "cta_section": {
+    "title": "Ready to transform your work with AI?",
+    "subtitle": "Actuaries, accountants, analysts, data scientists — let's discuss your AI challenges in a 30-minute call.",
+    "button": "Book a slot"
+  },
+  "about": {
+    "mission_title": "Our mission",
+    "mission_text": "Making AI accessible and operational for all technical roles in insurance and finance — actuaries, accountants, asset managers, quantitative analysts, data scientists, IT professionals and beyond. Neither a generalist AI consultant nor a technician without business insight — we combine sector expertise with technological mastery.",
+    "founder_title": "Founder",
+    "founder_name": "[Founder name]",
+    "founder_bio": "[Founder bio — actuarial + AI background]",
+    "values_title": "Our values",
+    "values": [
+      { "title": "Expertise", "description": "Deep technical mastery, continuous learning, constant monitoring." },
+      { "title": "Pragmatism", "description": "Concrete solutions, tangible deliverables, no buzzwords." },
+      { "title": "Measurable impact", "description": "Every engagement produces documented, verifiable ROI." }
+    ],
+    "stats_title": "By the numbers"
+  },
+  "formations": {
+    "hero_title": "Training & Services",
+    "hero_subtitle": "A catalog tailored to all technical roles in insurance and finance",
+    "formations_title": "Training programs",
+    "services_title": "Services",
+    "process_title": "Our approach",
+    "process_steps": [
+      { "title": "Audit", "description": "Analysis of your needs and AI maturity" },
+      { "title": "Training", "description": "Hands-on sessions tailored to your business context" },
+      { "title": "Implementation", "description": "Development and deployment of AI solutions" },
+      { "title": "Support", "description": "Ongoing support and skills development" }
+    ],
+    "cta": "Request a quote"
+  },
+  "contact": {
+    "title": "Contact us",
+    "subtitle": "A question, a project? Let's talk.",
+    "form": {
+      "name": "Full name",
+      "email": "Professional email",
+      "company": "Company",
+      "subject": "Subject",
+      "subject_options": ["Training", "AI Project", "Consulting", "Other"],
+      "message": "Your message",
+      "submit": "Send",
+      "success": "Message sent! We'll get back to you within 24 hours.",
+      "error": "Error sending message. Please try again."
+    },
+    "calendly_title": "Or book a slot directly",
+    "info": {
+      "email": "contact@leadmind-ai.com",
+      "linkedin": "linkedin.com/company/leadmind-ai",
+      "location": "Paris, France"
+    }
+  },
+  "footer": {
+    "copyright": "© 2026 LeadMind AI. All rights reserved.",
+    "links": {
+      "privacy": "Privacy policy",
+      "legal": "Legal notice"
+    }
+  }
+}

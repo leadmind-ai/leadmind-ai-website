@@ -1,0 +1,121 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "services": "Formations & Services",
+    "contact": "Contact",
+    "cta": "Prendre rendez-vous"
+  },
+  "hero": {
+    "title": "L'IA au service de l'assurance et de la finance",
+    "subtitle": "Formation opérationnelle et solutions IA sur-mesure pour les métiers techniques de l'assurance et de la finance : actuaires, comptables, asset managers, analystes financiers, data scientists et bien d'autres.",
+    "cta_primary": "Prendre rendez-vous",
+    "cta_secondary": "Nos formations"
+  },
+  "services": {
+    "title": "Nos expertises",
+    "subtitle": "Des solutions concrètes pour accélérer votre transformation IA",
+    "items": [
+      {
+        "title": "Formation Claude Code & Agentic Coding",
+        "description": "Formez vos équipes aux outils IA de dernière génération. Prise en main opérationnelle en 2 jours."
+      },
+      {
+        "title": "Agents IA Métier",
+        "description": "Développement d'agents intelligents adaptés à vos processus métier en assurance et finance."
+      },
+      {
+        "title": "Automatisation Solvabilité 2",
+        "description": "Automatisez vos reportings réglementaires et calculs SCR avec des pipelines IA robustes."
+      },
+      {
+        "title": "Conseil Stratégique IA",
+        "description": "Accompagnement de votre direction dans la définition et l'exécution de votre feuille de route IA."
+      }
+    ]
+  },
+  "why": {
+    "title": "Pourquoi LeadMind AI ?",
+    "pillars": [
+      {
+        "title": "Expertise technique",
+        "description": "Maîtrise avancée des LLM, agents IA et frameworks de développement modernes.",
+        "stat": "10+",
+        "stat_label": "années d'expérience"
+      },
+      {
+        "title": "Connaissance métier",
+        "description": "Double compétence assurance/finance et IA — nous parlons le langage de vos métiers techniques.",
+        "stat": "50+",
+        "stat_label": "professionnels formés"
+      },
+      {
+        "title": "Résultats mesurables",
+        "description": "ROI démontrable sur chaque mission. Livrables concrets, pas de slides.",
+        "stat": "30+",
+        "stat_label": "projets livrés"
+      }
+    ]
+  },
+  "cta_section": {
+    "title": "Prêt à transformer vos métiers avec l'IA ?",
+    "subtitle": "Actuaires, comptables, analystes, data scientists — discutons de vos enjeux IA lors d'un appel de 30 minutes.",
+    "button": "Réserver un créneau"
+  },
+  "about": {
+    "mission_title": "Notre mission",
+    "mission_text": "Rendre l'IA accessible et opérationnelle pour l'ensemble des métiers techniques de l'assurance et de la finance — actuaires, comptables, gestionnaires d'actifs, analystes quantitatifs, data scientists, IT et bien d'autres. Ni consultant IA généraliste, ni technicien sans vision métier — nous combinons expertise sectorielle et maîtrise technologique.",
+    "founder_title": "Fondateur",
+    "founder_name": "[Nom du fondateur]",
+    "founder_bio": "[Bio du fondateur — parcours actuariat + IA]",
+    "values_title": "Nos valeurs",
+    "values": [
+      { "title": "Expertise", "description": "Maîtrise technique profonde, formation continue, veille permanente." },
+      { "title": "Pragmatisme", "description": "Solutions concrètes, livrables tangibles, pas de buzzwords." },
+      { "title": "Impact mesurable", "description": "Chaque mission produit un ROI documenté et vérifiable." }
+    ],
+    "stats_title": "En chiffres"
+  },
+  "formations": {
+    "hero_title": "Formations & Services",
+    "hero_subtitle": "Un catalogue adapté à tous les métiers techniques de l'assurance et de la finance",
+    "formations_title": "Formations",
+    "services_title": "Services",
+    "process_title": "Notre approche",
+    "process_steps": [
+      { "title": "Audit", "description": "Analyse de vos besoins et de votre maturité IA" },
+      { "title": "Formation", "description": "Sessions pratiques adaptées à votre contexte métier" },
+      { "title": "Implémentation", "description": "Développement et déploiement des solutions IA" },
+      { "title": "Support", "description": "Accompagnement continu et montée en compétences" }
+    ],
+    "cta": "Demander un devis"
+  },
+  "contact": {
+    "title": "Contactez-nous",
+    "subtitle": "Une question, un projet ? Parlons-en.",
+    "form": {
+      "name": "Nom complet",
+      "email": "Email professionnel",
+      "company": "Entreprise",
+      "subject": "Objet",
+      "subject_options": ["Formation", "Projet IA", "Conseil", "Autre"],
+      "message": "Votre message",
+      "submit": "Envoyer",
+      "success": "Message envoyé ! Nous reviendrons vers vous sous 24h.",
+      "error": "Erreur lors de l'envoi. Veuillez réessayer."
+    },
+    "calendly_title": "Ou réservez directement un créneau",
+    "info": {
+      "email": "contact@leadmind-ai.com",
+      "linkedin": "linkedin.com/company/leadmind-ai",
+      "location": "Paris, France"
+    }
+  },
+  "footer": {
+    "copyright": "© 2026 LeadMind AI. Tous droits réservés.",
+    "links": {
+      "privacy": "Politique de confidentialité",
+      "legal": "Mentions légales"
+    }
+  }
+}
