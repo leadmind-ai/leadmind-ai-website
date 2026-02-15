@@ -36,10 +36,10 @@ export function Header({ nav, locale }: HeaderProps) {
           <Image
             src="/images/logo.png"
             alt="LeadMind AI"
-            width={180}
-            height={45}
+            width={800}
+            height={447}
             priority
-            className="h-9 w-auto md:h-10"
+            className="h-20 w-auto sm:h-24 md:h-28"
           />
         </Link>
 

@@ -30,16 +30,21 @@ export function Footer({ footer, nav, locale }: FooterProps) {
       <Container className="py-12">
         <div className="grid gap-8 md:grid-cols-3">
           <div>
-            <Image
-              src="/images/logo-dark.png"
-              alt="LeadMind AI"
-              width={180}
-              height={45}
-              className="h-10 w-auto"
-            />
-            <p className="mt-3 text-sm text-gray-300">
-              AI Training & Solutions
-            </p>
+            <div className="flex items-center gap-3">
+              <Image
+                src="/images/icon-square.png"
+                alt=""
+                width={400}
+                height={400}
+                className="h-12 w-12 md:h-14 md:w-14"
+              />
+              <div>
+                <span className="text-xl font-bold text-white md:text-2xl">
+                  LeadMind<span className="text-accent">AI</span>
+                </span>
+                <p className="text-sm text-gray-300">AI Training &amp; Solutions</p>
+              </div>
+            </div>
           </div>
           <div>
             <h4 className="text-sm font-semibold uppercase tracking-wider text-gray-300">
