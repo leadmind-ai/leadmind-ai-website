@@ -35,7 +35,11 @@ export default async function AboutPage({
       <Founder
         title={dict.about.founder_title}
         name={dict.about.founder_name}
-        bio={dict.about.founder_bio}
+        role={dict.about.founder_role}
+        intro={dict.about.founder_intro}
+        credentials={dict.about.founder_credentials}
+        highlights={dict.about.founder_highlights}
+        conviction={dict.about.founder_conviction}
       />
       <Values title={dict.about.values_title} values={dict.about.values} />
       <Stats title={dict.about.stats_title} pillars={dict.why.pillars} />

@@ -40,7 +40,7 @@
       {
         "title": "Expertise technique",
         "description": "Maîtrise avancée des LLM, agents IA et frameworks de développement modernes.",
-        "stat": "10+",
+        "stat": "15+",
         "stat_label": "années d'expérience"
       },
       {
@@ -67,7 +67,16 @@
     "mission_text": "Rendre l'IA accessible et opérationnelle pour l'ensemble des métiers techniques de l'assurance et de la finance — actuaires, comptables, gestionnaires d'actifs, analystes quantitatifs, data scientists, IT et bien d'autres. Ni consultant IA généraliste, ni technicien sans vision métier — nous combinons expertise sectorielle et maîtrise technologique.",
     "founder_title": "Fondateur",
     "founder_name": "Herman Njouonang",
-    "founder_bio": "Actuaire de formation et passionné d'intelligence artificielle, Herman Njouonang a fondé LeadMind AI en 2024 avec une conviction : l'IA ne remplace pas l'expert, elle le rend plus efficace. Fort d'une double expertise en actuariat et en technologies IA, il accompagne les professionnels de l'assurance et de la finance dans leur transformation — avec pragmatisme, rigueur technique et une vision résolument opérationnelle.",
+    "founder_role": "Fondateur & CEO",
+    "founder_intro": "Actuaire avec 15 ans d'expérience dans l'assurance et la finance, Herman combine expertise sectorielle et maîtrise de l'IA pour accompagner la transformation des métiers techniques.",
+    "founder_credentials": ["CFA Charterholder", "Executive MBA Dauphine-PSL", "15+ ans Assurance & Finance", "Enseignant IA — Dauphine-PSL"],
+    "founder_highlights": [
+      { "title": "Domaines d'expertise", "period": "15+ ans", "text": "Solvabilité 2 (3 piliers), ALM, provisions techniques, tarification, modélisation actuarielle, gestion de portefeuille, gestion des risques financiers." },
+      { "title": "Certifications Finance", "period": "CFA Institute", "text": "CFA Charterholder, Advanced Private Wealth Management (CFA Institute), Executive MBA CHEA Paris Dauphine-PSL." },
+      { "title": "Certifications IA", "period": "Google, Deeplearning.ai", "text": "Google Generative AI Intensive, Deeplearning.ai, Prompt Engineering (Vanderbilt University — Jules White), Tactical Agentic Engineering." },
+      { "title": "Enseignement & Communauté", "period": "Depuis 2024", "text": "Enseignant en IA à Paris Dauphine-PSL (Master 2). Intervenant IA de l'Executive MBA Assurance CHEA/Dauphine. Intervenant Déjeuner ALM & IA. Membre actif de la communauté Dynamous AI Mastery." }
+    ],
+    "founder_conviction": "L'IA ne remplace pas l'expert, elle le rend plus efficace.",
     "values_title": "Nos valeurs",
     "values": [
       { "title": "Expertise", "description": "Maîtrise technique profonde, formation continue, veille permanente." },

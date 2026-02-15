@@ -40,7 +40,7 @@
       {
         "title": "Technical expertise",
         "description": "Advanced mastery of LLMs, AI agents, and modern development frameworks.",
-        "stat": "10+",
+        "stat": "15+",
         "stat_label": "years of experience"
       },
       {
@@ -67,7 +67,16 @@
     "mission_text": "Making AI accessible and operational for all technical roles in insurance and finance — actuaries, accountants, asset managers, quantitative analysts, data scientists, IT professionals and beyond. Neither a generalist AI consultant nor a technician without business insight — we combine sector expertise with technological mastery.",
     "founder_title": "Founder",
     "founder_name": "Herman Njouonang",
-    "founder_bio": "An actuary by training and AI enthusiast, Herman Njouonang founded LeadMind AI in 2024 with a conviction: AI doesn't replace the expert — it makes them more effective. With dual expertise in actuarial science and AI technologies, he guides insurance and finance professionals through their transformation — with pragmatism, technical rigor, and a resolutely operational vision.",
+    "founder_role": "Founder & CEO",
+    "founder_intro": "An actuary with 15 years of experience in insurance and finance, Herman combines sector expertise with AI mastery to drive the transformation of technical professions.",
+    "founder_credentials": ["CFA Charterholder", "Executive MBA Dauphine-PSL", "15+ yrs Insurance & Finance", "AI Lecturer — Dauphine-PSL"],
+    "founder_highlights": [
+      { "title": "Areas of expertise", "period": "15+ years", "text": "Solvency 2 (all 3 pillars), ALM, technical provisions, pricing, actuarial modeling, portfolio management, financial risk management." },
+      { "title": "Finance certifications", "period": "CFA Institute", "text": "CFA Charterholder, Advanced Private Wealth Management (CFA Institute), Executive MBA CHEA Paris Dauphine-PSL." },
+      { "title": "AI certifications", "period": "Google, Deeplearning.ai", "text": "Google Generative AI Intensive, Deeplearning.ai, Prompt Engineering (Vanderbilt University — Jules White), Tactical Agentic Engineering." },
+      { "title": "Teaching & Community", "period": "Since 2024", "text": "AI Lecturer at Paris Dauphine-PSL (Master's). AI Speaker at the Executive MBA Insurance CHEA/Dauphine. Speaker at ALM & AI Lunch. Active member of the Dynamous AI Mastery community." }
+    ],
+    "founder_conviction": "AI doesn't replace the expert — it makes them more effective.",
     "values_title": "Our values",
     "values": [
       { "title": "Expertise", "description": "Deep technical mastery, continuous learning, constant monitoring." },
