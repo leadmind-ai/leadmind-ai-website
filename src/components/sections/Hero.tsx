@@ -37,8 +37,8 @@ export default function Hero({ hero, locale }: HeroProps) {
             </Button>
             <Button
               href={`/${locale}/formations`}
-              variant="secondary"
-              className="border-white text-white hover:bg-white hover:text-primary"
+              variant="ghost"
+              className="border-2 border-white text-white hover:bg-white/20 hover:text-white"
             >
               {hero.cta_secondary}
             </Button>
