@@ -66,8 +66,8 @@
     "mission_title": "Notre mission",
     "mission_text": "Rendre l'IA accessible et opérationnelle pour l'ensemble des métiers techniques de l'assurance et de la finance — actuaires, comptables, gestionnaires d'actifs, analystes quantitatifs, data scientists, IT et bien d'autres. Ni consultant IA généraliste, ni technicien sans vision métier — nous combinons expertise sectorielle et maîtrise technologique.",
     "founder_title": "Fondateur",
-    "founder_name": "[Nom du fondateur]",
-    "founder_bio": "[Bio du fondateur — parcours actuariat + IA]",
+    "founder_name": "Herman Njouonang",
+    "founder_bio": "Actuaire de formation et passionné d'intelligence artificielle, Herman Njouonang a fondé LeadMind AI en 2024 avec une conviction : l'IA ne remplace pas l'expert, elle le rend plus efficace. Fort d'une double expertise en actuariat et en technologies IA, il accompagne les professionnels de l'assurance et de la finance dans leur transformation — avec pragmatisme, rigueur technique et une vision résolument opérationnelle.",
     "values_title": "Nos valeurs",
     "values": [
       { "title": "Expertise", "description": "Maîtrise technique profonde, formation continue, veille permanente." },

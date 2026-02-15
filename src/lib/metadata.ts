@@ -37,6 +37,14 @@ export function createMetadata({
       locale: locale === "fr" ? "fr_FR" : "en_US",
       alternateLocale: locale === "fr" ? "en_US" : "fr_FR",
       type: "website",
+      images: [
+        {
+          url: `${siteUrl}/images/icon-512.png`,
+          width: 512,
+          height: 512,
+          alt: "LeadMind AI",
+        },
+      ],
     },
   };
 }
@@ -47,8 +55,14 @@ export function organizationJsonLd() {
     "@type": "Organization",
     name: "LeadMind AI",
     url: siteUrl,
+    logo: `${siteUrl}/images/icon-512.png`,
     description:
       "Conseil & Formation IA pour l'Assurance et la Finance",
+    founder: {
+      "@type": "Person",
+      name: "Herman Njouonang",
+    },
+    foundingDate: "2024",
     address: {
       "@type": "PostalAddress",
       addressLocality: "Paris",

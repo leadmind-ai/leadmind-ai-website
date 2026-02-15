@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 import { Button } from "@/components/ui/Button";
 import type { Locale } from "@/lib/i18n";
@@ -31,8 +32,15 @@ export function Header({ nav, locale }: HeaderProps) {
   return (
     <header className="sticky top-0 z-50 border-b border-gray-100 bg-white/90 backdrop-blur-md">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 md:px-8">
-        <Link href={`/${locale}`} className="text-xl font-bold text-primary">
-          LeadMind AI
+        <Link href={`/${locale}`} className="flex items-center">
+          <Image
+            src="/images/logo.png"
+            alt="LeadMind AI"
+            width={180}
+            height={45}
+            priority
+            className="h-9 w-auto md:h-10"
+          />
         </Link>
 
         {/* Desktop nav */}

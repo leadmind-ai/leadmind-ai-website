@@ -66,8 +66,8 @@
     "mission_title": "Our mission",
     "mission_text": "Making AI accessible and operational for all technical roles in insurance and finance — actuaries, accountants, asset managers, quantitative analysts, data scientists, IT professionals and beyond. Neither a generalist AI consultant nor a technician without business insight — we combine sector expertise with technological mastery.",
     "founder_title": "Founder",
-    "founder_name": "[Founder name]",
-    "founder_bio": "[Founder bio — actuarial + AI background]",
+    "founder_name": "Herman Njouonang",
+    "founder_bio": "An actuary by training and AI enthusiast, Herman Njouonang founded LeadMind AI in 2024 with a conviction: AI doesn't replace the expert — it makes them more effective. With dual expertise in actuarial science and AI technologies, he guides insurance and finance professionals through their transformation — with pragmatism, technical rigor, and a resolutely operational vision.",
     "values_title": "Our values",
     "values": [
       { "title": "Expertise", "description": "Deep technical mastery, continuous learning, constant monitoring." },

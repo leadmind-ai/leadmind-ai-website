@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Container } from "@/components/ui/Container";
 import type { Locale } from "@/lib/i18n";
 
@@ -29,9 +30,15 @@ export function Footer({ footer, nav, locale }: FooterProps) {
       <Container className="py-12">
         <div className="grid gap-8 md:grid-cols-3">
           <div>
-            <h3 className="text-lg font-bold">LeadMind AI</h3>
-            <p className="mt-2 text-sm text-gray-300">
-              Conseil & Formation IA pour l&apos;Assurance et la Finance
+            <Image
+              src="/images/logo-dark.png"
+              alt="LeadMind AI"
+              width={180}
+              height={45}
+              className="h-10 w-auto"
+            />
+            <p className="mt-3 text-sm text-gray-300">
+              AI Training & Solutions
             </p>
           </div>
           <div>
