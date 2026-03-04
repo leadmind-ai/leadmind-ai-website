@@ -12,12 +12,12 @@ export default function CalendlyEmbed({ title }: CalendlyEmbedProps) {
     "https://calendly.com/leadmind-ai/30min";
 
   return (
-    <section className="bg-surface py-16">
+    <section className="py-16">
       <Container>
-        <h2 className="mb-8 text-center text-2xl font-semibold text-primary">
+        <h2 className="mb-8 text-center text-2xl font-semibold text-white">
           {title}
         </h2>
-        <div className="mx-auto max-w-2xl overflow-hidden rounded-xl border border-gray-200 bg-white">
+        <div className="mx-auto max-w-2xl overflow-hidden rounded-xl border border-white/10 bg-white">
           <iframe
             src={calendlyUrl}
             width="100%"

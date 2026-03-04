@@ -11,7 +11,7 @@ type StatsProps = {
 
 export default function Stats({ title, pillars }: StatsProps) {
   return (
-    <section className="bg-primary py-16">
+    <section className="bg-white/5 py-16">
       <Container>
         <h2 className="text-center text-2xl font-semibold text-white">
           {title}

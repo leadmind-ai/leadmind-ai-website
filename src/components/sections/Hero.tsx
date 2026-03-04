@@ -1,13 +1,9 @@
 "use client";
 
-import { useState, lazy, Suspense } from "react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
-import { ShimmerText } from "@/components/ui/ShimmerText";
 import type { Locale } from "@/lib/i18n";
-
-const GLBackground = lazy(() => import("@/components/gl/GLBackground"));
 
 type HeroProps = {
   hero: {
@@ -20,13 +16,8 @@ type HeroProps = {
 };
 
 export default function Hero({ hero, locale }: HeroProps) {
-  const [hovering, setHovering] = useState(false);
-
   return (
-    <section className="relative overflow-hidden bg-primary py-24 md:py-32">
-      <Suspense fallback={null}>
-        <GLBackground hovering={hovering} bgColor="#1a365d" />
-      </Suspense>
+    <section className="relative overflow-hidden py-24 md:py-32">
       <Container className="relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -34,24 +25,16 @@ export default function Hero({ hero, locale }: HeroProps) {
           transition={{ duration: 0.6, ease: "easeOut" }}
           className="max-w-3xl"
         >
-          <ShimmerText
-            as="h1"
-            className="text-4xl font-bold leading-tight text-white md:text-5xl lg:text-6xl"
-          >
+          <h1 className="text-4xl font-bold leading-tight text-white md:text-5xl lg:text-6xl">
             {hero.title}
-          </ShimmerText>
+          </h1>
           <p className="mt-6 text-lg leading-relaxed text-gray-300 md:text-xl">
             {hero.subtitle}
           </p>
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-            <div
-              onMouseEnter={() => setHovering(true)}
-              onMouseLeave={() => setHovering(false)}
-            >
-              <Button href={`/${locale}/contact`} variant="cta">
-                {hero.cta_primary}
-              </Button>
-            </div>
+            <Button href={`/${locale}/contact`} variant="primary">
+              {hero.cta_primary}
+            </Button>
             <Button
               href={`/${locale}/formations`}
               variant="ghost"
@@ -62,6 +45,8 @@ export default function Hero({ hero, locale }: HeroProps) {
           </div>
         </motion.div>
       </Container>
+      {/* Background gradient decoration */}
+      <div className="absolute right-0 top-0 h-full w-1/2 bg-gradient-to-l from-accent/10 to-transparent" />
     </section>
   );
 }

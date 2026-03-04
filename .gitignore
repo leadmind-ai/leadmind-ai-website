@@ -40,13 +40,3 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
-
-# skal ventures reference (worktree)
-/7JW5iBM9v0h-1772631179318/
-
-# playwright screenshots
-*.png
-!public/**/*.png
-
-# playwright mcp
-.playwright-mcp/

@@ -1,6 +1,6 @@
 type BadgeProps = {
   children: React.ReactNode;
-  variant?: "accent" | "primary" | "muted" | "glass";
+  variant?: "accent" | "primary" | "muted";
   className?: string;
 };
 
@@ -12,8 +12,7 @@ export function Badge({
   const variants = {
     accent: "bg-accent/10 text-accent",
     primary: "bg-primary/10 text-primary",
-    muted: "bg-gray-100 text-text-muted",
-    glass: "bg-white/10 backdrop-blur-sm border border-white/20 text-white",
+    muted: "bg-white/10 text-text-muted",
   };
 
   return (

@@ -1,11 +1,8 @@
-"use client";
-
 import Link from "next/link";
-import { motion } from "framer-motion";
 
 type ButtonProps = {
   children: React.ReactNode;
-  variant?: "primary" | "secondary" | "ghost" | "cta";
+  variant?: "primary" | "secondary" | "ghost";
   href?: string;
   className?: string;
 } & React.ButtonHTMLAttributes<HTMLButtonElement>;
@@ -23,38 +20,11 @@ export function Button({
   const variants = {
     primary: "bg-accent text-white hover:bg-accent-light",
     secondary:
-      "border-2 border-primary text-primary hover:bg-primary hover:text-white",
-    ghost: "text-text-muted hover:text-text hover:bg-surface",
-    cta: "bg-accent text-white hover:shadow-[0_0_20px_rgba(13,148,136,0.4)] btn-cta-clip rounded-none",
+      "border-2 border-primary text-white hover:bg-primary hover:text-white",
+    ghost: "text-text-muted hover:text-white hover:bg-white/10",
   };
 
   const classes = `${base} ${variants[variant]} ${className}`;
-
-  if (variant === "cta") {
-    if (href) {
-      return (
-        <motion.div
-          whileHover={{ scale: 1.03 }}
-          whileTap={{ scale: 0.97 }}
-          className="inline-block"
-        >
-          <Link href={href} className={classes}>
-            {children}
-          </Link>
-        </motion.div>
-      );
-    }
-    return (
-      <motion.button
-        whileHover={{ scale: 1.03 }}
-        whileTap={{ scale: 0.97 }}
-        className={classes}
-        {...(props as React.ComponentProps<typeof motion.button>)}
-      >
-        {children}
-      </motion.button>
-    );
-  }
 
   if (href) {
     return (

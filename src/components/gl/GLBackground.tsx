@@ -13,7 +13,7 @@ type GLBackgroundProps = {
 
 export default function GLBackground({
   hovering = false,
-  bgColor = "#1a365d",
+  bgColor = "#0b1120",
 }: GLBackgroundProps) {
   const [fallback, setFallback] = useState(false);
 

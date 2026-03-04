@@ -31,10 +31,10 @@ export default function Founder({
   conviction,
 }: FounderProps) {
   return (
-    <section className="bg-surface py-20">
+    <section className="py-20">
       <Container>
         <FadeIn>
-          <h2 className="text-3xl font-semibold text-primary">{title}</h2>
+          <h2 className="text-3xl font-semibold text-white">{title}</h2>
         </FadeIn>
 
         <div className="mt-12 grid items-start gap-12 lg:grid-cols-5">
@@ -75,9 +75,9 @@ export default function Founder({
             <StaggerChildren className="mt-8 space-y-4">
               {highlights.map((h) => (
                 <StaggerItem key={h.title}>
-                  <div className="rounded-lg border-l-4 border-accent bg-white p-5 shadow-sm transition-shadow hover:shadow-md">
+                  <div className="rounded-lg border-l-4 border-accent bg-white/5 p-5 transition-colors hover:bg-white/10">
                     <div className="flex flex-wrap items-baseline justify-between gap-2">
-                      <h4 className="font-semibold text-primary">{h.title}</h4>
+                      <h4 className="font-semibold text-white">{h.title}</h4>
                       <span className="text-sm font-medium text-accent">
                         {h.period}
                       </span>

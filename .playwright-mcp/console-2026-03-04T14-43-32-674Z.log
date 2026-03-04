@@ -1,0 +1,2424 @@
+[     320ms] [WARNING] THREE.THREE.Clock: This module has been deprecated. Please use THREE.Timer instead. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[     333ms] [WARNING] THREE.THREE.Clock: This module has been deprecated. Please use THREE.Timer instead. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  450369ms] [ERROR] ./package.json:15:1
+Error parsing package.json file
+  13 |   "dependencies": {
+  14 |     "@formspree/react": "^3.0.0",
+> 15 | <<<<<<< HEAD
+     | ^
+  16 |     "@vercel/analytics": "^1.6.1",
+  17 |     "framer-motion": "^12.34.0",
+  18 |     "next": "16.1.6",
+
+package.json is not parseable: invalid JSON: key must be a string at line 15 column 1 @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  450369ms] [ERROR] ./tsconfig.json:32:5
+An issue occurred while parsing a tsconfig.json file.
+  30 |     ".next/dev/types/**/*.ts",
+  31 |     "**/*.mts"
+> 32 |   ],
+     |     ^
+> 33 | <<<<<<< HEAD
+     | ^^
+  34 |   "exclude": ["node_modules"]
+  35 | =======
+  36 |   "exclude": ["node_modules", "7JW5iBM9v0h-1772631179318"]
+
+tsconfig is not parseable: invalid JSON: Unexpected token @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  450369ms] [ERROR] ./src/middleware.ts:2:1
+Module not found: Can't resolve '@/lib/i18n'
+  1 | import { NextRequest, NextResponse } from "next/server";
+> 2 | import { locales, defaultLocale } from "@/lib/i18n";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export function middleware(request: NextRequest) {
+  5 |   const { pathname } = request.nextUrl;
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  450369ms] [ERROR] ./src/app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: /Users/njouonang/Projets/leadmind-ai-website-develop/src/app/globals.css:11:9: Unknown word HEAD
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Parser.unknownWord (turbopack:///[project]/node_modules/postcss/lib/parser.js:595:22)]
+    [at Parser.decl (turbopack:///[project]/node_modules/postcss/lib/parser.js:236:16)]
+    [at Parser.other (turbopack:///[project]/node_modules/postcss/lib/parser.js:401:18)]
+    [at Parser.parse (turbopack:///[project]/node_modules/postcss/lib/parser.js:472:16)]
+    [at parse (turbopack:///[project]/node_modules/postcss/lib/parse.js:11:12)]
+    [at new LazyResult (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:165:16)]
+    [at Processor.process (turbopack:///[project]/node_modules/postcss/lib/processor.js:53:14)]
+    [at transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:51)]
+    [at run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:29)]
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  450369ms] [ERROR] ./src/app/[locale]/layout.tsx:28:4
+Parsing ecmascript source code failed
+  26 |     <>
+  27 |       <Header nav={dict.nav} locale={locale as Locale} />
+> 28 | <<<<<<< HEAD
+     |    ^^
+  29 |       <main id="main-content" className="min-h-screen">{children}</main>
+  30 | =======
+  31 |       <main className="min-h-screen">{children}</main>
+
+Expression expected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  450369ms] [ERROR] ./src/app/[locale]/layout.tsx:4:1
+Module not found: Can't resolve '@/components/layout/Footer'
+  2 | import { locales, type Locale, getDictionary } from "@/lib/i18n";
+  3 | import { Header } from "@/components/layout/Header";
+> 4 | import { Footer } from "@/components/layout/Footer";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export function generateStaticParams() {
+  7 |   return locales.map((locale) => ({ locale }));
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  450370ms] [ERROR] ./src/app/[locale]/layout.tsx:3:1
+Module not found: Can't resolve '@/components/layout/Header'
+  1 | import { notFound } from "next/navigation";
+  2 | import { locales, type Locale, getDictionary } from "@/lib/i18n";
+> 3 | import { Header } from "@/components/layout/Header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Footer } from "@/components/layout/Footer";
+  5 |
+  6 | export function generateStaticParams() {
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  450370ms] [ERROR] ./src/app/[locale]/page.tsx:8:1
+Module not found: Can't resolve '@/components/sections/CTASection'
+   6 | import ServicesOverview from "@/components/sections/ServicesOverview";
+   7 | import WhyLeadMind from "@/components/sections/WhyLeadMind";
+>  8 | import CTASection from "@/components/sections/CTASection";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 |
+  10 | export async function generateMetadata({
+  11 |   params,
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  450370ms] [ERROR] ./src/app/[locale]/page.tsx:4:1
+Module not found: Can't resolve '@/components/sections/Hero'
+  2 | import { getDictionary, type Locale } from "@/lib/i18n";
+  3 | import { createMetadata, organizationJsonLd } from "@/lib/metadata";
+> 4 | import Hero from "@/components/sections/Hero";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import LogoBar from "@/components/sections/LogoBar";
+  6 | import ServicesOverview from "@/components/sections/ServicesOverview";
+  7 | import WhyLeadMind from "@/components/sections/WhyLeadMind";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  450370ms] [ERROR] ./src/app/[locale]/page.tsx:5:1
+Module not found: Can't resolve '@/components/sections/LogoBar'
+  3 | import { createMetadata, organizationJsonLd } from "@/lib/metadata";
+  4 | import Hero from "@/components/sections/Hero";
+> 5 | import LogoBar from "@/components/sections/LogoBar";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import ServicesOverview from "@/components/sections/ServicesOverview";
+  7 | import WhyLeadMind from "@/components/sections/WhyLeadMind";
+  8 | import CTASection from "@/components/sections/CTASection";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  450370ms] [ERROR] ./src/app/[locale]/page.tsx:6:1
+Module not found: Can't resolve '@/components/sections/ServicesOverview'
+  4 | import Hero from "@/components/sections/Hero";
+  5 | import LogoBar from "@/components/sections/LogoBar";
+> 6 | import ServicesOverview from "@/components/sections/ServicesOverview";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import WhyLeadMind from "@/components/sections/WhyLeadMind";
+  8 | import CTASection from "@/components/sections/CTASection";
+  9 |
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  450370ms] [ERROR] ./src/app/[locale]/page.tsx:7:1
+Module not found: Can't resolve '@/components/sections/WhyLeadMind'
+   5 | import LogoBar from "@/components/sections/LogoBar";
+   6 | import ServicesOverview from "@/components/sections/ServicesOverview";
+>  7 | import WhyLeadMind from "@/components/sections/WhyLeadMind";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import CTASection from "@/components/sections/CTASection";
+   9 |
+  10 | export async function generateMetadata({
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  450370ms] [ERROR] ./src/app/[locale]/layout.tsx:2:1
+Module not found: Can't resolve '@/lib/i18n'
+  1 | import { notFound } from "next/navigation";
+> 2 | import { locales, type Locale, getDictionary } from "@/lib/i18n";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Header } from "@/components/layout/Header";
+  4 | import { Footer } from "@/components/layout/Footer";
+  5 |
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  450370ms] [ERROR] ./src/app/[locale]/page.tsx:2:1
+Module not found: Can't resolve '@/lib/i18n'
+  1 | import type { Metadata } from "next";
+> 2 | import { getDictionary, type Locale } from "@/lib/i18n";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { createMetadata, organizationJsonLd } from "@/lib/metadata";
+  4 | import Hero from "@/components/sections/Hero";
+  5 | import LogoBar from "@/components/sections/LogoBar";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  450370ms] [ERROR] ./src/app/[locale]/page.tsx:3:1
+Module not found: Can't resolve '@/lib/metadata'
+  1 | import type { Metadata } from "next";
+  2 | import { getDictionary, type Locale } from "@/lib/i18n";
+> 3 | import { createMetadata, organizationJsonLd } from "@/lib/metadata";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Hero from "@/components/sections/Hero";
+  5 | import LogoBar from "@/components/sections/LogoBar";
+  6 | import ServicesOverview from "@/components/sections/ServicesOverview";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  450370ms] [ERROR] ./src/app/[locale]/contact/page.tsx:37:4
+Parsing ecmascript source code failed
+  35 |   return (
+  36 |     <>
+> 37 | <<<<<<< HEAD
+     |    ^^
+  38 |       <section className="py-20">
+  39 |         <Container>
+  40 |           <div className="mx-auto max-w-2xl">
+
+Expression expected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  450370ms] [ERROR] ./src/app/[locale]/contact/page.tsx:10:1
+Parsing ecmascript source code failed
+   8 | =======
+   9 | import ContactHero from "@/components/sections/ContactHero";
+> 10 | >>>>>>> 60ea887 (feat: initial commit — LeadMind AI website with WebGL particle waves)
+     | ^^^^^^^
+  11 |
+  12 | export async function generateMetadata({
+  13 |   params,
+
+Merge conflict marker encountered. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  450370ms] [ERROR] ./src/app/[locale]/contact/page.tsx:5:1
+Module not found: Can't resolve '@/components/forms/ContactForm'
+  3 | import { createMetadata } from "@/lib/metadata";
+  4 | import { Container } from "@/components/ui/Container";
+> 5 | import { ContactForm } from "@/components/forms/ContactForm";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import CalendlyEmbed from "@/components/sections/CalendlyEmbed";
+  7 | <<<<<<< HEAD
+  8 | =======
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  450370ms] [ERROR] ./src/app/[locale]/contact/page.tsx:6:1
+Module not found: Can't resolve '@/components/sections/CalendlyEmbed'
+  4 | import { Container } from "@/components/ui/Container";
+  5 | import { ContactForm } from "@/components/forms/ContactForm";
+> 6 | import CalendlyEmbed from "@/components/sections/CalendlyEmbed";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | <<<<<<< HEAD
+  8 | =======
+  9 | import ContactHero from "@/components/sections/ContactHero";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  450370ms] [ERROR] ./src/app/[locale]/contact/page.tsx:4:1
+Module not found: Can't resolve '@/components/ui/Container'
+  2 | import { getDictionary, type Locale } from "@/lib/i18n";
+  3 | import { createMetadata } from "@/lib/metadata";
+> 4 | import { Container } from "@/components/ui/Container";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { ContactForm } from "@/components/forms/ContactForm";
+  6 | import CalendlyEmbed from "@/components/sections/CalendlyEmbed";
+  7 | <<<<<<< HEAD
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  450370ms] [ERROR] ./src/app/[locale]/contact/page.tsx:2:1
+Module not found: Can't resolve '@/lib/i18n'
+  1 | import type { Metadata } from "next";
+> 2 | import { getDictionary, type Locale } from "@/lib/i18n";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { createMetadata } from "@/lib/metadata";
+  4 | import { Container } from "@/components/ui/Container";
+  5 | import { ContactForm } from "@/components/forms/ContactForm";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  450370ms] [ERROR] ./src/app/[locale]/contact/page.tsx:3:1
+Module not found: Can't resolve '@/lib/metadata'
+  1 | import type { Metadata } from "next";
+  2 | import { getDictionary, type Locale } from "@/lib/i18n";
+> 3 | import { createMetadata } from "@/lib/metadata";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Container } from "@/components/ui/Container";
+  5 | import { ContactForm } from "@/components/forms/ContactForm";
+  6 | import CalendlyEmbed from "@/components/sections/CalendlyEmbed";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  450370ms] [ERROR] ./src/app/[locale]/a-propos/page.tsx:5:1
+Module not found: Can't resolve '@/components/sections/Founder'
+  3 | import { createMetadata } from "@/lib/metadata";
+  4 | import Mission from "@/components/sections/Mission";
+> 5 | import Founder from "@/components/sections/Founder";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import Values from "@/components/sections/Values";
+  7 | import Stats from "@/components/sections/Stats";
+  8 |
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  450370ms] [ERROR] ./src/app/[locale]/a-propos/page.tsx:4:1
+Module not found: Can't resolve '@/components/sections/Mission'
+  2 | import { getDictionary, type Locale } from "@/lib/i18n";
+  3 | import { createMetadata } from "@/lib/metadata";
+> 4 | import Mission from "@/components/sections/Mission";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import Founder from "@/components/sections/Founder";
+  6 | import Values from "@/components/sections/Values";
+  7 | import Stats from "@/components/sections/Stats";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  450370ms] [ERROR] ./src/app/[locale]/a-propos/page.tsx:7:1
+Module not found: Can't resolve '@/components/sections/Stats'
+   5 | import Founder from "@/components/sections/Founder";
+   6 | import Values from "@/components/sections/Values";
+>  7 | import Stats from "@/components/sections/Stats";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | export async function generateMetadata({
+  10 |   params,
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  450370ms] [ERROR] ./src/app/[locale]/a-propos/page.tsx:6:1
+Module not found: Can't resolve '@/components/sections/Values'
+  4 | import Mission from "@/components/sections/Mission";
+  5 | import Founder from "@/components/sections/Founder";
+> 6 | import Values from "@/components/sections/Values";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import Stats from "@/components/sections/Stats";
+  8 |
+  9 | export async function generateMetadata({
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  450371ms] [ERROR] ./src/app/[locale]/a-propos/page.tsx:2:1
+Module not found: Can't resolve '@/lib/i18n'
+  1 | import type { Metadata } from "next";
+> 2 | import { getDictionary, type Locale } from "@/lib/i18n";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { createMetadata } from "@/lib/metadata";
+  4 | import Mission from "@/components/sections/Mission";
+  5 | import Founder from "@/components/sections/Founder";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  450371ms] [ERROR] ./src/app/[locale]/a-propos/page.tsx:3:1
+Module not found: Can't resolve '@/lib/metadata'
+  1 | import type { Metadata } from "next";
+  2 | import { getDictionary, type Locale } from "@/lib/i18n";
+> 3 | import { createMetadata } from "@/lib/metadata";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Mission from "@/components/sections/Mission";
+  5 | import Founder from "@/components/sections/Founder";
+  6 | import Values from "@/components/sections/Values";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  450371ms] [ERROR] ./src/app/[locale]/formations/page.tsx:7:1
+Module not found: Can't resolve '@/components/sections/CTASection'
+   5 | import FormationsList from "@/components/sections/FormationsList";
+   6 | import ProcessTimeline from "@/components/sections/ProcessTimeline";
+>  7 | import CTASection from "@/components/sections/CTASection";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | export async function generateMetadata({
+  10 |   params,
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  450371ms] [ERROR] ./src/app/[locale]/formations/page.tsx:4:1
+Module not found: Can't resolve '@/components/sections/FormationsHero'
+  2 | import { getDictionary, type Locale } from "@/lib/i18n";
+  3 | import { createMetadata } from "@/lib/metadata";
+> 4 | import FormationsHero from "@/components/sections/FormationsHero";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import FormationsList from "@/components/sections/FormationsList";
+  6 | import ProcessTimeline from "@/components/sections/ProcessTimeline";
+  7 | import CTASection from "@/components/sections/CTASection";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  450371ms] [ERROR] ./src/app/[locale]/formations/page.tsx:5:1
+Module not found: Can't resolve '@/components/sections/FormationsList'
+  3 | import { createMetadata } from "@/lib/metadata";
+  4 | import FormationsHero from "@/components/sections/FormationsHero";
+> 5 | import FormationsList from "@/components/sections/FormationsList";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import ProcessTimeline from "@/components/sections/ProcessTimeline";
+  7 | import CTASection from "@/components/sections/CTASection";
+  8 |
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  450371ms] [ERROR] ./src/app/[locale]/formations/page.tsx:6:1
+Module not found: Can't resolve '@/components/sections/ProcessTimeline'
+  4 | import FormationsHero from "@/components/sections/FormationsHero";
+  5 | import FormationsList from "@/components/sections/FormationsList";
+> 6 | import ProcessTimeline from "@/components/sections/ProcessTimeline";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import CTASection from "@/components/sections/CTASection";
+  8 |
+  9 | export async function generateMetadata({
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  450371ms] [ERROR] ./src/app/[locale]/formations/page.tsx:2:1
+Module not found: Can't resolve '@/lib/i18n'
+  1 | import type { Metadata } from "next";
+> 2 | import { getDictionary, type Locale } from "@/lib/i18n";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { createMetadata } from "@/lib/metadata";
+  4 | import FormationsHero from "@/components/sections/FormationsHero";
+  5 | import FormationsList from "@/components/sections/FormationsList";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  450371ms] [ERROR] ./src/app/[locale]/formations/page.tsx:3:1
+Module not found: Can't resolve '@/lib/metadata'
+  1 | import type { Metadata } from "next";
+  2 | import { getDictionary, type Locale } from "@/lib/i18n";
+> 3 | import { createMetadata } from "@/lib/metadata";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import FormationsHero from "@/components/sections/FormationsHero";
+  5 | import FormationsList from "@/components/sections/FormationsList";
+  6 | import ProcessTimeline from "@/components/sections/ProcessTimeline";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  450424ms] [ERROR] ./package.json:15:1
+Error parsing package.json file
+  13 |   "dependencies": {
+  14 |     "@formspree/react": "^3.0.0",
+> 15 | <<<<<<< HEAD
+     | ^
+  16 |     "@vercel/analytics": "^1.6.1",
+  17 |     "framer-motion": "^12.34.0",
+  18 |     "next": "16.1.6",
+
+package.json is not parseable: invalid JSON: key must be a string at line 15 column 1 @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  450425ms] [ERROR] ./tsconfig.json:32:5
+An issue occurred while parsing a tsconfig.json file.
+  30 |     ".next/dev/types/**/*.ts",
+  31 |     "**/*.mts"
+> 32 |   ],
+     |     ^
+> 33 | <<<<<<< HEAD
+     | ^^
+  34 |   "exclude": ["node_modules"]
+  35 | =======
+  36 |   "exclude": ["node_modules", "7JW5iBM9v0h-1772631179318"]
+
+tsconfig is not parseable: invalid JSON: Unexpected token @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  450425ms] [ERROR] ./src/middleware.ts:2:1
+Module not found: Can't resolve '@/lib/i18n'
+  1 | import { NextRequest, NextResponse } from "next/server";
+> 2 | import { locales, defaultLocale } from "@/lib/i18n";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export function middleware(request: NextRequest) {
+  5 |   const { pathname } = request.nextUrl;
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  450425ms] [ERROR] ./src/app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: /Users/njouonang/Projets/leadmind-ai-website-develop/src/app/globals.css:11:9: Unknown word HEAD
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Parser.unknownWord (turbopack:///[project]/node_modules/postcss/lib/parser.js:595:22)]
+    [at Parser.decl (turbopack:///[project]/node_modules/postcss/lib/parser.js:236:16)]
+    [at Parser.other (turbopack:///[project]/node_modules/postcss/lib/parser.js:401:18)]
+    [at Parser.parse (turbopack:///[project]/node_modules/postcss/lib/parser.js:472:16)]
+    [at parse (turbopack:///[project]/node_modules/postcss/lib/parse.js:11:12)]
+    [at new LazyResult (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:165:16)]
+    [at Processor.process (turbopack:///[project]/node_modules/postcss/lib/processor.js:53:14)]
+    [at transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:51)]
+    [at run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:29)]
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  450425ms] [ERROR] ./src/app/[locale]/layout.tsx:28:4
+Parsing ecmascript source code failed
+  26 |     <>
+  27 |       <Header nav={dict.nav} locale={locale as Locale} />
+> 28 | <<<<<<< HEAD
+     |    ^^
+  29 |       <main id="main-content" className="min-h-screen">{children}</main>
+  30 | =======
+  31 |       <main className="min-h-screen">{children}</main>
+
+Expression expected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  450425ms] [ERROR] ./src/app/[locale]/layout.tsx:4:1
+Module not found: Can't resolve '@/components/layout/Footer'
+  2 | import { locales, type Locale, getDictionary } from "@/lib/i18n";
+  3 | import { Header } from "@/components/layout/Header";
+> 4 | import { Footer } from "@/components/layout/Footer";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export function generateStaticParams() {
+  7 |   return locales.map((locale) => ({ locale }));
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  450425ms] [ERROR] ./src/app/[locale]/layout.tsx:3:1
+Module not found: Can't resolve '@/components/layout/Header'
+  1 | import { notFound } from "next/navigation";
+  2 | import { locales, type Locale, getDictionary } from "@/lib/i18n";
+> 3 | import { Header } from "@/components/layout/Header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Footer } from "@/components/layout/Footer";
+  5 |
+  6 | export function generateStaticParams() {
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  450425ms] [ERROR] ./src/app/[locale]/page.tsx:8:1
+Module not found: Can't resolve '@/components/sections/CTASection'
+   6 | import ServicesOverview from "@/components/sections/ServicesOverview";
+   7 | import WhyLeadMind from "@/components/sections/WhyLeadMind";
+>  8 | import CTASection from "@/components/sections/CTASection";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 |
+  10 | export async function generateMetadata({
+  11 |   params,
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  450425ms] [ERROR] ./src/app/[locale]/page.tsx:4:1
+Module not found: Can't resolve '@/components/sections/Hero'
+  2 | import { getDictionary, type Locale } from "@/lib/i18n";
+  3 | import { createMetadata, organizationJsonLd } from "@/lib/metadata";
+> 4 | import Hero from "@/components/sections/Hero";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import LogoBar from "@/components/sections/LogoBar";
+  6 | import ServicesOverview from "@/components/sections/ServicesOverview";
+  7 | import WhyLeadMind from "@/components/sections/WhyLeadMind";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  450425ms] [ERROR] ./src/app/[locale]/page.tsx:5:1
+Module not found: Can't resolve '@/components/sections/LogoBar'
+  3 | import { createMetadata, organizationJsonLd } from "@/lib/metadata";
+  4 | import Hero from "@/components/sections/Hero";
+> 5 | import LogoBar from "@/components/sections/LogoBar";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import ServicesOverview from "@/components/sections/ServicesOverview";
+  7 | import WhyLeadMind from "@/components/sections/WhyLeadMind";
+  8 | import CTASection from "@/components/sections/CTASection";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  450425ms] [ERROR] ./src/app/[locale]/page.tsx:6:1
+Module not found: Can't resolve '@/components/sections/ServicesOverview'
+  4 | import Hero from "@/components/sections/Hero";
+  5 | import LogoBar from "@/components/sections/LogoBar";
+> 6 | import ServicesOverview from "@/components/sections/ServicesOverview";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import WhyLeadMind from "@/components/sections/WhyLeadMind";
+  8 | import CTASection from "@/components/sections/CTASection";
+  9 |
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  450425ms] [ERROR] ./src/app/[locale]/page.tsx:7:1
+Module not found: Can't resolve '@/components/sections/WhyLeadMind'
+   5 | import LogoBar from "@/components/sections/LogoBar";
+   6 | import ServicesOverview from "@/components/sections/ServicesOverview";
+>  7 | import WhyLeadMind from "@/components/sections/WhyLeadMind";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import CTASection from "@/components/sections/CTASection";
+   9 |
+  10 | export async function generateMetadata({
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  450425ms] [ERROR] ./src/app/[locale]/layout.tsx:2:1
+Module not found: Can't resolve '@/lib/i18n'
+  1 | import { notFound } from "next/navigation";
+> 2 | import { locales, type Locale, getDictionary } from "@/lib/i18n";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Header } from "@/components/layout/Header";
+  4 | import { Footer } from "@/components/layout/Footer";
+  5 |
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  450425ms] [ERROR] ./src/app/[locale]/page.tsx:2:1
+Module not found: Can't resolve '@/lib/i18n'
+  1 | import type { Metadata } from "next";
+> 2 | import { getDictionary, type Locale } from "@/lib/i18n";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { createMetadata, organizationJsonLd } from "@/lib/metadata";
+  4 | import Hero from "@/components/sections/Hero";
+  5 | import LogoBar from "@/components/sections/LogoBar";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  450425ms] [ERROR] ./src/app/[locale]/page.tsx:3:1
+Module not found: Can't resolve '@/lib/metadata'
+  1 | import type { Metadata } from "next";
+  2 | import { getDictionary, type Locale } from "@/lib/i18n";
+> 3 | import { createMetadata, organizationJsonLd } from "@/lib/metadata";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Hero from "@/components/sections/Hero";
+  5 | import LogoBar from "@/components/sections/LogoBar";
+  6 | import ServicesOverview from "@/components/sections/ServicesOverview";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  450425ms] [ERROR] ./src/app/[locale]/contact/page.tsx:37:4
+Parsing ecmascript source code failed
+  35 |   return (
+  36 |     <>
+> 37 | <<<<<<< HEAD
+     |    ^^
+  38 |       <section className="py-20">
+  39 |         <Container>
+  40 |           <div className="mx-auto max-w-2xl">
+
+Expression expected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  450425ms] [ERROR] ./src/app/[locale]/contact/page.tsx:10:1
+Parsing ecmascript source code failed
+   8 | =======
+   9 | import ContactHero from "@/components/sections/ContactHero";
+> 10 | >>>>>>> 60ea887 (feat: initial commit — LeadMind AI website with WebGL particle waves)
+     | ^^^^^^^
+  11 |
+  12 | export async function generateMetadata({
+  13 |   params,
+
+Merge conflict marker encountered. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  450425ms] [ERROR] ./src/app/[locale]/contact/page.tsx:5:1
+Module not found: Can't resolve '@/components/forms/ContactForm'
+  3 | import { createMetadata } from "@/lib/metadata";
+  4 | import { Container } from "@/components/ui/Container";
+> 5 | import { ContactForm } from "@/components/forms/ContactForm";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import CalendlyEmbed from "@/components/sections/CalendlyEmbed";
+  7 | <<<<<<< HEAD
+  8 | =======
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  450426ms] [ERROR] ./src/app/[locale]/contact/page.tsx:6:1
+Module not found: Can't resolve '@/components/sections/CalendlyEmbed'
+  4 | import { Container } from "@/components/ui/Container";
+  5 | import { ContactForm } from "@/components/forms/ContactForm";
+> 6 | import CalendlyEmbed from "@/components/sections/CalendlyEmbed";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | <<<<<<< HEAD
+  8 | =======
+  9 | import ContactHero from "@/components/sections/ContactHero";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  450426ms] [ERROR] ./src/app/[locale]/contact/page.tsx:4:1
+Module not found: Can't resolve '@/components/ui/Container'
+  2 | import { getDictionary, type Locale } from "@/lib/i18n";
+  3 | import { createMetadata } from "@/lib/metadata";
+> 4 | import { Container } from "@/components/ui/Container";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { ContactForm } from "@/components/forms/ContactForm";
+  6 | import CalendlyEmbed from "@/components/sections/CalendlyEmbed";
+  7 | <<<<<<< HEAD
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  450426ms] [ERROR] ./src/app/[locale]/contact/page.tsx:2:1
+Module not found: Can't resolve '@/lib/i18n'
+  1 | import type { Metadata } from "next";
+> 2 | import { getDictionary, type Locale } from "@/lib/i18n";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { createMetadata } from "@/lib/metadata";
+  4 | import { Container } from "@/components/ui/Container";
+  5 | import { ContactForm } from "@/components/forms/ContactForm";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  450426ms] [ERROR] ./src/app/[locale]/contact/page.tsx:3:1
+Module not found: Can't resolve '@/lib/metadata'
+  1 | import type { Metadata } from "next";
+  2 | import { getDictionary, type Locale } from "@/lib/i18n";
+> 3 | import { createMetadata } from "@/lib/metadata";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Container } from "@/components/ui/Container";
+  5 | import { ContactForm } from "@/components/forms/ContactForm";
+  6 | import CalendlyEmbed from "@/components/sections/CalendlyEmbed";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  450426ms] [ERROR] ./src/app/[locale]/a-propos/page.tsx:5:1
+Module not found: Can't resolve '@/components/sections/Founder'
+  3 | import { createMetadata } from "@/lib/metadata";
+  4 | import Mission from "@/components/sections/Mission";
+> 5 | import Founder from "@/components/sections/Founder";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import Values from "@/components/sections/Values";
+  7 | import Stats from "@/components/sections/Stats";
+  8 |
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  450426ms] [ERROR] ./src/app/[locale]/a-propos/page.tsx:4:1
+Module not found: Can't resolve '@/components/sections/Mission'
+  2 | import { getDictionary, type Locale } from "@/lib/i18n";
+  3 | import { createMetadata } from "@/lib/metadata";
+> 4 | import Mission from "@/components/sections/Mission";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import Founder from "@/components/sections/Founder";
+  6 | import Values from "@/components/sections/Values";
+  7 | import Stats from "@/components/sections/Stats";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  450426ms] [ERROR] ./src/app/[locale]/a-propos/page.tsx:7:1
+Module not found: Can't resolve '@/components/sections/Stats'
+   5 | import Founder from "@/components/sections/Founder";
+   6 | import Values from "@/components/sections/Values";
+>  7 | import Stats from "@/components/sections/Stats";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | export async function generateMetadata({
+  10 |   params,
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  450426ms] [ERROR] ./src/app/[locale]/a-propos/page.tsx:6:1
+Module not found: Can't resolve '@/components/sections/Values'
+  4 | import Mission from "@/components/sections/Mission";
+  5 | import Founder from "@/components/sections/Founder";
+> 6 | import Values from "@/components/sections/Values";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import Stats from "@/components/sections/Stats";
+  8 |
+  9 | export async function generateMetadata({
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  450426ms] [ERROR] ./src/app/[locale]/a-propos/page.tsx:2:1
+Module not found: Can't resolve '@/lib/i18n'
+  1 | import type { Metadata } from "next";
+> 2 | import { getDictionary, type Locale } from "@/lib/i18n";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { createMetadata } from "@/lib/metadata";
+  4 | import Mission from "@/components/sections/Mission";
+  5 | import Founder from "@/components/sections/Founder";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  450426ms] [ERROR] ./src/app/[locale]/a-propos/page.tsx:3:1
+Module not found: Can't resolve '@/lib/metadata'
+  1 | import type { Metadata } from "next";
+  2 | import { getDictionary, type Locale } from "@/lib/i18n";
+> 3 | import { createMetadata } from "@/lib/metadata";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Mission from "@/components/sections/Mission";
+  5 | import Founder from "@/components/sections/Founder";
+  6 | import Values from "@/components/sections/Values";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  450426ms] [ERROR] ./src/app/[locale]/formations/page.tsx:7:1
+Module not found: Can't resolve '@/components/sections/CTASection'
+   5 | import FormationsList from "@/components/sections/FormationsList";
+   6 | import ProcessTimeline from "@/components/sections/ProcessTimeline";
+>  7 | import CTASection from "@/components/sections/CTASection";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | export async function generateMetadata({
+  10 |   params,
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  450426ms] [ERROR] ./src/app/[locale]/formations/page.tsx:4:1
+Module not found: Can't resolve '@/components/sections/FormationsHero'
+  2 | import { getDictionary, type Locale } from "@/lib/i18n";
+  3 | import { createMetadata } from "@/lib/metadata";
+> 4 | import FormationsHero from "@/components/sections/FormationsHero";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import FormationsList from "@/components/sections/FormationsList";
+  6 | import ProcessTimeline from "@/components/sections/ProcessTimeline";
+  7 | import CTASection from "@/components/sections/CTASection";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  450426ms] [ERROR] ./src/app/[locale]/formations/page.tsx:5:1
+Module not found: Can't resolve '@/components/sections/FormationsList'
+  3 | import { createMetadata } from "@/lib/metadata";
+  4 | import FormationsHero from "@/components/sections/FormationsHero";
+> 5 | import FormationsList from "@/components/sections/FormationsList";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import ProcessTimeline from "@/components/sections/ProcessTimeline";
+  7 | import CTASection from "@/components/sections/CTASection";
+  8 |
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  450426ms] [ERROR] ./src/app/[locale]/formations/page.tsx:6:1
+Module not found: Can't resolve '@/components/sections/ProcessTimeline'
+  4 | import FormationsHero from "@/components/sections/FormationsHero";
+  5 | import FormationsList from "@/components/sections/FormationsList";
+> 6 | import ProcessTimeline from "@/components/sections/ProcessTimeline";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import CTASection from "@/components/sections/CTASection";
+  8 |
+  9 | export async function generateMetadata({
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  450426ms] [ERROR] ./src/app/[locale]/formations/page.tsx:2:1
+Module not found: Can't resolve '@/lib/i18n'
+  1 | import type { Metadata } from "next";
+> 2 | import { getDictionary, type Locale } from "@/lib/i18n";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { createMetadata } from "@/lib/metadata";
+  4 | import FormationsHero from "@/components/sections/FormationsHero";
+  5 | import FormationsList from "@/components/sections/FormationsList";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  450426ms] [ERROR] ./src/app/[locale]/formations/page.tsx:3:1
+Module not found: Can't resolve '@/lib/metadata'
+  1 | import type { Metadata } from "next";
+  2 | import { getDictionary, type Locale } from "@/lib/i18n";
+> 3 | import { createMetadata } from "@/lib/metadata";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import FormationsHero from "@/components/sections/FormationsHero";
+  5 | import FormationsList from "@/components/sections/FormationsList";
+  6 | import ProcessTimeline from "@/components/sections/ProcessTimeline";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  450660ms] [ERROR] ./package.json:15:1
+Error parsing package.json file
+  13 |   "dependencies": {
+  14 |     "@formspree/react": "^3.0.0",
+> 15 | <<<<<<< HEAD
+     | ^
+  16 |     "@vercel/analytics": "^1.6.1",
+  17 |     "framer-motion": "^12.34.0",
+  18 |     "next": "16.1.6",
+
+package.json is not parseable: invalid JSON: key must be a string at line 15 column 1 @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  450661ms] [ERROR] ./tsconfig.json:32:5
+An issue occurred while parsing a tsconfig.json file.
+  30 |     ".next/dev/types/**/*.ts",
+  31 |     "**/*.mts"
+> 32 |   ],
+     |     ^
+> 33 | <<<<<<< HEAD
+     | ^^
+  34 |   "exclude": ["node_modules"]
+  35 | =======
+  36 |   "exclude": ["node_modules", "7JW5iBM9v0h-1772631179318"]
+
+tsconfig is not parseable: invalid JSON: Unexpected token @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  450661ms] [ERROR] ./src/middleware.ts:2:1
+Module not found: Can't resolve '@/lib/i18n'
+  1 | import { NextRequest, NextResponse } from "next/server";
+> 2 | import { locales, defaultLocale } from "@/lib/i18n";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export function middleware(request: NextRequest) {
+  5 |   const { pathname } = request.nextUrl;
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  450661ms] [ERROR] ./src/app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: /Users/njouonang/Projets/leadmind-ai-website-develop/src/app/globals.css:11:9: Unknown word HEAD
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Parser.unknownWord (turbopack:///[project]/node_modules/postcss/lib/parser.js:595:22)]
+    [at Parser.decl (turbopack:///[project]/node_modules/postcss/lib/parser.js:236:16)]
+    [at Parser.other (turbopack:///[project]/node_modules/postcss/lib/parser.js:401:18)]
+    [at Parser.parse (turbopack:///[project]/node_modules/postcss/lib/parser.js:472:16)]
+    [at parse (turbopack:///[project]/node_modules/postcss/lib/parse.js:11:12)]
+    [at new LazyResult (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:165:16)]
+    [at Processor.process (turbopack:///[project]/node_modules/postcss/lib/processor.js:53:14)]
+    [at transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:51)]
+    [at run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:29)]
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  450662ms] [ERROR] ./src/app/[locale]/layout.tsx:28:4
+Parsing ecmascript source code failed
+  26 |     <>
+  27 |       <Header nav={dict.nav} locale={locale as Locale} />
+> 28 | <<<<<<< HEAD
+     |    ^^
+  29 |       <main id="main-content" className="min-h-screen">{children}</main>
+  30 | =======
+  31 |       <main className="min-h-screen">{children}</main>
+
+Expression expected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  450662ms] [ERROR] ./src/app/[locale]/layout.tsx:4:1
+Module not found: Can't resolve '@/components/layout/Footer'
+  2 | import { locales, type Locale, getDictionary } from "@/lib/i18n";
+  3 | import { Header } from "@/components/layout/Header";
+> 4 | import { Footer } from "@/components/layout/Footer";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export function generateStaticParams() {
+  7 |   return locales.map((locale) => ({ locale }));
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  450662ms] [ERROR] ./src/app/[locale]/layout.tsx:3:1
+Module not found: Can't resolve '@/components/layout/Header'
+  1 | import { notFound } from "next/navigation";
+  2 | import { locales, type Locale, getDictionary } from "@/lib/i18n";
+> 3 | import { Header } from "@/components/layout/Header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Footer } from "@/components/layout/Footer";
+  5 |
+  6 | export function generateStaticParams() {
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  450662ms] [ERROR] ./src/app/[locale]/page.tsx:8:1
+Module not found: Can't resolve '@/components/sections/CTASection'
+   6 | import ServicesOverview from "@/components/sections/ServicesOverview";
+   7 | import WhyLeadMind from "@/components/sections/WhyLeadMind";
+>  8 | import CTASection from "@/components/sections/CTASection";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 |
+  10 | export async function generateMetadata({
+  11 |   params,
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  450662ms] [ERROR] ./src/app/[locale]/page.tsx:4:1
+Module not found: Can't resolve '@/components/sections/Hero'
+  2 | import { getDictionary, type Locale } from "@/lib/i18n";
+  3 | import { createMetadata, organizationJsonLd } from "@/lib/metadata";
+> 4 | import Hero from "@/components/sections/Hero";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import LogoBar from "@/components/sections/LogoBar";
+  6 | import ServicesOverview from "@/components/sections/ServicesOverview";
+  7 | import WhyLeadMind from "@/components/sections/WhyLeadMind";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  450662ms] [ERROR] ./src/app/[locale]/page.tsx:5:1
+Module not found: Can't resolve '@/components/sections/LogoBar'
+  3 | import { createMetadata, organizationJsonLd } from "@/lib/metadata";
+  4 | import Hero from "@/components/sections/Hero";
+> 5 | import LogoBar from "@/components/sections/LogoBar";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import ServicesOverview from "@/components/sections/ServicesOverview";
+  7 | import WhyLeadMind from "@/components/sections/WhyLeadMind";
+  8 | import CTASection from "@/components/sections/CTASection";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  450662ms] [ERROR] ./src/app/[locale]/page.tsx:6:1
+Module not found: Can't resolve '@/components/sections/ServicesOverview'
+  4 | import Hero from "@/components/sections/Hero";
+  5 | import LogoBar from "@/components/sections/LogoBar";
+> 6 | import ServicesOverview from "@/components/sections/ServicesOverview";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import WhyLeadMind from "@/components/sections/WhyLeadMind";
+  8 | import CTASection from "@/components/sections/CTASection";
+  9 |
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  450662ms] [ERROR] ./src/app/[locale]/page.tsx:7:1
+Module not found: Can't resolve '@/components/sections/WhyLeadMind'
+   5 | import LogoBar from "@/components/sections/LogoBar";
+   6 | import ServicesOverview from "@/components/sections/ServicesOverview";
+>  7 | import WhyLeadMind from "@/components/sections/WhyLeadMind";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import CTASection from "@/components/sections/CTASection";
+   9 |
+  10 | export async function generateMetadata({
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  450662ms] [ERROR] ./src/app/[locale]/layout.tsx:2:1
+Module not found: Can't resolve '@/lib/i18n'
+  1 | import { notFound } from "next/navigation";
+> 2 | import { locales, type Locale, getDictionary } from "@/lib/i18n";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Header } from "@/components/layout/Header";
+  4 | import { Footer } from "@/components/layout/Footer";
+  5 |
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  450662ms] [ERROR] ./src/app/[locale]/page.tsx:2:1
+Module not found: Can't resolve '@/lib/i18n'
+  1 | import type { Metadata } from "next";
+> 2 | import { getDictionary, type Locale } from "@/lib/i18n";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { createMetadata, organizationJsonLd } from "@/lib/metadata";
+  4 | import Hero from "@/components/sections/Hero";
+  5 | import LogoBar from "@/components/sections/LogoBar";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  450662ms] [ERROR] ./src/app/[locale]/page.tsx:3:1
+Module not found: Can't resolve '@/lib/metadata'
+  1 | import type { Metadata } from "next";
+  2 | import { getDictionary, type Locale } from "@/lib/i18n";
+> 3 | import { createMetadata, organizationJsonLd } from "@/lib/metadata";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Hero from "@/components/sections/Hero";
+  5 | import LogoBar from "@/components/sections/LogoBar";
+  6 | import ServicesOverview from "@/components/sections/ServicesOverview";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  450662ms] [ERROR] ./src/app/[locale]/contact/page.tsx:37:4
+Parsing ecmascript source code failed
+  35 |   return (
+  36 |     <>
+> 37 | <<<<<<< HEAD
+     |    ^^
+  38 |       <section className="py-20">
+  39 |         <Container>
+  40 |           <div className="mx-auto max-w-2xl">
+
+Expression expected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  450662ms] [ERROR] ./src/app/[locale]/contact/page.tsx:10:1
+Parsing ecmascript source code failed
+   8 | =======
+   9 | import ContactHero from "@/components/sections/ContactHero";
+> 10 | >>>>>>> 60ea887 (feat: initial commit — LeadMind AI website with WebGL particle waves)
+     | ^^^^^^^
+  11 |
+  12 | export async function generateMetadata({
+  13 |   params,
+
+Merge conflict marker encountered. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  450662ms] [ERROR] ./src/app/[locale]/contact/page.tsx:5:1
+Module not found: Can't resolve '@/components/forms/ContactForm'
+  3 | import { createMetadata } from "@/lib/metadata";
+  4 | import { Container } from "@/components/ui/Container";
+> 5 | import { ContactForm } from "@/components/forms/ContactForm";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import CalendlyEmbed from "@/components/sections/CalendlyEmbed";
+  7 | <<<<<<< HEAD
+  8 | =======
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  450662ms] [ERROR] ./src/app/[locale]/contact/page.tsx:6:1
+Module not found: Can't resolve '@/components/sections/CalendlyEmbed'
+  4 | import { Container } from "@/components/ui/Container";
+  5 | import { ContactForm } from "@/components/forms/ContactForm";
+> 6 | import CalendlyEmbed from "@/components/sections/CalendlyEmbed";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | <<<<<<< HEAD
+  8 | =======
+  9 | import ContactHero from "@/components/sections/ContactHero";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  450662ms] [ERROR] ./src/app/[locale]/contact/page.tsx:4:1
+Module not found: Can't resolve '@/components/ui/Container'
+  2 | import { getDictionary, type Locale } from "@/lib/i18n";
+  3 | import { createMetadata } from "@/lib/metadata";
+> 4 | import { Container } from "@/components/ui/Container";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { ContactForm } from "@/components/forms/ContactForm";
+  6 | import CalendlyEmbed from "@/components/sections/CalendlyEmbed";
+  7 | <<<<<<< HEAD
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  450662ms] [ERROR] ./src/app/[locale]/contact/page.tsx:2:1
+Module not found: Can't resolve '@/lib/i18n'
+  1 | import type { Metadata } from "next";
+> 2 | import { getDictionary, type Locale } from "@/lib/i18n";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { createMetadata } from "@/lib/metadata";
+  4 | import { Container } from "@/components/ui/Container";
+  5 | import { ContactForm } from "@/components/forms/ContactForm";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  450662ms] [ERROR] ./src/app/[locale]/contact/page.tsx:3:1
+Module not found: Can't resolve '@/lib/metadata'
+  1 | import type { Metadata } from "next";
+  2 | import { getDictionary, type Locale } from "@/lib/i18n";
+> 3 | import { createMetadata } from "@/lib/metadata";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Container } from "@/components/ui/Container";
+  5 | import { ContactForm } from "@/components/forms/ContactForm";
+  6 | import CalendlyEmbed from "@/components/sections/CalendlyEmbed";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  450662ms] [ERROR] ./src/app/[locale]/a-propos/page.tsx:5:1
+Module not found: Can't resolve '@/components/sections/Founder'
+  3 | import { createMetadata } from "@/lib/metadata";
+  4 | import Mission from "@/components/sections/Mission";
+> 5 | import Founder from "@/components/sections/Founder";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import Values from "@/components/sections/Values";
+  7 | import Stats from "@/components/sections/Stats";
+  8 |
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  450662ms] [ERROR] ./src/app/[locale]/a-propos/page.tsx:4:1
+Module not found: Can't resolve '@/components/sections/Mission'
+  2 | import { getDictionary, type Locale } from "@/lib/i18n";
+  3 | import { createMetadata } from "@/lib/metadata";
+> 4 | import Mission from "@/components/sections/Mission";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import Founder from "@/components/sections/Founder";
+  6 | import Values from "@/components/sections/Values";
+  7 | import Stats from "@/components/sections/Stats";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  450662ms] [ERROR] ./src/app/[locale]/a-propos/page.tsx:7:1
+Module not found: Can't resolve '@/components/sections/Stats'
+   5 | import Founder from "@/components/sections/Founder";
+   6 | import Values from "@/components/sections/Values";
+>  7 | import Stats from "@/components/sections/Stats";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | export async function generateMetadata({
+  10 |   params,
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  450662ms] [ERROR] ./src/app/[locale]/a-propos/page.tsx:6:1
+Module not found: Can't resolve '@/components/sections/Values'
+  4 | import Mission from "@/components/sections/Mission";
+  5 | import Founder from "@/components/sections/Founder";
+> 6 | import Values from "@/components/sections/Values";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import Stats from "@/components/sections/Stats";
+  8 |
+  9 | export async function generateMetadata({
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  450662ms] [ERROR] ./src/app/[locale]/a-propos/page.tsx:2:1
+Module not found: Can't resolve '@/lib/i18n'
+  1 | import type { Metadata } from "next";
+> 2 | import { getDictionary, type Locale } from "@/lib/i18n";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { createMetadata } from "@/lib/metadata";
+  4 | import Mission from "@/components/sections/Mission";
+  5 | import Founder from "@/components/sections/Founder";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  450662ms] [ERROR] ./src/app/[locale]/a-propos/page.tsx:3:1
+Module not found: Can't resolve '@/lib/metadata'
+  1 | import type { Metadata } from "next";
+  2 | import { getDictionary, type Locale } from "@/lib/i18n";
+> 3 | import { createMetadata } from "@/lib/metadata";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Mission from "@/components/sections/Mission";
+  5 | import Founder from "@/components/sections/Founder";
+  6 | import Values from "@/components/sections/Values";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  450662ms] [ERROR] ./src/app/[locale]/formations/page.tsx:7:1
+Module not found: Can't resolve '@/components/sections/CTASection'
+   5 | import FormationsList from "@/components/sections/FormationsList";
+   6 | import ProcessTimeline from "@/components/sections/ProcessTimeline";
+>  7 | import CTASection from "@/components/sections/CTASection";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | export async function generateMetadata({
+  10 |   params,
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  450662ms] [ERROR] ./src/app/[locale]/formations/page.tsx:4:1
+Module not found: Can't resolve '@/components/sections/FormationsHero'
+  2 | import { getDictionary, type Locale } from "@/lib/i18n";
+  3 | import { createMetadata } from "@/lib/metadata";
+> 4 | import FormationsHero from "@/components/sections/FormationsHero";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import FormationsList from "@/components/sections/FormationsList";
+  6 | import ProcessTimeline from "@/components/sections/ProcessTimeline";
+  7 | import CTASection from "@/components/sections/CTASection";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  450662ms] [ERROR] ./src/app/[locale]/formations/page.tsx:5:1
+Module not found: Can't resolve '@/components/sections/FormationsList'
+  3 | import { createMetadata } from "@/lib/metadata";
+  4 | import FormationsHero from "@/components/sections/FormationsHero";
+> 5 | import FormationsList from "@/components/sections/FormationsList";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import ProcessTimeline from "@/components/sections/ProcessTimeline";
+  7 | import CTASection from "@/components/sections/CTASection";
+  8 |
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  450662ms] [ERROR] ./src/app/[locale]/formations/page.tsx:6:1
+Module not found: Can't resolve '@/components/sections/ProcessTimeline'
+  4 | import FormationsHero from "@/components/sections/FormationsHero";
+  5 | import FormationsList from "@/components/sections/FormationsList";
+> 6 | import ProcessTimeline from "@/components/sections/ProcessTimeline";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import CTASection from "@/components/sections/CTASection";
+  8 |
+  9 | export async function generateMetadata({
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  450662ms] [ERROR] ./src/app/[locale]/formations/page.tsx:2:1
+Module not found: Can't resolve '@/lib/i18n'
+  1 | import type { Metadata } from "next";
+> 2 | import { getDictionary, type Locale } from "@/lib/i18n";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { createMetadata } from "@/lib/metadata";
+  4 | import FormationsHero from "@/components/sections/FormationsHero";
+  5 | import FormationsList from "@/components/sections/FormationsList";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  450662ms] [ERROR] ./src/app/[locale]/formations/page.tsx:3:1
+Module not found: Can't resolve '@/lib/metadata'
+  1 | import type { Metadata } from "next";
+  2 | import { getDictionary, type Locale } from "@/lib/i18n";
+> 3 | import { createMetadata } from "@/lib/metadata";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import FormationsHero from "@/components/sections/FormationsHero";
+  5 | import FormationsList from "@/components/sections/FormationsList";
+  6 | import ProcessTimeline from "@/components/sections/ProcessTimeline";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  450663ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3000/fr/contact?_rsc=acjpc:0
+[  450836ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3000/fr/contact?_rsc=acjpc:0
+[  450880ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3000/fr/contact:0
+[  450979ms] Error: ./package.json:15:1
+Error parsing package.json file
+  13 |   "dependencies": {
+  14 |     "@formspree/react": "^3.0.0",
+> 15 | <<<<<<< HEAD
+     | ^
+  16 |     "@vercel/analytics": "^1.6.1",
+  17 |     "framer-motion": "^12.34.0",
+  18 |     "next": "16.1.6",
+
+package.json is not parseable: invalid JSON: key must be a string at line 15 column 1
+
+
+    at <unknown> (Error: ./package.json:15:1)
+    at Object.getCompilationErrors (file:///Users/njouonang/Projets/leadmind-ai-website-develop/node_modules/next/dist/server/dev/hot-reloader-turbopack.js:997:55)
+    at DevBundlerService.getCompilationError (file:///Users/njouonang/Projets/leadmind-ai-website-develop/node_modules/next/dist/server/lib/dev-bundler-service.js:44:55)
+    at DevServer.getCompilationError (file:///Users/njouonang/Projets/leadmind-ai-website-develop/node_modules/next/dist/server/dev/next-dev-server.js:706:42)
+    at DevServer.findPageComponents (file:///Users/njouonang/Projets/leadmind-ai-website-develop/node_modules/next/dist/server/dev/next-dev-server.js:676:43)
+    at async DevServer.renderErrorToResponseImpl (file:///Users/njouonang/Projets/leadmind-ai-website-develop/node_modules/next/dist/server/base-server.js:1733:26)
+[  451000ms] [ERROR] ./package.json:15:1
+Error parsing package.json file
+  13 |   "dependencies": {
+  14 |     "@formspree/react": "^3.0.0",
+> 15 | <<<<<<< HEAD
+     | ^
+  16 |     "@vercel/analytics": "^1.6.1",
+  17 |     "framer-motion": "^12.34.0",
+  18 |     "next": "16.1.6",
+
+package.json is not parseable: invalid JSON: key must be a string at line 15 column 1 @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[  451000ms] [ERROR] ./tsconfig.json:32:5
+An issue occurred while parsing a tsconfig.json file.
+  30 |     ".next/dev/types/**/*.ts",
+  31 |     "**/*.mts"
+> 32 |   ],
+     |     ^
+> 33 | <<<<<<< HEAD
+     | ^^
+  34 |   "exclude": ["node_modules"]
+  35 | =======
+  36 |   "exclude": ["node_modules", "7JW5iBM9v0h-1772631179318"]
+
+tsconfig is not parseable: invalid JSON: Unexpected token @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[  451000ms] [ERROR] ./src/middleware.ts:2:1
+Module not found: Can't resolve '@/lib/i18n'
+  1 | import { NextRequest, NextResponse } from "next/server";
+> 2 | import { locales, defaultLocale } from "@/lib/i18n";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export function middleware(request: NextRequest) {
+  5 |   const { pathname } = request.nextUrl;
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[  451000ms] [ERROR] ./package.json:15:1
+Error parsing package.json file
+  13 |   "dependencies": {
+  14 |     "@formspree/react": "^3.0.0",
+> 15 | <<<<<<< HEAD
+     | ^
+  16 |     "@vercel/analytics": "^1.6.1",
+  17 |     "framer-motion": "^12.34.0",
+  18 |     "next": "16.1.6",
+
+package.json is not parseable: invalid JSON: key must be a string at line 15 column 1 @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[  451000ms] [ERROR] ./src/app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: /Users/njouonang/Projets/leadmind-ai-website-develop/src/app/globals.css:11:9: Unknown word HEAD
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Parser.unknownWord (turbopack:///[project]/node_modules/postcss/lib/parser.js:595:22)]
+    [at Parser.decl (turbopack:///[project]/node_modules/postcss/lib/parser.js:236:16)]
+    [at Parser.other (turbopack:///[project]/node_modules/postcss/lib/parser.js:401:18)]
+    [at Parser.parse (turbopack:///[project]/node_modules/postcss/lib/parser.js:472:16)]
+    [at parse (turbopack:///[project]/node_modules/postcss/lib/parse.js:11:12)]
+    [at new LazyResult (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:165:16)]
+    [at Processor.process (turbopack:///[project]/node_modules/postcss/lib/processor.js:53:14)]
+    [at transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:51)]
+    [at run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:29)]
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[  451000ms] [ERROR] ./tsconfig.json:32:5
+An issue occurred while parsing a tsconfig.json file.
+  30 |     ".next/dev/types/**/*.ts",
+  31 |     "**/*.mts"
+> 32 |   ],
+     |     ^
+> 33 | <<<<<<< HEAD
+     | ^^
+  34 |   "exclude": ["node_modules"]
+  35 | =======
+  36 |   "exclude": ["node_modules", "7JW5iBM9v0h-1772631179318"]
+
+tsconfig is not parseable: invalid JSON: Unexpected token @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[  451000ms] [ERROR] ./src/app/[locale]/layout.tsx:28:4
+Parsing ecmascript source code failed
+  26 |     <>
+  27 |       <Header nav={dict.nav} locale={locale as Locale} />
+> 28 | <<<<<<< HEAD
+     |    ^^
+  29 |       <main id="main-content" className="min-h-screen">{children}</main>
+  30 | =======
+  31 |       <main className="min-h-screen">{children}</main>
+
+Expression expected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[  451000ms] [ERROR] ./src/app/[locale]/layout.tsx:4:1
+Module not found: Can't resolve '@/components/layout/Footer'
+  2 | import { locales, type Locale, getDictionary } from "@/lib/i18n";
+  3 | import { Header } from "@/components/layout/Header";
+> 4 | import { Footer } from "@/components/layout/Footer";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export function generateStaticParams() {
+  7 |   return locales.map((locale) => ({ locale }));
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[  451001ms] [ERROR] ./src/app/[locale]/layout.tsx:3:1
+Module not found: Can't resolve '@/components/layout/Header'
+  1 | import { notFound } from "next/navigation";
+  2 | import { locales, type Locale, getDictionary } from "@/lib/i18n";
+> 3 | import { Header } from "@/components/layout/Header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Footer } from "@/components/layout/Footer";
+  5 |
+  6 | export function generateStaticParams() {
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[  451001ms] [ERROR] ./src/app/[locale]/page.tsx:8:1
+Module not found: Can't resolve '@/components/sections/CTASection'
+   6 | import ServicesOverview from "@/components/sections/ServicesOverview";
+   7 | import WhyLeadMind from "@/components/sections/WhyLeadMind";
+>  8 | import CTASection from "@/components/sections/CTASection";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 |
+  10 | export async function generateMetadata({
+  11 |   params,
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[  451001ms] [ERROR] ./src/app/[locale]/page.tsx:4:1
+Module not found: Can't resolve '@/components/sections/Hero'
+  2 | import { getDictionary, type Locale } from "@/lib/i18n";
+  3 | import { createMetadata, organizationJsonLd } from "@/lib/metadata";
+> 4 | import Hero from "@/components/sections/Hero";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import LogoBar from "@/components/sections/LogoBar";
+  6 | import ServicesOverview from "@/components/sections/ServicesOverview";
+  7 | import WhyLeadMind from "@/components/sections/WhyLeadMind";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[  451001ms] [ERROR] ./src/app/[locale]/page.tsx:5:1
+Module not found: Can't resolve '@/components/sections/LogoBar'
+  3 | import { createMetadata, organizationJsonLd } from "@/lib/metadata";
+  4 | import Hero from "@/components/sections/Hero";
+> 5 | import LogoBar from "@/components/sections/LogoBar";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import ServicesOverview from "@/components/sections/ServicesOverview";
+  7 | import WhyLeadMind from "@/components/sections/WhyLeadMind";
+  8 | import CTASection from "@/components/sections/CTASection";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[  451001ms] [ERROR] ./src/app/[locale]/page.tsx:6:1
+Module not found: Can't resolve '@/components/sections/ServicesOverview'
+  4 | import Hero from "@/components/sections/Hero";
+  5 | import LogoBar from "@/components/sections/LogoBar";
+> 6 | import ServicesOverview from "@/components/sections/ServicesOverview";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import WhyLeadMind from "@/components/sections/WhyLeadMind";
+  8 | import CTASection from "@/components/sections/CTASection";
+  9 |
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[  451001ms] [ERROR] ./src/app/[locale]/page.tsx:7:1
+Module not found: Can't resolve '@/components/sections/WhyLeadMind'
+   5 | import LogoBar from "@/components/sections/LogoBar";
+   6 | import ServicesOverview from "@/components/sections/ServicesOverview";
+>  7 | import WhyLeadMind from "@/components/sections/WhyLeadMind";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import CTASection from "@/components/sections/CTASection";
+   9 |
+  10 | export async function generateMetadata({
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[  451001ms] [ERROR] ./src/app/[locale]/layout.tsx:2:1
+Module not found: Can't resolve '@/lib/i18n'
+  1 | import { notFound } from "next/navigation";
+> 2 | import { locales, type Locale, getDictionary } from "@/lib/i18n";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Header } from "@/components/layout/Header";
+  4 | import { Footer } from "@/components/layout/Footer";
+  5 |
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[  451001ms] [ERROR] ./src/app/[locale]/page.tsx:2:1
+Module not found: Can't resolve '@/lib/i18n'
+  1 | import type { Metadata } from "next";
+> 2 | import { getDictionary, type Locale } from "@/lib/i18n";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { createMetadata, organizationJsonLd } from "@/lib/metadata";
+  4 | import Hero from "@/components/sections/Hero";
+  5 | import LogoBar from "@/components/sections/LogoBar";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[  451001ms] [ERROR] ./src/app/[locale]/page.tsx:3:1
+Module not found: Can't resolve '@/lib/metadata'
+  1 | import type { Metadata } from "next";
+  2 | import { getDictionary, type Locale } from "@/lib/i18n";
+> 3 | import { createMetadata, organizationJsonLd } from "@/lib/metadata";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Hero from "@/components/sections/Hero";
+  5 | import LogoBar from "@/components/sections/LogoBar";
+  6 | import ServicesOverview from "@/components/sections/ServicesOverview";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[  451001ms] [ERROR] ./package.json:15:1
+Error parsing package.json file
+  13 |   "dependencies": {
+  14 |     "@formspree/react": "^3.0.0",
+> 15 | <<<<<<< HEAD
+     | ^
+  16 |     "@vercel/analytics": "^1.6.1",
+  17 |     "framer-motion": "^12.34.0",
+  18 |     "next": "16.1.6",
+
+package.json is not parseable: invalid JSON: key must be a string at line 15 column 1 @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[  451001ms] [ERROR] ./src/app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: /Users/njouonang/Projets/leadmind-ai-website-develop/src/app/globals.css:11:9: Unknown word HEAD
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Parser.unknownWord (turbopack:///[project]/node_modules/postcss/lib/parser.js:595:22)]
+    [at Parser.decl (turbopack:///[project]/node_modules/postcss/lib/parser.js:236:16)]
+    [at Parser.other (turbopack:///[project]/node_modules/postcss/lib/parser.js:401:18)]
+    [at Parser.parse (turbopack:///[project]/node_modules/postcss/lib/parser.js:472:16)]
+    [at parse (turbopack:///[project]/node_modules/postcss/lib/parse.js:11:12)]
+    [at new LazyResult (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:165:16)]
+    [at Processor.process (turbopack:///[project]/node_modules/postcss/lib/processor.js:53:14)]
+    [at transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:51)]
+    [at run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:29)]
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[  451001ms] [ERROR] ./tsconfig.json:32:5
+An issue occurred while parsing a tsconfig.json file.
+  30 |     ".next/dev/types/**/*.ts",
+  31 |     "**/*.mts"
+> 32 |   ],
+     |     ^
+> 33 | <<<<<<< HEAD
+     | ^^
+  34 |   "exclude": ["node_modules"]
+  35 | =======
+  36 |   "exclude": ["node_modules", "7JW5iBM9v0h-1772631179318"]
+
+tsconfig is not parseable: invalid JSON: Unexpected token @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[  451001ms] [ERROR] ./src/app/[locale]/contact/page.tsx:37:4
+Parsing ecmascript source code failed
+  35 |   return (
+  36 |     <>
+> 37 | <<<<<<< HEAD
+     |    ^^
+  38 |       <section className="py-20">
+  39 |         <Container>
+  40 |           <div className="mx-auto max-w-2xl">
+
+Expression expected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[  451001ms] [ERROR] ./src/app/[locale]/contact/page.tsx:10:1
+Parsing ecmascript source code failed
+   8 | =======
+   9 | import ContactHero from "@/components/sections/ContactHero";
+> 10 | >>>>>>> 60ea887 (feat: initial commit — LeadMind AI website with WebGL particle waves)
+     | ^^^^^^^
+  11 |
+  12 | export async function generateMetadata({
+  13 |   params,
+
+Merge conflict marker encountered. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[  451001ms] [ERROR] ./src/app/[locale]/layout.tsx:28:4
+Parsing ecmascript source code failed
+  26 |     <>
+  27 |       <Header nav={dict.nav} locale={locale as Locale} />
+> 28 | <<<<<<< HEAD
+     |    ^^
+  29 |       <main id="main-content" className="min-h-screen">{children}</main>
+  30 | =======
+  31 |       <main className="min-h-screen">{children}</main>
+
+Expression expected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[  451001ms] [ERROR] ./src/app/[locale]/contact/page.tsx:5:1
+Module not found: Can't resolve '@/components/forms/ContactForm'
+  3 | import { createMetadata } from "@/lib/metadata";
+  4 | import { Container } from "@/components/ui/Container";
+> 5 | import { ContactForm } from "@/components/forms/ContactForm";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import CalendlyEmbed from "@/components/sections/CalendlyEmbed";
+  7 | <<<<<<< HEAD
+  8 | =======
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[  451001ms] [ERROR] ./src/app/[locale]/layout.tsx:4:1
+Module not found: Can't resolve '@/components/layout/Footer'
+  2 | import { locales, type Locale, getDictionary } from "@/lib/i18n";
+  3 | import { Header } from "@/components/layout/Header";
+> 4 | import { Footer } from "@/components/layout/Footer";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export function generateStaticParams() {
+  7 |   return locales.map((locale) => ({ locale }));
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[  451001ms] [ERROR] ./src/app/[locale]/layout.tsx:3:1
+Module not found: Can't resolve '@/components/layout/Header'
+  1 | import { notFound } from "next/navigation";
+  2 | import { locales, type Locale, getDictionary } from "@/lib/i18n";
+> 3 | import { Header } from "@/components/layout/Header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Footer } from "@/components/layout/Footer";
+  5 |
+  6 | export function generateStaticParams() {
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[  451001ms] [ERROR] ./src/app/[locale]/contact/page.tsx:6:1
+Module not found: Can't resolve '@/components/sections/CalendlyEmbed'
+  4 | import { Container } from "@/components/ui/Container";
+  5 | import { ContactForm } from "@/components/forms/ContactForm";
+> 6 | import CalendlyEmbed from "@/components/sections/CalendlyEmbed";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | <<<<<<< HEAD
+  8 | =======
+  9 | import ContactHero from "@/components/sections/ContactHero";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[  451001ms] [ERROR] ./src/app/[locale]/contact/page.tsx:4:1
+Module not found: Can't resolve '@/components/ui/Container'
+  2 | import { getDictionary, type Locale } from "@/lib/i18n";
+  3 | import { createMetadata } from "@/lib/metadata";
+> 4 | import { Container } from "@/components/ui/Container";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { ContactForm } from "@/components/forms/ContactForm";
+  6 | import CalendlyEmbed from "@/components/sections/CalendlyEmbed";
+  7 | <<<<<<< HEAD
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[  451001ms] [ERROR] ./src/app/[locale]/contact/page.tsx:2:1
+Module not found: Can't resolve '@/lib/i18n'
+  1 | import type { Metadata } from "next";
+> 2 | import { getDictionary, type Locale } from "@/lib/i18n";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { createMetadata } from "@/lib/metadata";
+  4 | import { Container } from "@/components/ui/Container";
+  5 | import { ContactForm } from "@/components/forms/ContactForm";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[  451001ms] [ERROR] ./src/app/[locale]/layout.tsx:2:1
+Module not found: Can't resolve '@/lib/i18n'
+  1 | import { notFound } from "next/navigation";
+> 2 | import { locales, type Locale, getDictionary } from "@/lib/i18n";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Header } from "@/components/layout/Header";
+  4 | import { Footer } from "@/components/layout/Footer";
+  5 |
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[  451001ms] [ERROR] ./src/app/[locale]/contact/page.tsx:3:1
+Module not found: Can't resolve '@/lib/metadata'
+  1 | import type { Metadata } from "next";
+  2 | import { getDictionary, type Locale } from "@/lib/i18n";
+> 3 | import { createMetadata } from "@/lib/metadata";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Container } from "@/components/ui/Container";
+  5 | import { ContactForm } from "@/components/forms/ContactForm";
+  6 | import CalendlyEmbed from "@/components/sections/CalendlyEmbed";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[  451001ms] [ERROR] ./package.json:15:1
+Error parsing package.json file
+  13 |   "dependencies": {
+  14 |     "@formspree/react": "^3.0.0",
+> 15 | <<<<<<< HEAD
+     | ^
+  16 |     "@vercel/analytics": "^1.6.1",
+  17 |     "framer-motion": "^12.34.0",
+  18 |     "next": "16.1.6",
+
+package.json is not parseable: invalid JSON: key must be a string at line 15 column 1 @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[  451001ms] [ERROR] ./src/app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: /Users/njouonang/Projets/leadmind-ai-website-develop/src/app/globals.css:11:9: Unknown word HEAD
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Parser.unknownWord (turbopack:///[project]/node_modules/postcss/lib/parser.js:595:22)]
+    [at Parser.decl (turbopack:///[project]/node_modules/postcss/lib/parser.js:236:16)]
+    [at Parser.other (turbopack:///[project]/node_modules/postcss/lib/parser.js:401:18)]
+    [at Parser.parse (turbopack:///[project]/node_modules/postcss/lib/parser.js:472:16)]
+    [at parse (turbopack:///[project]/node_modules/postcss/lib/parse.js:11:12)]
+    [at new LazyResult (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:165:16)]
+    [at Processor.process (turbopack:///[project]/node_modules/postcss/lib/processor.js:53:14)]
+    [at transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:51)]
+    [at run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:29)]
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[  451001ms] [ERROR] ./tsconfig.json:32:5
+An issue occurred while parsing a tsconfig.json file.
+  30 |     ".next/dev/types/**/*.ts",
+  31 |     "**/*.mts"
+> 32 |   ],
+     |     ^
+> 33 | <<<<<<< HEAD
+     | ^^
+  34 |   "exclude": ["node_modules"]
+  35 | =======
+  36 |   "exclude": ["node_modules", "7JW5iBM9v0h-1772631179318"]
+
+tsconfig is not parseable: invalid JSON: Unexpected token @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[  451001ms] [ERROR] ./src/app/[locale]/layout.tsx:28:4
+Parsing ecmascript source code failed
+  26 |     <>
+  27 |       <Header nav={dict.nav} locale={locale as Locale} />
+> 28 | <<<<<<< HEAD
+     |    ^^
+  29 |       <main id="main-content" className="min-h-screen">{children}</main>
+  30 | =======
+  31 |       <main className="min-h-screen">{children}</main>
+
+Expression expected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[  451001ms] [ERROR] ./src/app/[locale]/layout.tsx:4:1
+Module not found: Can't resolve '@/components/layout/Footer'
+  2 | import { locales, type Locale, getDictionary } from "@/lib/i18n";
+  3 | import { Header } from "@/components/layout/Header";
+> 4 | import { Footer } from "@/components/layout/Footer";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export function generateStaticParams() {
+  7 |   return locales.map((locale) => ({ locale }));
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[  451001ms] [ERROR] ./src/app/[locale]/layout.tsx:3:1
+Module not found: Can't resolve '@/components/layout/Header'
+  1 | import { notFound } from "next/navigation";
+  2 | import { locales, type Locale, getDictionary } from "@/lib/i18n";
+> 3 | import { Header } from "@/components/layout/Header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Footer } from "@/components/layout/Footer";
+  5 |
+  6 | export function generateStaticParams() {
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[  451001ms] [ERROR] ./src/app/[locale]/a-propos/page.tsx:5:1
+Module not found: Can't resolve '@/components/sections/Founder'
+  3 | import { createMetadata } from "@/lib/metadata";
+  4 | import Mission from "@/components/sections/Mission";
+> 5 | import Founder from "@/components/sections/Founder";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import Values from "@/components/sections/Values";
+  7 | import Stats from "@/components/sections/Stats";
+  8 |
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[  451001ms] [ERROR] ./src/app/[locale]/a-propos/page.tsx:4:1
+Module not found: Can't resolve '@/components/sections/Mission'
+  2 | import { getDictionary, type Locale } from "@/lib/i18n";
+  3 | import { createMetadata } from "@/lib/metadata";
+> 4 | import Mission from "@/components/sections/Mission";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import Founder from "@/components/sections/Founder";
+  6 | import Values from "@/components/sections/Values";
+  7 | import Stats from "@/components/sections/Stats";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[  451001ms] [ERROR] ./src/app/[locale]/a-propos/page.tsx:7:1
+Module not found: Can't resolve '@/components/sections/Stats'
+   5 | import Founder from "@/components/sections/Founder";
+   6 | import Values from "@/components/sections/Values";
+>  7 | import Stats from "@/components/sections/Stats";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | export async function generateMetadata({
+  10 |   params,
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[  451001ms] [ERROR] ./src/app/[locale]/a-propos/page.tsx:6:1
+Module not found: Can't resolve '@/components/sections/Values'
+  4 | import Mission from "@/components/sections/Mission";
+  5 | import Founder from "@/components/sections/Founder";
+> 6 | import Values from "@/components/sections/Values";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import Stats from "@/components/sections/Stats";
+  8 |
+  9 | export async function generateMetadata({
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[  451001ms] [ERROR] ./src/app/[locale]/a-propos/page.tsx:2:1
+Module not found: Can't resolve '@/lib/i18n'
+  1 | import type { Metadata } from "next";
+> 2 | import { getDictionary, type Locale } from "@/lib/i18n";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { createMetadata } from "@/lib/metadata";
+  4 | import Mission from "@/components/sections/Mission";
+  5 | import Founder from "@/components/sections/Founder";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[  451001ms] [ERROR] ./src/app/[locale]/layout.tsx:2:1
+Module not found: Can't resolve '@/lib/i18n'
+  1 | import { notFound } from "next/navigation";
+> 2 | import { locales, type Locale, getDictionary } from "@/lib/i18n";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Header } from "@/components/layout/Header";
+  4 | import { Footer } from "@/components/layout/Footer";
+  5 |
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[  451001ms] [ERROR] ./src/app/[locale]/a-propos/page.tsx:3:1
+Module not found: Can't resolve '@/lib/metadata'
+  1 | import type { Metadata } from "next";
+  2 | import { getDictionary, type Locale } from "@/lib/i18n";
+> 3 | import { createMetadata } from "@/lib/metadata";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Mission from "@/components/sections/Mission";
+  5 | import Founder from "@/components/sections/Founder";
+  6 | import Values from "@/components/sections/Values";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[  451001ms] [ERROR] ./package.json:15:1
+Error parsing package.json file
+  13 |   "dependencies": {
+  14 |     "@formspree/react": "^3.0.0",
+> 15 | <<<<<<< HEAD
+     | ^
+  16 |     "@vercel/analytics": "^1.6.1",
+  17 |     "framer-motion": "^12.34.0",
+  18 |     "next": "16.1.6",
+
+package.json is not parseable: invalid JSON: key must be a string at line 15 column 1 @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[  451001ms] [ERROR] ./src/app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: /Users/njouonang/Projets/leadmind-ai-website-develop/src/app/globals.css:11:9: Unknown word HEAD
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Parser.unknownWord (turbopack:///[project]/node_modules/postcss/lib/parser.js:595:22)]
+    [at Parser.decl (turbopack:///[project]/node_modules/postcss/lib/parser.js:236:16)]
+    [at Parser.other (turbopack:///[project]/node_modules/postcss/lib/parser.js:401:18)]
+    [at Parser.parse (turbopack:///[project]/node_modules/postcss/lib/parser.js:472:16)]
+    [at parse (turbopack:///[project]/node_modules/postcss/lib/parse.js:11:12)]
+    [at new LazyResult (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:165:16)]
+    [at Processor.process (turbopack:///[project]/node_modules/postcss/lib/processor.js:53:14)]
+    [at transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:51)]
+    [at run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:29)]
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[  451001ms] [ERROR] ./tsconfig.json:32:5
+An issue occurred while parsing a tsconfig.json file.
+  30 |     ".next/dev/types/**/*.ts",
+  31 |     "**/*.mts"
+> 32 |   ],
+     |     ^
+> 33 | <<<<<<< HEAD
+     | ^^
+  34 |   "exclude": ["node_modules"]
+  35 | =======
+  36 |   "exclude": ["node_modules", "7JW5iBM9v0h-1772631179318"]
+
+tsconfig is not parseable: invalid JSON: Unexpected token @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[  451001ms] [ERROR] ./src/app/[locale]/layout.tsx:28:4
+Parsing ecmascript source code failed
+  26 |     <>
+  27 |       <Header nav={dict.nav} locale={locale as Locale} />
+> 28 | <<<<<<< HEAD
+     |    ^^
+  29 |       <main id="main-content" className="min-h-screen">{children}</main>
+  30 | =======
+  31 |       <main className="min-h-screen">{children}</main>
+
+Expression expected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[  451002ms] [ERROR] ./src/app/[locale]/layout.tsx:4:1
+Module not found: Can't resolve '@/components/layout/Footer'
+  2 | import { locales, type Locale, getDictionary } from "@/lib/i18n";
+  3 | import { Header } from "@/components/layout/Header";
+> 4 | import { Footer } from "@/components/layout/Footer";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export function generateStaticParams() {
+  7 |   return locales.map((locale) => ({ locale }));
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[  451002ms] [ERROR] ./src/app/[locale]/layout.tsx:3:1
+Module not found: Can't resolve '@/components/layout/Header'
+  1 | import { notFound } from "next/navigation";
+  2 | import { locales, type Locale, getDictionary } from "@/lib/i18n";
+> 3 | import { Header } from "@/components/layout/Header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Footer } from "@/components/layout/Footer";
+  5 |
+  6 | export function generateStaticParams() {
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[  451002ms] [ERROR] ./src/app/[locale]/formations/page.tsx:7:1
+Module not found: Can't resolve '@/components/sections/CTASection'
+   5 | import FormationsList from "@/components/sections/FormationsList";
+   6 | import ProcessTimeline from "@/components/sections/ProcessTimeline";
+>  7 | import CTASection from "@/components/sections/CTASection";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | export async function generateMetadata({
+  10 |   params,
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[  451002ms] [ERROR] ./src/app/[locale]/formations/page.tsx:4:1
+Module not found: Can't resolve '@/components/sections/FormationsHero'
+  2 | import { getDictionary, type Locale } from "@/lib/i18n";
+  3 | import { createMetadata } from "@/lib/metadata";
+> 4 | import FormationsHero from "@/components/sections/FormationsHero";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import FormationsList from "@/components/sections/FormationsList";
+  6 | import ProcessTimeline from "@/components/sections/ProcessTimeline";
+  7 | import CTASection from "@/components/sections/CTASection";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[  451002ms] [ERROR] ./src/app/[locale]/formations/page.tsx:5:1
+Module not found: Can't resolve '@/components/sections/FormationsList'
+  3 | import { createMetadata } from "@/lib/metadata";
+  4 | import FormationsHero from "@/components/sections/FormationsHero";
+> 5 | import FormationsList from "@/components/sections/FormationsList";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import ProcessTimeline from "@/components/sections/ProcessTimeline";
+  7 | import CTASection from "@/components/sections/CTASection";
+  8 |
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[  451002ms] [ERROR] ./src/app/[locale]/formations/page.tsx:6:1
+Module not found: Can't resolve '@/components/sections/ProcessTimeline'
+  4 | import FormationsHero from "@/components/sections/FormationsHero";
+  5 | import FormationsList from "@/components/sections/FormationsList";
+> 6 | import ProcessTimeline from "@/components/sections/ProcessTimeline";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import CTASection from "@/components/sections/CTASection";
+  8 |
+  9 | export async function generateMetadata({
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[  451002ms] [ERROR] ./src/app/[locale]/formations/page.tsx:2:1
+Module not found: Can't resolve '@/lib/i18n'
+  1 | import type { Metadata } from "next";
+> 2 | import { getDictionary, type Locale } from "@/lib/i18n";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { createMetadata } from "@/lib/metadata";
+  4 | import FormationsHero from "@/components/sections/FormationsHero";
+  5 | import FormationsList from "@/components/sections/FormationsList";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[  451002ms] [ERROR] ./src/app/[locale]/layout.tsx:2:1
+Module not found: Can't resolve '@/lib/i18n'
+  1 | import { notFound } from "next/navigation";
+> 2 | import { locales, type Locale, getDictionary } from "@/lib/i18n";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Header } from "@/components/layout/Header";
+  4 | import { Footer } from "@/components/layout/Footer";
+  5 |
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[  451002ms] [ERROR] ./src/app/[locale]/formations/page.tsx:3:1
+Module not found: Can't resolve '@/lib/metadata'
+  1 | import type { Metadata } from "next";
+  2 | import { getDictionary, type Locale } from "@/lib/i18n";
+> 3 | import { createMetadata } from "@/lib/metadata";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import FormationsHero from "@/components/sections/FormationsHero";
+  5 | import FormationsList from "@/components/sections/FormationsList";
+  6 | import ProcessTimeline from "@/components/sections/ProcessTimeline";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[  451002ms] [ERROR] ./package.json:15:1
+Error parsing package.json file
+  13 |   "dependencies": {
+  14 |     "@formspree/react": "^3.0.0",
+> 15 | <<<<<<< HEAD
+     | ^
+  16 |     "@vercel/analytics": "^1.6.1",
+  17 |     "framer-motion": "^12.34.0",
+  18 |     "next": "16.1.6",
+
+package.json is not parseable: invalid JSON: key must be a string at line 15 column 1 @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[  451002ms] [ERROR] ./tsconfig.json:32:5
+An issue occurred while parsing a tsconfig.json file.
+  30 |     ".next/dev/types/**/*.ts",
+  31 |     "**/*.mts"
+> 32 |   ],
+     |     ^
+> 33 | <<<<<<< HEAD
+     | ^^
+  34 |   "exclude": ["node_modules"]
+  35 | =======
+  36 |   "exclude": ["node_modules", "7JW5iBM9v0h-1772631179318"]
+
+tsconfig is not parseable: invalid JSON: Unexpected token @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[  451002ms] [ERROR] ./package.json:15:1
+Error parsing package.json file
+  13 |   "dependencies": {
+  14 |     "@formspree/react": "^3.0.0",
+> 15 | <<<<<<< HEAD
+     | ^
+  16 |     "@vercel/analytics": "^1.6.1",
+  17 |     "framer-motion": "^12.34.0",
+  18 |     "next": "16.1.6",
+
+package.json is not parseable: invalid JSON: key must be a string at line 15 column 1 @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[  451002ms] [ERROR] ./tsconfig.json:32:5
+An issue occurred while parsing a tsconfig.json file.
+  30 |     ".next/dev/types/**/*.ts",
+  31 |     "**/*.mts"
+> 32 |   ],
+     |     ^
+> 33 | <<<<<<< HEAD
+     | ^^
+  34 |   "exclude": ["node_modules"]
+  35 | =======
+  36 |   "exclude": ["node_modules", "7JW5iBM9v0h-1772631179318"]
+
+tsconfig is not parseable: invalid JSON: Unexpected token @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[  451002ms] [ERROR] ./package.json:15:1
+Error parsing package.json file
+  13 |   "dependencies": {
+  14 |     "@formspree/react": "^3.0.0",
+> 15 | <<<<<<< HEAD
+     | ^
+  16 |     "@vercel/analytics": "^1.6.1",
+  17 |     "framer-motion": "^12.34.0",
+  18 |     "next": "16.1.6",
+
+package.json is not parseable: invalid JSON: key must be a string at line 15 column 1 @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[  451002ms] [ERROR] ./tsconfig.json:32:5
+An issue occurred while parsing a tsconfig.json file.
+  30 |     ".next/dev/types/**/*.ts",
+  31 |     "**/*.mts"
+> 32 |   ],
+     |     ^
+> 33 | <<<<<<< HEAD
+     | ^^
+  34 |   "exclude": ["node_modules"]
+  35 | =======
+  36 |   "exclude": ["node_modules", "7JW5iBM9v0h-1772631179318"]
+
+tsconfig is not parseable: invalid JSON: Unexpected token @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[  451002ms] [ERROR] ./package.json:15:1
+Error parsing package.json file
+  13 |   "dependencies": {
+  14 |     "@formspree/react": "^3.0.0",
+> 15 | <<<<<<< HEAD
+     | ^
+  16 |     "@vercel/analytics": "^1.6.1",
+  17 |     "framer-motion": "^12.34.0",
+  18 |     "next": "16.1.6",
+
+package.json is not parseable: invalid JSON: key must be a string at line 15 column 1 @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[  451002ms] [ERROR] ./src/app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: /Users/njouonang/Projets/leadmind-ai-website-develop/src/app/globals.css:11:9: Unknown word HEAD
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Parser.unknownWord (turbopack:///[project]/node_modules/postcss/lib/parser.js:595:22)]
+    [at Parser.decl (turbopack:///[project]/node_modules/postcss/lib/parser.js:236:16)]
+    [at Parser.other (turbopack:///[project]/node_modules/postcss/lib/parser.js:401:18)]
+    [at Parser.parse (turbopack:///[project]/node_modules/postcss/lib/parser.js:472:16)]
+    [at parse (turbopack:///[project]/node_modules/postcss/lib/parse.js:11:12)]
+    [at new LazyResult (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:165:16)]
+    [at Processor.process (turbopack:///[project]/node_modules/postcss/lib/processor.js:53:14)]
+    [at transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:51)]
+    [at run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:29)]
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[  451002ms] [ERROR] ./tsconfig.json:32:5
+An issue occurred while parsing a tsconfig.json file.
+  30 |     ".next/dev/types/**/*.ts",
+  31 |     "**/*.mts"
+> 32 |   ],
+     |     ^
+> 33 | <<<<<<< HEAD
+     | ^^
+  34 |   "exclude": ["node_modules"]
+  35 | =======
+  36 |   "exclude": ["node_modules", "7JW5iBM9v0h-1772631179318"]
+
+tsconfig is not parseable: invalid JSON: Unexpected token @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[  451025ms] [ERROR] ./package.json:15:1
+Error parsing package.json file
+  13 |   "dependencies": {
+  14 |     "@formspree/react": "^3.0.0",
+> 15 | <<<<<<< HEAD
+     | ^
+  16 |     "@vercel/analytics": "^1.6.1",
+  17 |     "framer-motion": "^12.34.0",
+  18 |     "next": "16.1.6",
+
+package.json is not parseable: invalid JSON: key must be a string at line 15 column 1 @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[  451025ms] [ERROR] ./tsconfig.json:32:5
+An issue occurred while parsing a tsconfig.json file.
+  30 |     ".next/dev/types/**/*.ts",
+  31 |     "**/*.mts"
+> 32 |   ],
+     |     ^
+> 33 | <<<<<<< HEAD
+     | ^^
+  34 |   "exclude": ["node_modules"]
+  35 | =======
+  36 |   "exclude": ["node_modules", "7JW5iBM9v0h-1772631179318"]
+
+tsconfig is not parseable: invalid JSON: Unexpected token @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[  451025ms] [ERROR] ./src/middleware.ts:2:1
+Module not found: Can't resolve '@/lib/i18n'
+  1 | import { NextRequest, NextResponse } from "next/server";
+> 2 | import { locales, defaultLocale } from "@/lib/i18n";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export function middleware(request: NextRequest) {
+  5 |   const { pathname } = request.nextUrl;
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[  451025ms] [ERROR] ./src/app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: /Users/njouonang/Projets/leadmind-ai-website-develop/src/app/globals.css:11:9: Unknown word HEAD
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Parser.unknownWord (turbopack:///[project]/node_modules/postcss/lib/parser.js:595:22)]
+    [at Parser.decl (turbopack:///[project]/node_modules/postcss/lib/parser.js:236:16)]
+    [at Parser.other (turbopack:///[project]/node_modules/postcss/lib/parser.js:401:18)]
+    [at Parser.parse (turbopack:///[project]/node_modules/postcss/lib/parser.js:472:16)]
+    [at parse (turbopack:///[project]/node_modules/postcss/lib/parse.js:11:12)]
+    [at new LazyResult (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:165:16)]
+    [at Processor.process (turbopack:///[project]/node_modules/postcss/lib/processor.js:53:14)]
+    [at transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:51)]
+    [at run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:29)]
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[  451025ms] [ERROR] ./src/app/[locale]/layout.tsx:28:4
+Parsing ecmascript source code failed
+  26 |     <>
+  27 |       <Header nav={dict.nav} locale={locale as Locale} />
+> 28 | <<<<<<< HEAD
+     |    ^^
+  29 |       <main id="main-content" className="min-h-screen">{children}</main>
+  30 | =======
+  31 |       <main className="min-h-screen">{children}</main>
+
+Expression expected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[  451025ms] [ERROR] ./src/app/[locale]/layout.tsx:4:1
+Module not found: Can't resolve '@/components/layout/Footer'
+  2 | import { locales, type Locale, getDictionary } from "@/lib/i18n";
+  3 | import { Header } from "@/components/layout/Header";
+> 4 | import { Footer } from "@/components/layout/Footer";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export function generateStaticParams() {
+  7 |   return locales.map((locale) => ({ locale }));
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[  451025ms] [ERROR] ./src/app/[locale]/layout.tsx:3:1
+Module not found: Can't resolve '@/components/layout/Header'
+  1 | import { notFound } from "next/navigation";
+  2 | import { locales, type Locale, getDictionary } from "@/lib/i18n";
+> 3 | import { Header } from "@/components/layout/Header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Footer } from "@/components/layout/Footer";
+  5 |
+  6 | export function generateStaticParams() {
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[  451025ms] [ERROR] ./src/app/[locale]/page.tsx:8:1
+Module not found: Can't resolve '@/components/sections/CTASection'
+   6 | import ServicesOverview from "@/components/sections/ServicesOverview";
+   7 | import WhyLeadMind from "@/components/sections/WhyLeadMind";
+>  8 | import CTASection from "@/components/sections/CTASection";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 |
+  10 | export async function generateMetadata({
+  11 |   params,
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[  451025ms] [ERROR] ./src/app/[locale]/page.tsx:4:1
+Module not found: Can't resolve '@/components/sections/Hero'
+  2 | import { getDictionary, type Locale } from "@/lib/i18n";
+  3 | import { createMetadata, organizationJsonLd } from "@/lib/metadata";
+> 4 | import Hero from "@/components/sections/Hero";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import LogoBar from "@/components/sections/LogoBar";
+  6 | import ServicesOverview from "@/components/sections/ServicesOverview";
+  7 | import WhyLeadMind from "@/components/sections/WhyLeadMind";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[  451025ms] [ERROR] ./src/app/[locale]/page.tsx:5:1
+Module not found: Can't resolve '@/components/sections/LogoBar'
+  3 | import { createMetadata, organizationJsonLd } from "@/lib/metadata";
+  4 | import Hero from "@/components/sections/Hero";
+> 5 | import LogoBar from "@/components/sections/LogoBar";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import ServicesOverview from "@/components/sections/ServicesOverview";
+  7 | import WhyLeadMind from "@/components/sections/WhyLeadMind";
+  8 | import CTASection from "@/components/sections/CTASection";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[  451025ms] [ERROR] ./src/app/[locale]/page.tsx:6:1
+Module not found: Can't resolve '@/components/sections/ServicesOverview'
+  4 | import Hero from "@/components/sections/Hero";
+  5 | import LogoBar from "@/components/sections/LogoBar";
+> 6 | import ServicesOverview from "@/components/sections/ServicesOverview";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import WhyLeadMind from "@/components/sections/WhyLeadMind";
+  8 | import CTASection from "@/components/sections/CTASection";
+  9 |
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[  451025ms] [ERROR] ./src/app/[locale]/page.tsx:7:1
+Module not found: Can't resolve '@/components/sections/WhyLeadMind'
+   5 | import LogoBar from "@/components/sections/LogoBar";
+   6 | import ServicesOverview from "@/components/sections/ServicesOverview";
+>  7 | import WhyLeadMind from "@/components/sections/WhyLeadMind";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import CTASection from "@/components/sections/CTASection";
+   9 |
+  10 | export async function generateMetadata({
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[  451025ms] [ERROR] ./src/app/[locale]/layout.tsx:2:1
+Module not found: Can't resolve '@/lib/i18n'
+  1 | import { notFound } from "next/navigation";
+> 2 | import { locales, type Locale, getDictionary } from "@/lib/i18n";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { Header } from "@/components/layout/Header";
+  4 | import { Footer } from "@/components/layout/Footer";
+  5 |
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[  451025ms] [ERROR] ./src/app/[locale]/page.tsx:2:1
+Module not found: Can't resolve '@/lib/i18n'
+  1 | import type { Metadata } from "next";
+> 2 | import { getDictionary, type Locale } from "@/lib/i18n";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { createMetadata, organizationJsonLd } from "@/lib/metadata";
+  4 | import Hero from "@/components/sections/Hero";
+  5 | import LogoBar from "@/components/sections/LogoBar";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[  451025ms] [ERROR] ./src/app/[locale]/page.tsx:3:1
+Module not found: Can't resolve '@/lib/metadata'
+  1 | import type { Metadata } from "next";
+  2 | import { getDictionary, type Locale } from "@/lib/i18n";
+> 3 | import { createMetadata, organizationJsonLd } from "@/lib/metadata";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Hero from "@/components/sections/Hero";
+  5 | import LogoBar from "@/components/sections/LogoBar";
+  6 | import ServicesOverview from "@/components/sections/ServicesOverview";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[  451025ms] [ERROR] ./src/app/[locale]/contact/page.tsx:37:4
+Parsing ecmascript source code failed
+  35 |   return (
+  36 |     <>
+> 37 | <<<<<<< HEAD
+     |    ^^
+  38 |       <section className="py-20">
+  39 |         <Container>
+  40 |           <div className="mx-auto max-w-2xl">
+
+Expression expected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[  451025ms] [ERROR] ./src/app/[locale]/contact/page.tsx:10:1
+Parsing ecmascript source code failed
+   8 | =======
+   9 | import ContactHero from "@/components/sections/ContactHero";
+> 10 | >>>>>>> 60ea887 (feat: initial commit — LeadMind AI website with WebGL particle waves)
+     | ^^^^^^^
+  11 |
+  12 | export async function generateMetadata({
+  13 |   params,
+
+Merge conflict marker encountered. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[  451025ms] [ERROR] ./src/app/[locale]/contact/page.tsx:5:1
+Module not found: Can't resolve '@/components/forms/ContactForm'
+  3 | import { createMetadata } from "@/lib/metadata";
+  4 | import { Container } from "@/components/ui/Container";
+> 5 | import { ContactForm } from "@/components/forms/ContactForm";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import CalendlyEmbed from "@/components/sections/CalendlyEmbed";
+  7 | <<<<<<< HEAD
+  8 | =======
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[  451025ms] [ERROR] ./src/app/[locale]/contact/page.tsx:6:1
+Module not found: Can't resolve '@/components/sections/CalendlyEmbed'
+  4 | import { Container } from "@/components/ui/Container";
+  5 | import { ContactForm } from "@/components/forms/ContactForm";
+> 6 | import CalendlyEmbed from "@/components/sections/CalendlyEmbed";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | <<<<<<< HEAD
+  8 | =======
+  9 | import ContactHero from "@/components/sections/ContactHero";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[  451025ms] [ERROR] ./src/app/[locale]/contact/page.tsx:4:1
+Module not found: Can't resolve '@/components/ui/Container'
+  2 | import { getDictionary, type Locale } from "@/lib/i18n";
+  3 | import { createMetadata } from "@/lib/metadata";
+> 4 | import { Container } from "@/components/ui/Container";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { ContactForm } from "@/components/forms/ContactForm";
+  6 | import CalendlyEmbed from "@/components/sections/CalendlyEmbed";
+  7 | <<<<<<< HEAD
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[  451025ms] [ERROR] ./src/app/[locale]/contact/page.tsx:2:1
+Module not found: Can't resolve '@/lib/i18n'
+  1 | import type { Metadata } from "next";
+> 2 | import { getDictionary, type Locale } from "@/lib/i18n";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { createMetadata } from "@/lib/metadata";
+  4 | import { Container } from "@/components/ui/Container";
+  5 | import { ContactForm } from "@/components/forms/ContactForm";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[  451025ms] [ERROR] ./src/app/[locale]/contact/page.tsx:3:1
+Module not found: Can't resolve '@/lib/metadata'
+  1 | import type { Metadata } from "next";
+  2 | import { getDictionary, type Locale } from "@/lib/i18n";
+> 3 | import { createMetadata } from "@/lib/metadata";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Container } from "@/components/ui/Container";
+  5 | import { ContactForm } from "@/components/forms/ContactForm";
+  6 | import CalendlyEmbed from "@/components/sections/CalendlyEmbed";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[  451025ms] [ERROR] ./src/app/[locale]/a-propos/page.tsx:5:1
+Module not found: Can't resolve '@/components/sections/Founder'
+  3 | import { createMetadata } from "@/lib/metadata";
+  4 | import Mission from "@/components/sections/Mission";
+> 5 | import Founder from "@/components/sections/Founder";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import Values from "@/components/sections/Values";
+  7 | import Stats from "@/components/sections/Stats";
+  8 |
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[  451025ms] [ERROR] ./src/app/[locale]/a-propos/page.tsx:4:1
+Module not found: Can't resolve '@/components/sections/Mission'
+  2 | import { getDictionary, type Locale } from "@/lib/i18n";
+  3 | import { createMetadata } from "@/lib/metadata";
+> 4 | import Mission from "@/components/sections/Mission";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import Founder from "@/components/sections/Founder";
+  6 | import Values from "@/components/sections/Values";
+  7 | import Stats from "@/components/sections/Stats";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[  451025ms] [ERROR] ./src/app/[locale]/a-propos/page.tsx:7:1
+Module not found: Can't resolve '@/components/sections/Stats'
+   5 | import Founder from "@/components/sections/Founder";
+   6 | import Values from "@/components/sections/Values";
+>  7 | import Stats from "@/components/sections/Stats";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | export async function generateMetadata({
+  10 |   params,
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[  451025ms] [ERROR] ./src/app/[locale]/a-propos/page.tsx:6:1
+Module not found: Can't resolve '@/components/sections/Values'
+  4 | import Mission from "@/components/sections/Mission";
+  5 | import Founder from "@/components/sections/Founder";
+> 6 | import Values from "@/components/sections/Values";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import Stats from "@/components/sections/Stats";
+  8 |
+  9 | export async function generateMetadata({
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[  451025ms] [ERROR] ./src/app/[locale]/a-propos/page.tsx:2:1
+Module not found: Can't resolve '@/lib/i18n'
+  1 | import type { Metadata } from "next";
+> 2 | import { getDictionary, type Locale } from "@/lib/i18n";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { createMetadata } from "@/lib/metadata";
+  4 | import Mission from "@/components/sections/Mission";
+  5 | import Founder from "@/components/sections/Founder";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[  451025ms] [ERROR] ./src/app/[locale]/a-propos/page.tsx:3:1
+Module not found: Can't resolve '@/lib/metadata'
+  1 | import type { Metadata } from "next";
+  2 | import { getDictionary, type Locale } from "@/lib/i18n";
+> 3 | import { createMetadata } from "@/lib/metadata";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import Mission from "@/components/sections/Mission";
+  5 | import Founder from "@/components/sections/Founder";
+  6 | import Values from "@/components/sections/Values";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[  451025ms] [ERROR] ./src/app/[locale]/formations/page.tsx:7:1
+Module not found: Can't resolve '@/components/sections/CTASection'
+   5 | import FormationsList from "@/components/sections/FormationsList";
+   6 | import ProcessTimeline from "@/components/sections/ProcessTimeline";
+>  7 | import CTASection from "@/components/sections/CTASection";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | export async function generateMetadata({
+  10 |   params,
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[  451025ms] [ERROR] ./src/app/[locale]/formations/page.tsx:4:1
+Module not found: Can't resolve '@/components/sections/FormationsHero'
+  2 | import { getDictionary, type Locale } from "@/lib/i18n";
+  3 | import { createMetadata } from "@/lib/metadata";
+> 4 | import FormationsHero from "@/components/sections/FormationsHero";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import FormationsList from "@/components/sections/FormationsList";
+  6 | import ProcessTimeline from "@/components/sections/ProcessTimeline";
+  7 | import CTASection from "@/components/sections/CTASection";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[  451025ms] [ERROR] ./src/app/[locale]/formations/page.tsx:5:1
+Module not found: Can't resolve '@/components/sections/FormationsList'
+  3 | import { createMetadata } from "@/lib/metadata";
+  4 | import FormationsHero from "@/components/sections/FormationsHero";
+> 5 | import FormationsList from "@/components/sections/FormationsList";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import ProcessTimeline from "@/components/sections/ProcessTimeline";
+  7 | import CTASection from "@/components/sections/CTASection";
+  8 |
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[  451025ms] [ERROR] ./src/app/[locale]/formations/page.tsx:6:1
+Module not found: Can't resolve '@/components/sections/ProcessTimeline'
+  4 | import FormationsHero from "@/components/sections/FormationsHero";
+  5 | import FormationsList from "@/components/sections/FormationsList";
+> 6 | import ProcessTimeline from "@/components/sections/ProcessTimeline";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import CTASection from "@/components/sections/CTASection";
+  8 |
+  9 | export async function generateMetadata({
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[  451025ms] [ERROR] ./src/app/[locale]/formations/page.tsx:2:1
+Module not found: Can't resolve '@/lib/i18n'
+  1 | import type { Metadata } from "next";
+> 2 | import { getDictionary, type Locale } from "@/lib/i18n";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import { createMetadata } from "@/lib/metadata";
+  4 | import FormationsHero from "@/components/sections/FormationsHero";
+  5 | import FormationsList from "@/components/sections/FormationsList";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[  451025ms] [ERROR] ./src/app/[locale]/formations/page.tsx:3:1
+Module not found: Can't resolve '@/lib/metadata'
+  1 | import type { Metadata } from "next";
+  2 | import { getDictionary, type Locale } from "@/lib/i18n";
+> 3 | import { createMetadata } from "@/lib/metadata";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import FormationsHero from "@/components/sections/FormationsHero";
+  5 | import FormationsList from "@/components/sections/FormationsList";
+  6 | import ProcessTimeline from "@/components/sections/ProcessTimeline";
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[  468780ms] [ERROR] ./package.json:15:1
+Error parsing package.json file
+  13 |   "dependencies": {
+  14 |     "@formspree/react": "^3.0.0",
+> 15 | <<<<<<< HEAD
+     | ^
+  16 |     "@vercel/analytics": "^1.6.1",
+  17 |     "framer-motion": "^12.34.0",
+  18 |     "next": "16.1.6",
+
+package.json is not parseable: invalid JSON: key must be a string at line 15 column 1 @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[  468781ms] [ERROR] ./tsconfig.json:32:5
+An issue occurred while parsing a tsconfig.json file.
+  30 |     ".next/dev/types/**/*.ts",
+  31 |     "**/*.mts"
+> 32 |   ],
+     |     ^
+> 33 | <<<<<<< HEAD
+     | ^^
+  34 |   "exclude": ["node_modules"]
+  35 | =======
+  36 |   "exclude": ["node_modules", "7JW5iBM9v0h-1772631179318"]
+
+tsconfig is not parseable: invalid JSON: Unexpected token @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_b3fb3b5f._.js:1920
+[  469151ms] [ERROR] ./package.json:15:1
+Error parsing package.json file
+  13 |   "dependencies": {
+  14 |     "@formspree/react": "^3.0.0",
+> 15 | <<<<<<< HEAD
+     | ^
+  16 |     "@vercel/analytics": "^1.6.1",
+  17 |     "framer-motion": "^12.34.0",
+  18 |     "next": "16.1.6",
+
+package.json is not parseable: invalid JSON: key must be a string at line 15 column 1 @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  469151ms] [ERROR] ./tsconfig.json:32:5
+An issue occurred while parsing a tsconfig.json file.
+  30 |     ".next/dev/types/**/*.ts",
+  31 |     "**/*.mts"
+> 32 |   ],
+     |     ^
+> 33 | <<<<<<< HEAD
+     | ^^
+  34 |   "exclude": ["node_modules"]
+  35 | =======
+  36 |   "exclude": ["node_modules", "7JW5iBM9v0h-1772631179318"]
+
+tsconfig is not parseable: invalid JSON: Unexpected token @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  469151ms] [ERROR] ./package.json:15:1
+Error parsing package.json file
+  13 |   "dependencies": {
+  14 |     "@formspree/react": "^3.0.0",
+> 15 | <<<<<<< HEAD
+     | ^
+  16 |     "@vercel/analytics": "^1.6.1",
+  17 |     "framer-motion": "^12.34.0",
+  18 |     "next": "16.1.6",
+
+package.json is not parseable: invalid JSON: key must be a string at line 15 column 1 @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  469151ms] [ERROR] ./tsconfig.json:32:5
+An issue occurred while parsing a tsconfig.json file.
+  30 |     ".next/dev/types/**/*.ts",
+  31 |     "**/*.mts"
+> 32 |   ],
+     |     ^
+> 33 | <<<<<<< HEAD
+     | ^^
+  34 |   "exclude": ["node_modules"]
+  35 | =======
+  36 |   "exclude": ["node_modules", "7JW5iBM9v0h-1772631179318"]
+
+tsconfig is not parseable: invalid JSON: Unexpected token @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  469151ms] [ERROR] ./package.json:15:1
+Error parsing package.json file
+  13 |   "dependencies": {
+  14 |     "@formspree/react": "^3.0.0",
+> 15 | <<<<<<< HEAD
+     | ^
+  16 |     "@vercel/analytics": "^1.6.1",
+  17 |     "framer-motion": "^12.34.0",
+  18 |     "next": "16.1.6",
+
+package.json is not parseable: invalid JSON: key must be a string at line 15 column 1 @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  469151ms] [ERROR] ./tsconfig.json:32:5
+An issue occurred while parsing a tsconfig.json file.
+  30 |     ".next/dev/types/**/*.ts",
+  31 |     "**/*.mts"
+> 32 |   ],
+     |     ^
+> 33 | <<<<<<< HEAD
+     | ^^
+  34 |   "exclude": ["node_modules"]
+  35 | =======
+  36 |   "exclude": ["node_modules", "7JW5iBM9v0h-1772631179318"]
+
+tsconfig is not parseable: invalid JSON: Unexpected token @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  469225ms] [ERROR] ./package.json:15:1
+Error parsing package.json file
+  13 |   "dependencies": {
+  14 |     "@formspree/react": "^3.0.0",
+> 15 | <<<<<<< HEAD
+     | ^
+  16 |     "@vercel/analytics": "^1.6.1",
+  17 |     "framer-motion": "^12.34.0",
+  18 |     "next": "16.1.6",
+
+package.json is not parseable: invalid JSON: key must be a string at line 15 column 1 @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  469225ms] [ERROR] ./tsconfig.json:32:5
+An issue occurred while parsing a tsconfig.json file.
+  30 |     ".next/dev/types/**/*.ts",
+  31 |     "**/*.mts"
+> 32 |   ],
+     |     ^
+> 33 | <<<<<<< HEAD
+     | ^^
+  34 |   "exclude": ["node_modules"]
+  35 | =======
+  36 |   "exclude": ["node_modules", "7JW5iBM9v0h-1772631179318"]
+
+tsconfig is not parseable: invalid JSON: Unexpected token @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127
+[  469275ms] [WARNING] THREE.THREE.Clock: This module has been deprecated. Please use THREE.Timer instead. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  469293ms] [WARNING] THREE.THREE.Clock: This module has been deprecated. Please use THREE.Timer instead. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297

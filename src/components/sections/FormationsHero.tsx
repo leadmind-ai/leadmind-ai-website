@@ -1,10 +1,7 @@
 "use client";
 
-import { lazy, Suspense } from "react";
 import { motion } from "framer-motion";
 import { Container } from "@/components/ui/Container";
-
-const GLBackground = lazy(() => import("@/components/gl/GLBackground"));
 
 type FormationsHeroProps = {
   title: string;
@@ -16,11 +13,8 @@ export default function FormationsHero({
   subtitle,
 }: FormationsHeroProps) {
   return (
-    <section className="relative overflow-hidden bg-primary py-20">
-      <Suspense fallback={null}>
-        <GLBackground bgColor="#1a365d" />
-      </Suspense>
-      <Container className="relative z-10">
+    <section className="py-20">
+      <Container>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}

@@ -11,7 +11,7 @@ const logos = [
 
 export default function LogoBar() {
   return (
-    <section className="border-b border-gray-100 bg-surface py-8">
+    <section className="border-b border-white/5 py-8">
       <Container>
         <div className="relative overflow-hidden">
           <div className="flex animate-scroll gap-12">

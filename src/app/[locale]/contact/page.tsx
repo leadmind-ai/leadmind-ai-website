@@ -4,7 +4,6 @@ import { createMetadata } from "@/lib/metadata";
 import { Container } from "@/components/ui/Container";
 import { ContactForm } from "@/components/forms/ContactForm";
 import CalendlyEmbed from "@/components/sections/CalendlyEmbed";
-import ContactHero from "@/components/sections/ContactHero";
 
 export async function generateMetadata({
   params,
@@ -31,10 +30,15 @@ export default async function ContactPage({
 
   return (
     <>
-      <ContactHero title={dict.contact.title} subtitle={dict.contact.subtitle} />
       <section className="py-20">
         <Container>
           <div className="mx-auto max-w-2xl">
+            <h1 className="text-4xl font-bold text-white">
+              {dict.contact.title}
+            </h1>
+            <p className="mt-4 text-lg text-text-muted">
+              {dict.contact.subtitle}
+            </p>
             <div className="mt-8">
               <ContactForm form={dict.contact.form} />
             </div>

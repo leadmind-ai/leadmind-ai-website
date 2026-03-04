@@ -32,7 +32,7 @@ export function ContactForm({ form }: ContactFormProps) {
   }
 
   const inputClasses =
-    "w-full rounded-lg border border-gray-200 px-4 py-3 text-text transition-colors focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/20";
+    "w-full rounded-lg border border-white/20 bg-white/5 px-4 py-3 text-text placeholder:text-text-muted/50 transition-colors focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/20";
 
   return (
     <form onSubmit={handleSubmit} className="space-y-6">

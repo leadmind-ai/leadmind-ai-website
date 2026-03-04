@@ -17,7 +17,7 @@ export default function ServicesOverview({ services }: ServicesOverviewProps) {
     <section className="py-20">
       <Container>
         <div className="text-center">
-          <h2 className="text-3xl font-semibold text-primary md:text-4xl">
+          <h2 className="text-3xl font-semibold text-white md:text-4xl">
             {services.title}
           </h2>
           <p className="mt-4 text-lg text-text-muted">{services.subtitle}</p>
@@ -26,7 +26,7 @@ export default function ServicesOverview({ services }: ServicesOverviewProps) {
           {services.items.map((item, i) => (
             <StaggerItem key={i}>
               <Card className="h-full">
-                <h3 className="text-lg font-semibold text-primary">
+                <h3 className="text-lg font-semibold text-white">
                   {item.title}
                 </h3>
                 <p className="mt-2 text-sm leading-relaxed text-text-muted">

@@ -3,7 +3,6 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/Button";
 import type { Locale } from "@/lib/i18n";
 
@@ -31,11 +30,11 @@ export function Header({ nav, locale }: HeaderProps) {
   ];
 
   return (
-    <header className="sticky top-0 z-50 border-b border-gray-100 bg-white/90 backdrop-blur-md">
+    <header className="sticky top-0 z-50 border-b border-white/10 bg-background/80 backdrop-blur-md">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 md:px-8">
         <Link href={`/${locale}`} className="flex items-center">
           <Image
-            src="/images/logo.png"
+            src="/images/logo-dark.png"
             alt="LeadMind AI"
             width={800}
             height={447}
@@ -50,14 +49,14 @@ export function Header({ nav, locale }: HeaderProps) {
             <Link
               key={link.href}
               href={link.href}
-              className="relative text-sm font-medium text-text-muted transition-colors hover:text-primary after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-accent after:transition-all after:duration-200 hover:after:w-full"
+              className="text-sm font-medium text-text-muted transition-colors hover:text-white"
             >
               {link.label}
             </Link>
           ))}
           <Link
             href={`/${otherLocale}`}
-            className="text-sm font-medium text-text-muted transition-colors hover:text-primary"
+            className="text-sm font-medium text-text-muted transition-colors hover:text-white"
           >
             {otherLocale.toUpperCase()}
           </Link>
@@ -98,42 +97,33 @@ export function Header({ nav, locale }: HeaderProps) {
       </div>
 
       {/* Mobile menu */}
-      <AnimatePresence>
-        {mobileOpen && (
-          <motion.nav
-            key="mobile-menu"
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: "auto" }}
-            exit={{ opacity: 0, height: 0 }}
-            transition={{ duration: 0.2, ease: "easeOut" }}
-            className="overflow-hidden border-t border-gray-100 bg-white/95 backdrop-blur-md px-6 py-4 md:hidden"
-          >
-            {links.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className="block py-2 text-sm font-medium text-text-muted"
-                onClick={() => setMobileOpen(false)}
-              >
-                {link.label}
-              </Link>
-            ))}
+      {mobileOpen && (
+        <nav className="border-t border-white/10 bg-background/95 px-6 py-4 md:hidden">
+          {links.map((link) => (
             <Link
-              href={`/${otherLocale}`}
+              key={link.href}
+              href={link.href}
               className="block py-2 text-sm font-medium text-text-muted"
+              onClick={() => setMobileOpen(false)}
             >
-              {otherLocale.toUpperCase()}
+              {link.label}
             </Link>
-            <Button
-              href={`/${locale}/contact`}
-              variant="primary"
-              className="mt-2 w-full"
-            >
-              {nav.cta}
-            </Button>
-          </motion.nav>
-        )}
-      </AnimatePresence>
+          ))}
+          <Link
+            href={`/${otherLocale}`}
+            className="block py-2 text-sm font-medium text-text-muted"
+          >
+            {otherLocale.toUpperCase()}
+          </Link>
+          <Button
+            href={`/${locale}/contact`}
+            variant="primary"
+            className="mt-2 w-full"
+          >
+            {nav.cta}
+          </Button>
+        </nav>
+      )}
     </header>
   );
 }

@@ -26,7 +26,7 @@ type FooterProps = {
 
 export function Footer({ footer, nav, locale }: FooterProps) {
   return (
-    <footer className="border-t border-gray-100 bg-primary text-white">
+    <footer className="border-t border-white/10 bg-background text-white">
       <Container className="py-12">
         <div className="grid gap-8 md:grid-cols-3">
           <div>
