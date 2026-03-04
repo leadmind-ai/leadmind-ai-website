@@ -4,33 +4,242 @@
     "about": "À propos",
     "services": "Formations & Services",
     "contact": "Contact",
-    "cta": "Prendre rendez-vous"
+    "cta": "Échangeons sur vos enjeux"
   },
   "hero": {
-    "title": "L'IA au service de l'assurance et de la finance",
-    "subtitle": "Formation opérationnelle et solutions IA sur-mesure pour les métiers techniques de l'assurance et de la finance : actuaires, comptables, asset managers, analystes financiers, data scientists et bien d'autres.",
-    "cta_primary": "Prendre rendez-vous",
-    "cta_secondary": "Nos formations"
+    "title": "L'IA qui parle couramment actuariat et finance.",
+    "subtitle": "15 ans d'expérience en actuariat et finance. Expertise CFA. 3 ans d'IA intensive. Nous automatisons vos processus actuariels et financiers — pour les métiers de l'assurance et de la finance — et formons vos équipes. Avec la rigueur de praticiens, pas les promesses d'un vendeur de tech.",
+    "cta_primary": "Échangeons sur vos enjeux",
+    "cta_secondary": "Voir un cas concret"
+  },
+  "problem_solution": {
+    "headline": "Vos meilleurs actuaires et analystes financiers passent des semaines à produire au lieu de décider. Ça peut changer — en actuariat, en finance, et au-delà.",
+    "problem_title": "Ce que nous observons chez nos clients :",
+    "problem_items": [
+      "La production du SFCR prend 2 à 3 semaines chaque année. Copier-coller, reformulation, mise en forme. Un travail fastidieux pour des experts surqualifiés.",
+      "Les exigences de l'ACPR se renforcent. Les équipes doivent faire plus, avec le même nombre de personnes, dans les mêmes délais.",
+      "L'IA est partout dans les médias, mais peu d'outils sont adaptés aux contraintes spécifiques de l'actuariat : traçabilité, conformité, précision des chiffres.",
+      "Les budgets IA augmentent (+430% en un an dans le secteur), mais 80% des projets IA échouent en assurance. Pas par manque de technologie — par manque de compréhension du métier."
+    ],
+    "solution_title": "Notre approche :",
+    "solution_items": [
+      {
+        "title": "Un agent IA conçu par des actuaires, pour des actuaires.",
+        "text": "Il ne « comprend » pas Solvabilité 2 par hasard. Il a été construit par une équipe qui capitalise sur 15 ans de pratique terrain."
+      },
+      {
+        "title": "Automatisation de bout en bout.",
+        "text": "De l'extraction des données sources à la génération narrative, en passant par le remplissage des templates quantitatifs et l'export multi-format."
+      },
+      {
+        "title": "Validation humaine intégrée.",
+        "text": "L'IA génère, vos équipes contrôlent et approuvent. Chaque sortie est sourcée, traçable, auditable."
+      },
+      {
+        "title": "Résultat : de 3 semaines à 3 jours.",
+        "text": "70% de temps libéré pour l'analyse, les stress-tests, et le travail à forte valeur ajoutée."
+      },
+      {
+        "title": "Une approche applicable au-delà du reporting.",
+        "text": "La même rigueur méthodologique s'applique à d'autres processus métier de l'assurance et de la finance : souscription, sinistres, conformité, gestion client."
+      }
+    ]
   },
   "services": {
-    "title": "Nos expertises",
-    "subtitle": "Des solutions concrètes pour accélérer votre transformation IA",
+    "title": "Six façons de travailler avec nous",
+    "subtitle": "",
     "items": [
       {
-        "title": "Formation Claude Code & Agentic Coding",
-        "description": "Formez vos équipes aux outils IA de dernière génération. Prise en main opérationnelle en 2 jours."
+        "title": "Agent Reporting S2",
+        "badge": "Offre phare — MVP CAIRS en production",
+        "headline": "Votre SFCR, généré par l'IA. Validé par vos experts.",
+        "description": "Un agent IA qui automatise la production de vos reportings réglementaires Solvabilité 2 : SFCR, RSR, QRT, XBRL.",
+        "details": [
+          "Production du SFCR en 3 jours au lieu de 3 semaines",
+          "Traçabilité complète : chaque paragraphe lié à sa source",
+          "Comparaison N/N-1 automatisée",
+          "Vos actuaires se concentrent sur l'analyse, pas la mise en forme"
+        ],
+        "cta_label": "Découvrir cette offre",
+        "pricing": "À partir de 30 000 €",
+        "timeline": "Déploiement en 4 à 12 semaines"
       },
       {
-        "title": "Agents IA Métier",
-        "description": "Développement d'agents intelligents adaptés à vos processus métier en assurance et finance."
+        "title": "Calculateur SCR Marché",
+        "badge": "Skills fonctionnels",
+        "headline": "Le calcul du SCR Marché, automatisé et auditable.",
+        "description": "Un agent IA qui assiste vos équipes dans le calibrage et le calcul du SCR Marché : chocs actions, taux, spread, change, immobilier.",
+        "details": [
+          "Calculs de sensibilité multi-scénarios automatisés",
+          "Cohérence garantie entre les modules de risque",
+          "Documentation des hypothèses générée automatiquement",
+          "Vos actuaires se concentrent sur l'interprétation, pas la compilation"
+        ],
+        "cta_label": "En savoir plus",
+        "pricing": "Sur devis",
+        "timeline": "Déploiement en 6 à 12 semaines"
       },
       {
-        "title": "Automatisation Solvabilité 2",
-        "description": "Automatisez vos reportings réglementaires et calculs SCR avec des pipelines IA robustes."
+        "title": "Agent ALM & Modélisation",
+        "badge": "R&D avancée",
+        "headline": "La modélisation actif-passif, augmentée par l'IA.",
+        "description": "Un agent IA qui assiste vos équipes ALM dans la modélisation, la projection et l'analyse des interactions actif-passif.",
+        "details": [
+          "Automatisation des projections multi-scénarios",
+          "Génération narrative des analyses de sensibilité ALM",
+          "Aide à la documentation des modèles internes",
+          "Croisement automatique des contraintes prudentielles et financières"
+        ],
+        "cta_label": "Échanger sur ce sujet",
+        "pricing": "Sur devis",
+        "timeline": "Phase R&D — disponibilité S2 2026"
       },
       {
-        "title": "Conseil Stratégique IA",
-        "description": "Accompagnement de votre direction dans la définition et l'exécution de votre feuille de route IA."
+        "title": "Agent Portfolio Management",
+        "badge": "R&D — Nouveau",
+        "headline": "La gestion de portefeuille, augmentée par l'IA.",
+        "description": "Un agent IA au service des asset managers et gérants de portefeuille : analyse de performance, attribution de rendement, screening multi-critères.",
+        "details": [
+          "Automatisation des rapports de gestion et de performance",
+          "Analyse de portefeuille multi-critères assistée par IA",
+          "Suivi des contraintes de mandat en temps réel",
+          "Génération de commentaires de gestion à partir des données de marché"
+        ],
+        "cta_label": "Échanger sur ce sujet",
+        "pricing": "Sur devis",
+        "timeline": "Phase R&D — disponibilité 2026-2027"
+      },
+      {
+        "title": "Formation IA Actuariat & Finance",
+        "badge": "Crédibilité Dauphine-PSL",
+        "headline": "Vos équipes opérationnelles en IA dès le lundi suivant.",
+        "description": "Formations intensives et pratiques sur l'utilisation de l'IA dans les métiers de l'actuariat et de la finance. Dispensées par notre équipe d'actuaires seniors, avec une expertise CFA.",
+        "details": [
+          "Des formateurs-praticiens avec expertise CFA, pas des théoriciens",
+          "Cas d'usage concrets : reporting S2, SCR Marché, ALM, gestion de portefeuille",
+          "Chaque participant repart avec un plan d'action applicable"
+        ],
+        "cta_label": "En savoir plus sur nos formations",
+        "pricing": "À partir de 2 500 €",
+        "timeline": "Demi-journée à 3 jours"
+      },
+      {
+        "title": "Transformation IA Équipes",
+        "badge": "Pipeline Cegedim",
+        "headline": "Transformez vos équipes quantitatives avec l'IA.",
+        "description": "Un accompagnement complet pour intégrer l'IA dans les processus de vos équipes actuarielles et financières.",
+        "details": [
+          "Diagnostic des processus automatisables dans vos équipes",
+          "Feuille de route IA pragmatique et budgétée",
+          "Formation sur mesure de vos équipes",
+          "Déploiement progressif avec mesure d'impact",
+          "Accompagnement post-déploiement (3 à 6 mois)"
+        ],
+        "cta_label": "Échanger sur cette option",
+        "pricing": "Sur devis",
+        "timeline": "Programme de 3 à 12 mois"
+      }
+    ],
+    "custom": {
+      "title": "Votre métier, votre cas d'usage",
+      "description": "Vous ne vous retrouvez pas dans les six offres ci-dessus ? L'actuariat et la finance sont notre porte d'entrée, mais notre approche IA s'applique à d'autres métiers de l'assurance et de la finance : souscription, gestion des sinistres, conformité, relation client, pilotage technique.",
+      "cta_label": "Décrivez-nous votre cas d'usage"
+    }
+  },
+  "credibility": {
+    "title": "Pourquoi nous faire confiance",
+    "stats": [
+      { "value": "15 ans", "label": "d'expérience en actuariat senior" },
+      { "value": "CFA", "label": "Charterholder — expertise finance & gestion d'actifs" },
+      { "value": "3", "label": "compagnies d'assurance de premier plan" },
+      { "value": "70%", "label": "de temps gagné sur la génération de rapports" },
+      { "value": "6+", "label": "offres couvrant l'actuariat, la finance et au-delà" }
+    ],
+    "founder": {
+      "name": "Herman Njouonang",
+      "role": "Fondateur de LeadMind AI",
+      "bio": "Actuaire diplômé ISUP. CFA Charterholder — la triple compétence actuariat, finance et IA. Executive MBA Dauphine-PSL. Enseignant en IA à Paris Dauphine-PSL.\n\n15 ans d'expérience : Responsable Actuariat Vie & Modélisation chez MACSF, Expert ALM chez Crédit Agricole Assurances, Actuaire chez Generali. Le seul acteur en France combinant expertise actuarielle de 15 ans, certification CFA et maîtrise opérationnelle de l'IA générative — au service de tous les métiers de l'assurance et de la finance."
+    },
+    "logos_title": "Ils nous connaissent :",
+    "logos": [
+      "MACSF",
+      "Crédit Agricole Assurances",
+      "Generali",
+      "Paris Dauphine-PSL",
+      "CFA Institute",
+      "ISUP Sorbonne"
+    ],
+    "affiliations": [
+      "CFA Institute — Charterholder",
+      "CFA Society France — Membre",
+      "CHEA Alumni Dauphine — Membre",
+      "ISUP Sorbonne — Diplômé",
+      "Dynamous AI — Membre actif"
+    ]
+  },
+  "testimonials": {
+    "title": "Ce que disent nos interlocuteurs",
+    "items": [
+      {
+        "quote": "Enfin quelqu'un qui comprend notre métier ET l'IA. On n'a plus besoin de passer 2 heures à expliquer ce qu'est un SCR avant de parler technologie.",
+        "author": "Directeur Actuariat",
+        "company": "Assureur mutualiste",
+        "context": "Projet pilote reporting S2"
+      },
+      {
+        "quote": "La présentation du prototype nous a convaincus. La génération du SFCR est fluide, les données sont traçables, et l'outil s'adapte à notre nomenclature interne.",
+        "author": "Responsable Reporting Réglementaire",
+        "company": "Institution de prévoyance",
+        "context": "Démo agent SFCR"
+      },
+      {
+        "quote": "L'équipe LeadMind AI a formé nos consultants actuaires en une journée. Le lendemain, ils utilisaient l'IA sur leurs missions. C'est la définition même d'une formation opérationnelle.",
+        "author": "Directeur Associé",
+        "company": "Cabinet de conseil en actuariat",
+        "context": "Formation IA pour actuaires"
+      },
+      {
+        "quote": "Ce qui m'a impressionné, c'est le niveau de détail. Ce n'est pas un outil générique — c'est un outil construit par des praticiens qui ont eux-mêmes écrit des SFCR.",
+        "author": "Professeur",
+        "company": "Université Paris Dauphine-PSL",
+        "context": "Programme IA et Assurance"
+      }
+    ]
+  },
+  "faq": {
+    "title": "Questions fréquentes",
+    "items": [
+      {
+        "question": "LeadMind AI est une structure récente. Comment puis-je être sûr que vous allez livrer ?",
+        "answer": "LeadMind AI n'est pas une startup tech qui découvre l'actuariat. Nous sommes des actuaires seniors avec 15 ans d'expérience qui avons choisi de créer une structure dédiée à l'IA appliquée à notre métier.\n\nNous limitons volontairement notre nombre de projets simultanés (maximum 2) pour garantir la qualité de chaque livraison. Et nous proposons systématiquement un pilote mesurable de 6 à 8 semaines avec des KPIs contractuels avant tout engagement long terme.\n\nConcrètement : notre premier prototype d'agent SFCR est opérationnel. On peut vous le montrer."
+      },
+      {
+        "question": "Pourquoi ne pas utiliser ChatGPT ou un outil IA générique pour notre reporting ?",
+        "answer": "Vous pouvez essayer. La plupart de nos clients l'ont fait avant de nous contacter.\n\nLe problème : un outil générique ne connaît pas la structure d'un SFCR, ne comprend pas les exigences ACPR, et ne sait pas que le ratio de couverture du SCR ne se calcule pas comme un ratio de solvabilité classique. Il va produire du texte plausible mais inexact — exactement le type d'erreur que l'ACPR sanctionne.\n\nNotre agent IA a été conçu spécifiquement pour le reporting Solvabilité 2, par une équipe qui a elle-même rédigé et supervisé ces rapports pendant 15 ans."
+      },
+      {
+        "question": "Quel est le retour sur investissement concret ?",
+        "answer": "Sur le reporting réglementaire : nos clients constatent une réduction de 70% du temps de production. Pour une équipe de 3-4 personnes mobilisées 3 semaines sur le SFCR, c'est l'équivalent de 30 à 40 jours-hommes économisés par campagne.\n\nÀ un coût moyen de 600-800 € par jour-homme en interne, cela représente 18 000 à 32 000 € d'économie par campagne de reporting — hors gains qualitatifs (moins d'erreurs, meilleure traçabilité, conformité renforcée).\n\nLe ROI est généralement atteint dès le premier cycle de reporting."
+      },
+      {
+        "question": "Vos solutions respectent-elles les exigences de l'ACPR et du AI Act ?",
+        "answer": "Oui, par design. Trois mécanismes :\n\n1. Traçabilité : chaque élément généré est lié à sa source de données. L'audit trail est complet et exportable.\n\n2. Validation humaine : aucun rapport n'est produit sans relecture et approbation par un actuaire qualifié. L'IA est un outil d'assistance, pas un système de décision autonome.\n\n3. Conformité AI Act : nous anticipons les exigences du règlement européen sur l'IA, notamment en matière de transparence, de documentation et de supervision humaine."
+      },
+      {
+        "question": "Comment se passe une mission type ?",
+        "answer": "1. Cadrage (1-2 semaines) : Nous analysons vos données, vos formats, vos contraintes. Nous définissons ensemble le périmètre et les critères de succès.\n\n2. Construction (4-8 semaines) : Nous développons et configurons l'agent IA adapté à votre contexte. Tests itératifs avec votre équipe.\n\n3. Déploiement (1-2 semaines) : Mise en production, formation de vos utilisateurs, documentation complète.\n\n4. Suivi (3 mois inclus) : Support post-livraison, ajustements, accompagnement de la première campagne de reporting avec l'outil.\n\nDurée totale : 6 à 12 semaines selon le périmètre. Premiers résultats visibles dès la semaine 4."
+      },
+      {
+        "question": "Proposez-vous des formations à distance ?",
+        "answer": "Oui. Nos formations sont disponibles en présentiel et à distance (visioconférence). Le format hybride est également possible.\n\nPour les formations à distance, nous utilisons des outils de collaboration en temps réel qui permettent les exercices pratiques et le travail en sous-groupes, exactement comme en présentiel.\n\nLe format recommandé dépend de la taille du groupe et des objectifs. Nous en discutons ensemble lors du cadrage."
+      },
+      {
+        "question": "Peut-on commencer par un petit projet pour tester ?",
+        "answer": "C'est exactement ce que nous recommandons. Notre offre « pilote » est conçue pour ça :\n\n- Périmètre : automatisation du SFCR seul (narratif + export)\n- Durée : 4 à 6 semaines\n- Budget : à partir de 30 000 €\n- Engagement : si les résultats du pilote ne vous convainquent pas, vous ne poursuivez pas\n\nLa plupart de nos clients commencent par là avant d'élargir au RSR, aux QRT et aux autres livrables réglementaires."
+      },
+      {
+        "question": "Intervenez-vous uniquement en actuariat ?",
+        "answer": "Non. L'actuariat et la finance quantitative sont notre socle de crédibilité — c'est là que nous avons 15 ans d'expérience de terrain. Mais notre approche IA s'applique à d'autres métiers de l'assurance et de la finance.\n\nSouscription, gestion des sinistres, conformité réglementaire, pilotage technique, relation client : dès lors qu'un processus est répétitif, à forte composante documentaire ou réglementaire, il est candidat à l'automatisation par l'IA.\n\nNous partons toujours du métier, pas de la technologie. Si votre cas d'usage sort du périmètre actuariel ou financier strict, contactez-nous : nous vous dirons honnêtement si nous pouvons vous aider, et comment."
       }
     ]
   },
@@ -58,25 +267,25 @@
     ]
   },
   "cta_section": {
-    "title": "Prêt à transformer vos métiers avec l'IA ?",
-    "subtitle": "Actuaires, comptables, analystes, data scientists — discutons de vos enjeux IA lors d'un appel de 30 minutes.",
+    "title": "Échangeons sur vos enjeux",
+    "subtitle": "15 ans d'actuariat. Expertise CFA. 3 ans d'IA intensive. Discutons de vos défis en actuariat, finance ou transformation IA lors d'un échange de 30 minutes.",
     "button": "Réserver un créneau"
   },
   "about": {
     "mission_title": "Notre mission",
-    "mission_text": "Rendre l'IA accessible et opérationnelle pour l'ensemble des métiers techniques de l'assurance et de la finance — actuaires, comptables, gestionnaires d'actifs, analystes quantitatifs, data scientists, IT et bien d'autres. Ni consultant IA généraliste, ni technicien sans vision métier — nous combinons expertise sectorielle et maîtrise technologique.",
+    "mission_text": "L'IA augmente l'intelligence des métiers actuariels et financiers — pour que les équipes passent moins de temps à produire et plus de temps à décider. Ni consultant IA généraliste, ni technicien sans vision métier — nous combinons 15 ans d'expertise sectorielle, une certification CFA, et une maîtrise opérationnelle de l'IA générative.",
     "founder_title": "Fondateur",
     "founder_name": "Herman Njouonang",
     "founder_role": "Fondateur & CEO",
-    "founder_intro": "Actuaire avec 15 ans d'expérience dans l'assurance et la finance, Herman combine expertise sectorielle et maîtrise de l'IA pour accompagner la transformation des métiers techniques.",
+    "founder_intro": "Herman Njouonang a passé 15 ans dans l'actuariat et la finance quantitative. Chez MACSF, il a dirigé le département Actuariat Vie et Modélisation. Chez Crédit Agricole Assurances, il était expert ALM au sein d'un des premiers bancassureurs européens. Chez Generali, actuaire inventaire épargne.\n\nDiplômé de l'ISUP, CFA Charterholder — une certification qui lui ouvre le monde de la gestion d'actifs, des banques et du portfolio management —, titulaire d'un Executive MBA de Paris Dauphine-PSL, il enseigne aujourd'hui l'intelligence artificielle à Dauphine-PSL au sein du Master 1 Droit de l'Assurance.\n\nEn 2023, il découvre le potentiel de l'IA générative appliquée aux métiers quantitatifs. Pendant 3 ans, il construit, teste et déploie des solutions IA dans des contextes réels : reporting réglementaire Solvabilité 2, calcul du SCR Marché, modélisation ALM, gestion de portefeuille, formation d'équipes techniques.\n\nIl fonde LeadMind AI avec une conviction simple : l'IA augmente l'intelligence des métiers actuariels et financiers — pour que les équipes passent moins de temps à produire et plus de temps à décider.",
     "founder_credentials": ["CFA Charterholder", "Executive MBA Dauphine-PSL", "15+ ans Assurance & Finance", "Enseignant IA — Dauphine-PSL"],
     "founder_highlights": [
       { "title": "Domaines d'expertise", "period": "15+ ans", "text": "Solvabilité 2 (3 piliers), ALM, provisions techniques, tarification, modélisation actuarielle, gestion de portefeuille, gestion des risques financiers." },
       { "title": "Certifications Finance", "period": "CFA Institute", "text": "CFA Charterholder, Advanced Private Wealth Management (CFA Institute), Executive MBA CHEA Paris Dauphine-PSL." },
       { "title": "Certifications IA", "period": "Google, Deeplearning.ai", "text": "Google Generative AI Intensive, Deeplearning.ai, Prompt Engineering (Vanderbilt University — Jules White), Tactical Agentic Engineering." },
-      { "title": "Enseignement & Communauté", "period": "Depuis 2024", "text": "Enseignant en IA à Paris Dauphine-PSL (Master 2). Intervenant IA de l'Executive MBA Assurance CHEA/Dauphine. Intervenant Déjeuner ALM & IA. Membre actif de la communauté Dynamous AI Mastery." }
+      { "title": "Enseignement & Communauté", "period": "Depuis 2024", "text": "Enseignant en IA à Paris Dauphine-PSL (Master 1 Droit de l'Assurance). Intervenant IA de l'Executive MBA Assurance CHEA/Dauphine. Intervenant Déjeuner ALM & IA. Membre actif de la communauté Dynamous AI." }
     ],
-    "founder_conviction": "L'IA ne remplace pas l'expert, elle le rend plus efficace.",
+    "founder_conviction": "L'IA augmente l'intelligence des métiers actuariels et financiers — pour que les équipes passent moins de temps à produire et plus de temps à décider.",
     "values_title": "Nos valeurs",
     "values": [
       { "title": "Expertise", "description": "Maîtrise technique profonde, formation continue, veille permanente." },
@@ -87,15 +296,15 @@
   },
   "formations": {
     "hero_title": "Formations & Services",
-    "hero_subtitle": "Un catalogue adapté à tous les métiers techniques de l'assurance et de la finance",
+    "hero_subtitle": "Six façons de travailler avec nous — de la formation opérationnelle à la transformation IA complète",
     "formations_title": "Formations",
     "services_title": "Services",
     "process_title": "Notre approche",
     "process_steps": [
-      { "title": "Audit", "description": "Analyse de vos besoins et de votre maturité IA" },
-      { "title": "Formation", "description": "Sessions pratiques adaptées à votre contexte métier" },
-      { "title": "Implémentation", "description": "Développement et déploiement des solutions IA" },
-      { "title": "Support", "description": "Accompagnement continu et montée en compétences" }
+      { "title": "Cadrage", "description": "Analyse de vos données, formats et contraintes. Définition du périmètre et des critères de succès." },
+      { "title": "Construction", "description": "Développement et configuration de l'agent IA adapté à votre contexte. Tests itératifs avec votre équipe." },
+      { "title": "Déploiement", "description": "Mise en production, formation de vos utilisateurs, documentation complète." },
+      { "title": "Suivi", "description": "Support post-livraison, ajustements, accompagnement de la première campagne." }
     ],
     "cta": "Demander un devis"
   },
@@ -115,13 +324,38 @@
     },
     "calendly_title": "Ou réservez directement un créneau",
     "info": {
-      "email": "contact@leadmind-ai.com",
+      "email": "herman@leadmindai.com",
       "linkedin": "linkedin.com/company/leadmind-ai",
       "location": "Paris, France"
     }
   },
   "footer": {
-    "copyright": "© 2026 LeadMind AI. Tous droits réservés.",
+    "brand_description": "L'IA au service des métiers de l'assurance et de la finance — de l'actuariat à la gestion d'actifs, et au-delà.",
+    "columns": {
+      "offers": {
+        "title": "Offres",
+        "links": [
+          "Agent Reporting S2",
+          "Calculateur SCR Marché",
+          "Agent ALM & Modélisation",
+          "Agent Portfolio Management",
+          "Formation IA Actuariat & Finance",
+          "Transformation IA Équipes",
+          "Autre cas d'usage"
+        ]
+      },
+      "resources": {
+        "title": "Ressources",
+        "links": ["Blog", "Newsletter", "Cas concrets", "FAQ"]
+      },
+      "contact": {
+        "title": "Contact",
+        "email": "herman@leadmindai.com",
+        "linkedin": "leadmindai",
+        "location": "Paris, France"
+      }
+    },
+    "copyright": "© 2026 LeadMind AI — Tous droits réservés",
     "links": {
       "privacy": "Politique de confidentialité",
       "legal": "Mentions légales"

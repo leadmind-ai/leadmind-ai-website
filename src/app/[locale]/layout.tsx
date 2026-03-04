@@ -34,7 +34,7 @@ export default async function LocaleLayout({
       </Suspense>
       <Header nav={dict.nav} locale={locale as Locale} />
       <main className="min-h-screen">{children}</main>
-      <Footer footer={dict.footer} nav={dict.nav} locale={locale as Locale} />
+      <Footer footer={dict.footer} locale={locale as Locale} />
     </div>
   );
 }

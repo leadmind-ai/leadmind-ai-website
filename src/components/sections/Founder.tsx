@@ -69,7 +69,7 @@ export default function Founder({
           {/* Parcours */}
           <div className="lg:col-span-3">
             <FadeIn direction="right">
-              <p className="text-lg leading-relaxed text-text-muted">{intro}</p>
+              <p className="text-lg leading-relaxed text-text-muted whitespace-pre-line">{intro}</p>
             </FadeIn>
 
             <StaggerChildren className="mt-8 space-y-4">

@@ -1,0 +1,82 @@
+"use client";
+
+import { Container } from "@/components/ui/Container";
+import { Card } from "@/components/ui/Card";
+import { FadeIn, StaggerChildren, StaggerItem } from "@/components/ui/FadeIn";
+
+type CredibilityProps = {
+  credibility: {
+    title: string;
+    stats: { value: string; label: string }[];
+    founder: {
+      name: string;
+      role: string;
+      bio: string;
+    };
+    affiliations: string[];
+  };
+};
+
+export default function CredibilityStats({
+  credibility,
+}: CredibilityProps) {
+  return (
+    <section className="py-20">
+      <Container>
+        <FadeIn>
+          <h2 className="text-center text-3xl font-semibold text-white md:text-4xl">
+            {credibility.title}
+          </h2>
+        </FadeIn>
+
+        {/* Stats grid */}
+        <StaggerChildren className="mt-12 grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
+          {credibility.stats.map((stat, i) => (
+            <StaggerItem key={i}>
+              <Card className="text-center">
+                <div className="text-3xl font-bold text-accent">
+                  {stat.value}
+                </div>
+                <p className="mt-2 text-sm text-text-muted">{stat.label}</p>
+              </Card>
+            </StaggerItem>
+          ))}
+        </StaggerChildren>
+
+        {/* Founder card */}
+        <FadeIn>
+          <Card
+            hover={false}
+            className="mt-12 border-t-4 border-t-accent"
+          >
+            <h3 className="text-xl font-bold text-white">
+              {credibility.founder.name}
+            </h3>
+            <p className="text-sm font-medium text-accent">
+              {credibility.founder.role}
+            </p>
+            <p className="mt-4 text-sm leading-relaxed text-text-muted whitespace-pre-line">
+              {credibility.founder.bio}
+            </p>
+          </Card>
+        </FadeIn>
+
+        {/* Affiliations */}
+        <FadeIn>
+          <div className="mt-8">
+            <ul className="flex flex-wrap justify-center gap-x-6 gap-y-2">
+              {credibility.affiliations.map((aff, i) => (
+                <li
+                  key={i}
+                  className="text-sm text-text-muted"
+                >
+                  {aff}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </FadeIn>
+      </Container>
+    </section>
+  );
+}
