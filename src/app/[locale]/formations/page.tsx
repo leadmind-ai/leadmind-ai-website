@@ -39,6 +39,7 @@ export default async function FormationsPage({
         formationsTitle={dict.formations.formations_title}
         servicesTitle={dict.formations.services_title}
         items={dict.services.items}
+        locale={locale}
       />
       <ProcessTimeline
         title={dict.formations.process_title}

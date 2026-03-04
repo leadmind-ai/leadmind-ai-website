@@ -3,55 +3,74 @@
 import { Container } from "@/components/ui/Container";
 import { Card } from "@/components/ui/Card";
 import { Badge } from "@/components/ui/Badge";
+import { Button } from "@/components/ui/Button";
 import { StaggerChildren, StaggerItem } from "@/components/ui/FadeIn";
+
+type ServiceItem = {
+  title: string;
+  badge: string;
+  headline: string;
+  description: string;
+  details: string[];
+  cta_label: string;
+  pricing: string;
+  timeline: string;
+};
 
 type FormationsListProps = {
   formationsTitle: string;
   servicesTitle: string;
-  items: { title: string; description: string }[];
+  items: ServiceItem[];
+  locale?: string;
 };
 
 export default function FormationsList({
   formationsTitle,
   servicesTitle,
   items,
+  locale,
 }: FormationsListProps) {
-  // First 2 items are formations, last 2 are services
-  const formations = items.slice(0, 2);
-  const services = items.slice(2);
-
   return (
     <section className="py-20">
       <Container>
         <h2 className="text-3xl font-semibold text-white">
-          {formationsTitle}
+          {formationsTitle} & {servicesTitle}
         </h2>
-        <StaggerChildren className="mt-8 grid gap-6 md:grid-cols-2">
-          {formations.map((item, i) => (
+        <StaggerChildren className="mt-8 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          {items.map((item, i) => (
             <StaggerItem key={i}>
-              <Card className="h-full">
-                <Badge variant="accent">Formation</Badge>
+              <Card className="flex h-full flex-col">
+                <Badge variant="accent">{item.badge}</Badge>
                 <h3 className="mt-3 text-xl font-semibold text-white">
-                  {item.title}
+                  {item.headline}
                 </h3>
-                <p className="mt-2 text-text-muted">{item.description}</p>
-              </Card>
-            </StaggerItem>
-          ))}
-        </StaggerChildren>
-
-        <h2 className="mt-16 text-3xl font-semibold text-white">
-          {servicesTitle}
-        </h2>
-        <StaggerChildren className="mt-8 grid gap-6 md:grid-cols-2">
-          {services.map((item, i) => (
-            <StaggerItem key={i}>
-              <Card className="h-full">
-                <Badge variant="primary">Service</Badge>
-                <h3 className="mt-3 text-xl font-semibold text-white">
-                  {item.title}
-                </h3>
-                <p className="mt-2 text-text-muted">{item.description}</p>
+                <p className="mt-2 text-sm text-text-muted">
+                  {item.description}
+                </p>
+                <ul className="mt-4 space-y-2">
+                  {item.details.map((detail, j) => (
+                    <li
+                      key={j}
+                      className="flex gap-2 text-sm text-text-muted"
+                    >
+                      <span className="mt-1 block h-1.5 w-1.5 flex-shrink-0 rounded-full bg-accent" />
+                      {detail}
+                    </li>
+                  ))}
+                </ul>
+                <div className="mt-auto flex items-center justify-between border-t border-white/10 pt-4">
+                  <div>
+                    <p className="text-sm font-semibold text-accent">{item.pricing}</p>
+                    <p className="text-xs text-text-muted">{item.timeline}</p>
+                  </div>
+                  <Button
+                    href={`/${locale || "fr"}/contact`}
+                    variant="ghost"
+                    className="text-sm"
+                  >
+                    {item.cta_label}
+                  </Button>
+                </div>
               </Card>
             </StaggerItem>
           ))}

@@ -57,12 +57,12 @@ export function organizationJsonLd() {
     url: siteUrl,
     logo: `${siteUrl}/images/icon-512.png`,
     description:
-      "Conseil & Formation IA pour l'Assurance et la Finance",
+      "IA Training & Solutions pour l'Assurance et la Finance",
     founder: {
       "@type": "Person",
       name: "Herman Njouonang",
     },
-    foundingDate: "2024",
+    foundingDate: "2026",
     address: {
       "@type": "PostalAddress",
       addressLocality: "Paris",

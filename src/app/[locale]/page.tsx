@@ -3,8 +3,11 @@ import { getDictionary, type Locale } from "@/lib/i18n";
 import { createMetadata, organizationJsonLd } from "@/lib/metadata";
 import Hero from "@/components/sections/Hero";
 import LogoBar from "@/components/sections/LogoBar";
+import ProblemSolution from "@/components/sections/ProblemSolution";
 import ServicesOverview from "@/components/sections/ServicesOverview";
-import WhyLeadMind from "@/components/sections/WhyLeadMind";
+import CredibilityStats from "@/components/sections/CredibilityStats";
+import Testimonials from "@/components/sections/Testimonials";
+import FAQ from "@/components/sections/FAQ";
 import CTASection from "@/components/sections/CTASection";
 
 export async function generateMetadata({
@@ -39,9 +42,15 @@ export default async function HomePage({
         }}
       />
       <Hero hero={dict.hero} locale={locale as Locale} />
-      <LogoBar />
-      <ServicesOverview services={dict.services} />
-      <WhyLeadMind why={dict.why} />
+      <LogoBar
+        title={dict.credibility.logos_title}
+        logos={dict.credibility.logos}
+      />
+      <ProblemSolution problemSolution={dict.problem_solution} />
+      <ServicesOverview services={dict.services} locale={locale} />
+      <CredibilityStats credibility={dict.credibility} />
+      <Testimonials testimonials={dict.testimonials} />
+      <FAQ faq={dict.faq} />
       <CTASection cta={dict.cta_section} locale={locale as Locale} />
     </>
   );
