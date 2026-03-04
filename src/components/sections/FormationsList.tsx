@@ -23,7 +23,7 @@ export default function FormationsList({
   return (
     <section className="py-20">
       <Container>
-        <h2 className="text-3xl font-semibold text-primary">
+        <h2 className="text-3xl font-semibold text-white">
           {formationsTitle}
         </h2>
         <StaggerChildren className="mt-8 grid gap-6 md:grid-cols-2">
@@ -31,7 +31,7 @@ export default function FormationsList({
             <StaggerItem key={i}>
               <Card className="h-full">
                 <Badge variant="accent">Formation</Badge>
-                <h3 className="mt-3 text-xl font-semibold text-primary">
+                <h3 className="mt-3 text-xl font-semibold text-white">
                   {item.title}
                 </h3>
                 <p className="mt-2 text-text-muted">{item.description}</p>
@@ -40,7 +40,7 @@ export default function FormationsList({
           ))}
         </StaggerChildren>
 
-        <h2 className="mt-16 text-3xl font-semibold text-primary">
+        <h2 className="mt-16 text-3xl font-semibold text-white">
           {servicesTitle}
         </h2>
         <StaggerChildren className="mt-8 grid gap-6 md:grid-cols-2">
@@ -48,7 +48,7 @@ export default function FormationsList({
             <StaggerItem key={i}>
               <Card className="h-full">
                 <Badge variant="primary">Service</Badge>
-                <h3 className="mt-3 text-xl font-semibold text-primary">
+                <h3 className="mt-3 text-xl font-semibold text-white">
                   {item.title}
                 </h3>
                 <p className="mt-2 text-text-muted">{item.description}</p>

@@ -13,9 +13,9 @@ export default function ProcessTimeline({
   steps,
 }: ProcessTimelineProps) {
   return (
-    <section className="bg-surface py-20">
+    <section className="py-20">
       <Container>
-        <h2 className="text-center text-3xl font-semibold text-primary">
+        <h2 className="text-center text-3xl font-semibold text-white">
           {title}
         </h2>
         <div className="mt-12 grid gap-8 md:grid-cols-4">
@@ -25,7 +25,7 @@ export default function ProcessTimeline({
                 <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-accent text-lg font-bold text-white">
                   {i + 1}
                 </div>
-                <h3 className="mt-4 text-lg font-semibold text-primary">
+                <h3 className="mt-4 text-lg font-semibold text-white">
                   {step.title}
                 </h3>
                 <p className="mt-2 text-sm text-text-muted">

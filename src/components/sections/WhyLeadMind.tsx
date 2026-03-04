@@ -18,9 +18,9 @@ type WhyLeadMindProps = {
 
 export default function WhyLeadMind({ why }: WhyLeadMindProps) {
   return (
-    <section className="bg-surface py-20">
+    <section className="py-20">
       <Container>
-        <h2 className="text-center text-3xl font-semibold text-primary md:text-4xl">
+        <h2 className="text-center text-3xl font-semibold text-white md:text-4xl">
           {why.title}
         </h2>
         <div className="mt-12 grid gap-8 md:grid-cols-3">
@@ -33,7 +33,7 @@ export default function WhyLeadMind({ why }: WhyLeadMindProps) {
                 <p className="mt-1 text-sm text-text-muted">
                   {pillar.stat_label}
                 </p>
-                <h3 className="mt-4 text-xl font-semibold text-primary">
+                <h3 className="mt-4 text-xl font-semibold text-white">
                   {pillar.title}
                 </h3>
                 <p className="mt-2 text-sm leading-relaxed text-text-muted">

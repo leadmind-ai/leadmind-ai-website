@@ -16,7 +16,7 @@ type CTASectionProps = {
 
 export default function CTASection({ cta, locale }: CTASectionProps) {
   return (
-    <section className="bg-primary py-20">
+    <section className="bg-white/5 py-20">
       <Container>
         <FadeIn>
           <div className="text-center">

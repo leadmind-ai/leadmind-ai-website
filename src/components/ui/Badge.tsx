@@ -12,7 +12,7 @@ export function Badge({
   const variants = {
     accent: "bg-accent/10 text-accent",
     primary: "bg-primary/10 text-primary",
-    muted: "bg-gray-100 text-text-muted",
+    muted: "bg-white/10 text-text-muted",
   };
 
   return (

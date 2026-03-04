@@ -20,8 +20,8 @@ export function Button({
   const variants = {
     primary: "bg-accent text-white hover:bg-accent-light",
     secondary:
-      "border-2 border-primary text-primary hover:bg-primary hover:text-white",
-    ghost: "text-text-muted hover:text-text hover:bg-surface",
+      "border-2 border-primary text-white hover:bg-primary hover:text-white",
+    ghost: "text-text-muted hover:text-white hover:bg-white/10",
   };
 
   const classes = `${base} ${variants[variant]} ${className}`;

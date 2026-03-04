@@ -13,7 +13,7 @@ export default function FormationsHero({
   subtitle,
 }: FormationsHeroProps) {
   return (
-    <section className="bg-primary py-20">
+    <section className="py-20">
       <Container>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
