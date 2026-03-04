@@ -1,0 +1,40 @@
+# Template de story de test — Format YAML pour browser-qa-agent
+#
+# Chaque fichier YAML contient un tableau `stories`.
+# Chaque story a : name, url, workflow (étapes séquentielles en texte libre).
+#
+# Formats de workflow supportés :
+# - Impératif : "Navigate to...", "Verify...", "Click..."
+# - BDD : "Given... When... Then..."
+# - Narratif : "As a user...", "Assert:..."
+# - Checklist : "- [ ] Vérification 1"
+#
+# Placer les fichiers dans : ai_review/user_stories/*.yaml
+
+stories:
+  - name: "La page d'accueil charge avec la navigation"
+    url: "http://localhost:3000"
+    workflow: |
+      Navigate to http://localhost:3000
+      Verify the homepage loads successfully
+      Verify a navigation bar is visible with at least 3 links
+      Verify a hero section or main content area is present
+
+  - name: "Le flux de connexion fonctionne"
+    url: "http://localhost:3000/login"
+    workflow: |
+      Navigate to http://localhost:3000/login
+      Verify the login page loads with email and password fields
+      Fill in email with "test@example.com"
+      Fill in password with "password123"
+      Click the login/submit button
+      Verify the page redirects to a dashboard or authenticated view
+
+  - name: "La consultation du contrat affiche les garanties"
+    url: "http://localhost:3000/contrat"
+    workflow: |
+      Navigate to http://localhost:3000/contrat
+      Verify the contract page loads with member information
+      Verify a list of guarantees is visible
+      Click on a guarantee to see details
+      Verify the detail view shows coverage amounts and conditions

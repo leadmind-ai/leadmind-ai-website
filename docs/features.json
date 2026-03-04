@@ -1,0 +1,18 @@
+{
+  "_comment": "Feature tracker for site-internet. Set 'passes' to true only when ALL acceptance criteria are met.",
+  "features": [
+    {
+      "id": "F001",
+      "name": "[Feature name]",
+      "description": "[What this feature does in one sentence]",
+      "priority": "critical|high|medium|low",
+      "dependencies": [],
+      "acceptance_criteria": [
+        "[Criterion 1 — specific, testable statement]",
+        "[Criterion 2]"
+      ],
+      "passes": false,
+      "notes": "À remplir lors du brainstorming"
+    }
+  ]
+}
