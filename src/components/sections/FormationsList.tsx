@@ -33,35 +33,35 @@ export default function FormationsList({
   return (
     <section className="py-20">
       <Container>
-        <h2 className="text-3xl font-semibold text-white">
+        <h2 className="text-3xl font-normal text-on-surface">
           {formationsTitle} & {servicesTitle}
         </h2>
         <StaggerChildren className="mt-8 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {items.map((item, i) => (
             <StaggerItem key={i}>
-              <Card className="flex h-full flex-col">
+              <Card shine className="flex h-full flex-col">
                 <Badge variant="accent">{item.badge}</Badge>
-                <h3 className="mt-3 text-xl font-semibold text-white">
+                <h3 className="mt-3 text-xl font-normal text-on-surface">
                   {item.headline}
                 </h3>
-                <p className="mt-2 text-sm text-text-muted">
+                <p className="mt-2 text-sm text-on-surface-muted">
                   {item.description}
                 </p>
                 <ul className="mt-4 space-y-2">
                   {item.details.map((detail, j) => (
                     <li
                       key={j}
-                      className="flex gap-2 text-sm text-text-muted"
+                      className="flex gap-2 text-sm text-on-surface-muted"
                     >
                       <span className="mt-1 block h-1.5 w-1.5 flex-shrink-0 rounded-full bg-accent" />
                       {detail}
                     </li>
                   ))}
                 </ul>
-                <div className="mt-auto flex items-center justify-between border-t border-white/10 pt-4">
+                <div className="mt-auto flex items-center justify-between border-t border-surface-elevated pt-4">
                   <div>
-                    <p className="text-sm font-semibold text-accent">{item.pricing}</p>
-                    <p className="text-xs text-text-muted">{item.timeline}</p>
+                    <p className="text-sm font-normal text-accent">{item.pricing}</p>
+                    <p className="text-xs text-on-surface-muted">{item.timeline}</p>
                   </div>
                   <Button
                     href={`/${locale || "fr"}/contact`}

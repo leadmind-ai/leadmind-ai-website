@@ -26,7 +26,7 @@ export default function ProblemSolution({
     <section className="py-20">
       <Container>
         <FadeIn>
-          <h2 className="mx-auto max-w-4xl text-center text-3xl font-semibold text-white md:text-4xl">
+          <h2 className="mx-auto max-w-4xl text-center text-3xl font-normal text-on-surface md:text-4xl">
             {problemSolution.headline}
           </h2>
         </FadeIn>
@@ -35,12 +35,12 @@ export default function ProblemSolution({
           {/* Problem column */}
           <FadeIn direction="left">
             <Card hover={false} className="h-full">
-              <h3 className="text-xl font-semibold text-white">
+              <h3 className="text-xl font-normal text-on-surface">
                 {problemSolution.problem_title}
               </h3>
               <ul className="mt-6 space-y-4">
                 {problemSolution.problem_items.map((item, i) => (
-                  <li key={i} className="flex gap-3 text-sm leading-relaxed text-text-muted">
+                  <li key={i} className="flex gap-3 text-sm leading-relaxed text-on-surface-muted">
                     <span className="mt-1 block h-2 w-2 flex-shrink-0 rounded-full bg-red-400/60" />
                     {item}
                   </li>
@@ -52,13 +52,13 @@ export default function ProblemSolution({
           {/* Solution column */}
           <FadeIn direction="right">
             <Card hover={false} className="h-full border-accent/30">
-              <h3 className="text-xl font-semibold text-white">
+              <h3 className="text-xl font-normal text-on-surface">
                 {problemSolution.solution_title}
               </h3>
               <ul className="mt-6 space-y-4">
                 {problemSolution.solution_items.map((item, i) => (
-                  <li key={i} className="text-sm leading-relaxed text-text-muted">
-                    <span className="font-semibold text-accent">
+                  <li key={i} className="text-sm leading-relaxed text-on-surface-muted">
+                    <span className="font-normal text-accent">
                       {item.title}
                     </span>{" "}
                     {item.text}

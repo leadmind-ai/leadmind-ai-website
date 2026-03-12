@@ -16,10 +16,10 @@ export default function LogoBar({ title, logos }: LogoBarProps) {
   ];
 
   return (
-    <section className="border-b border-white/5 py-8">
+    <section className="border-b border-surface-elevated py-8">
       <Container>
         {title && (
-          <p className="mb-4 text-center text-sm font-medium text-text-muted">
+          <p className="mb-4 text-center text-sm font-medium text-on-surface-muted">
             {title}
           </p>
         )}
@@ -28,7 +28,7 @@ export default function LogoBar({ title, logos }: LogoBarProps) {
             {[...displayLogos, ...displayLogos].map((logo, i) => (
               <div
                 key={i}
-                className="flex-shrink-0 text-sm font-medium text-text-muted"
+                className="flex-shrink-0 text-sm font-medium text-on-surface-muted"
               >
                 {logo}
               </div>
