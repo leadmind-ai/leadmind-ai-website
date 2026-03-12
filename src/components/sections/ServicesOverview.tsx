@@ -37,11 +37,11 @@ export default function ServicesOverview({ services, locale }: ServicesOverviewP
       <Container>
         <FadeIn>
           <div className="text-center">
-            <h2 className="text-3xl font-semibold text-white md:text-4xl">
+            <h2 className="text-3xl font-normal text-on-surface md:text-4xl">
               {services.title}
             </h2>
             {services.subtitle && (
-              <p className="mt-4 text-lg text-text-muted">{services.subtitle}</p>
+              <p className="mt-4 text-lg text-on-surface-muted">{services.subtitle}</p>
             )}
           </div>
         </FadeIn>
@@ -49,19 +49,19 @@ export default function ServicesOverview({ services, locale }: ServicesOverviewP
         <StaggerChildren className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {services.items.map((item, i) => (
             <StaggerItem key={i}>
-              <Card className="flex h-full flex-col">
+              <Card shine className="flex h-full flex-col">
                 <Badge variant="accent">{item.badge}</Badge>
-                <h3 className="mt-3 text-lg font-semibold text-white">
+                <h3 className="mt-3 text-lg font-normal text-on-surface">
                   {item.headline}
                 </h3>
-                <p className="mt-2 text-sm leading-relaxed text-text-muted">
+                <p className="mt-2 text-sm leading-relaxed text-on-surface-muted">
                   {item.description}
                 </p>
                 <ul className="mt-4 space-y-2">
                   {item.details.map((detail, j) => (
                     <li
                       key={j}
-                      className="flex gap-2 text-sm text-text-muted"
+                      className="flex gap-2 text-sm text-on-surface-muted"
                     >
                       <span className="mt-1 block h-1.5 w-1.5 flex-shrink-0 rounded-full bg-accent" />
                       {detail}
@@ -84,11 +84,11 @@ export default function ServicesOverview({ services, locale }: ServicesOverviewP
 
         {/* Custom use case - full width */}
         <FadeIn>
-          <Card className="mt-6 text-center" hover={false}>
-            <h3 className="text-xl font-semibold text-white">
+          <Card shine className="mt-6 text-center" hover={false}>
+            <h3 className="text-xl font-normal text-on-surface">
               {services.custom.title}
             </h3>
-            <p className="mx-auto mt-3 max-w-2xl text-sm leading-relaxed text-text-muted">
+            <p className="mx-auto mt-3 max-w-2xl text-sm leading-relaxed text-on-surface-muted">
               {services.custom.description}
             </p>
             <div className="mt-6">
