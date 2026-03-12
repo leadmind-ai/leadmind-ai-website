@@ -15,10 +15,12 @@ export function Card({
 }: CardProps) {
   return (
     <div
-      className={`rounded-2xl p-6 shadow-card-inner ${
-        diagonal ? "gradient-card-diagonal" : "bg-surface-container"
+      className={`rounded-2xl border border-white/[0.08] p-6 ${
+        diagonal ? "gradient-card-diagonal" : "bg-[#0a0a0a]"
       } ${
-        hover ? "transition-all duration-200 hover:shadow-card" : ""
+        hover
+          ? "transition-all duration-300 hover:border-[#87CEEB]/30 hover:bg-[#0d1a2a] hover:shadow-[0_0_30px_rgba(135,206,235,0.15)]"
+          : ""
       } ${shine ? "shine" : ""} ${className}`}
     >
       {children}

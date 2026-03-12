@@ -64,13 +64,13 @@ body {
 .shine::after {
   content: "";
   position: absolute;
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   background: radial-gradient(
     100% 100% at right,
-    var(--color-surface),
-    var(--color-on-surface) 5%,
-    var(--color-accent) 40%,
+    transparent,
+    rgba(255, 255, 255, 0.6) 5%,
+    rgba(135, 206, 235, 0.4) 40%,
     transparent 80%
   );
   offset-path: border-box;
@@ -78,19 +78,30 @@ body {
   animation: trail 15s infinite linear;
   z-index: 1;
   transition: opacity 0.2s ease;
-  filter: blur(12px);
+  filter: blur(8px);
   pointer-events: none;
   will-change: offset-distance;
 }
 
 .shine::before {
-  opacity: 0.5;
+  opacity: 0.3;
 }
 
 .shine::after {
   animation: trail-offset 15s infinite linear;
   offset-distance: 50%;
-  opacity: 0.3;
+  opacity: 0.15;
+}
+
+/* Intensify shine on hover */
+.shine:hover::before {
+  opacity: 0.6;
+  filter: blur(10px);
+}
+
+.shine:hover::after {
+  opacity: 0.4;
+  filter: blur(10px);
 }
 
 @keyframes trail {

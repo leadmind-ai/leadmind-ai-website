@@ -49,12 +49,12 @@ export default function ServicesOverview({ services, locale }: ServicesOverviewP
         <StaggerChildren className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {services.items.map((item, i) => (
             <StaggerItem key={i}>
-              <Card shine className="flex h-full flex-col">
-                <Badge variant="accent">{item.badge}</Badge>
-                <h3 className="mt-3 text-lg font-normal text-on-surface">
+              <Card shine className="flex h-full flex-col p-8">
+                <Badge variant="accent" className="text-xs">{item.badge}</Badge>
+                <h3 className="mt-4 text-base font-medium text-on-surface">
                   {item.headline}
                 </h3>
-                <p className="mt-2 text-sm leading-relaxed text-on-surface-muted">
+                <p className="mt-3 text-sm leading-relaxed text-on-surface-muted">
                   {item.description}
                 </p>
                 <ul className="mt-4 space-y-2">

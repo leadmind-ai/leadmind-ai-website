@@ -39,9 +39,9 @@ export default function FormationsList({
         <StaggerChildren className="mt-8 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {items.map((item, i) => (
             <StaggerItem key={i}>
-              <Card shine className="flex h-full flex-col">
-                <Badge variant="accent">{item.badge}</Badge>
-                <h3 className="mt-3 text-xl font-normal text-on-surface">
+              <Card shine className="flex h-full flex-col p-8">
+                <Badge variant="accent" className="text-xs">{item.badge}</Badge>
+                <h3 className="mt-4 text-base font-medium text-on-surface">
                   {item.headline}
                 </h3>
                 <p className="mt-2 text-sm text-on-surface-muted">
