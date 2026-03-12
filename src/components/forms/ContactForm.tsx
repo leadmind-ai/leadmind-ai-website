@@ -12,6 +12,7 @@ type FormDict = {
   submit: string;
   success: string;
   error: string;
+  consent?: string;
 };
 
 type ContactFormProps = {
@@ -116,6 +117,20 @@ export function ContactForm({ form }: ContactFormProps) {
           className={inputClasses}
         />
       </div>
+      {form.consent && (
+        <div className="flex items-start gap-3">
+          <input
+            id="consent"
+            name="consent"
+            type="checkbox"
+            required
+            className="mt-1 h-4 w-4 rounded border-surface-elevated bg-surface-input text-accent accent-accent focus:ring-accent"
+          />
+          <label htmlFor="consent" className="text-sm leading-relaxed text-on-surface-muted">
+            {form.consent}
+          </label>
+        </div>
+      )}
       {state.errors && Object.keys(state.errors).length > 0 && (
         <p className="text-sm text-red-500">{form.error}</p>
       )}

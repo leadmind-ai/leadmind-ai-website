@@ -85,11 +85,26 @@ export function Footer({ footer, locale }: FooterProps) {
               {footer.columns.resources.title}
             </h4>
             <ul className="mt-3 space-y-2">
-              {footer.columns.resources.links.map((link) => (
-                <li key={link} className="text-sm text-on-surface-muted">
-                  {link}
-                </li>
-              ))}
+              {footer.columns.resources.links.map((link) => {
+                const isFaq = link === "FAQ";
+                if (isFaq) {
+                  return (
+                    <li key={link}>
+                      <Link
+                        href={`/${locale}/#faq`}
+                        className="text-sm text-on-surface-muted hover:text-on-surface"
+                      >
+                        {link}
+                      </Link>
+                    </li>
+                  );
+                }
+                return (
+                  <li key={link} className="text-sm text-on-surface-muted">
+                    {link}
+                  </li>
+                );
+              })}
             </ul>
           </div>
 
@@ -117,14 +132,14 @@ export function Footer({ footer, locale }: FooterProps) {
           <p className="text-sm text-on-surface-muted">{footer.copyright}</p>
           <div className="mt-4 flex gap-4 md:mt-0">
             <Link
-              href="#"
+              href={`/${locale}/politique-confidentialite`}
               className="text-sm text-on-surface-muted hover:text-on-surface"
             >
               {footer.links.privacy}
             </Link>
             <span className="text-on-surface-muted">|</span>
             <Link
-              href="#"
+              href={`/${locale}/mentions-legales`}
               className="text-sm text-on-surface-muted hover:text-on-surface"
             >
               {footer.links.legal}

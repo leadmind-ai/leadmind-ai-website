@@ -1,10 +1,10 @@
-import { lazy, Suspense } from "react";
 import { notFound } from "next/navigation";
 import { locales, type Locale, getDictionary } from "@/lib/i18n";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
-
-const GLBackground = lazy(() => import("@/components/gl/GLBackground"));
+import { SetLang } from "@/components/util/SetLang";
+import GLBackgroundWrapper from "@/components/gl/GLBackgroundWrapper";
+import { CookieBanner } from "@/components/ui/CookieBanner";
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -27,14 +27,12 @@ export default async function LocaleLayout({
 
   return (
     <div className="relative min-h-screen">
-      <Suspense fallback={null}>
-        <div className="fixed inset-0 -z-10">
-          <GLBackground bgColor="#000000" />
-        </div>
-      </Suspense>
+      <SetLang locale={locale as Locale} />
+      <GLBackgroundWrapper />
       <Header nav={dict.nav} locale={locale as Locale} />
       <main className="min-h-screen pt-[104px]">{children}</main>
       <Footer footer={dict.footer} locale={locale as Locale} />
+      <CookieBanner locale={locale as string} />
     </div>
   );
 }

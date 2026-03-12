@@ -13,7 +13,7 @@ export default function Stats({ title, pillars }: StatsProps) {
   return (
     <section className="py-16">
       <Container>
-        <div className="shine rounded-2xl border border-white/[0.08] bg-[#0a0a0a] px-8 py-12">
+        <div className="shine rounded-2xl border border-white/[0.08] bg-surface-container px-8 py-12">
           <h2 className="text-center text-base font-medium text-on-surface">
             {title}
           </h2>

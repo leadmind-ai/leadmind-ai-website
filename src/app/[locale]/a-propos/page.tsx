@@ -5,6 +5,7 @@ import Mission from "@/components/sections/Mission";
 import Founder from "@/components/sections/Founder";
 import Values from "@/components/sections/Values";
 import Stats from "@/components/sections/Stats";
+import CTASection from "@/components/sections/CTASection";
 
 export async function generateMetadata({
   params,
@@ -43,6 +44,7 @@ export default async function AboutPage({
       />
       <Values title={dict.about.values_title} values={dict.about.values} />
       <Stats title={dict.about.stats_title} pillars={dict.why.pillars} />
+      <CTASection cta={dict.cta_section} locale={locale as Locale} />
     </>
   );
 }

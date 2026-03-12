@@ -10,7 +10,7 @@
     "title": "L'IA qui parle couramment actuariat et finance.",
     "subtitle": "15 ans d'expérience en actuariat et finance. Expertise CFA. 3 ans d'IA intensive. Nous automatisons vos processus actuariels et financiers — pour les métiers de l'assurance et de la finance — et formons vos équipes. Avec la rigueur de praticiens, pas les promesses d'un vendeur de tech.",
     "cta_primary": "Échangeons sur vos enjeux",
-    "cta_secondary": "Voir un cas concret"
+    "cta_secondary": "Découvrir nos offres"
   },
   "problem_solution": {
     "headline": "Vos meilleurs actuaires et analystes financiers passent des semaines à produire au lieu de décider. Ça peut changer — en actuariat, en finance, et au-delà.",
@@ -218,6 +218,18 @@
         "answer": "Vous pouvez essayer. La plupart de nos clients l'ont fait avant de nous contacter.\n\nLe problème : un outil générique ne connaît pas la structure d'un SFCR, ne comprend pas les exigences ACPR, et ne sait pas que le ratio de couverture du SCR ne se calcule pas comme un ratio de solvabilité classique. Il va produire du texte plausible mais inexact — exactement le type d'erreur que l'ACPR sanctionne.\n\nNotre agent IA a été conçu spécifiquement pour le reporting Solvabilité 2, par une équipe qui a elle-même rédigé et supervisé ces rapports pendant 15 ans."
       },
       {
+        "question": "Pourquoi faire confiance à une startup plutôt qu'à Milliman ou WTW ?",
+        "answer": "Si vous avez besoin d'un modèle actuariel Prophet ou d'un audit S2 classique, Milliman ou WTW sont les bons choix. Ce n'est pas notre terrain.\n\nNotre terrain, c'est ce qu'ils ne font pas encore : automatiser votre SFCR avec de l'IA générative, former vos actuaires à utiliser les LLM dans leur quotidien, déployer des agents IA qui comprennent la logique Solvabilité 2.\n\nNous occupons un espace que les grands cabinets n'adressent pas aujourd'hui. La question n'est pas « grande structure ou petite structure ». C'est : « qui a déjà construit ce que je cherche ? » Notre MVP fonctionne. On peut vous le montrer."
+      },
+      {
+        "question": "C'est cher pour un consultant indépendant.",
+        "answer": "Notre TJM reflète une double expertise que vous ne trouverez pas ailleurs : actuariat senior et IA générative opérationnelle.\n\nPour comparaison : un consultant Milliman est facturé 1 800 à 3 000 € par jour. Un consultant Sia Partners, 1 200 à 1 800 €. Notre tarif est dans la fourchette basse du conseil spécialisé — avec l'avantage que vous travaillez directement avec l'expert, sans intermédiaire.\n\nCe qui est cher, ce n'est pas le TJM — c'est un projet qui ne livre pas. Nous nous engageons sur des résultats mesurables. Si un pilote ne démontre pas le ROI attendu en 6-8 semaines, vous ne paierez que le travail effectué."
+      },
+      {
+        "question": "Toute l'expertise repose sur une petite équipe. Comment gérez-vous la continuité ?",
+        "answer": "C'est un point que nous prenons très au sérieux.\n\nPremièrement, chaque livrable est documenté et reproductible. Les agents IA que nous construisons ne dépendent pas d'une personne — ils fonctionnent de manière autonome une fois déployés.\n\nDeuxièmement, nous avons une équipe de développeurs formés à nos méthodes, capables d'assurer la maintenance et le support courant. Et un réseau de freelances seniors identifié en cas de besoin de renfort.\n\nTroisièmement, la formation que nous dispensons à vos équipes est conçue pour les rendre autonomes. L'objectif n'est pas de créer une dépendance, mais de transférer les compétences."
+      },
+      {
         "question": "Quel est le retour sur investissement concret ?",
         "answer": "Sur le reporting réglementaire : nos clients constatent une réduction de 70% du temps de production. Pour une équipe de 3-4 personnes mobilisées 3 semaines sur le SFCR, c'est l'équivalent de 30 à 40 jours-hommes économisés par campagne.\n\nÀ un coût moyen de 600-800 € par jour-homme en interne, cela représente 18 000 à 32 000 € d'économie par campagne de reporting — hors gains qualitatifs (moins d'erreurs, meilleure traçabilité, conformité renforcée).\n\nLe ROI est généralement atteint dès le premier cycle de reporting."
       },
@@ -255,14 +267,14 @@
       {
         "title": "Connaissance métier",
         "description": "Double compétence assurance/finance et IA — nous parlons le langage de vos métiers techniques.",
-        "stat": "50+",
-        "stat_label": "professionnels formés"
+        "stat": "6+",
+        "stat_label": "offres actuariat, finance et au-delà"
       },
       {
         "title": "Résultats mesurables",
         "description": "ROI démontrable sur chaque mission. Livrables concrets, pas de slides.",
-        "stat": "30+",
-        "stat_label": "projets livrés"
+        "stat": "70%",
+        "stat_label": "de temps gagné sur le reporting"
       }
     ]
   },
@@ -320,7 +332,8 @@
       "message": "Votre message",
       "submit": "Envoyer",
       "success": "Message envoyé ! Nous reviendrons vers vous sous 24h.",
-      "error": "Erreur lors de l'envoi. Veuillez réessayer."
+      "error": "Erreur lors de l'envoi. Veuillez réessayer.",
+      "consent": "J'accepte que mes données soient traitées conformément à la politique de confidentialité de LeadMind AI."
     },
     "calendly_title": "Ou réservez directement un créneau",
     "info": {
@@ -359,6 +372,38 @@
     "links": {
       "privacy": "Politique de confidentialité",
       "legal": "Mentions légales"
+    }
+  },
+  "legal": {
+    "mentions_title": "Mentions légales",
+    "mentions_content": {
+      "editor_title": "Éditeur du site",
+      "editor_text": "LeadMind AI\nReprésentation : Herman Njouonang\nEmail : herman@leadmindai.com\nSiège social : Paris, France",
+      "hosting_title": "Hébergement",
+      "hosting_text": "Ce site est hébergé par Vercel Inc.\n440 N Barranca Ave #4133\nCovina, CA 91723, États-Unis\nhttps://vercel.com",
+      "ip_title": "Propriété intellectuelle",
+      "ip_text": "L'ensemble du contenu de ce site (textes, images, vidéos, logos, icônes, sons, logiciels, etc.) est la propriété exclusive de LeadMind AI ou de ses partenaires et est protégé par les lois françaises et internationales relatives à la propriété intellectuelle. Toute reproduction, représentation, modification, publication, adaptation de tout ou partie des éléments du site, quel que soit le moyen ou le procédé utilisé, est interdite, sauf autorisation écrite préalable de LeadMind AI.",
+      "liability_title": "Responsabilité",
+      "liability_text": "LeadMind AI s'efforce d'assurer au mieux l'exactitude et la mise à jour des informations diffusées sur ce site. Toutefois, LeadMind AI ne peut garantir l'exactitude, la précision ou l'exhaustivité des informations mises à disposition sur ce site. LeadMind AI décline toute responsabilité pour toute imprécision, inexactitude ou omission portant sur des informations disponibles sur ce site."
+    },
+    "privacy_title": "Politique de confidentialité",
+    "privacy_content": {
+      "intro_title": "Introduction",
+      "intro_text": "LeadMind AI s'engage à protéger la vie privée des utilisateurs de son site internet. La présente politique de confidentialité décrit les données personnelles que nous collectons, comment nous les utilisons et les droits dont vous disposez.",
+      "data_title": "Données collectées",
+      "data_text": "Nous collectons les données suivantes via notre formulaire de contact :\n- Nom complet\n- Adresse email professionnelle\n- Entreprise (optionnel)\n- Objet de la demande\n- Message\n\nNous utilisons également Vercel Analytics pour collecter des données anonymisées de navigation (pages visitées, durée des sessions, appareil utilisé).",
+      "purpose_title": "Finalité du traitement",
+      "purpose_text": "Vos données personnelles sont collectées pour :\n- Répondre à vos demandes de contact\n- Vous recontacter dans le cadre de votre demande\n- Améliorer notre site et nos services grâce aux données analytiques anonymisées",
+      "legal_basis_title": "Base légale",
+      "legal_basis_text": "Le traitement de vos données repose sur votre consentement explicite (case à cocher du formulaire de contact) conformément à l'article 6.1.a du RGPD.",
+      "retention_title": "Durée de conservation",
+      "retention_text": "Vos données de contact sont conservées pendant une durée maximale de 3 ans à compter de votre dernière interaction avec nous. Les données analytiques anonymisées sont conservées pendant 26 mois.",
+      "rights_title": "Vos droits",
+      "rights_text": "Conformément au RGPD, vous disposez des droits suivants :\n- Droit d'accès à vos données personnelles\n- Droit de rectification\n- Droit à l'effacement\n- Droit à la limitation du traitement\n- Droit à la portabilité des données\n- Droit d'opposition\n\nPour exercer ces droits, contactez-nous à : herman@leadmindai.com",
+      "cookies_title": "Cookies",
+      "cookies_text": "Ce site utilise Vercel Analytics qui peut déposer des cookies techniques nécessaires au fonctionnement du service d'analyse. Vous pouvez gérer vos préférences de cookies via le bandeau affiché lors de votre première visite.",
+      "changes_title": "Modifications",
+      "changes_text": "Nous nous réservons le droit de modifier cette politique de confidentialité à tout moment. Toute modification sera publiée sur cette page avec la date de mise à jour."
     }
   }
 }

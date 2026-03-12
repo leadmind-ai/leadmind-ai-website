@@ -5,10 +5,30 @@ type LogoBarProps = {
   logos?: string[];
 };
 
+const logoStyles: Record<string, string> = {
+  "MACSF": "text-lg font-bold tracking-[0.2em] uppercase",
+  "Crédit Agricole Assurances": "text-base font-semibold tracking-wide",
+  "Credit Agricole Assurances": "text-base font-semibold tracking-wide",
+  "Generali": "text-lg font-bold italic tracking-tight",
+  "Paris Dauphine-PSL": "text-base font-medium tracking-wide",
+  "CFA Institute": "text-base font-bold tracking-[0.15em] uppercase",
+  "ISUP Sorbonne": "text-base font-semibold tracking-wider uppercase",
+};
+
+function LogoItem({ name }: { name: string }) {
+  const style = logoStyles[name] || "text-base font-semibold";
+
+  return (
+    <div className={`flex-shrink-0 select-none text-on-surface/40 transition-opacity hover:text-on-surface/60 ${style}`}>
+      {name}
+    </div>
+  );
+}
+
 export default function LogoBar({ title, logos }: LogoBarProps) {
   const displayLogos = logos ?? [
     "MACSF",
-    "Credit Agricole Assurances",
+    "Crédit Agricole Assurances",
     "Generali",
     "Paris Dauphine-PSL",
     "CFA Institute",
@@ -16,22 +36,20 @@ export default function LogoBar({ title, logos }: LogoBarProps) {
   ];
 
   return (
-    <section className="border-b border-surface-elevated py-8">
+    <section className="border-b border-surface-elevated py-10">
       <Container>
         {title && (
-          <p className="mb-4 text-center text-sm font-medium text-on-surface-muted">
+          <p className="mb-6 text-center text-sm font-medium text-on-surface-muted">
             {title}
           </p>
         )}
         <div className="relative overflow-hidden">
-          <div className="flex animate-scroll gap-12">
+          {/* Fade edges */}
+          <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-16 bg-gradient-to-r from-surface to-transparent" />
+          <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-16 bg-gradient-to-l from-surface to-transparent" />
+          <div className="flex animate-scroll items-center gap-16">
             {[...displayLogos, ...displayLogos].map((logo, i) => (
-              <div
-                key={i}
-                className="flex-shrink-0 text-sm font-medium text-on-surface-muted"
-              >
-                {logo}
-              </div>
+              <LogoItem key={i} name={logo} />
             ))}
           </div>
         </div>

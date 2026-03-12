@@ -10,7 +10,7 @@
     "title": "AI that speaks fluent actuarial science and finance.",
     "subtitle": "15 years of actuarial and finance experience. CFA expertise. 3 years of intensive AI. We automate your actuarial and financial processes — for insurance and finance professionals — and upskill your teams. With the rigor of practitioners, not the promises of a tech vendor.",
     "cta_primary": "Let's discuss your challenges",
-    "cta_secondary": "See a case study"
+    "cta_secondary": "Discover our offerings"
   },
   "problem_solution": {
     "headline": "Your best actuaries and financial analysts spend weeks producing instead of deciding. That can change — in actuarial science, finance, and beyond.",
@@ -218,6 +218,18 @@
         "answer": "You can try. Most of our clients did before contacting us.\n\nThe problem: a generic tool doesn't know the structure of an SFCR, doesn't understand ACPR requirements, and doesn't know that the SCR coverage ratio isn't calculated like a standard solvency ratio. It will produce plausible but inaccurate text — exactly the type of error the ACPR sanctions.\n\nOur AI agent was specifically designed for Solvency 2 reporting, by a team that has itself written and supervised these reports for 15 years."
       },
       {
+        "question": "Why trust a startup rather than Milliman or WTW?",
+        "answer": "If you need a Prophet actuarial model or a standard S2 audit, Milliman or WTW are the right choice. That's not our field.\n\nOur field is what they don't do yet: automating your SFCR with generative AI, training your actuaries to use LLMs in their daily work, deploying AI agents that understand Solvency 2 logic.\n\nWe occupy a space that major firms don't address today. The question isn't 'big firm or small firm.' It's: 'who has already built what I'm looking for?' Our MVP works. We can show it to you."
+      },
+      {
+        "question": "It's expensive for an independent consultant.",
+        "answer": "Our daily rate reflects a dual expertise you won't find elsewhere: senior actuarial science and operational generative AI.\n\nFor comparison: a Milliman consultant is billed at EUR 1,800 to 3,000 per day. A Sia Partners consultant, EUR 1,200 to 1,800. Our rate is in the lower range of specialized consulting — with the advantage that you work directly with the expert, no intermediary.\n\nWhat's expensive isn't the daily rate — it's a project that doesn't deliver. We commit to measurable results. If a pilot doesn't demonstrate the expected ROI within 6-8 weeks, you only pay for work completed."
+      },
+      {
+        "question": "All expertise rests on a small team. How do you handle continuity?",
+        "answer": "This is a point we take very seriously.\n\nFirst, every deliverable is documented and reproducible. The AI agents we build don't depend on one person — they operate autonomously once deployed.\n\nSecond, we have a team of developers trained in our methods, capable of handling maintenance and ongoing support. Plus a network of identified senior freelancers for additional capacity.\n\nThird, the training we provide to your teams is designed to make them autonomous. The goal isn't to create dependency, but to transfer skills."
+      },
+      {
         "question": "What is the concrete return on investment?",
         "answer": "On regulatory reporting: our clients see a 70% reduction in production time. For a team of 3-4 people mobilized for 3 weeks on the SFCR, that's the equivalent of 30 to 40 person-days saved per campaign.\n\nAt an average internal cost of EUR 600-800 per person-day, that represents EUR 18,000 to 32,000 in savings per reporting campaign — excluding qualitative gains (fewer errors, better traceability, enhanced compliance).\n\nROI is typically achieved from the first reporting cycle."
       },
@@ -255,14 +267,14 @@
       {
         "title": "Domain knowledge",
         "description": "Dual insurance/finance and AI expertise — we speak the language of your technical roles.",
-        "stat": "50+",
-        "stat_label": "professionals trained"
+        "stat": "6+",
+        "stat_label": "offerings in actuarial, finance and beyond"
       },
       {
         "title": "Measurable results",
         "description": "Demonstrable ROI on every engagement. Concrete deliverables, not slides.",
-        "stat": "30+",
-        "stat_label": "projects delivered"
+        "stat": "70%",
+        "stat_label": "time saved on reporting"
       }
     ]
   },
@@ -320,7 +332,8 @@
       "message": "Your message",
       "submit": "Send",
       "success": "Message sent! We'll get back to you within 24 hours.",
-      "error": "Error sending message. Please try again."
+      "error": "Error sending message. Please try again.",
+      "consent": "I agree that my data will be processed in accordance with LeadMind AI's privacy policy."
     },
     "calendly_title": "Or book a slot directly",
     "info": {
@@ -359,6 +372,38 @@
     "links": {
       "privacy": "Privacy policy",
       "legal": "Legal notice"
+    }
+  },
+  "legal": {
+    "mentions_title": "Legal notice",
+    "mentions_content": {
+      "editor_title": "Website publisher",
+      "editor_text": "LeadMind AI\nRepresented by: Herman Njouonang\nEmail: herman@leadmindai.com\nRegistered office: Paris, France",
+      "hosting_title": "Hosting",
+      "hosting_text": "This website is hosted by Vercel Inc.\n440 N Barranca Ave #4133\nCovina, CA 91723, United States\nhttps://vercel.com",
+      "ip_title": "Intellectual property",
+      "ip_text": "All content on this site (text, images, videos, logos, icons, sounds, software, etc.) is the exclusive property of LeadMind AI or its partners and is protected by French and international intellectual property laws. Any reproduction, representation, modification, publication, or adaptation of all or part of the site elements, by any means or process, is prohibited without prior written authorization from LeadMind AI.",
+      "liability_title": "Liability",
+      "liability_text": "LeadMind AI strives to ensure the accuracy and updating of information published on this site. However, LeadMind AI cannot guarantee the accuracy, precision, or completeness of information made available on this site. LeadMind AI disclaims any responsibility for any inaccuracy, error, or omission relating to information available on this site."
+    },
+    "privacy_title": "Privacy policy",
+    "privacy_content": {
+      "intro_title": "Introduction",
+      "intro_text": "LeadMind AI is committed to protecting the privacy of its website users. This privacy policy describes the personal data we collect, how we use it, and your rights.",
+      "data_title": "Data collected",
+      "data_text": "We collect the following data through our contact form:\n- Full name\n- Professional email address\n- Company (optional)\n- Subject of inquiry\n- Message\n\nWe also use Vercel Analytics to collect anonymized browsing data (pages visited, session duration, device used).",
+      "purpose_title": "Purpose of processing",
+      "purpose_text": "Your personal data is collected to:\n- Respond to your contact requests\n- Follow up on your inquiry\n- Improve our site and services through anonymized analytics",
+      "legal_basis_title": "Legal basis",
+      "legal_basis_text": "The processing of your data is based on your explicit consent (contact form checkbox) in accordance with Article 6.1.a of the GDPR.",
+      "retention_title": "Data retention",
+      "retention_text": "Your contact data is retained for a maximum of 3 years from your last interaction with us. Anonymized analytics data is retained for 26 months.",
+      "rights_title": "Your rights",
+      "rights_text": "Under the GDPR, you have the following rights:\n- Right of access to your personal data\n- Right of rectification\n- Right to erasure\n- Right to restriction of processing\n- Right to data portability\n- Right to object\n\nTo exercise these rights, contact us at: herman@leadmindai.com",
+      "cookies_title": "Cookies",
+      "cookies_text": "This site uses Vercel Analytics which may place technical cookies necessary for the analytics service. You can manage your cookie preferences via the banner displayed on your first visit.",
+      "changes_title": "Changes",
+      "changes_text": "We reserve the right to modify this privacy policy at any time. Any changes will be published on this page with the update date."
     }
   }
 }
