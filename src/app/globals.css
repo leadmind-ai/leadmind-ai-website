@@ -1,21 +1,171 @@
 @import "tailwindcss";
 
 @theme inline {
-  --color-primary: #1a365d;
-  --color-primary-light: #2c5282;
-  --color-accent: #0d9488;
-  --color-accent-light: #14b8a6;
-  --color-background: #0b1120;
-  --color-surface: #111827;
-  --color-text: #e2e8f0;
-  --color-text-muted: #94a3b8;
+  /* Surfaces */
+  --color-surface: #000000;
+  --color-surface-container: #1a2230;
+  --color-surface-elevated: #253145;
+  --color-surface-input: #070a0e;
+
+  /* Text */
+  --color-on-surface: #ffffff;
+  --color-on-surface-muted: #818181;
+
+  /* Accents */
+  --color-accent: #007af4;
+  --color-accent-soft: #253145;
+  --color-accent-glow: rgba(0, 122, 244, 0.25);
+  --color-teal: #0d9488;
+  --color-teal-light: #14b8a6;
+  --color-purple: #9e9eff;
+
+  /* Fonts */
   --font-sans: var(--font-inter);
+  --font-mono: var(--font-jetbrains-mono), monospace;
+
+  /* Typography Scale */
+  --text-display-large: 3.5rem;
+  --text-display-medium: 2.75rem;
+  --text-display-small: 2.25rem;
+  --text-headline: 1.5rem;
+  --text-body-large: 1rem;
+  --text-body-medium: 0.875rem;
+  --text-body-small: 0.75rem;
+
+  --leading-display-large: 4rem;
+  --leading-display-medium: 3.25rem;
+  --leading-display-small: 2.75rem;
+  --leading-headline: 2rem;
+  --leading-body-large: 1.5rem;
+  --leading-body-medium: 1.25rem;
+  --leading-body-small: 1rem;
+
+  /* Layout */
+  --spacing-section: 120px;
+  --radius-card: 16px;
+  --radius-input: 12px;
+  --radius-button: 8px;
 }
 
 body {
-  background: var(--color-background);
-  color: var(--color-text);
+  background: var(--color-surface);
+  color: var(--color-on-surface);
   font-family: var(--font-sans), system-ui, sans-serif;
+}
+
+/* === Shine Animation (CodeWiki border trail) === */
+.shine {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius-card);
+}
+
+.shine::before,
+.shine::after {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background: radial-gradient(
+    100% 100% at right,
+    var(--color-surface),
+    var(--color-on-surface) 5%,
+    var(--color-accent) 40%,
+    transparent 80%
+  );
+  offset-path: border-box;
+  offset-anchor: 100% 50%;
+  animation: trail 15s infinite linear;
+  z-index: 1;
+  transition: opacity 0.2s ease;
+  filter: blur(12px);
+  pointer-events: none;
+  will-change: offset-distance;
+}
+
+.shine::before {
+  opacity: 0.5;
+}
+
+.shine::after {
+  animation: trail-offset 15s infinite linear;
+  offset-distance: 50%;
+  opacity: 0.3;
+}
+
+@keyframes trail {
+  to { offset-distance: 100%; }
+}
+
+@keyframes trail-offset {
+  0% { offset-distance: 50%; }
+  100% { offset-distance: 150%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .shine::before,
+  .shine::after {
+    animation: none;
+    opacity: 0;
+  }
+}
+
+/* === Gradients (DESIGN.md Section 5) === */
+.gradient-hero-text {
+  background: radial-gradient(circle, #fff, #547faa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-header-fade {
+  background: linear-gradient(var(--color-surface), transparent 90%);
+}
+
+.gradient-card-diagonal {
+  background: linear-gradient(135deg, var(--color-surface-elevated), var(--color-surface));
+}
+
+.gradient-icon-glow {
+  background: linear-gradient(135deg, rgba(0, 122, 244, 0.2), transparent 50%);
+}
+
+.gradient-blue-radial {
+  background: radial-gradient(circle, rgba(0, 122, 244, 0.3), transparent 90%);
+}
+
+.gradient-cta-premium {
+  background: linear-gradient(to right, #c797ff, #007af4);
+}
+
+.gradient-tag {
+  background: linear-gradient(135deg, #213856, var(--color-surface));
+}
+
+/* === Shadows & Glow (DESIGN.md Section 6) === */
+.shadow-subtle {
+  box-shadow: rgba(0, 0, 0, 0.05) 0 4px 20px;
+}
+
+.shadow-card {
+  box-shadow: rgba(0, 122, 244, 0.25) 0 34px 84px -30px;
+}
+
+.shadow-card-inner {
+  box-shadow: rgba(66, 133, 244, 0.09) 0 34px 84px -30px;
+}
+
+.shadow-hero {
+  box-shadow: rgba(0, 122, 244, 0.2) 0 -80px 100px 60px;
+}
+
+.shadow-purple {
+  box-shadow: rgba(68, 162, 255, 0.3) 0 34px 84px -30px;
+}
+
+/* === Transitions (DESIGN.md Section 7) === */
+a, button, [class*="card"] {
+  transition: opacity 0.2s ease, color 0.2s ease, background-color 0.2s ease;
 }
 
 @keyframes scroll {
