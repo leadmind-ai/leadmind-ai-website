@@ -13,9 +13,9 @@ type ContactHeroProps = {
 
 export default function ContactHero({ title, subtitle }: ContactHeroProps) {
   return (
-    <section className="relative overflow-hidden bg-primary py-20">
+    <section className="relative overflow-hidden bg-surface py-20">
       <Suspense fallback={null}>
-        <GLBackground bgColor="#1a365d" />
+        <GLBackground bgColor="#000000" />
       </Suspense>
       <Container className="relative z-10">
         <motion.div

@@ -98,7 +98,7 @@ export function Header({ nav, locale }: HeaderProps) {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <nav className="border-t border-white/10 bg-surface/95 px-6 py-4 md:hidden">
+        <nav className="border-t border-surface-elevated bg-surface/95 px-6 py-4 md:hidden">
           {links.map((link) => (
             <Link
               key={link.href}

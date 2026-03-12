@@ -20,7 +20,7 @@ export function Button({
   const variants = {
     primary: "bg-teal text-white hover:bg-teal-light",
     secondary:
-      "border-2 border-accent text-accent hover:bg-accent hover:text-white",
+      "border-2 border-accent text-accent hover:bg-accent hover:text-on-surface",
     ghost: "text-on-surface-muted hover:text-on-surface hover:bg-surface-elevated",
     cta: "gradient-cta-premium text-white shadow-purple hover:opacity-90",
   };

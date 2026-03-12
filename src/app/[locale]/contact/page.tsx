@@ -33,10 +33,10 @@ export default async function ContactPage({
       <section className="py-20">
         <Container>
           <div className="mx-auto max-w-2xl">
-            <h1 className="text-4xl font-bold text-white">
+            <h1 className="text-4xl font-normal text-on-surface">
               {dict.contact.title}
             </h1>
-            <p className="mt-4 text-lg text-text-muted">
+            <p className="mt-4 text-lg text-on-surface-muted">
               {dict.contact.subtitle}
             </p>
             <div className="mt-8">
@@ -51,22 +51,22 @@ export default async function ContactPage({
           <div className="mx-auto max-w-2xl">
             <div className="grid gap-6 md:grid-cols-3">
               <div>
-                <h3 className="text-sm font-semibold uppercase tracking-wider text-text-muted">
+                <h3 className="text-sm font-semibold uppercase tracking-wider text-on-surface-muted">
                   Email
                 </h3>
-                <p className="mt-1 text-text">{dict.contact.info.email}</p>
+                <p className="mt-1 text-on-surface">{dict.contact.info.email}</p>
               </div>
               <div>
-                <h3 className="text-sm font-semibold uppercase tracking-wider text-text-muted">
+                <h3 className="text-sm font-semibold uppercase tracking-wider text-on-surface-muted">
                   LinkedIn
                 </h3>
-                <p className="mt-1 text-text">{dict.contact.info.linkedin}</p>
+                <p className="mt-1 text-on-surface">{dict.contact.info.linkedin}</p>
               </div>
               <div>
-                <h3 className="text-sm font-semibold uppercase tracking-wider text-text-muted">
+                <h3 className="text-sm font-semibold uppercase tracking-wider text-on-surface-muted">
                   Location
                 </h3>
-                <p className="mt-1 text-text">{dict.contact.info.location}</p>
+                <p className="mt-1 text-on-surface">{dict.contact.info.location}</p>
               </div>
             </div>
           </div>
