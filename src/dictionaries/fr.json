@@ -50,6 +50,8 @@
     "subtitle": "",
     "items": [
       {
+        "icon": "reporting",
+        "slug": "agent-reporting-s2",
         "title": "Agent Reporting S2",
         "badge": "Offre phare — MVP CAIRS en production",
         "headline": "Votre SFCR, généré par l'IA. Validé par vos experts.",
@@ -65,6 +67,8 @@
         "timeline": "Déploiement en 4 à 12 semaines"
       },
       {
+        "icon": "calculator",
+        "slug": "calculateur-scr-marche",
         "title": "Calculateur SCR Marché",
         "badge": "Skills fonctionnels",
         "headline": "Le calcul du SCR Marché, automatisé et auditable.",
@@ -80,6 +84,8 @@
         "timeline": "Déploiement en 6 à 12 semaines"
       },
       {
+        "icon": "alm",
+        "slug": "agent-alm-modelisation",
         "title": "Agent ALM & Modélisation",
         "badge": "R&D avancée",
         "headline": "La modélisation actif-passif, augmentée par l'IA.",
@@ -95,6 +101,8 @@
         "timeline": "Phase R&D — disponibilité S2 2026"
       },
       {
+        "icon": "portfolio",
+        "slug": "agent-portfolio-management",
         "title": "Agent Portfolio Management",
         "badge": "R&D — Nouveau",
         "headline": "La gestion de portefeuille, augmentée par l'IA.",
@@ -110,6 +118,8 @@
         "timeline": "Phase R&D — disponibilité 2026-2027"
       },
       {
+        "icon": "training",
+        "slug": "formation-ia-actuariat-finance",
         "title": "Formation IA Actuariat & Finance",
         "badge": "Crédibilité Dauphine-PSL",
         "headline": "Vos équipes opérationnelles en IA dès le lundi suivant.",
@@ -124,6 +134,8 @@
         "timeline": "Demi-journée à 3 jours"
       },
       {
+        "icon": "transformation",
+        "slug": "transformation-ia-equipes",
         "title": "Transformation IA Équipes",
         "badge": "Pipeline Cegedim",
         "headline": "Transformez vos équipes quantitatives avec l'IA.",
@@ -177,8 +189,39 @@
       "Dynamous AI — Membre actif"
     ]
   },
+  "personas": {
+    "title": "Pour chaque décideur, une réponse ciblée",
+    "subtitle": "Nos solutions s'adaptent à vos enjeux spécifiques",
+    "items": [
+      {
+        "role": "Directeur Actuariat",
+        "pain": "Vos équipes passent des semaines sur le SFCR au lieu d'analyser les risques.",
+        "solution": "Notre agent IA produit le SFCR en 3 jours. Vos actuaires retrouvent du temps pour l'analyse et les stress-tests.",
+        "cta": "Voir l'agent Reporting S2"
+      },
+      {
+        "role": "DSI / CTO",
+        "pain": "L'IA générique ne s'intègre pas à vos systèmes et ne respecte pas vos exigences de sécurité.",
+        "solution": "Déploiement on-premise ou cloud privé, API REST, traçabilité complète, conformité AI Act intégrée.",
+        "cta": "Discuter intégration technique"
+      },
+      {
+        "role": "Direction Générale",
+        "pain": "Les budgets IA augmentent mais 80% des projets échouent dans l'assurance.",
+        "solution": "ROI mesurable dès le premier cycle. Pilote à 30K€ avec KPIs contractuels. Pas d'engagement long terme sans résultats.",
+        "cta": "Évaluer le ROI"
+      },
+      {
+        "role": "Consultants & Cabinets",
+        "pain": "Vos clients demandent de l'IA mais vos équipes ne sont pas formées sur les cas d'usage métier.",
+        "solution": "Formation intensive d'une journée. Vos consultants utilisent l'IA dès le lendemain sur leurs missions actuarielles.",
+        "cta": "Former mes équipes"
+      }
+    ]
+  },
   "testimonials": {
     "title": "Ce que disent nos interlocuteurs",
+    "disclaimer": "Témoignages anonymisés issus de démonstrations et missions réelles.",
     "items": [
       {
         "quote": "Enfin quelqu'un qui comprend notre métier ET l'IA. On n'a plus besoin de passer 2 heures à expliquer ce qu'est un SCR avant de parler technologie.",
@@ -318,7 +361,34 @@
       { "title": "Déploiement", "description": "Mise en production, formation de vos utilisateurs, documentation complète." },
       { "title": "Suivi", "description": "Support post-livraison, ajustements, accompagnement de la première campagne." }
     ],
-    "cta": "Demander un devis"
+    "cta": "Demander un devis",
+    "differentiators_title": "Ce qui nous différencie",
+    "differentiators": [
+      {
+        "title": "Formateurs-praticiens",
+        "description": "Nos formateurs sont des actuaires seniors avec 15 ans d'expérience. Pas des théoriciens — des praticiens qui ont écrit des SFCR, calibré des SCR, et piloté des modèles ALM."
+      },
+      {
+        "title": "Expertise CFA",
+        "description": "La certification CFA nous ouvre le monde de la gestion d'actifs et du portfolio management — une perspective unique pour vos équipes finance."
+      },
+      {
+        "title": "Cas d'usage concrets",
+        "description": "Chaque formation inclut des exercices pratiques sur vos propres données et processus. Pas de slides génériques — du concret applicable dès le lundi suivant."
+      },
+      {
+        "title": "Suivi post-formation",
+        "description": "Un mois d'accompagnement inclus après la formation pour répondre aux questions de mise en pratique de vos équipes."
+      }
+    ],
+    "target_profiles_title": "Pour qui ?",
+    "target_profiles": [
+      "Équipes actuarielles (vie, non-vie, santé)",
+      "Départements finance et gestion d'actifs",
+      "Directions des risques et conformité",
+      "Cabinets de conseil en actuariat",
+      "Directions générales et directions techniques"
+    ]
   },
   "contact": {
     "title": "Contactez-nous",
@@ -326,7 +396,8 @@
     "form": {
       "name": "Nom complet",
       "email": "Email professionnel",
-      "company": "Entreprise",
+      "company": "Entreprise *",
+      "job_title": "Poste / Fonction",
       "subject": "Objet",
       "subject_options": ["Formation", "Projet IA", "Conseil", "Autre"],
       "message": "Votre message",
@@ -337,7 +408,7 @@
     },
     "calendly_title": "Ou réservez directement un créneau",
     "info": {
-      "email": "herman@leadmindai.com",
+      "email": "contact@leadmindai.com",
       "linkedin": "linkedin.com/company/leadmind-ai",
       "location": "Paris, France"
     }
@@ -363,7 +434,7 @@
       },
       "contact": {
         "title": "Contact",
-        "email": "herman@leadmindai.com",
+        "email": "contact@leadmindai.com",
         "linkedin": "leadmindai",
         "location": "Paris, France"
       }

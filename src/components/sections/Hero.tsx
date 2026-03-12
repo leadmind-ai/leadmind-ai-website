@@ -18,8 +18,8 @@ type HeroProps = {
 export default function Hero({ hero, locale }: HeroProps) {
   return (
     <section className="relative overflow-hidden py-32 md:py-44">
-      {/* Subtle radial glow — ambient, not overwhelming */}
-      <div className="absolute left-1/4 top-1/3 h-[600px] w-[600px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-accent/[0.07] blur-[120px]" />
+      {/* Radial glow — visible ambient effect */}
+      <div className="absolute left-1/4 top-1/3 h-[600px] w-[600px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-accent/[0.15] blur-[120px]" />
       <Container className="relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -27,7 +27,7 @@ export default function Hero({ hero, locale }: HeroProps) {
           transition={{ duration: 0.6, ease: "easeOut" }}
           className="max-w-3xl"
         >
-          <h1 className="text-4xl font-normal leading-tight tracking-tight text-on-surface md:text-5xl lg:text-[3.5rem] lg:leading-[1.1]">
+          <h1 className="gradient-hero-text text-4xl font-normal leading-tight tracking-tight md:text-5xl lg:text-[3.5rem] lg:leading-[1.1]">
             {hero.title}
           </h1>
           <p className="mt-6 max-w-2xl text-base leading-relaxed text-on-surface-muted md:text-lg">

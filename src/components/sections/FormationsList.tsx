@@ -31,7 +31,7 @@ export default function FormationsList({
   locale,
 }: FormationsListProps) {
   return (
-    <section className="py-20">
+    <section className="py-16 md:py-[var(--spacing-section)]">
       <Container>
         <h2 className="text-3xl font-normal text-on-surface">
           {formationsTitle} & {servicesTitle}

@@ -114,11 +114,23 @@ export function Footer({ footer, locale }: FooterProps) {
               {footer.columns.contact.title}
             </h4>
             <ul className="mt-3 space-y-2">
-              <li className="text-sm text-on-surface-muted">
-                {footer.columns.contact.email}
+              <li>
+                <a
+                  href={`mailto:${footer.columns.contact.email}`}
+                  className="text-sm text-on-surface-muted hover:text-on-surface"
+                >
+                  {footer.columns.contact.email}
+                </a>
               </li>
-              <li className="text-sm text-on-surface-muted">
-                LinkedIn: {footer.columns.contact.linkedin}
+              <li>
+                <a
+                  href={`https://linkedin.com/company/${footer.columns.contact.linkedin}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-on-surface-muted hover:text-on-surface"
+                >
+                  LinkedIn: {footer.columns.contact.linkedin}
+                </a>
               </li>
               <li className="text-sm text-on-surface-muted">
                 {footer.columns.contact.location}

@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import { getDictionary, type Locale } from "@/lib/i18n";
-import { createMetadata, organizationJsonLd } from "@/lib/metadata";
+import { createMetadata, organizationJsonLd, faqJsonLd } from "@/lib/metadata";
 import Hero from "@/components/sections/Hero";
 import LogoBar from "@/components/sections/LogoBar";
 import ProblemSolution from "@/components/sections/ProblemSolution";
 import ServicesOverview from "@/components/sections/ServicesOverview";
+import PersonaSection from "@/components/sections/PersonaSection";
 import CredibilityStats from "@/components/sections/CredibilityStats";
 import Testimonials from "@/components/sections/Testimonials";
 import FAQ from "@/components/sections/FAQ";
@@ -41,6 +42,12 @@ export default async function HomePage({
           __html: JSON.stringify(organizationJsonLd()),
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faqJsonLd(dict.faq.items)),
+        }}
+      />
       <Hero hero={dict.hero} locale={locale as Locale} />
       <LogoBar
         title={dict.credibility.logos_title}
@@ -48,6 +55,7 @@ export default async function HomePage({
       />
       <ProblemSolution problemSolution={dict.problem_solution} />
       <ServicesOverview services={dict.services} locale={locale} />
+      <PersonaSection personas={dict.personas} locale={locale} />
       <CredibilityStats credibility={dict.credibility} />
       <Testimonials testimonials={dict.testimonials} />
       <FAQ faq={dict.faq} />

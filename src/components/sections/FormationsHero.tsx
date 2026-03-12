@@ -13,7 +13,7 @@ export default function FormationsHero({
   subtitle,
 }: FormationsHeroProps) {
   return (
-    <section className="py-20">
+    <section className="py-16 md:py-[var(--spacing-section)]">
       <Container>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
