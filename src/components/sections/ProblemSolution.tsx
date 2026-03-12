@@ -34,8 +34,8 @@ export default function ProblemSolution({
         <div className="mt-12 grid gap-8 lg:grid-cols-2">
           {/* Problem column */}
           <FadeIn direction="left">
-            <Card hover={false} className="h-full">
-              <h3 className="text-xl font-normal text-on-surface">
+            <Card shine className="h-full p-8">
+              <h3 className="text-base font-medium text-on-surface">
                 {problemSolution.problem_title}
               </h3>
               <ul className="mt-6 space-y-4">
@@ -51,8 +51,8 @@ export default function ProblemSolution({
 
           {/* Solution column */}
           <FadeIn direction="right">
-            <Card hover={false} className="h-full border-accent/30">
-              <h3 className="text-xl font-normal text-on-surface">
+            <Card shine className="h-full p-8">
+              <h3 className="text-base font-medium text-on-surface">
                 {problemSolution.solution_title}
               </h3>
               <ul className="mt-6 space-y-4">
