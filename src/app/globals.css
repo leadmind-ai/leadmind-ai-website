@@ -130,7 +130,13 @@ body {
 }
 
 .gradient-header-fade {
-  background: linear-gradient(var(--color-surface), transparent 90%);
+  background: linear-gradient(
+    to bottom,
+    var(--color-surface) 0%,
+    rgba(0, 0, 0, 0.8) 40%,
+    rgba(0, 0, 0, 0.4) 70%,
+    transparent 100%
+  );
 }
 
 .gradient-card-diagonal {

@@ -21,7 +21,7 @@ export function Button({
     primary: "bg-teal text-white hover:bg-teal-light",
     secondary:
       "border-2 border-accent text-accent hover:bg-accent hover:text-on-surface",
-    ghost: "text-on-surface-muted hover:text-on-surface hover:bg-surface-elevated",
+    ghost: "text-on-surface/70 hover:text-on-surface hover:bg-white/[0.06]",
     cta: "gradient-cta-premium text-white shadow-purple hover:opacity-90",
   };
 

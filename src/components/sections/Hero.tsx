@@ -17,9 +17,9 @@ type HeroProps = {
 
 export default function Hero({ hero, locale }: HeroProps) {
   return (
-    <section className="relative overflow-hidden py-24 shadow-hero md:py-32">
-      {/* Radial blue glow behind content */}
-      <div className="gradient-blue-radial absolute inset-0 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2" />
+    <section className="relative overflow-hidden py-32 md:py-44">
+      {/* Subtle radial glow — ambient, not overwhelming */}
+      <div className="absolute left-1/4 top-1/3 h-[600px] w-[600px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-accent/[0.07] blur-[120px]" />
       <Container className="relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -27,17 +27,17 @@ export default function Hero({ hero, locale }: HeroProps) {
           transition={{ duration: 0.6, ease: "easeOut" }}
           className="max-w-3xl"
         >
-          <h1 className="text-[length:var(--text-display-large)] font-normal leading-[length:var(--leading-display-large)] text-on-surface">
+          <h1 className="text-4xl font-normal leading-tight tracking-tight text-on-surface md:text-5xl lg:text-[3.5rem] lg:leading-[1.1]">
             {hero.title}
           </h1>
-          <p className="gradient-hero-text mt-6 text-lg leading-relaxed md:text-xl">
+          <p className="mt-6 max-w-2xl text-base leading-relaxed text-on-surface-muted md:text-lg">
             {hero.subtitle}
           </p>
-          <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-            <Button href={`/${locale}/contact`} variant="cta">
+          <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center">
+            <Button href={`/${locale}/contact`} variant="cta" className="px-8 py-3.5">
               {hero.cta_primary}
             </Button>
-            <Button href={`/${locale}/formations`} variant="ghost">
+            <Button href={`/${locale}/formations`} variant="ghost" className="text-on-surface/60 hover:text-on-surface">
               {hero.cta_secondary}
             </Button>
           </div>
