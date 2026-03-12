@@ -64,7 +64,7 @@ export default function FAQ({ faq }: FAQProps) {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <section className="py-20">
+    <section className="py-16 md:py-[var(--spacing-section)]">
       <Container>
         <FadeIn>
           <h2 className="text-center text-3xl font-normal text-on-surface md:text-4xl">

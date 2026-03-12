@@ -49,6 +49,26 @@ export function createMetadata({
   };
 }
 
+type FAQItem = {
+  question: string;
+  answer: string;
+};
+
+export function faqJsonLd(items: FAQItem[]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: items.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.answer,
+      },
+    })),
+  };
+}
+
 export function organizationJsonLd() {
   return {
     "@context": "https://schema.org",

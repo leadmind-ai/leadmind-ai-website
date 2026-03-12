@@ -10,7 +10,7 @@ type MissionProps = {
 
 export default function Mission({ title, text }: MissionProps) {
   return (
-    <section className="py-20">
+    <section className="py-16 md:py-[var(--spacing-section)]">
       <Container>
         <FadeIn>
           <div className="mx-auto max-w-3xl text-center">

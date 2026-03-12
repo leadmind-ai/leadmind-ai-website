@@ -31,7 +31,7 @@ export default function Founder({
   conviction,
 }: FounderProps) {
   return (
-    <section className="py-20">
+    <section className="py-16 md:py-[var(--spacing-section)]">
       <Container>
         <FadeIn>
           <h2 className="text-3xl font-normal text-on-surface">{title}</h2>

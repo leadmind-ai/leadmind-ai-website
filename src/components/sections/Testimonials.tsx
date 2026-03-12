@@ -14,17 +14,23 @@ type Testimonial = {
 type TestimonialsProps = {
   testimonials: {
     title: string;
+    disclaimer?: string;
     items: Testimonial[];
   };
 };
 
 export default function Testimonials({ testimonials }: TestimonialsProps) {
   return (
-    <section className="py-20">
+    <section className="py-16 md:py-[var(--spacing-section)]">
       <Container>
         <h2 className="text-center text-3xl font-normal text-on-surface md:text-4xl">
           {testimonials.title}
         </h2>
+        {testimonials.disclaimer && (
+          <p className="mt-2 text-center text-sm text-on-surface-muted/60">
+            {testimonials.disclaimer}
+          </p>
+        )}
         <StaggerChildren className="mt-12 grid gap-6 md:grid-cols-2">
           {testimonials.items.map((item, i) => (
             <StaggerItem key={i}>

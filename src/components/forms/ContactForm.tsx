@@ -6,6 +6,7 @@ type FormDict = {
   name: string;
   email: string;
   company: string;
+  job_title?: string;
   subject: string;
   subject_options: string[];
   message: string;
@@ -77,9 +78,26 @@ export function ContactForm({ form }: ContactFormProps) {
           id="company"
           name="company"
           type="text"
+          required
           className={inputClasses}
         />
       </div>
+      {form.job_title && (
+        <div>
+          <label
+            htmlFor="job_title"
+            className="mb-1 block text-sm font-medium text-on-surface"
+          >
+            {form.job_title}
+          </label>
+          <input
+            id="job_title"
+            name="job_title"
+            type="text"
+            className={inputClasses}
+          />
+        </div>
+      )}
       <div>
         <label
           htmlFor="subject"

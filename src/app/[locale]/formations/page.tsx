@@ -3,6 +3,8 @@ import { getDictionary, type Locale } from "@/lib/i18n";
 import { createMetadata } from "@/lib/metadata";
 import FormationsHero from "@/components/sections/FormationsHero";
 import FormationsList from "@/components/sections/FormationsList";
+import Differentiators from "@/components/sections/Differentiators";
+import TargetProfiles from "@/components/sections/TargetProfiles";
 import ProcessTimeline from "@/components/sections/ProcessTimeline";
 import CTASection from "@/components/sections/CTASection";
 
@@ -40,6 +42,14 @@ export default async function FormationsPage({
         servicesTitle={dict.formations.services_title}
         items={dict.services.items}
         locale={locale}
+      />
+      <Differentiators
+        title={dict.formations.differentiators_title}
+        items={dict.formations.differentiators}
+      />
+      <TargetProfiles
+        title={dict.formations.target_profiles_title}
+        profiles={dict.formations.target_profiles}
       />
       <ProcessTimeline
         title={dict.formations.process_title}
