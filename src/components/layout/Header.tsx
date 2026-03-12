@@ -30,8 +30,8 @@ export function Header({ nav, locale }: HeaderProps) {
   ];
 
   return (
-    <header className="sticky top-0 z-50 border-b border-white/10 bg-background/80 backdrop-blur-md">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 md:px-8">
+    <header className="fixed left-0 right-0 top-0 z-50 gradient-header-fade">
+      <div className="mx-auto flex h-[104px] max-w-[1200px] items-center justify-between px-6 md:px-8">
         <Link href={`/${locale}`} className="flex items-center">
           <Image
             src="/images/logo-dark.png"
@@ -49,14 +49,14 @@ export function Header({ nav, locale }: HeaderProps) {
             <Link
               key={link.href}
               href={link.href}
-              className="text-sm font-medium text-text-muted transition-colors hover:text-white"
+              className="text-sm font-medium text-on-surface-muted transition-colors hover:text-on-surface"
             >
               {link.label}
             </Link>
           ))}
           <Link
             href={`/${otherLocale}`}
-            className="text-sm font-medium text-text-muted transition-colors hover:text-white"
+            className="text-sm font-medium text-on-surface-muted transition-colors hover:text-on-surface"
           >
             {otherLocale.toUpperCase()}
           </Link>
@@ -98,12 +98,12 @@ export function Header({ nav, locale }: HeaderProps) {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <nav className="border-t border-white/10 bg-background/95 px-6 py-4 md:hidden">
+        <nav className="border-t border-white/10 bg-surface/95 px-6 py-4 md:hidden">
           {links.map((link) => (
             <Link
               key={link.href}
               href={link.href}
-              className="block py-2 text-sm font-medium text-text-muted"
+              className="block py-2 text-sm font-medium text-on-surface-muted"
               onClick={() => setMobileOpen(false)}
             >
               {link.label}
@@ -111,7 +111,7 @@ export function Header({ nav, locale }: HeaderProps) {
           ))}
           <Link
             href={`/${otherLocale}`}
-            className="block py-2 text-sm font-medium text-text-muted"
+            className="block py-2 text-sm font-medium text-on-surface-muted"
           >
             {otherLocale.toUpperCase()}
           </Link>

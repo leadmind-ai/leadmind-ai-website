@@ -29,11 +29,11 @@ export default async function LocaleLayout({
     <div className="relative min-h-screen">
       <Suspense fallback={null}>
         <div className="fixed inset-0 -z-10">
-          <GLBackground bgColor="#0b1120" />
+          <GLBackground bgColor="#000000" />
         </div>
       </Suspense>
       <Header nav={dict.nav} locale={locale as Locale} />
-      <main className="min-h-screen">{children}</main>
+      <main className="min-h-screen pt-[104px]">{children}</main>
       <Footer footer={dict.footer} locale={locale as Locale} />
     </div>
   );
