@@ -17,7 +17,9 @@ type HeroProps = {
 
 export default function Hero({ hero, locale }: HeroProps) {
   return (
-    <section className="relative overflow-hidden py-24 md:py-32">
+    <section className="relative overflow-hidden py-24 shadow-hero md:py-32">
+      {/* Radial blue glow behind content */}
+      <div className="gradient-blue-radial absolute inset-0 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2" />
       <Container className="relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -25,28 +27,22 @@ export default function Hero({ hero, locale }: HeroProps) {
           transition={{ duration: 0.6, ease: "easeOut" }}
           className="max-w-3xl"
         >
-          <h1 className="text-4xl font-bold leading-tight text-white md:text-5xl lg:text-6xl">
+          <h1 className="text-[length:var(--text-display-large)] font-normal leading-[length:var(--leading-display-large)] text-on-surface">
             {hero.title}
           </h1>
-          <p className="mt-6 text-lg leading-relaxed text-gray-300 md:text-xl">
+          <p className="gradient-hero-text mt-6 text-lg leading-relaxed md:text-xl">
             {hero.subtitle}
           </p>
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-            <Button href={`/${locale}/contact`} variant="primary">
+            <Button href={`/${locale}/contact`} variant="cta">
               {hero.cta_primary}
             </Button>
-            <Button
-              href={`/${locale}/formations`}
-              variant="ghost"
-              className="border-2 border-white text-white hover:bg-white/20 hover:text-white"
-            >
+            <Button href={`/${locale}/formations`} variant="ghost">
               {hero.cta_secondary}
             </Button>
           </div>
         </motion.div>
       </Container>
-      {/* Background gradient decoration */}
-      <div className="absolute right-0 top-0 h-full w-1/2 bg-gradient-to-l from-accent/10 to-transparent" />
     </section>
   );
 }
