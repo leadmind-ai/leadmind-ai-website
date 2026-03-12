@@ -13,9 +13,9 @@ type ContactHeroProps = {
 
 export default function ContactHero({ title, subtitle }: ContactHeroProps) {
   return (
-    <section className="relative overflow-hidden bg-primary py-20">
+    <section className="relative overflow-hidden bg-surface py-20">
       <Suspense fallback={null}>
-        <GLBackground bgColor="#1a365d" />
+        <GLBackground bgColor="#000000" />
       </Suspense>
       <Container className="relative z-10">
         <motion.div
@@ -24,8 +24,8 @@ export default function ContactHero({ title, subtitle }: ContactHeroProps) {
           transition={{ duration: 0.6 }}
           className="mx-auto max-w-2xl"
         >
-          <h1 className="text-4xl font-bold text-white">{title}</h1>
-          <p className="mt-4 text-lg text-gray-300">{subtitle}</p>
+          <h1 className="text-4xl font-normal text-on-surface">{title}</h1>
+          <p className="mt-4 text-lg text-on-surface-muted">{subtitle}</p>
         </motion.div>
       </Container>
     </section>

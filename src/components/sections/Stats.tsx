@@ -11,22 +11,24 @@ type StatsProps = {
 
 export default function Stats({ title, pillars }: StatsProps) {
   return (
-    <section className="bg-white/5 py-16">
+    <section className="py-16">
       <Container>
-        <h2 className="text-center text-2xl font-semibold text-white">
-          {title}
-        </h2>
-        <div className="mt-8 grid gap-8 md:grid-cols-3">
-          {pillars.map((p, i) => (
-            <FadeIn key={i} delay={i * 0.1}>
-              <div className="text-center">
-                <div className="text-4xl font-bold text-accent">
-                  <Counter value={p.stat} />
+        <div className="shine rounded-2xl border border-white/[0.08] bg-[#0a0a0a] px-8 py-12">
+          <h2 className="text-center text-base font-medium text-on-surface">
+            {title}
+          </h2>
+          <div className="mt-8 grid gap-8 md:grid-cols-3">
+            {pillars.map((p, i) => (
+              <FadeIn key={i} delay={i * 0.1}>
+                <div className="text-center">
+                  <div className="text-4xl font-normal text-accent">
+                    <Counter value={p.stat} />
+                  </div>
+                  <p className="mt-2 text-sm text-on-surface-muted">{p.stat_label}</p>
                 </div>
-                <p className="mt-1 text-sm text-gray-300">{p.stat_label}</p>
-              </div>
-            </FadeIn>
-          ))}
+              </FadeIn>
+            ))}
+          </div>
         </div>
       </Container>
     </section>

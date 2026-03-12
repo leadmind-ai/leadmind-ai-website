@@ -34,7 +34,7 @@ export default function Founder({
     <section className="py-20">
       <Container>
         <FadeIn>
-          <h2 className="text-3xl font-semibold text-white">{title}</h2>
+          <h2 className="text-3xl font-normal text-on-surface">{title}</h2>
         </FadeIn>
 
         <div className="mt-12 grid items-start gap-12 lg:grid-cols-5">
@@ -49,7 +49,7 @@ export default function Founder({
                   className="object-cover"
                 />
               </div>
-              <h3 className="mt-6 text-2xl font-bold text-text">{name}</h3>
+              <h3 className="mt-6 text-2xl font-normal text-on-surface">{name}</h3>
               <p className="text-sm font-medium text-accent">{role}</p>
 
               <div className="mt-4 flex flex-wrap justify-center gap-2">
@@ -60,7 +60,7 @@ export default function Founder({
                 ))}
               </div>
 
-              <blockquote className="mt-6 border-l-4 border-accent pl-4 text-left italic text-text-muted">
+              <blockquote className="mt-6 border-l-4 border-accent pl-4 text-left italic text-on-surface-muted">
                 &ldquo;{conviction}&rdquo;
               </blockquote>
             </div>
@@ -69,20 +69,20 @@ export default function Founder({
           {/* Parcours */}
           <div className="lg:col-span-3">
             <FadeIn direction="right">
-              <p className="text-lg leading-relaxed text-text-muted whitespace-pre-line">{intro}</p>
+              <p className="text-lg leading-relaxed text-on-surface-muted whitespace-pre-line">{intro}</p>
             </FadeIn>
 
             <StaggerChildren className="mt-8 space-y-4">
               {highlights.map((h) => (
                 <StaggerItem key={h.title}>
-                  <div className="rounded-lg border-l-4 border-accent bg-white/5 p-5 transition-colors hover:bg-white/10">
+                  <div className="rounded-lg border-l-4 border-accent bg-surface-container p-5 transition-colors hover:bg-surface-elevated">
                     <div className="flex flex-wrap items-baseline justify-between gap-2">
-                      <h4 className="font-semibold text-white">{h.title}</h4>
+                      <h4 className="font-normal text-on-surface">{h.title}</h4>
                       <span className="text-sm font-medium text-accent">
                         {h.period}
                       </span>
                     </div>
-                    <p className="mt-2 text-sm leading-relaxed text-text-muted">
+                    <p className="mt-2 text-sm leading-relaxed text-on-surface-muted">
                       {h.text}
                     </p>
                   </div>

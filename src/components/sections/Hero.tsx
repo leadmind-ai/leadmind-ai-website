@@ -17,7 +17,9 @@ type HeroProps = {
 
 export default function Hero({ hero, locale }: HeroProps) {
   return (
-    <section className="relative overflow-hidden py-24 md:py-32">
+    <section className="relative overflow-hidden py-32 md:py-44">
+      {/* Subtle radial glow — ambient, not overwhelming */}
+      <div className="absolute left-1/4 top-1/3 h-[600px] w-[600px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-accent/[0.07] blur-[120px]" />
       <Container className="relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -25,28 +27,22 @@ export default function Hero({ hero, locale }: HeroProps) {
           transition={{ duration: 0.6, ease: "easeOut" }}
           className="max-w-3xl"
         >
-          <h1 className="text-4xl font-bold leading-tight text-white md:text-5xl lg:text-6xl">
+          <h1 className="text-4xl font-normal leading-tight tracking-tight text-on-surface md:text-5xl lg:text-[3.5rem] lg:leading-[1.1]">
             {hero.title}
           </h1>
-          <p className="mt-6 text-lg leading-relaxed text-gray-300 md:text-xl">
+          <p className="mt-6 max-w-2xl text-base leading-relaxed text-on-surface-muted md:text-lg">
             {hero.subtitle}
           </p>
-          <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-            <Button href={`/${locale}/contact`} variant="primary">
+          <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center">
+            <Button href={`/${locale}/contact`} variant="cta" className="px-8 py-3.5">
               {hero.cta_primary}
             </Button>
-            <Button
-              href={`/${locale}/formations`}
-              variant="ghost"
-              className="border-2 border-white text-white hover:bg-white/20 hover:text-white"
-            >
+            <Button href={`/${locale}/formations`} variant="ghost" className="text-on-surface/60 hover:text-on-surface">
               {hero.cta_secondary}
             </Button>
           </div>
         </motion.div>
       </Container>
-      {/* Background gradient decoration */}
-      <div className="absolute right-0 top-0 h-full w-1/2 bg-gradient-to-l from-accent/10 to-transparent" />
     </section>
   );
 }

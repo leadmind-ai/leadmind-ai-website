@@ -16,18 +16,20 @@ type CTASectionProps = {
 
 export default function CTASection({ cta, locale }: CTASectionProps) {
   return (
-    <section className="bg-white/5 py-20">
+    <section className="py-20">
       <Container>
         <FadeIn>
-          <div className="text-center">
-            <h2 className="text-3xl font-bold text-white md:text-4xl">
-              {cta.title}
-            </h2>
-            <p className="mt-4 text-lg text-gray-300">{cta.subtitle}</p>
-            <div className="mt-8">
-              <Button href={`/${locale}/contact`} variant="primary">
-                {cta.button}
-              </Button>
+          <div className="shine bg-[#f9fbfe] rounded-2xl mx-4 md:mx-8 px-8 py-16">
+            <div className="text-center">
+              <h2 className="text-3xl font-normal text-[#002549] md:text-4xl">
+                {cta.title}
+              </h2>
+              <p className="mt-4 text-lg text-[#002549]/70">{cta.subtitle}</p>
+              <div className="mt-8">
+                <Button href={`/${locale}/contact`} variant="cta">
+                  {cta.button}
+                </Button>
+              </div>
             </div>
           </div>
         </FadeIn>

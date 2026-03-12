@@ -20,10 +20,10 @@ export default function FormationsHero({
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <h1 className="text-4xl font-bold text-white md:text-5xl">
+          <h1 className="text-4xl font-normal text-on-surface md:text-5xl">
             {title}
           </h1>
-          <p className="mt-4 text-lg text-gray-300">{subtitle}</p>
+          <p className="mt-4 text-lg text-on-surface-muted">{subtitle}</p>
         </motion.div>
       </Container>
     </section>

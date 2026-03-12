@@ -15,20 +15,20 @@ export default function ProcessTimeline({
   return (
     <section className="py-20">
       <Container>
-        <h2 className="text-center text-3xl font-semibold text-white">
+        <h2 className="text-center text-3xl font-normal text-on-surface">
           {title}
         </h2>
         <div className="mt-12 grid gap-8 md:grid-cols-4">
           {steps.map((step, i) => (
             <FadeIn key={i} delay={i * 0.15}>
               <div className="text-center">
-                <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-accent text-lg font-bold text-white">
+                <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-accent text-lg font-normal text-on-surface">
                   {i + 1}
                 </div>
-                <h3 className="mt-4 text-lg font-semibold text-white">
+                <h3 className="mt-4 text-lg font-normal text-on-surface">
                   {step.title}
                 </h3>
-                <p className="mt-2 text-sm text-text-muted">
+                <p className="mt-2 text-sm text-on-surface-muted">
                   {step.description}
                 </p>
               </div>

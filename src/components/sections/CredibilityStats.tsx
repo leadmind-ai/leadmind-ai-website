@@ -24,7 +24,7 @@ export default function CredibilityStats({
     <section className="py-20">
       <Container>
         <FadeIn>
-          <h2 className="text-center text-3xl font-semibold text-white md:text-4xl">
+          <h2 className="text-center text-3xl font-normal text-on-surface md:text-4xl">
             {credibility.title}
           </h2>
         </FadeIn>
@@ -34,10 +34,10 @@ export default function CredibilityStats({
           {credibility.stats.map((stat, i) => (
             <StaggerItem key={i}>
               <Card className="text-center">
-                <div className="text-3xl font-bold text-accent">
+                <div className="text-3xl font-normal text-accent">
                   {stat.value}
                 </div>
-                <p className="mt-2 text-sm text-text-muted">{stat.label}</p>
+                <p className="mt-2 text-sm text-on-surface-muted">{stat.label}</p>
               </Card>
             </StaggerItem>
           ))}
@@ -49,13 +49,13 @@ export default function CredibilityStats({
             hover={false}
             className="mt-12 border-t-4 border-t-accent"
           >
-            <h3 className="text-xl font-bold text-white">
+            <h3 className="text-xl font-normal text-on-surface">
               {credibility.founder.name}
             </h3>
             <p className="text-sm font-medium text-accent">
               {credibility.founder.role}
             </p>
-            <p className="mt-4 text-sm leading-relaxed text-text-muted whitespace-pre-line">
+            <p className="mt-4 text-sm leading-relaxed text-on-surface-muted whitespace-pre-line">
               {credibility.founder.bio}
             </p>
           </Card>
@@ -68,7 +68,7 @@ export default function CredibilityStats({
               {credibility.affiliations.map((aff, i) => (
                 <li
                   key={i}
-                  className="text-sm text-text-muted"
+                  className="text-sm text-on-surface-muted"
                 >
                   {aff}
                 </li>
