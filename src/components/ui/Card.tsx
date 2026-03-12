@@ -2,16 +2,24 @@ type CardProps = {
   children: React.ReactNode;
   className?: string;
   hover?: boolean;
+  shine?: boolean;
+  diagonal?: boolean;
 };
 
-export function Card({ children, className = "", hover = true }: CardProps) {
+export function Card({
+  children,
+  className = "",
+  hover = true,
+  shine = false,
+  diagonal = false,
+}: CardProps) {
   return (
     <div
-      className={`rounded-xl border border-white/10 bg-white/5 backdrop-blur-sm p-6 ${
-        hover
-          ? "transition-all duration-200 hover:scale-[1.02] hover:bg-white/10"
-          : ""
-      } ${className}`}
+      className={`rounded-2xl p-6 shadow-card-inner ${
+        diagonal ? "gradient-card-diagonal" : "bg-surface-container"
+      } ${
+        hover ? "transition-all duration-200 hover:shadow-card" : ""
+      } ${shine ? "shine" : ""} ${className}`}
     >
       {children}
     </div>
