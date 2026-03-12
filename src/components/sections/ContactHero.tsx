@@ -24,8 +24,8 @@ export default function ContactHero({ title, subtitle }: ContactHeroProps) {
           transition={{ duration: 0.6 }}
           className="mx-auto max-w-2xl"
         >
-          <h1 className="text-4xl font-bold text-white">{title}</h1>
-          <p className="mt-4 text-lg text-gray-300">{subtitle}</p>
+          <h1 className="text-4xl font-normal text-on-surface">{title}</h1>
+          <p className="mt-4 text-lg text-on-surface-muted">{subtitle}</p>
         </motion.div>
       </Container>
     </section>

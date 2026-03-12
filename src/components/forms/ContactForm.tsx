@@ -25,21 +25,21 @@ export function ContactForm({ form }: ContactFormProps) {
 
   if (state.succeeded) {
     return (
-      <div className="rounded-xl bg-accent/10 p-8 text-center">
+      <div className="rounded-xl bg-accent-soft p-8 text-center">
         <p className="text-lg font-medium text-accent">{form.success}</p>
       </div>
     );
   }
 
   const inputClasses =
-    "w-full rounded-lg border border-white/20 bg-white/5 px-4 py-3 text-text placeholder:text-text-muted/50 transition-colors focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/20";
+    "w-full rounded-xl border border-surface-elevated bg-surface-input px-4 py-3 text-on-surface placeholder:text-on-surface-muted/50 transition-colors focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent-glow";
 
   return (
     <form onSubmit={handleSubmit} className="space-y-6">
       <div>
         <label
           htmlFor="name"
-          className="mb-1 block text-sm font-medium text-text"
+          className="mb-1 block text-sm font-medium text-on-surface"
         >
           {form.name}
         </label>
@@ -54,7 +54,7 @@ export function ContactForm({ form }: ContactFormProps) {
       <div>
         <label
           htmlFor="email"
-          className="mb-1 block text-sm font-medium text-text"
+          className="mb-1 block text-sm font-medium text-on-surface"
         >
           {form.email}
         </label>
@@ -69,7 +69,7 @@ export function ContactForm({ form }: ContactFormProps) {
       <div>
         <label
           htmlFor="company"
-          className="mb-1 block text-sm font-medium text-text"
+          className="mb-1 block text-sm font-medium text-on-surface"
         >
           {form.company}
         </label>
@@ -83,7 +83,7 @@ export function ContactForm({ form }: ContactFormProps) {
       <div>
         <label
           htmlFor="subject"
-          className="mb-1 block text-sm font-medium text-text"
+          className="mb-1 block text-sm font-medium text-on-surface"
         >
           {form.subject}
         </label>
@@ -104,7 +104,7 @@ export function ContactForm({ form }: ContactFormProps) {
       <div>
         <label
           htmlFor="message"
-          className="mb-1 block text-sm font-medium text-text"
+          className="mb-1 block text-sm font-medium text-on-surface"
         >
           {form.message}
         </label>
@@ -122,7 +122,7 @@ export function ContactForm({ form }: ContactFormProps) {
       <button
         type="submit"
         disabled={state.submitting}
-        className="inline-flex w-full items-center justify-center rounded-full bg-accent px-6 py-3 font-medium text-white transition-colors hover:bg-accent-light disabled:opacity-50"
+        className="inline-flex w-full items-center justify-center rounded-lg bg-teal px-6 py-3 font-medium text-white transition-colors hover:bg-teal-light disabled:opacity-50"
       >
         {state.submitting ? "..." : form.submit}
       </button>
