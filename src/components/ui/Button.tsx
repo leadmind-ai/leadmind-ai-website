@@ -20,8 +20,8 @@ export function Button({
     "inline-flex items-center justify-center font-medium transition-all duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent";
 
   const sizes = {
-    default: "rounded-lg px-6 py-3 text-base",
-    lg: "rounded-xl px-8 py-4 text-lg",
+    default: "rounded-full px-6 py-3 text-base",
+    lg: "rounded-full px-8 py-4 text-lg",
   };
 
   const variants = {

@@ -22,9 +22,10 @@
   --color-cta-dark-hover: #1e293b;
   --color-surface-cta: #111827;
 
-  /* Fonts */
-  --font-sans: var(--font-inter);
-  --font-mono: var(--font-jetbrains-mono), monospace;
+  /* Fonts — inspired by URLab (Satoshi/Source Sans 3) */
+  --font-sans: var(--font-body), "Source Sans 3", system-ui, sans-serif;
+  --font-heading: var(--font-heading), "DM Sans", system-ui, sans-serif;
+  --font-mono: ui-monospace, "SFMono-Regular", monospace;
 
   /* Typography Scale */
   --text-display-large: 4rem;
@@ -47,15 +48,19 @@
 
   /* Layout */
   --spacing-section: 120px;
-  --radius-card: 16px;
+  --radius-card: 14px;
   --radius-input: 12px;
-  --radius-button: 8px;
+  --radius-button: 9999px;
 }
 
 body {
   background: var(--color-surface);
   color: var(--color-on-surface);
   font-family: var(--font-sans), system-ui, sans-serif;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-heading), system-ui, sans-serif;
 }
 
 /* === Shine Animation (CodeWiki border trail) === */
