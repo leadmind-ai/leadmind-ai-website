@@ -40,7 +40,7 @@ export function Header({ nav, locale }: HeaderProps) {
 
   return (
     <header className="fixed left-0 right-0 top-0 z-50 gradient-header-fade">
-      <div className="mx-auto flex h-[72px] max-w-[1200px] items-center justify-between px-6 md:px-8">
+      <div className="mx-auto flex h-[72px] max-w-[1400px] items-center justify-between px-6 md:px-12 lg:px-16">
         <div className="flex items-center gap-8">
           <Link href={`/${locale}`} className="flex items-center">
             <Image
