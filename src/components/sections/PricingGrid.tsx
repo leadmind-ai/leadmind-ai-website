@@ -70,7 +70,7 @@ export default function PricingGrid({ pricing, locale }: PricingGridProps) {
         </p>
 
         <div className="mt-16 text-center">
-          <h3 className="text-xl font-normal text-on-surface">
+          <h3 className="text-xl text-on-surface">
             {pricing.cta_title}
           </h3>
           <div className="mt-6">

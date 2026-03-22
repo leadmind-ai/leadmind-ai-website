@@ -32,8 +32,8 @@ export default async function FormationsPage({
   return (
     <>
       <section className="pb-8 pt-28 md:pt-36">
-        <div className="mx-auto max-w-[1400px] px-6 md:px-12 lg:px-16">
-          <h1 className="gradient-hero-text text-3xl font-normal md:text-4xl lg:text-5xl">
+        <div className="mx-auto w-full px-6 md:px-12 lg:px-20 xl:px-28">
+          <h1 className="gradient-hero-text text-3xl md:text-4xl lg:text-5xl">
             {dict.formations.hero_title}
           </h1>
           <p className="mt-4 max-w-2xl text-base text-on-surface-muted md:text-lg">

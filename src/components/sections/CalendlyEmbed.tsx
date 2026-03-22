@@ -14,7 +14,7 @@ export default function CalendlyEmbed({ title }: CalendlyEmbedProps) {
   return (
     <section className="py-16">
       <Container>
-        <h2 className="mb-8 text-2xl font-normal text-on-surface">
+        <h2 className="mb-8 text-2xl text-on-surface">
           {title}
         </h2>
         <div className="mx-auto max-w-2xl overflow-hidden rounded-2xl border border-surface-elevated bg-surface-container">

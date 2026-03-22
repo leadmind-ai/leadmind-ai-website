@@ -21,7 +21,7 @@ export default function Stats({ title, pillars }: StatsProps) {
             {pillars.map((p, i) => (
               <FadeIn key={i} delay={i * 0.1}>
                 <div className="text-center">
-                  <div className="text-4xl font-normal text-accent">
+                  <div className="text-4xl text-accent">
                     <Counter value={p.stat} />
                   </div>
                   <p className="mt-2 text-sm text-on-surface-muted">{p.stat_label}</p>

@@ -85,7 +85,7 @@ export default async function ServiceDetailPage({
             <Badge variant="accent" className="text-xs">
               {service.badge}
             </Badge>
-            <h1 className="mt-6 text-4xl font-normal text-on-surface md:text-5xl">
+            <h1 className="mt-6 text-4xl text-on-surface md:text-5xl">
               {service.headline}
             </h1>
             <p className="mt-6 text-lg leading-relaxed text-on-surface-muted">
@@ -100,7 +100,7 @@ export default async function ServiceDetailPage({
         <Container>
           <div className="mx-auto max-w-3xl">
             <Card shine className="p-8">
-              <h2 className="text-2xl font-normal text-on-surface">
+              <h2 className="text-2xl text-on-surface">
                 {service.title}
               </h2>
               <ul className="mt-6 space-y-3">

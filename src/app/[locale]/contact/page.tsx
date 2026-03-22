@@ -33,7 +33,7 @@ export default async function ContactPage({
       <section className="py-20">
         <Container>
           <div className="mx-auto max-w-2xl">
-            <h1 className="text-4xl font-normal text-on-surface">
+            <h1 className="text-4xl text-on-surface">
               {dict.contact.title}
             </h1>
             <p className="mt-4 text-lg text-on-surface-muted">

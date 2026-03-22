@@ -101,7 +101,7 @@ export default function FormationsCatalog({ formations }: FormationsCatalogProps
 
         <FadeIn>
           <Card className="mt-16 p-8 text-center">
-            <h2 className="text-xl font-normal text-on-surface">
+            <h2 className="text-xl text-on-surface">
               {formations.custom_title}
             </h2>
             <p className="mx-auto mt-3 max-w-xl text-sm text-on-surface-muted">

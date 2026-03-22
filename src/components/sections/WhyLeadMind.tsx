@@ -20,20 +20,20 @@ export default function WhyLeadMind({ why }: WhyLeadMindProps) {
   return (
     <section className="py-16 md:py-[var(--spacing-section)]">
       <Container>
-        <h2 className="text-3xl font-normal text-on-surface md:text-4xl">
+        <h2 className="text-3xl text-on-surface md:text-4xl">
           {why.title}
         </h2>
         <div className="mt-12 grid gap-8 md:grid-cols-3">
           {why.pillars.map((pillar, i) => (
             <FadeIn key={i} delay={i * 0.1}>
               <div className="text-center">
-                <div className="text-4xl font-normal text-accent">
+                <div className="text-4xl text-accent">
                   <Counter value={pillar.stat} />
                 </div>
                 <p className="mt-1 text-sm text-on-surface-muted">
                   {pillar.stat_label}
                 </p>
-                <h3 className="mt-4 text-xl font-normal text-on-surface">
+                <h3 className="mt-4 text-xl text-on-surface">
                   {pillar.title}
                 </h3>
                 <p className="mt-2 text-sm leading-relaxed text-on-surface-muted">

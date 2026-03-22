@@ -21,7 +21,7 @@ export default function UseCases({ useCases }: UseCasesProps) {
       <Container>
         <FadeIn>
           <div>
-            <h2 className="text-3xl font-normal text-on-surface md:text-4xl lg:text-5xl">
+            <h2 className="text-3xl text-on-surface md:text-4xl lg:text-5xl">
               {useCases.title}
             </h2>
             {useCases.subtitle && (

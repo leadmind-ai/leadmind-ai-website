@@ -19,7 +19,7 @@ export default function PainPoints({ painPoints }: PainPointsProps) {
     <section className="py-16 md:py-[var(--spacing-section)]">
       <Container>
         <FadeIn>
-          <h2 className="max-w-4xl text-3xl font-normal leading-snug text-on-surface md:text-4xl lg:text-5xl">
+          <h2 className="max-w-4xl text-3xl leading-snug text-on-surface md:text-4xl lg:text-5xl">
             {painPoints.headline}
           </h2>
         </FadeIn>

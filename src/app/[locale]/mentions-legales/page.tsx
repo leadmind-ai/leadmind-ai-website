@@ -37,7 +37,7 @@ export default async function MentionsLegalesPage({
   return (
     <section className="py-20">
       <Container>
-        <h1 className="text-3xl font-normal text-on-surface md:text-4xl">
+        <h1 className="text-3xl text-on-surface md:text-4xl">
           {dict.legal.mentions_title}
         </h1>
         <div className="mt-12 max-w-3xl space-y-10">

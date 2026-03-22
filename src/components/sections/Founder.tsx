@@ -34,7 +34,7 @@ export default function Founder({
     <section className="py-16 md:py-[var(--spacing-section)]">
       <Container>
         <FadeIn>
-          <h2 className="text-3xl font-normal text-on-surface">{title}</h2>
+          <h2 className="text-3xl text-on-surface">{title}</h2>
         </FadeIn>
 
         <div className="mt-12 grid items-start gap-12 lg:grid-cols-5">
@@ -49,7 +49,7 @@ export default function Founder({
                   className="object-cover"
                 />
               </div>
-              <h3 className="mt-6 text-2xl font-normal text-on-surface">{name}</h3>
+              <h3 className="mt-6 text-2xl text-on-surface">{name}</h3>
               <p className="text-sm font-medium text-accent">{role}</p>
 
               <div className="mt-4 flex flex-wrap justify-center gap-2">

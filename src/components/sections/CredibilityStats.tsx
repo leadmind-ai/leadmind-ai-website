@@ -24,7 +24,7 @@ export default function CredibilityStats({
     <section className="py-16 md:py-[var(--spacing-section)]">
       <Container>
         <FadeIn>
-          <h2 className="text-3xl font-normal text-on-surface md:text-4xl">
+          <h2 className="text-3xl text-on-surface md:text-4xl">
             {credibility.title}
           </h2>
         </FadeIn>
@@ -34,7 +34,7 @@ export default function CredibilityStats({
           {credibility.stats.map((stat, i) => (
             <StaggerItem key={i}>
               <Card className="text-center">
-                <div className="text-3xl font-normal text-accent">
+                <div className="text-3xl text-accent">
                   {stat.value}
                 </div>
                 <p className="mt-2 text-sm text-on-surface-muted">{stat.label}</p>
@@ -49,7 +49,7 @@ export default function CredibilityStats({
             hover={false}
             className="mt-12 border-t-4 border-t-accent"
           >
-            <h3 className="text-xl font-normal text-on-surface">
+            <h3 className="text-xl text-on-surface">
               {credibility.founder.name}
             </h3>
             <p className="text-sm font-medium text-accent">

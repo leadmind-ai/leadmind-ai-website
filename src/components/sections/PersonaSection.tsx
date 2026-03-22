@@ -25,7 +25,7 @@ export default function PersonaSection({ personas, locale }: PersonaSectionProps
       <Container>
         <FadeIn>
           <div>
-            <h2 className="text-3xl font-normal text-on-surface md:text-4xl">
+            <h2 className="text-3xl text-on-surface md:text-4xl">
               {personas.title}
             </h2>
             {personas.subtitle && (

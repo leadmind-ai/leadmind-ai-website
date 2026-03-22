@@ -31,7 +31,7 @@ function FAQAccordion({ item, isOpen, onToggle, index }: {
         aria-controls={`faq-answer-${index}`}
         className="flex w-full items-center justify-between py-5 text-left transition-colors hover:text-accent"
       >
-        <span className="pr-4 font-normal text-on-surface">{item.question}</span>
+        <span className="pr-4 text-on-surface">{item.question}</span>
         <span className="flex-shrink-0 text-accent">
           {isOpen ? (
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
@@ -74,7 +74,7 @@ export default function FAQ({ faq }: FAQProps) {
     <section className="py-16 md:py-[var(--spacing-section)]">
       <Container>
         <FadeIn>
-          <h2 className="text-3xl font-normal text-on-surface md:text-4xl">
+          <h2 className="text-3xl text-on-surface md:text-4xl">
             {faq.title}
           </h2>
         </FadeIn>

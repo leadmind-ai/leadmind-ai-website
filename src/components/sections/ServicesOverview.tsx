@@ -117,7 +117,7 @@ export default function ServicesOverview({ services, locale }: ServicesOverviewP
       <Container>
         <FadeIn>
           <div className="text-center">
-            <h2 className="text-3xl font-normal text-on-surface md:text-4xl">
+            <h2 className="text-3xl text-on-surface md:text-4xl">
               {services.title}
             </h2>
             {services.subtitle && (
@@ -166,7 +166,7 @@ export default function ServicesOverview({ services, locale }: ServicesOverviewP
         {/* Custom use case - full width */}
         <FadeIn>
           <Card shine className="mt-6 text-center" hover={false}>
-            <h3 className="text-xl font-normal text-on-surface">
+            <h3 className="text-xl text-on-surface">
               {services.custom.title}
             </h3>
             <p className="mx-auto mt-3 max-w-2xl text-sm leading-relaxed text-on-surface-muted">

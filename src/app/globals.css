@@ -61,6 +61,11 @@ body {
 
 h1, h2, h3, h4 {
   font-family: var(--font-heading), system-ui, sans-serif;
+  font-weight: 700;
+}
+
+p, li, span, a, div {
+  font-weight: 500;
 }
 
 /* === Shine Animation (CodeWiki border trail) === */
