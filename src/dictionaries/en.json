@@ -653,41 +653,33 @@
     }
   },
   "footer": {
-    "brand_description": "AI serving insurance and finance professions — from actuarial science to asset management, and beyond.",
+    "brand_description": "AI fluent in actuarial science and finance. Certified training, custom AI modules, end-to-end support.",
     "columns": {
-      "offers": {
-        "title": "Offerings",
+      "solutions": {
+        "title": "Solutions",
         "links": [
-          "S2 Reporting Agent",
-          "Market SCR Calculator",
-          "ALM & Modeling Agent",
-          "Portfolio Management Agent",
-          "AI Training for Actuarial & Finance",
-          "AI Team Transformation",
-          "Other use case"
+          { "label": "AI Modules", "href": "/solutions" },
+          { "label": "Training", "href": "/formations" },
+          { "label": "Pricing", "href": "/tarifs" }
         ]
       },
-      "resources": {
-        "title": "Resources",
+      "company": {
+        "title": "Company",
         "links": [
-          "Blog",
-          "Newsletter",
-          "Case studies",
-          "FAQ"
+          { "label": "About", "href": "/a-propos" },
+          { "label": "Contact", "href": "/contact" },
+          { "label": "FAQ", "href": "/#faq" }
         ]
       },
       "contact": {
         "title": "Contact",
-        "email": "contact@leadmindai.com",
-        "linkedin": "leadmindai",
+        "email": "contact@leadmind-ai.com",
+        "linkedin": "leadmind-ai",
         "location": "Paris, France"
       }
     },
-    "copyright": "© 2026 LeadMind AI — All rights reserved",
-    "links": {
-      "privacy": "Privacy policy",
-      "legal": "Legal notice"
-    }
+    "copyright": "© 2026 LeadMind AI. All rights reserved.",
+    "links": { "privacy": "Privacy policy", "legal": "Legal notice" }
   },
   "legal": {
     "mentions_title": "Legal notice",

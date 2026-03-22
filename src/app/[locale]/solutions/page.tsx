@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
 import { getDictionary, type Locale } from "@/lib/i18n";
 import { createMetadata } from "@/lib/metadata";
-import FormationsCatalog from "@/components/sections/FormationsCatalog";
-import Differentiators from "@/components/sections/Differentiators";
-import TargetProfiles from "@/components/sections/TargetProfiles";
+import ModulesIA from "@/components/sections/ModulesIA";
+import Accompagnement from "@/components/sections/Accompagnement";
 import CTASection from "@/components/sections/CTASection";
 
 export async function generateMetadata({
@@ -14,14 +13,14 @@ export async function generateMetadata({
   const { locale } = await params;
   const dict = await getDictionary(locale as Locale);
   return createMetadata({
-    title: `LeadMind AI — ${dict.formations.hero_title}`,
-    description: dict.formations.hero_subtitle,
+    title: `LeadMind AI — ${dict.modules_ia.title}`,
+    description: dict.modules_ia.subtitle,
     locale: locale as Locale,
-    path: "/formations",
+    path: "/solutions",
   });
 }
 
-export default async function FormationsPage({
+export default async function SolutionsPage({
   params,
 }: {
   params: Promise<{ locale: string }>;
@@ -34,30 +33,16 @@ export default async function FormationsPage({
       <section className="pb-8 pt-28 md:pt-36">
         <div className="mx-auto max-w-[1200px] px-6 md:px-8">
           <h1 className="gradient-hero-text text-3xl font-normal md:text-4xl lg:text-5xl">
-            {dict.formations.hero_title}
+            {dict.modules_ia.title}
           </h1>
           <p className="mt-4 max-w-2xl text-base text-on-surface-muted md:text-lg">
-            {dict.formations.hero_subtitle}
+            {dict.modules_ia.subtitle}
           </p>
         </div>
       </section>
-      <FormationsCatalog formations={dict.formations} />
-      <Differentiators
-        title={dict.formations.differentiators_title}
-        items={dict.formations.differentiators}
-      />
-      <TargetProfiles
-        title={dict.formations.target_profiles_title}
-        profiles={dict.formations.target_profiles}
-      />
-      <CTASection
-        cta={{
-          title: dict.formations.cta,
-          subtitle: "",
-          button: dict.formations.cta,
-        }}
-        locale={locale as Locale}
-      />
+      <ModulesIA modules={dict.modules_ia} />
+      <Accompagnement accompagnement={dict.accompagnement} />
+      <CTASection cta={dict.cta_section} locale={locale as Locale} />
     </>
   );
 }

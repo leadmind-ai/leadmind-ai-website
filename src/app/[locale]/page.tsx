@@ -3,9 +3,9 @@ import { getDictionary, type Locale } from "@/lib/i18n";
 import { createMetadata, organizationJsonLd, faqJsonLd } from "@/lib/metadata";
 import Hero from "@/components/sections/Hero";
 import LogoBar from "@/components/sections/LogoBar";
-import ProblemSolution from "@/components/sections/ProblemSolution";
-import ServicesOverview from "@/components/sections/ServicesOverview";
-import PersonaSection from "@/components/sections/PersonaSection";
+import PainPoints from "@/components/sections/PainPoints";
+import ProcessPhases from "@/components/sections/ProcessPhases";
+import UseCases from "@/components/sections/UseCases";
 import CredibilityStats from "@/components/sections/CredibilityStats";
 import Testimonials from "@/components/sections/Testimonials";
 import FAQ from "@/components/sections/FAQ";
@@ -53,9 +53,9 @@ export default async function HomePage({
         title={dict.credibility.logos_title}
         logos={dict.credibility.logos}
       />
-      <ProblemSolution problemSolution={dict.problem_solution} />
-      <ServicesOverview services={dict.services} locale={locale} />
-      <PersonaSection personas={dict.personas} locale={locale} />
+      <PainPoints painPoints={dict.pain_points} />
+      <ProcessPhases phases={dict.process_phases} />
+      <UseCases useCases={dict.use_cases} />
       <CredibilityStats credibility={dict.credibility} />
       <Testimonials testimonials={dict.testimonials} />
       <FAQ faq={dict.faq} />

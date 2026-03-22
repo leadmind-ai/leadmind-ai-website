@@ -653,41 +653,33 @@
     }
   },
   "footer": {
-    "brand_description": "L'IA au service des métiers de l'assurance et de la finance — de l'actuariat à la gestion d'actifs, et au-delà.",
+    "brand_description": "L'IA qui parle couramment actuariat et finance. Formations certifiantes, modules IA sur mesure, accompagnement de bout en bout.",
     "columns": {
-      "offers": {
-        "title": "Offres",
+      "solutions": {
+        "title": "Solutions",
         "links": [
-          "Agent Reporting S2",
-          "Calculateur SCR Marché",
-          "Agent ALM & Modélisation",
-          "Agent Portfolio Management",
-          "Formation IA Actuariat & Finance",
-          "Transformation IA Équipes",
-          "Autre cas d'usage"
+          { "label": "Modules IA", "href": "/solutions" },
+          { "label": "Formations", "href": "/formations" },
+          { "label": "Tarifs", "href": "/tarifs" }
         ]
       },
-      "resources": {
-        "title": "Ressources",
+      "company": {
+        "title": "Entreprise",
         "links": [
-          "Blog",
-          "Newsletter",
-          "Cas concrets",
-          "FAQ"
+          { "label": "À propos", "href": "/a-propos" },
+          { "label": "Contact", "href": "/contact" },
+          { "label": "FAQ", "href": "/#faq" }
         ]
       },
       "contact": {
         "title": "Contact",
-        "email": "contact@leadmindai.com",
-        "linkedin": "leadmindai",
+        "email": "contact@leadmind-ai.com",
+        "linkedin": "leadmind-ai",
         "location": "Paris, France"
       }
     },
-    "copyright": "© 2026 LeadMind AI — Tous droits réservés",
-    "links": {
-      "privacy": "Politique de confidentialité",
-      "legal": "Mentions légales"
-    }
+    "copyright": "© 2026 LeadMind AI. Tous droits réservés.",
+    "links": { "privacy": "Politique de confidentialité", "legal": "Mentions légales" }
   },
   "legal": {
     "mentions_title": "Mentions légales",

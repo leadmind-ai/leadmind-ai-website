@@ -3,16 +3,21 @@ import Image from "next/image";
 import { Container } from "@/components/ui/Container";
 import type { Locale } from "@/lib/i18n";
 
+type FooterLink = {
+  label: string;
+  href: string;
+};
+
 type FooterDict = {
   brand_description: string;
   columns: {
-    offers: {
+    solutions: {
       title: string;
-      links: string[];
+      links: FooterLink[];
     };
-    resources: {
+    company: {
       title: string;
-      links: string[];
+      links: FooterLink[];
     };
     contact: {
       title: string;
@@ -60,51 +65,41 @@ export function Footer({ footer, locale }: FooterProps) {
             </p>
           </div>
 
-          {/* Column 2: Offers */}
+          {/* Column 2: Solutions */}
           <div>
             <h4 className="text-sm font-semibold uppercase tracking-wider text-on-surface-muted">
-              {footer.columns.offers.title}
+              {footer.columns.solutions.title}
             </h4>
             <ul className="mt-3 space-y-2">
-              {footer.columns.offers.links.map((link) => (
-                <li key={link}>
+              {footer.columns.solutions.links.map((link) => (
+                <li key={link.href}>
                   <Link
-                    href={`/${locale}/formations`}
+                    href={`/${locale}${link.href}`}
                     className="text-sm text-on-surface-muted hover:text-on-surface"
                   >
-                    {link}
+                    {link.label}
                   </Link>
                 </li>
               ))}
             </ul>
           </div>
 
-          {/* Column 3: Resources */}
+          {/* Column 3: Company */}
           <div>
             <h4 className="text-sm font-semibold uppercase tracking-wider text-on-surface-muted">
-              {footer.columns.resources.title}
+              {footer.columns.company.title}
             </h4>
             <ul className="mt-3 space-y-2">
-              {footer.columns.resources.links.map((link) => {
-                const isFaq = link === "FAQ";
-                if (isFaq) {
-                  return (
-                    <li key={link}>
-                      <Link
-                        href={`/${locale}/#faq`}
-                        className="text-sm text-on-surface-muted hover:text-on-surface"
-                      >
-                        {link}
-                      </Link>
-                    </li>
-                  );
-                }
-                return (
-                  <li key={link} className="text-sm text-on-surface-muted">
-                    {link}
-                  </li>
-                );
-              })}
+              {footer.columns.company.links.map((link) => (
+                <li key={link.href}>
+                  <Link
+                    href={`/${locale}${link.href}`}
+                    className="text-sm text-on-surface-muted hover:text-on-surface"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
