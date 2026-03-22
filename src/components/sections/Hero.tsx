@@ -24,7 +24,7 @@ export default function Hero({ hero, locale }: HeroProps) {
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, ease: "easeOut" }}
-          className="mx-auto max-w-4xl text-center"
+          className="mx-auto text-center"
         >
           <h1 className="gradient-hero-text whitespace-pre-line text-[2.75rem] leading-[1.08] tracking-tight md:text-[4rem] lg:text-[5.5rem]">
             {hero.title}
