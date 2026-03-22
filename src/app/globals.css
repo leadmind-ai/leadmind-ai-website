@@ -12,9 +12,9 @@
   --color-on-surface-muted: #b0b8c4;
 
   /* Accents */
-  --color-accent: #007af4;
+  --color-accent: #0d9488;
   --color-accent-soft: #253145;
-  --color-accent-glow: rgba(0, 122, 244, 0.25);
+  --color-accent-glow: rgba(13, 148, 136, 0.25);
   --color-teal: #0d9488;
   --color-teal-light: #14b8a6;
   --color-purple: #9e9eff;
@@ -159,15 +159,15 @@ p, li, span, a, div {
 }
 
 .gradient-icon-glow {
-  background: linear-gradient(135deg, rgba(0, 122, 244, 0.2), transparent 50%);
+  background: linear-gradient(135deg, rgba(13, 148, 136, 0.2), transparent 50%);
 }
 
 .gradient-blue-radial {
-  background: radial-gradient(circle, rgba(0, 122, 244, 0.3), transparent 90%);
+  background: radial-gradient(circle, rgba(13, 148, 136, 0.3), transparent 90%);
 }
 
 .gradient-cta-premium {
-  background: linear-gradient(to right, #c797ff, #007af4);
+  background: linear-gradient(to right, #14b8a6, #0d9488);
 }
 
 .gradient-tag {
@@ -180,19 +180,19 @@ p, li, span, a, div {
 }
 
 .shadow-card {
-  box-shadow: rgba(0, 122, 244, 0.25) 0 34px 84px -30px;
+  box-shadow: rgba(13, 148, 136, 0.25) 0 34px 84px -30px;
 }
 
 .shadow-card-inner {
-  box-shadow: rgba(66, 133, 244, 0.09) 0 34px 84px -30px;
+  box-shadow: rgba(13, 148, 136, 0.09) 0 34px 84px -30px;
 }
 
 .shadow-hero {
-  box-shadow: rgba(0, 122, 244, 0.2) 0 -80px 100px 60px;
+  box-shadow: rgba(13, 148, 136, 0.2) 0 -80px 100px 60px;
 }
 
 .shadow-purple {
-  box-shadow: rgba(68, 162, 255, 0.3) 0 34px 84px -30px;
+  box-shadow: rgba(13, 148, 136, 0.3) 0 34px 84px -30px;
 }
 
 /* === Transitions (DESIGN.md Section 7) === */
