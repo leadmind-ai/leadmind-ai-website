@@ -10,7 +10,8 @@
   },
   "hero": {
     "title": "AI that speaks fluent actuarial science and finance.",
-    "subtitle": "15 years of actuarial and finance experience. CFA expertise. 3 years of intensive AI. We automate your actuarial and financial processes — for insurance and finance professionals — and upskill your teams. With the rigor of practitioners, not the promises of a tech vendor.",
+    "subtitle_line1": "15 years of actuarial and finance experience. CFA expertise. 3 years of intensive AI.",
+    "subtitle_line2": "We automate your actuarial and financial processes — for insurance and finance professionals — and upskill your teams. With the rigor of practitioners, not the promises of a tech vendor.",
     "cta_primary": "Let's discuss your challenges",
     "cta_secondary": "Discover our offerings"
   },
