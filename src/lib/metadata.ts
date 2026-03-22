@@ -29,6 +29,11 @@ export function createMetadata({
         en: `${siteUrl}/en${path}`,
       },
     },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+    },
     openGraph: {
       title,
       description,
