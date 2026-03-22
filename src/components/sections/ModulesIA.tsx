@@ -24,10 +24,10 @@ export default function ModulesIA({ modules }: ModulesIAProps) {
     <section className="py-16 md:py-[var(--spacing-section)]">
       <Container>
         <FadeIn>
-          <h2 className="text-2xl font-normal text-on-surface md:text-3xl">
+          <h2 className="text-3xl font-normal text-on-surface md:text-4xl lg:text-5xl">
             {modules.title}
           </h2>
-          <p className="mt-4 max-w-2xl text-base text-on-surface-muted">
+          <p className="mt-4 max-w-3xl text-lg text-on-surface-muted">
             {modules.subtitle}
           </p>
         </FadeIn>

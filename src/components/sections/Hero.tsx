@@ -26,10 +26,10 @@ export default function Hero({ hero, locale }: HeroProps) {
           transition={{ duration: 0.7, ease: "easeOut" }}
           className="mx-auto max-w-4xl text-center"
         >
-          <h1 className="gradient-hero-text text-[2.5rem] font-normal leading-[1.1] tracking-tight md:text-[3.25rem] lg:text-[4rem]">
+          <h1 className="gradient-hero-text text-[2.75rem] font-normal leading-[1.08] tracking-tight md:text-[4rem] lg:text-[5.5rem]">
             {hero.title}
           </h1>
-          <p className="mx-auto mt-6 max-w-3xl text-base leading-relaxed text-on-surface-muted md:text-lg">
+          <p className="mx-auto mt-8 max-w-3xl text-lg leading-relaxed text-on-surface-muted md:text-xl">
             {hero.subtitle}
           </p>
           <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">

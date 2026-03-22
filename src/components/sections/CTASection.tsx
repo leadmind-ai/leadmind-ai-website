@@ -20,7 +20,7 @@ export default function CTASection({ cta, locale }: CTASectionProps) {
       <Container>
         <FadeIn>
           <div className="rounded-2xl border border-surface-elevated bg-surface-container px-8 py-20 text-center">
-            <h2 className="text-2xl font-normal text-on-surface md:text-3xl lg:text-4xl">
+            <h2 className="text-3xl font-normal text-on-surface md:text-4xl lg:text-5xl">
               {cta.title}
             </h2>
             {cta.subtitle && (
