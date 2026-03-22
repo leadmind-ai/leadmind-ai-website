@@ -26,6 +26,7 @@ export function Header({ nav, locale }: HeaderProps) {
   const otherLocale = locale === "fr" ? "en" : "fr";
 
   const links = [
+    { label: nav.home, href: `/${locale}` },
     { label: nav.solutions, href: `/${locale}/solutions` },
     { label: nav.formations, href: `/${locale}/formations` },
     { label: nav.pricing, href: `/${locale}/tarifs` },
