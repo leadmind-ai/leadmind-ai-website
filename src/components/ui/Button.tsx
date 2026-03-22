@@ -25,7 +25,7 @@ export function Button({
   };
 
   const variants = {
-    primary: "bg-accent text-white shadow-sm group",
+    primary: "bg-teal text-white shadow-sm group hover:bg-teal-light",
     outline:
       "border border-surface-elevated text-on-surface hover:bg-surface-elevated/50",
     ghost: "text-on-surface-muted hover:text-on-surface hover:bg-white/[0.06]",
