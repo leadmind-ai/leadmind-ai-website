@@ -25,32 +25,48 @@ export function Header({ nav, locale }: HeaderProps) {
   const [mobileOpen, setMobileOpen] = useState(false);
   const otherLocale = locale === "fr" ? "en" : "fr";
 
-  const links = [
+  const leftLinks = [
     { label: nav.home, href: `/${locale}` },
     { label: nav.solutions, href: `/${locale}/solutions` },
     { label: nav.formations, href: `/${locale}/formations` },
-    { label: nav.pricing, href: `/${locale}/tarifs` },
-    { label: nav.about, href: `/${locale}/a-propos` },
-    { label: nav.contact, href: `/${locale}/contact` },
   ];
+
+  const rightLinks = [
+    { label: nav.about, href: `/${locale}/a-propos` },
+    { label: nav.pricing, href: `/${locale}/tarifs` },
+  ];
+
+  const mobileLinks = [...leftLinks, ...rightLinks];
 
   return (
     <header className="fixed left-0 right-0 top-0 z-50 gradient-header-fade">
       <div className="mx-auto flex h-[72px] max-w-[1200px] items-center justify-between px-6 md:px-8">
-        <Link href={`/${locale}`} className="flex items-center">
-          <Image
-            src="/images/logo-dark.png"
-            alt="LeadMind AI"
-            width={800}
-            height={447}
-            priority
-            className="h-14 w-auto sm:h-16"
-          />
-        </Link>
+        <div className="flex items-center gap-8">
+          <Link href={`/${locale}`} className="flex items-center">
+            <Image
+              src="/images/logo-dark.png"
+              alt="LeadMind AI"
+              width={800}
+              height={447}
+              priority
+              className="h-14 w-auto sm:h-16"
+            />
+          </Link>
+          <nav className="hidden items-center gap-6 md:flex">
+            {leftLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="text-sm font-medium text-on-surface-muted transition-colors hover:text-on-surface"
+              >
+                {link.label}
+              </Link>
+            ))}
+          </nav>
+        </div>
 
-        {/* Desktop nav */}
-        <nav className="hidden items-center gap-8 md:flex">
-          {links.map((link) => (
+        <nav className="hidden items-center gap-6 md:flex">
+          {rightLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
@@ -70,7 +86,6 @@ export function Header({ nav, locale }: HeaderProps) {
           </Button>
         </nav>
 
-        {/* Mobile hamburger */}
         <button
           className="md:hidden"
           onClick={() => setMobileOpen(!mobileOpen)}
@@ -102,10 +117,9 @@ export function Header({ nav, locale }: HeaderProps) {
         </button>
       </div>
 
-      {/* Mobile menu */}
       {mobileOpen && (
         <nav className="border-t border-surface-elevated bg-surface/95 px-6 py-4 md:hidden">
-          {links.map((link) => (
+          {mobileLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
