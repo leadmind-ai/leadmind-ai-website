@@ -26,7 +26,7 @@ export default function CTASection({ cta, locale }: CTASectionProps) {
               </h2>
               <p className="mt-4 text-lg text-[#002549]/70">{cta.subtitle}</p>
               <div className="mt-8">
-                <Button href={`/${locale}/contact`} variant="cta">
+                <Button href={`/${locale}/contact`} variant="primary">
                   {cta.button}
                 </Button>
               </div>

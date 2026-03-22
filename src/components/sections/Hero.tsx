@@ -34,7 +34,7 @@ export default function Hero({ hero, locale }: HeroProps) {
             {hero.subtitle}
           </p>
           <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center">
-            <Button href={`/${locale}/contact`} variant="cta" className="px-8 py-3.5">
+            <Button href={`/${locale}/contact`} variant="primary" className="px-8 py-3.5">
               {hero.cta_primary}
             </Button>
             <Button href={`/${locale}/formations`} variant="ghost" className="text-on-surface/60 hover:text-on-surface">

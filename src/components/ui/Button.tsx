@@ -2,7 +2,8 @@ import Link from "next/link";
 
 type ButtonProps = {
   children: React.ReactNode;
-  variant?: "primary" | "secondary" | "ghost" | "cta";
+  variant?: "primary" | "outline" | "ghost";
+  size?: "default" | "lg";
   href?: string;
   className?: string;
 } & React.ButtonHTMLAttributes<HTMLButtonElement>;
@@ -10,22 +11,27 @@ type ButtonProps = {
 export function Button({
   children,
   variant = "primary",
+  size = "default",
   href,
   className = "",
   ...props
 }: ButtonProps) {
   const base =
-    "inline-flex items-center justify-center rounded-lg px-6 py-3 text-base font-medium transition-colors duration-200";
+    "inline-flex items-center justify-center font-medium transition-all duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent";
 
-  const variants = {
-    primary: "bg-teal text-white hover:bg-teal-light",
-    secondary:
-      "border-2 border-accent text-accent hover:bg-accent hover:text-on-surface",
-    ghost: "text-on-surface/70 hover:text-on-surface hover:bg-white/[0.06]",
-    cta: "gradient-cta-premium text-white shadow-purple hover:opacity-90",
+  const sizes = {
+    default: "rounded-lg px-6 py-3 text-base",
+    lg: "rounded-xl px-8 py-4 text-lg",
   };
 
-  const classes = `${base} ${variants[variant]} ${className}`;
+  const variants = {
+    primary: "bg-accent text-white hover:bg-accent/90 shadow-sm",
+    outline:
+      "border border-surface-elevated text-on-surface hover:bg-surface-elevated/50",
+    ghost: "text-on-surface-muted hover:text-on-surface hover:bg-white/[0.06]",
+  };
+
+  const classes = `${base} ${sizes[size]} ${variants[variant]} ${className}`;
 
   if (href) {
     return (

@@ -18,24 +18,29 @@
   --color-teal: #0d9488;
   --color-teal-light: #14b8a6;
   --color-purple: #9e9eff;
+  --color-cta-dark: #0f172a;
+  --color-cta-dark-hover: #1e293b;
+  --color-surface-cta: #111827;
 
   /* Fonts */
   --font-sans: var(--font-inter);
   --font-mono: var(--font-jetbrains-mono), monospace;
 
   /* Typography Scale */
-  --text-display-large: 3.5rem;
-  --text-display-medium: 2.75rem;
+  --text-display-large: 4rem;
+  --text-display-medium: 3rem;
   --text-display-small: 2.25rem;
-  --text-headline: 1.5rem;
+  --text-headline: 1.75rem;
+  --text-tagline: 1.25rem;
   --text-body-large: 1rem;
   --text-body-medium: 0.875rem;
   --text-body-small: 0.75rem;
 
-  --leading-display-large: 4rem;
-  --leading-display-medium: 3.25rem;
+  --leading-display-large: 4.5rem;
+  --leading-display-medium: 3.5rem;
   --leading-display-small: 2.75rem;
-  --leading-headline: 2rem;
+  --leading-headline: 2.25rem;
+  --leading-tagline: 1.75rem;
   --leading-body-large: 1.5rem;
   --leading-body-medium: 1.25rem;
   --leading-body-small: 1rem;
