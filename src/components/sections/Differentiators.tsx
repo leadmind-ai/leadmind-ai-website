@@ -14,7 +14,7 @@ export default function Differentiators({ title, items }: DifferentiatorsProps) 
     <section className="py-16 md:py-[var(--spacing-section)]">
       <Container>
         <FadeIn>
-          <h2 className="mb-12 text-center text-3xl font-bold tracking-tight md:text-4xl">
+          <h2 className="mb-12 text-3xl font-bold tracking-tight md:text-4xl">
             {title}
           </h2>
         </FadeIn>

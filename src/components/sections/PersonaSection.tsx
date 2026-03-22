@@ -24,12 +24,12 @@ export default function PersonaSection({ personas, locale }: PersonaSectionProps
     <section className="py-16 md:py-[var(--spacing-section)]">
       <Container>
         <FadeIn>
-          <div className="text-center">
+          <div>
             <h2 className="text-3xl font-normal text-on-surface md:text-4xl">
               {personas.title}
             </h2>
             {personas.subtitle && (
-              <p className="mt-4 text-lg text-on-surface-muted">
+              <p className="mt-4 max-w-3xl text-lg text-on-surface-muted">
                 {personas.subtitle}
               </p>
             )}

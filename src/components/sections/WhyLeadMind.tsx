@@ -20,7 +20,7 @@ export default function WhyLeadMind({ why }: WhyLeadMindProps) {
   return (
     <section className="py-16 md:py-[var(--spacing-section)]">
       <Container>
-        <h2 className="text-center text-3xl font-normal text-on-surface md:text-4xl">
+        <h2 className="text-3xl font-normal text-on-surface md:text-4xl">
           {why.title}
         </h2>
         <div className="mt-12 grid gap-8 md:grid-cols-3">

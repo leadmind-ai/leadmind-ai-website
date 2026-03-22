@@ -24,15 +24,15 @@ export default function Hero({ hero, locale }: HeroProps) {
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, ease: "easeOut" }}
-          className="mx-auto max-w-4xl text-center"
+          className="max-w-4xl"
         >
           <h1 className="gradient-hero-text text-[2.5rem] font-normal leading-[1.1] tracking-tight md:text-[3.25rem] lg:text-[4rem]">
             {hero.title}
           </h1>
-          <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-on-surface-muted md:text-lg">
+          <p className="mt-6 max-w-3xl text-base leading-relaxed text-on-surface-muted md:text-lg">
             {hero.subtitle}
           </p>
-          <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
+          <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center">
             <Button href={`/${locale}/contact`} variant="primary" size="lg">
               {hero.cta_primary}
             </Button>

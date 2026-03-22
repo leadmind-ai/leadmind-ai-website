@@ -13,7 +13,7 @@ export default function Values({ title, values }: ValuesProps) {
   return (
     <section className="py-16 md:py-[var(--spacing-section)]">
       <Container>
-        <h2 className="text-center text-3xl font-normal text-on-surface">
+        <h2 className="text-3xl font-normal text-on-surface">
           {title}
         </h2>
         <StaggerChildren className="mt-12 grid gap-6 md:grid-cols-3">

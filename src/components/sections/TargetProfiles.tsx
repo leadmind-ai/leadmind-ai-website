@@ -13,7 +13,7 @@ export default function TargetProfiles({ title, profiles }: TargetProfilesProps)
     <section className="py-16 md:py-[var(--spacing-section)]">
       <Container>
         <FadeIn>
-          <h2 className="mb-10 text-center text-3xl font-bold tracking-tight md:text-4xl">
+          <h2 className="mb-10 text-3xl font-bold tracking-tight md:text-4xl">
             {title}
           </h2>
         </FadeIn>

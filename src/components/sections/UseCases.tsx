@@ -20,12 +20,12 @@ export default function UseCases({ useCases }: UseCasesProps) {
     <section className="py-16 md:py-[var(--spacing-section)]">
       <Container>
         <FadeIn>
-          <div className="text-center">
+          <div>
             <h2 className="text-2xl font-normal text-on-surface md:text-3xl">
               {useCases.title}
             </h2>
             {useCases.subtitle && (
-              <p className="mx-auto mt-4 max-w-2xl text-base text-on-surface-muted">
+              <p className="mt-4 max-w-3xl text-base text-on-surface-muted">
                 {useCases.subtitle}
               </p>
             )}

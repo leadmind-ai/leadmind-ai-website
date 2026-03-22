@@ -24,7 +24,7 @@ export default function CredibilityStats({
     <section className="py-16 md:py-[var(--spacing-section)]">
       <Container>
         <FadeIn>
-          <h2 className="text-center text-3xl font-normal text-on-surface md:text-4xl">
+          <h2 className="text-3xl font-normal text-on-surface md:text-4xl">
             {credibility.title}
           </h2>
         </FadeIn>
@@ -64,7 +64,7 @@ export default function CredibilityStats({
         {/* Affiliations */}
         <FadeIn>
           <div className="mt-8">
-            <ul className="flex flex-wrap justify-center gap-x-6 gap-y-2">
+            <ul className="flex flex-wrap gap-x-6 gap-y-2">
               {credibility.affiliations.map((aff, i) => (
                 <li
                   key={i}
