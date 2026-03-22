@@ -20,7 +20,7 @@ export async function generateMetadata({
   const dict = await getDictionary(locale as Locale);
   return createMetadata({
     title: `LeadMind AI — ${dict.hero.title}`,
-    description: `${dict.hero.subtitle_line1} ${dict.hero.subtitle_line2}`,
+    description: dict.hero.subtitle,
     locale: locale as Locale,
     path: "",
   });

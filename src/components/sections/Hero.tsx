@@ -8,8 +8,7 @@ import type { Locale } from "@/lib/i18n";
 type HeroProps = {
   hero: {
     title: string;
-    subtitle_line1: string;
-    subtitle_line2: string;
+    subtitle: string;
     cta_primary: string;
     cta_secondary: string;
   };
@@ -30,11 +29,8 @@ export default function Hero({ hero, locale }: HeroProps) {
           <h1 className="gradient-hero-text text-[2.5rem] font-normal leading-[1.1] tracking-tight md:text-[3.25rem] lg:text-[4rem]">
             {hero.title}
           </h1>
-          <p className="mx-auto mt-6 max-w-3xl text-base font-medium leading-relaxed text-on-surface/80 md:text-lg">
-            {hero.subtitle_line1}
-          </p>
-          <p className="mx-auto mt-3 max-w-3xl text-base leading-relaxed text-on-surface-muted md:text-lg">
-            {hero.subtitle_line2}
+          <p className="mx-auto mt-6 max-w-3xl text-base leading-relaxed text-on-surface-muted md:text-lg">
+            {hero.subtitle}
           </p>
           <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
             <Button href={`/${locale}/contact`} variant="primary" size="lg">
