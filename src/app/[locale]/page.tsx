@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { getDictionary, type Locale } from "@/lib/i18n";
 import { createMetadata, organizationJsonLd, faqJsonLd } from "@/lib/metadata";
 import Hero from "@/components/sections/Hero";
-import LogoBar from "@/components/sections/LogoBar";
 import PainPoints from "@/components/sections/PainPoints";
 import ProcessPhases from "@/components/sections/ProcessPhases";
 import UseCases from "@/components/sections/UseCases";
@@ -49,10 +48,6 @@ export default async function HomePage({
         }}
       />
       <Hero hero={dict.hero} locale={locale as Locale} />
-      <LogoBar
-        title={dict.credibility.logos_title}
-        logos={dict.credibility.logos}
-      />
       <PainPoints painPoints={dict.pain_points} />
       <ProcessPhases phases={dict.process_phases} />
       <UseCases useCases={dict.use_cases} />
