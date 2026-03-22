@@ -8,8 +8,10 @@ import type { Locale } from "@/lib/i18n";
 
 type NavDict = {
   home: string;
+  solutions: string;
+  formations: string;
+  pricing: string;
   about: string;
-  services: string;
   contact: string;
   cta: string;
 };
@@ -24,14 +26,16 @@ export function Header({ nav, locale }: HeaderProps) {
   const otherLocale = locale === "fr" ? "en" : "fr";
 
   const links = [
+    { label: nav.solutions, href: `/${locale}/solutions` },
+    { label: nav.formations, href: `/${locale}/formations` },
+    { label: nav.pricing, href: `/${locale}/tarifs` },
     { label: nav.about, href: `/${locale}/a-propos` },
-    { label: nav.services, href: `/${locale}/formations` },
     { label: nav.contact, href: `/${locale}/contact` },
   ];
 
   return (
     <header className="fixed left-0 right-0 top-0 z-50 gradient-header-fade">
-      <div className="mx-auto flex h-[104px] max-w-[1200px] items-center justify-between px-6 md:px-8">
+      <div className="mx-auto flex h-[72px] max-w-[1200px] items-center justify-between px-6 md:px-8">
         <Link href={`/${locale}`} className="flex items-center">
           <Image
             src="/images/logo-dark.png"
@@ -39,7 +43,7 @@ export function Header({ nav, locale }: HeaderProps) {
             width={800}
             height={447}
             priority
-            className="h-20 w-auto sm:h-24 md:h-28"
+            className="h-14 w-auto sm:h-16"
           />
         </Link>
 
@@ -70,6 +74,7 @@ export function Header({ nav, locale }: HeaderProps) {
           className="md:hidden"
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label="Menu"
+          aria-expanded={mobileOpen}
         >
           <svg
             className="h-6 w-6"

@@ -17,15 +17,18 @@ type FAQProps = {
   };
 };
 
-function FAQAccordion({ item, isOpen, onToggle }: {
+function FAQAccordion({ item, isOpen, onToggle, index }: {
   item: FAQItem;
   isOpen: boolean;
   onToggle: () => void;
+  index: number;
 }) {
   return (
     <div className="border-b border-surface-elevated">
       <button
         onClick={onToggle}
+        aria-expanded={isOpen}
+        aria-controls={`faq-answer-${index}`}
         className="flex w-full items-center justify-between py-5 text-left transition-colors hover:text-accent"
       >
         <span className="pr-4 font-normal text-on-surface">{item.question}</span>
@@ -50,7 +53,11 @@ function FAQAccordion({ item, isOpen, onToggle }: {
             transition={{ duration: 0.3, ease: "easeInOut" }}
             className="overflow-hidden"
           >
-            <div className="pb-5 text-sm leading-relaxed text-on-surface-muted whitespace-pre-line">
+            <div
+              id={`faq-answer-${index}`}
+              role="region"
+              className="pb-5 text-sm leading-relaxed text-on-surface-muted whitespace-pre-line"
+            >
               {item.answer}
             </div>
           </motion.div>
@@ -78,6 +85,7 @@ export default function FAQ({ faq }: FAQProps) {
               item={item}
               isOpen={openIndex === i}
               onToggle={() => setOpenIndex(openIndex === i ? null : i)}
+              index={i}
             />
           ))}
         </div>

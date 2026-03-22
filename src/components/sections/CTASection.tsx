@@ -19,17 +19,19 @@ export default function CTASection({ cta, locale }: CTASectionProps) {
     <section className="py-16 md:py-[var(--spacing-section)]">
       <Container>
         <FadeIn>
-          <div className="shine bg-[#f9fbfe] rounded-2xl mx-4 md:mx-8 px-8 py-16">
-            <div className="text-center">
-              <h2 className="text-3xl font-normal text-[#002549] md:text-4xl">
-                {cta.title}
-              </h2>
-              <p className="mt-4 text-lg text-[#002549]/70">{cta.subtitle}</p>
-              <div className="mt-8">
-                <Button href={`/${locale}/contact`} variant="primary">
-                  {cta.button}
-                </Button>
-              </div>
+          <div className="rounded-2xl border border-surface-elevated bg-surface-container px-8 py-20 text-center">
+            <h2 className="text-2xl font-normal text-on-surface md:text-3xl lg:text-4xl">
+              {cta.title}
+            </h2>
+            {cta.subtitle && (
+              <p className="mx-auto mt-4 max-w-2xl text-base text-on-surface-muted">
+                {cta.subtitle}
+              </p>
+            )}
+            <div className="mt-8">
+              <Button href={`/${locale}/contact`} variant="primary" size="lg">
+                {cta.button}
+              </Button>
             </div>
           </div>
         </FadeIn>

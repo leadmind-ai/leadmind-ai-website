@@ -1,10 +1,12 @@
 {
   "nav": {
     "home": "Home",
+    "solutions": "Solutions",
+    "formations": "Training",
+    "pricing": "Pricing",
     "about": "About",
-    "services": "Training & Services",
     "contact": "Contact",
-    "cta": "Let's discuss your challenges"
+    "cta": "Request a demo"
   },
   "hero": {
     "title": "AI that speaks fluent actuarial science and finance.",
@@ -158,14 +160,54 @@
       "cta_label": "Describe your use case"
     }
   },
+  "modules_ia": {
+    "title": "Custom AI Modules",
+    "subtitle": "Deployed solutions that automate your business processes — from a 2-week POC to full deployment.",
+    "items": [
+      { "title": "Regulatory Reporting", "description": "SFCR, RSR, QRT, XBRL automation. AI-assisted generation and validation.", "badge": "Flagship" },
+      { "title": "SCR & ORSA", "description": "Automated market SCR calculations, stress testing, ORSA scenarios.", "badge": "" },
+      { "title": "ALM & Cash-Flow Projections", "description": "Flexible ALM modeling, cash-flow projections, balance sheet optimization.", "badge": "" },
+      { "title": "Augmented Portfolio Management", "description": "AI-assisted portfolio management, screening, DCF valuation, ESG scoring.", "badge": "" },
+      { "title": "Business Chatbots & AI Dashboards", "description": "Conversational chatbots for insurance data, AI-generated interactive dashboards.", "badge": "" },
+      { "title": "Claims Management", "description": "Automated triage, reserve estimation, fraud detection, correspondence.", "badge": "" },
+      { "title": "AI Application Development", "description": "Design and development of business applications with Claude AI: internal tools, client portals, workflow automation.", "badge": "New" }
+    ],
+    "custom_text": "Specific need? We develop custom AI modules tailored to your business processes. From a 2-week POC to full deployment.",
+    "custom_cta": "Tell us about your need"
+  },
+  "accompagnement": {
+    "title": "Support & Guidance",
+    "subtitle": "From assessment to complete transformation.",
+    "items": [
+      { "title": "AI Audit", "description": "Assessment of your AI maturity, identification of priority use cases, actionable roadmap.", "duration": "1-2 weeks" },
+      { "title": "Rapid POC", "description": "Proof of concept on a concrete business use case, functional deliverable.", "duration": "2 weeks" },
+      { "title": "Deployment & Integration", "description": "Full development, IT integration, team training, production rollout.", "duration": "3-6 months" },
+      { "title": "Ongoing Training", "description": "Subscription: AI monitoring, update sessions, continuous technical support.", "duration": "Annual" }
+    ]
+  },
   "credibility": {
     "title": "Why trust us",
     "stats": [
-      { "value": "15 yrs", "label": "of senior actuarial experience" },
-      { "value": "CFA", "label": "Charterholder — finance & asset management expertise" },
-      { "value": "3", "label": "top-tier insurance companies" },
-      { "value": "70%", "label": "time saved on report generation" },
-      { "value": "6+", "label": "offerings covering actuarial, finance and beyond" }
+      {
+        "value": "15 yrs",
+        "label": "of senior actuarial experience"
+      },
+      {
+        "value": "CFA",
+        "label": "Charterholder — finance & asset management expertise"
+      },
+      {
+        "value": "3",
+        "label": "top-tier insurance companies"
+      },
+      {
+        "value": "70%",
+        "label": "time saved on report generation"
+      },
+      {
+        "value": "6+",
+        "label": "offerings covering actuarial, finance and beyond"
+      }
     ],
     "founder": {
       "name": "Herman Njouonang",
@@ -189,34 +231,62 @@
       "Dynamous AI — Active member"
     ]
   },
+  "pricing": {
+    "title": "Transparent pricing",
+    "subtitle": "Clear prices, no surprises. Positioned as justified premium thanks to our dual domain + AI expertise.",
+    "formations_title": "Training",
+    "formations_grid": [
+      { "label": "1-day training (Executive)", "price": "EUR 900 — 1,200 / pers", "detail": "Executive & back-office introduction" },
+      { "label": "2-day training (professional)", "price": "EUR 1,800 — 2,500 / pers", "detail": "Specialized training by profession" },
+      { "label": "3-5 day training (certified)", "price": "EUR 3,500 — 6,000 / pers", "detail": "Bronze/Silver/Gold certification" }
+    ],
+    "modules_title": "AI Modules",
+    "modules_grid": [
+      { "label": "POC (proof of concept)", "price": "EUR 30,000 — 80,000", "detail": "Tangible results in 2-8 weeks" },
+      { "label": "Full transformation", "price": "EUR 150,000 — 500,000", "detail": "Complete deployment, 3-12 months" }
+    ],
+    "note": "All prices are excluding tax. CPF/OPCO eligibility pending (Qualiopi certification).",
+    "cta_title": "Need a custom quote?",
+    "cta_button": "Request a quote"
+  },
   "personas": {
-    "title": "For every decision-maker, a targeted answer",
-    "subtitle": "Our solutions adapt to your specific challenges",
+    "title": "Who is LeadMind AI for",
+    "subtitle": "6 target sectors, one promise: AI that understands your business.",
     "items": [
-      {
-        "role": "Head of Actuarial",
-        "pain": "Your teams spend weeks on the SFCR instead of analyzing risks.",
-        "solution": "Our AI agent produces the SFCR in 3 days. Your actuaries regain time for analysis and stress-tests.",
-        "cta": "See the S2 Reporting Agent"
-      },
-      {
-        "role": "CIO / CTO",
-        "pain": "Generic AI doesn't integrate with your systems or meet your security requirements.",
-        "solution": "On-premise or private cloud deployment, REST API, full traceability, built-in AI Act compliance.",
-        "cta": "Discuss technical integration"
-      },
-      {
-        "role": "C-Suite / CEO",
-        "pain": "AI budgets are rising but 80% of insurance AI projects fail.",
-        "solution": "Measurable ROI from the first cycle. EUR 30K pilot with contractual KPIs. No long-term commitment without results.",
-        "cta": "Evaluate ROI"
-      },
-      {
-        "role": "Consultants & Firms",
-        "pain": "Your clients demand AI but your teams aren't trained on domain-specific use cases.",
-        "solution": "Intensive one-day training. Your consultants use AI the next day on their actuarial assignments.",
-        "cta": "Train my teams"
-      }
+      { "role": "Insurance", "pain": "Your actuaries spend weeks on reporting instead of analyzing risks.", "solution": "Specialized AI modules (SFCR, SCR, ALM) + certified training for your teams.", "cta": "Discover our insurance solutions" },
+      { "role": "Asset Management", "pain": "Management reports and portfolio analysis are time-consuming and manual.", "solution": "Portfolio Management Agent + CFA x AI training — a unique market positioning.", "cta": "Explore the finance offering" },
+      { "role": "Consulting Firms", "pain": "Your clients demand AI but your consultants aren't trained on domain-specific use cases.", "solution": "Intensive one-day training. Your consultants use AI the next day on their assignments.", "cta": "Train my teams" },
+      { "role": "Banking & Credit", "pain": "Risk departments and banking ALM are looking for reliable and auditable AI solutions.", "solution": "ALM and compliance modules tailored to the banking context. Dual CFA + actuarial expertise.", "cta": "Discuss your challenges" },
+      { "role": "Large Enterprises", "pain": "Digital transformation is underway but AI adoption stalls due to lack of suitable training.", "solution": "3-12 month transformation program. Mass training + AI module deployment.", "cta": "Plan the transformation" },
+      { "role": "Brokers & Intermediaries", "pain": "Need for immediate productivity with quickly visible ROI.", "solution": "Short training courses (1-2 days) + business chatbots to automate repetitive tasks.", "cta": "See short training courses" }
+    ]
+  },
+  "pain_points": {
+    "headline": "The best insurance and finance experts spend weeks producing instead of deciding.",
+    "items": [
+      { "number": "01", "title": "Regulatory reporting devours your experts", "description": "SFCR production takes 2 to 3 weeks every year. Copy-paste, rewording, formatting — tedious work for overqualified actuaries." },
+      { "number": "02", "title": "Generic AI doesn't understand your business", "description": "ChatGPT doesn't know the structure of an SFCR, nor ACPR requirements. It produces plausible but inaccurate text — exactly the type of error that gets sanctioned." },
+      { "number": "03", "title": "AI budgets are soaring, results are missing", "description": "AI budgets are up 430% in the sector, but 80% of projects fail in insurance. Not for lack of technology — for lack of domain understanding." }
+    ]
+  },
+  "process_phases": {
+    "title": "Our 3-step approach",
+    "items": [
+      { "number": "01", "title": "Assessment & Scoping", "description": "Analysis of your data, formats, and constraints. Identification of high-ROI use cases. Scope and success criteria defined in 1 to 2 weeks." },
+      { "number": "02", "title": "Build & Deploy", "description": "Development of custom AI modules or intensive team training. Iterative testing with your experts. First results by week 4." },
+      { "number": "03", "title": "Autonomy & Transformation", "description": "Your teams are trained and autonomous. Post-deployment support included. Documented impact measurement. Gradual expansion to other processes." }
+    ]
+  },
+  "use_cases": {
+    "title": "Application areas",
+    "subtitle": "Our expertise covers the full range of technical roles in insurance and finance.",
+    "items": [
+      { "title": "Regulatory Reporting", "description": "SFCR, RSR, QRT, XBRL — end-to-end automation of Solvency 2 reporting." },
+      { "title": "SCR & Capital", "description": "Automated Market SCR calculation, stress testing, ORSA scenarios, automatic documentation." },
+      { "title": "ALM & Projections", "description": "Asset-liability modeling, cash flow projections, balance sheet optimization, sensitivity analyses." },
+      { "title": "Portfolio Management", "description": "AI-assisted portfolio management: multi-criteria screening, DCF valuation, ESG scoring." },
+      { "title": "AI Training by Profession", "description": "21 specialized training programs with Bronze/Silver/Gold certification. From life actuaries to executives." },
+      { "title": "Transformation & Support", "description": "From AI audit to full deployment. 3 to 12-month support for lasting transformation." }
     ]
   },
   "testimonials": {
@@ -333,52 +403,214 @@
     "founder_name": "Herman Njouonang",
     "founder_role": "Founder & CEO",
     "founder_intro": "Herman Njouonang spent 15 years in actuarial science and quantitative finance. At MACSF, he led the Life Actuarial & Modeling department. At Credit Agricole Assurances, he was an ALM expert at one of Europe's leading bancassurers. At Generali, a savings inventory actuary.\n\nISUP graduate, CFA Charterholder — a certification opening the world of asset management, banking, and portfolio management —, Executive MBA from Paris Dauphine-PSL, he now teaches artificial intelligence at Dauphine-PSL within the Master 1 Insurance Law program.\n\nIn 2023, he discovered the potential of generative AI applied to quantitative professions. Over 3 years, he built, tested, and deployed AI solutions in real-world contexts: Solvency 2 regulatory reporting, Market SCR calculation, ALM modeling, portfolio management, technical team training.\n\nHe founded LeadMind AI with a simple conviction: AI augments the intelligence of actuarial and financial professions — so that teams spend less time producing and more time deciding.",
-    "founder_credentials": ["CFA Charterholder", "Executive MBA Dauphine-PSL", "15+ yrs Insurance & Finance", "AI Lecturer — Dauphine-PSL"],
+    "founder_credentials": [
+      "CFA Charterholder",
+      "Executive MBA Dauphine-PSL",
+      "15+ yrs Insurance & Finance",
+      "AI Lecturer — Dauphine-PSL"
+    ],
     "founder_highlights": [
-      { "title": "Areas of expertise", "period": "15+ years", "text": "Solvency 2 (all 3 pillars), ALM, technical provisions, pricing, actuarial modeling, portfolio management, financial risk management." },
-      { "title": "Finance certifications", "period": "CFA Institute", "text": "CFA Charterholder, Advanced Private Wealth Management (CFA Institute), Executive MBA CHEA Paris Dauphine-PSL." },
-      { "title": "AI certifications", "period": "Google, Deeplearning.ai", "text": "Google Generative AI Intensive, Deeplearning.ai, Prompt Engineering (Vanderbilt University — Jules White), Tactical Agentic Engineering." },
-      { "title": "Teaching & Community", "period": "Since 2024", "text": "AI Lecturer at Paris Dauphine-PSL (Master 1 Insurance Law). AI Speaker at the Executive MBA Insurance CHEA/Dauphine. Speaker at ALM & AI Lunch. Active member of the Dynamous AI community." }
+      {
+        "title": "Areas of expertise",
+        "period": "15+ years",
+        "text": "Solvency 2 (all 3 pillars), ALM, technical provisions, pricing, actuarial modeling, portfolio management, financial risk management."
+      },
+      {
+        "title": "Finance certifications",
+        "period": "CFA Institute",
+        "text": "CFA Charterholder, Advanced Private Wealth Management (CFA Institute), Executive MBA CHEA Paris Dauphine-PSL."
+      },
+      {
+        "title": "AI certifications",
+        "period": "Google, Deeplearning.ai",
+        "text": "Google Generative AI Intensive, Deeplearning.ai, Prompt Engineering (Vanderbilt University — Jules White), Tactical Agentic Engineering."
+      },
+      {
+        "title": "Teaching & Community",
+        "period": "Since 2024",
+        "text": "AI Lecturer at Paris Dauphine-PSL (Master 1 Insurance Law). AI Speaker at the Executive MBA Insurance CHEA/Dauphine. Speaker at ALM & AI Lunch. Active member of the Dynamous AI community."
+      }
     ],
     "founder_conviction": "AI augments the intelligence of actuarial and financial professions — so that teams spend less time producing and more time deciding.",
     "values_title": "Our values",
     "values": [
-      { "title": "Expertise", "description": "Deep technical mastery, continuous learning, constant monitoring." },
-      { "title": "Pragmatism", "description": "Concrete solutions, tangible deliverables, no buzzwords." },
-      { "title": "Measurable impact", "description": "Every engagement produces documented, verifiable ROI." }
+      {
+        "title": "Expertise",
+        "description": "Deep technical mastery, continuous learning, constant monitoring."
+      },
+      {
+        "title": "Pragmatism",
+        "description": "Concrete solutions, tangible deliverables, no buzzwords."
+      },
+      {
+        "title": "Measurable impact",
+        "description": "Every engagement produces documented, verifiable ROI."
+      }
     ],
     "stats_title": "By the numbers"
   },
   "formations": {
-    "hero_title": "Training & Services",
-    "hero_subtitle": "Six ways to work with us — from operational training to full AI transformation",
-    "formations_title": "Training programs",
-    "services_title": "Services",
-    "process_title": "Our approach",
-    "process_steps": [
-      { "title": "Scoping", "description": "Analysis of your data, formats, and constraints. Definition of scope and success criteria." },
-      { "title": "Build", "description": "Development and configuration of the AI agent adapted to your context. Iterative testing with your team." },
-      { "title": "Deployment", "description": "Production rollout, user training, complete documentation." },
-      { "title": "Follow-up", "description": "Post-delivery support, adjustments, guidance through the first campaign." }
+    "hero_title": "AI Training by Profession",
+    "hero_subtitle": "Master Claude AI for your profession. Hands-on training delivered by senior practitioners, with Bronze/Silver/Gold certification.",
+    "tagline": "Master Claude AI for your profession",
+    "certifiantes_title": "Certified Training Programs (3-6 days)",
+    "certifiantes": [
+      {
+        "title": "Life Actuaries",
+        "duration": "4-5 days",
+        "audience": "Life actuaries, IFRS 17, Solvency 2, ORSA",
+        "certification": "Bronze / Silver / Gold"
+      },
+      {
+        "title": "Non-Life Actuaries",
+        "duration": "3-4 days",
+        "audience": "P&C actuaries, pricing, reserving",
+        "certification": "Bronze / Silver / Gold"
+      },
+      {
+        "title": "Financial Analysts (CFA)",
+        "duration": "3-4 days",
+        "audience": "Equity research, M&A, credit analysts",
+        "certification": "Bronze / Silver / Gold"
+      },
+      {
+        "title": "Asset Managers",
+        "duration": "3-4 days",
+        "audience": "Portfolio managers, buy-side analysts",
+        "certification": "Bronze / Silver / Gold"
+      },
+      {
+        "title": "AI & Data Engineers",
+        "duration": "5-6 days",
+        "audience": "Data engineers, ML engineers, data scientists",
+        "certification": "Bronze / Silver / Gold"
+      },
+      {
+        "title": "IT Developers",
+        "duration": "5-6 days",
+        "audience": "Developers, tech leads, architects",
+        "certification": "Bronze / Silver / Gold"
+      }
     ],
-    "cta": "Request a quote",
+    "metier_title": "Professional Training (1-2 days)",
+    "metier": [
+      {
+        "title": "Insurance Underwriters",
+        "duration": "1-2 days",
+        "audience": "Underwriters, risk analysts"
+      },
+      {
+        "title": "Risk Managers / ORSA",
+        "duration": "1-2 days",
+        "audience": "Chief risk officers, ORSA managers"
+      },
+      {
+        "title": "Compliance / Internal Audit",
+        "duration": "1-2 days",
+        "audience": "Compliance officers, auditors"
+      },
+      {
+        "title": "Sales & Business Development",
+        "duration": "1-2 days",
+        "audience": "Sales teams, brokers"
+      },
+      {
+        "title": "Claims Managers",
+        "duration": "1-2 days",
+        "audience": "Claims handlers, indemnity managers"
+      },
+      {
+        "title": "Insurance Accountants (IFRS 17)",
+        "duration": "1-2 days",
+        "audience": "Accountants, financial controllers"
+      },
+      {
+        "title": "Management Controllers",
+        "duration": "1-2 days",
+        "audience": "Controllers, reporting managers"
+      },
+      {
+        "title": "Regulatory Reporting (SFCR/QRT)",
+        "duration": "2 days",
+        "audience": "Reporting teams, regulatory actuaries"
+      },
+      {
+        "title": "ALM & Cash-Flow Projections",
+        "duration": "2 days",
+        "audience": "ALM managers, financial actuaries"
+      },
+      {
+        "title": "Portfolio Management & AI",
+        "duration": "1-2 days",
+        "audience": "Portfolio managers, analysts"
+      },
+      {
+        "title": "Business Chatbots & Dashboards",
+        "duration": "1-2 days",
+        "audience": "Data teams, transformation managers"
+      },
+      {
+        "title": "AI Act & DORA Compliance",
+        "duration": "1 day",
+        "audience": "DPO, legal, compliance, management"
+      },
+      {
+        "title": "AI-Powered Fraud Detection",
+        "duration": "1-2 days",
+        "audience": "Claims teams, compliance, audit"
+      }
+    ],
+    "executive_title": "Executive Training",
+    "executive": {
+      "title": "Executives",
+      "duration": "1 day",
+      "audience": "C-suite, directors, chief actuaries"
+    },
+    "backoffice_title": "Back-Office Training",
+    "backoffice": {
+      "title": "Back-Office / Policy Administration",
+      "duration": "1 day",
+      "audience": "Policy administrators, technical assistants"
+    },
+    "custom_title": "Custom Training",
+    "custom_text": "Your profession is not listed? We design AI training programs tailored to any industry and any role.",
+    "custom_cta": "Contact us for a custom program",
     "differentiators_title": "What sets us apart",
     "differentiators": [
       {
         "title": "Practitioner-trainers",
-        "description": "Our trainers are senior actuaries with 15 years of experience. Not theorists — practitioners who have written SFCRs, calibrated SCRs, and managed ALM models."
+        "description": "Our trainers are senior actuaries with 15 years of field experience. Not theorists."
       },
       {
-        "title": "CFA expertise",
-        "description": "CFA certification opens the world of asset management and portfolio management — a unique perspective for your finance teams."
+        "title": "CFA Expertise",
+        "description": "CFA certification opens the world of asset management and portfolio management — a unique perspective."
       },
       {
         "title": "Concrete use cases",
-        "description": "Each training includes hands-on exercises with your own data and processes. No generic slides — actionable content from the very next Monday."
+        "description": "Hands-on exercises with your own data and processes. Actionable content from the very next Monday."
       },
       {
         "title": "Post-training support",
-        "description": "One month of included support after training to answer your teams' implementation questions."
+        "description": "One month of included support after training for practical implementation."
+      }
+    ],
+    "process_title": "Our approach",
+    "process_steps": [
+      {
+        "title": "Scoping",
+        "description": "Analysis of your data, formats, and constraints. Definition of scope and success criteria."
+      },
+      {
+        "title": "Build",
+        "description": "Development and configuration adapted to your context. Iterative testing with your team."
+      },
+      {
+        "title": "Deployment",
+        "description": "Production rollout, user training, complete documentation."
+      },
+      {
+        "title": "Follow-up",
+        "description": "Post-delivery support, adjustments, guidance through the first campaign."
       }
     ],
     "target_profiles_title": "For whom?",
@@ -387,8 +619,10 @@
       "Finance and asset management departments",
       "Risk and compliance departments",
       "Actuarial consulting firms",
-      "C-suite and technical management"
-    ]
+      "C-suite and technical management",
+      "IT and data teams"
+    ],
+    "cta": "Request a quote"
   },
   "contact": {
     "title": "Contact us",
@@ -399,7 +633,12 @@
       "company": "Company *",
       "job_title": "Job title / Function",
       "subject": "Subject",
-      "subject_options": ["Training", "AI Project", "Consulting", "Other"],
+      "subject_options": [
+        "Training",
+        "AI Project",
+        "Consulting",
+        "Other"
+      ],
       "message": "Your message",
       "submit": "Send",
       "success": "Message sent! We'll get back to you within 24 hours.",
@@ -430,7 +669,12 @@
       },
       "resources": {
         "title": "Resources",
-        "links": ["Blog", "Newsletter", "Case studies", "FAQ"]
+        "links": [
+          "Blog",
+          "Newsletter",
+          "Case studies",
+          "FAQ"
+        ]
       },
       "contact": {
         "title": "Contact",

@@ -28,9 +28,15 @@ export default async function LocaleLayout({
   return (
     <div className="relative min-h-screen">
       <SetLang locale={locale as Locale} />
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-lg focus:bg-accent focus:px-4 focus:py-2 focus:text-white"
+      >
+        Skip to main content
+      </a>
       <GLBackgroundWrapper />
       <Header nav={dict.nav} locale={locale as Locale} />
-      <main className="min-h-screen pt-[104px]">{children}</main>
+      <main id="main-content" className="min-h-screen pt-[72px]">{children}</main>
       <Footer footer={dict.footer} locale={locale as Locale} />
       <CookieBanner locale={locale as string} />
     </div>

@@ -1,10 +1,12 @@
 {
   "nav": {
     "home": "Accueil",
+    "solutions": "Solutions",
+    "formations": "Formations",
+    "pricing": "Tarifs",
     "about": "À propos",
-    "services": "Formations & Services",
     "contact": "Contact",
-    "cta": "Échangeons sur vos enjeux"
+    "cta": "Demander une démo"
   },
   "hero": {
     "title": "L'IA qui parle couramment actuariat et finance.",
@@ -158,14 +160,54 @@
       "cta_label": "Décrivez-nous votre cas d'usage"
     }
   },
+  "modules_ia": {
+    "title": "Modules IA Sur Mesure",
+    "subtitle": "Des solutions déployées qui automatisent vos processus métier — du POC en 2 semaines au déploiement complet.",
+    "items": [
+      { "title": "Reporting Réglementaire", "description": "Automatisation SFCR, RSR, QRT, XBRL. Génération et validation assistées par IA.", "badge": "Offre phare" },
+      { "title": "SCR & ORSA", "description": "Calculs SCR marché automatisés, stress testing, scénarios ORSA.", "badge": "" },
+      { "title": "ALM & Projections Cash-Flow", "description": "Modélisation ALM flexible, projections de flux, optimisation bilan.", "badge": "" },
+      { "title": "Portfolio Management Augmenté", "description": "Gestion de portefeuille assistée IA, screening, valorisation DCF, scoring ESG.", "badge": "" },
+      { "title": "Chatbots Métier & Dashboards IA", "description": "Chatbots conversationnels pour data assurance, dashboards interactifs générés par IA.", "badge": "" },
+      { "title": "Gestion de Sinistres", "description": "Triage automatique, estimation provisions, détection fraude, correspondances.", "badge": "" },
+      { "title": "Développement d'Applications IA", "description": "Conception et développement d'applications métier avec Claude AI : outils internes, portails clients, automatisation de workflows.", "badge": "Nouveau" }
+    ],
+    "custom_text": "Besoin spécifique ? Nous développons des modules IA adaptés à vos processus métier. Du POC en 2 semaines au déploiement complet.",
+    "custom_cta": "Décrivez-nous votre besoin"
+  },
+  "accompagnement": {
+    "title": "Accompagnement",
+    "subtitle": "De l'évaluation à la transformation complète.",
+    "items": [
+      { "title": "Audit IA", "description": "Évaluation de votre maturité IA, identification des cas d'usage prioritaires, feuille de route actionnable.", "duration": "1-2 semaines" },
+      { "title": "POC rapide", "description": "Proof of concept sur un cas d'usage métier concret, livrable fonctionnel.", "duration": "2 semaines" },
+      { "title": "Déploiement & Intégration", "description": "Développement complet, intégration SI, formation des équipes, mise en production.", "duration": "3-6 mois" },
+      { "title": "Formation continue", "description": "Abonnement : veille IA, sessions de mise à jour, support technique continu.", "duration": "Annuel" }
+    ]
+  },
   "credibility": {
     "title": "Pourquoi nous faire confiance",
     "stats": [
-      { "value": "15 ans", "label": "d'expérience en actuariat senior" },
-      { "value": "CFA", "label": "Charterholder — expertise finance & gestion d'actifs" },
-      { "value": "3", "label": "compagnies d'assurance de premier plan" },
-      { "value": "70%", "label": "de temps gagné sur la génération de rapports" },
-      { "value": "6+", "label": "offres couvrant l'actuariat, la finance et au-delà" }
+      {
+        "value": "15 ans",
+        "label": "d'expérience en actuariat senior"
+      },
+      {
+        "value": "CFA",
+        "label": "Charterholder — expertise finance & gestion d'actifs"
+      },
+      {
+        "value": "3",
+        "label": "compagnies d'assurance de premier plan"
+      },
+      {
+        "value": "70%",
+        "label": "de temps gagné sur la génération de rapports"
+      },
+      {
+        "value": "6+",
+        "label": "offres couvrant l'actuariat, la finance et au-delà"
+      }
     ],
     "founder": {
       "name": "Herman Njouonang",
@@ -189,34 +231,62 @@
       "Dynamous AI — Membre actif"
     ]
   },
+  "pricing": {
+    "title": "Tarifs transparents",
+    "subtitle": "Des prix clairs, sans surprises. Positionnés en premium justifié par notre double expertise métier + IA.",
+    "formations_title": "Formations",
+    "formations_grid": [
+      { "label": "Formation 1 jour (Executive)", "price": "900 — 1 200 € / pers", "detail": "Initiation dirigeants, back-office" },
+      { "label": "Formation 2 jours (métier)", "price": "1 800 — 2 500 € / pers", "detail": "Formations spécialisées par métier" },
+      { "label": "Formation 3-5 jours (certifiante)", "price": "3 500 — 6 000 € / pers", "detail": "Certification Bronze/Silver/Gold" }
+    ],
+    "modules_title": "Modules IA",
+    "modules_grid": [
+      { "label": "POC (proof of concept)", "price": "30 000 — 80 000 €", "detail": "Résultat tangible en 2-8 semaines" },
+      { "label": "Transformation complète", "price": "150 000 — 500 000 €", "detail": "Déploiement complet, 3-12 mois" }
+    ],
+    "note": "Tous les prix sont HT. Éligibilité CPF/OPCO en cours d'obtention (Qualiopi).",
+    "cta_title": "Besoin d'un devis sur mesure ?",
+    "cta_button": "Demander un devis"
+  },
   "personas": {
-    "title": "Pour chaque décideur, une réponse ciblée",
-    "subtitle": "Nos solutions s'adaptent à vos enjeux spécifiques",
+    "title": "À qui s'adresse LeadMind AI",
+    "subtitle": "6 secteurs cibles, une même promesse : l'IA qui comprend votre métier.",
     "items": [
-      {
-        "role": "Directeur Actuariat",
-        "pain": "Vos équipes passent des semaines sur le SFCR au lieu d'analyser les risques.",
-        "solution": "Notre agent IA produit le SFCR en 3 jours. Vos actuaires retrouvent du temps pour l'analyse et les stress-tests.",
-        "cta": "Voir l'agent Reporting S2"
-      },
-      {
-        "role": "DSI / CTO",
-        "pain": "L'IA générique ne s'intègre pas à vos systèmes et ne respecte pas vos exigences de sécurité.",
-        "solution": "Déploiement on-premise ou cloud privé, API REST, traçabilité complète, conformité AI Act intégrée.",
-        "cta": "Discuter intégration technique"
-      },
-      {
-        "role": "Direction Générale",
-        "pain": "Les budgets IA augmentent mais 80% des projets échouent dans l'assurance.",
-        "solution": "ROI mesurable dès le premier cycle. Pilote à 30K€ avec KPIs contractuels. Pas d'engagement long terme sans résultats.",
-        "cta": "Évaluer le ROI"
-      },
-      {
-        "role": "Consultants & Cabinets",
-        "pain": "Vos clients demandent de l'IA mais vos équipes ne sont pas formées sur les cas d'usage métier.",
-        "solution": "Formation intensive d'une journée. Vos consultants utilisent l'IA dès le lendemain sur leurs missions actuarielles.",
-        "cta": "Former mes équipes"
-      }
+      { "role": "Assurances", "pain": "Vos actuaires passent des semaines sur le reporting au lieu d'analyser les risques.", "solution": "Modules IA spécialisés (SFCR, SCR, ALM) + formations certifiantes pour vos équipes.", "cta": "Découvrir nos solutions assurance" },
+      { "role": "Asset Management", "pain": "Les rapports de gestion et l'analyse de portefeuille sont chronophages et manuels.", "solution": "Agent Portfolio Management + formation CFA x IA — un positionnement unique sur le marché.", "cta": "Explorer l'offre finance" },
+      { "role": "Cabinets de Conseil", "pain": "Vos clients demandent de l'IA mais vos consultants ne sont pas formés sur les cas d'usage métier.", "solution": "Formation intensive d'une journée. Vos consultants utilisent l'IA dès le lendemain sur leurs missions.", "cta": "Former mes équipes" },
+      { "role": "Banque & Crédit", "pain": "Les directions des risques et l'ALM bancaire cherchent des solutions IA fiables et auditables.", "solution": "Modules ALM et conformité adaptés au contexte bancaire. Double compétence CFA + actuariat.", "cta": "Échanger sur vos enjeux" },
+      { "role": "Grandes Entreprises", "pain": "La transformation digitale est lancée mais l'adoption IA stagne faute de formations adaptées.", "solution": "Programme de transformation 3-12 mois. Formation de masse + déploiement de modules IA.", "cta": "Planifier la transformation" },
+      { "role": "Courtiers & Intermédiaires", "pain": "Besoin de productivité immédiate avec un ROI visible rapidement.", "solution": "Formations courtes (1-2 jours) + chatbots métier pour automatiser les tâches répétitives.", "cta": "Voir les formations courtes" }
+    ]
+  },
+  "pain_points": {
+    "headline": "Les meilleurs experts de l'assurance et de la finance passent des semaines à produire au lieu de décider.",
+    "items": [
+      { "number": "01", "title": "Le reporting réglementaire dévore vos experts", "description": "La production du SFCR prend 2 à 3 semaines chaque année. Copier-coller, reformulation, mise en forme — un travail fastidieux pour des actuaires surqualifiés." },
+      { "number": "02", "title": "L'IA générique ne comprend pas vos métiers", "description": "ChatGPT ne connaît pas la structure d'un SFCR, ni les exigences ACPR. Il produit du texte plausible mais inexact — exactement le type d'erreur qui se sanctionne." },
+      { "number": "03", "title": "Les budgets IA explosent, les résultats manquent", "description": "Les budgets IA augmentent de 430% dans le secteur, mais 80% des projets échouent en assurance. Pas par manque de technologie — par manque de compréhension métier." }
+    ]
+  },
+  "process_phases": {
+    "title": "Notre approche en 3 temps",
+    "items": [
+      { "number": "01", "title": "Diagnostic & Cadrage", "description": "Analyse de vos données, formats et contraintes. Identification des cas d'usage à fort ROI. Définition du périmètre et des critères de succès en 1 à 2 semaines." },
+      { "number": "02", "title": "Construction & Déploiement", "description": "Développement de modules IA sur mesure ou formation intensive de vos équipes. Tests itératifs avec vos experts. Premiers résultats dès la semaine 4." },
+      { "number": "03", "title": "Autonomie & Transformation", "description": "Vos équipes sont formées et autonomes. Support post-déploiement inclus. Mesure d'impact documentée. Élargissement progressif à d'autres processus." }
+    ]
+  },
+  "use_cases": {
+    "title": "Domaines d'application",
+    "subtitle": "Notre expertise couvre l'ensemble des métiers techniques de l'assurance et de la finance.",
+    "items": [
+      { "title": "Reporting Réglementaire", "description": "SFCR, RSR, QRT, XBRL — automatisation de bout en bout du reporting Solvabilité 2." },
+      { "title": "SCR & Capital", "description": "Calcul du SCR Marché automatisé, stress testing, scénarios ORSA, documentation automatique." },
+      { "title": "ALM & Projections", "description": "Modélisation actif-passif, projections de flux, optimisation bilan, analyses de sensibilité." },
+      { "title": "Portfolio Management", "description": "Gestion de portefeuille assistée IA : screening multi-critères, valorisation DCF, scoring ESG." },
+      { "title": "Formation IA par Métier", "description": "21 formations spécialisées avec certification Bronze/Silver/Gold. De l'actuaire vie au dirigeant." },
+      { "title": "Transformation & Accompagnement", "description": "De l'audit IA au déploiement complet. Accompagnement 3 à 12 mois pour une transformation durable." }
     ]
   },
   "testimonials": {
@@ -333,52 +403,214 @@
     "founder_name": "Herman Njouonang",
     "founder_role": "Fondateur & CEO",
     "founder_intro": "Herman Njouonang a passé 15 ans dans l'actuariat et la finance quantitative. Chez MACSF, il a dirigé le département Actuariat Vie et Modélisation. Chez Crédit Agricole Assurances, il était expert ALM au sein d'un des premiers bancassureurs européens. Chez Generali, actuaire inventaire épargne.\n\nDiplômé de l'ISUP, CFA Charterholder — une certification qui lui ouvre le monde de la gestion d'actifs, des banques et du portfolio management —, titulaire d'un Executive MBA de Paris Dauphine-PSL, il enseigne aujourd'hui l'intelligence artificielle à Dauphine-PSL au sein du Master 1 Droit de l'Assurance.\n\nEn 2023, il découvre le potentiel de l'IA générative appliquée aux métiers quantitatifs. Pendant 3 ans, il construit, teste et déploie des solutions IA dans des contextes réels : reporting réglementaire Solvabilité 2, calcul du SCR Marché, modélisation ALM, gestion de portefeuille, formation d'équipes techniques.\n\nIl fonde LeadMind AI avec une conviction simple : l'IA augmente l'intelligence des métiers actuariels et financiers — pour que les équipes passent moins de temps à produire et plus de temps à décider.",
-    "founder_credentials": ["CFA Charterholder", "Executive MBA Dauphine-PSL", "15+ ans Assurance & Finance", "Enseignant IA — Dauphine-PSL"],
+    "founder_credentials": [
+      "CFA Charterholder",
+      "Executive MBA Dauphine-PSL",
+      "15+ ans Assurance & Finance",
+      "Enseignant IA — Dauphine-PSL"
+    ],
     "founder_highlights": [
-      { "title": "Domaines d'expertise", "period": "15+ ans", "text": "Solvabilité 2 (3 piliers), ALM, provisions techniques, tarification, modélisation actuarielle, gestion de portefeuille, gestion des risques financiers." },
-      { "title": "Certifications Finance", "period": "CFA Institute", "text": "CFA Charterholder, Advanced Private Wealth Management (CFA Institute), Executive MBA CHEA Paris Dauphine-PSL." },
-      { "title": "Certifications IA", "period": "Google, Deeplearning.ai", "text": "Google Generative AI Intensive, Deeplearning.ai, Prompt Engineering (Vanderbilt University — Jules White), Tactical Agentic Engineering." },
-      { "title": "Enseignement & Communauté", "period": "Depuis 2024", "text": "Enseignant en IA à Paris Dauphine-PSL (Master 1 Droit de l'Assurance). Intervenant IA de l'Executive MBA Assurance CHEA/Dauphine. Intervenant Déjeuner ALM & IA. Membre actif de la communauté Dynamous AI." }
+      {
+        "title": "Domaines d'expertise",
+        "period": "15+ ans",
+        "text": "Solvabilité 2 (3 piliers), ALM, provisions techniques, tarification, modélisation actuarielle, gestion de portefeuille, gestion des risques financiers."
+      },
+      {
+        "title": "Certifications Finance",
+        "period": "CFA Institute",
+        "text": "CFA Charterholder, Advanced Private Wealth Management (CFA Institute), Executive MBA CHEA Paris Dauphine-PSL."
+      },
+      {
+        "title": "Certifications IA",
+        "period": "Google, Deeplearning.ai",
+        "text": "Google Generative AI Intensive, Deeplearning.ai, Prompt Engineering (Vanderbilt University — Jules White), Tactical Agentic Engineering."
+      },
+      {
+        "title": "Enseignement & Communauté",
+        "period": "Depuis 2024",
+        "text": "Enseignant en IA à Paris Dauphine-PSL (Master 1 Droit de l'Assurance). Intervenant IA de l'Executive MBA Assurance CHEA/Dauphine. Intervenant Déjeuner ALM & IA. Membre actif de la communauté Dynamous AI."
+      }
     ],
     "founder_conviction": "L'IA augmente l'intelligence des métiers actuariels et financiers — pour que les équipes passent moins de temps à produire et plus de temps à décider.",
     "values_title": "Nos valeurs",
     "values": [
-      { "title": "Expertise", "description": "Maîtrise technique profonde, formation continue, veille permanente." },
-      { "title": "Pragmatisme", "description": "Solutions concrètes, livrables tangibles, pas de buzzwords." },
-      { "title": "Impact mesurable", "description": "Chaque mission produit un ROI documenté et vérifiable." }
+      {
+        "title": "Expertise",
+        "description": "Maîtrise technique profonde, formation continue, veille permanente."
+      },
+      {
+        "title": "Pragmatisme",
+        "description": "Solutions concrètes, livrables tangibles, pas de buzzwords."
+      },
+      {
+        "title": "Impact mesurable",
+        "description": "Chaque mission produit un ROI documenté et vérifiable."
+      }
     ],
     "stats_title": "En chiffres"
   },
   "formations": {
-    "hero_title": "Formations & Services",
-    "hero_subtitle": "Six façons de travailler avec nous — de la formation opérationnelle à la transformation IA complète",
-    "formations_title": "Formations",
-    "services_title": "Services",
-    "process_title": "Notre approche",
-    "process_steps": [
-      { "title": "Cadrage", "description": "Analyse de vos données, formats et contraintes. Définition du périmètre et des critères de succès." },
-      { "title": "Construction", "description": "Développement et configuration de l'agent IA adapté à votre contexte. Tests itératifs avec votre équipe." },
-      { "title": "Déploiement", "description": "Mise en production, formation de vos utilisateurs, documentation complète." },
-      { "title": "Suivi", "description": "Support post-livraison, ajustements, accompagnement de la première campagne." }
+    "hero_title": "Formations IA par Métier",
+    "hero_subtitle": "Maîtrisez Claude AI pour votre métier. Des formations pratiques, dispensées par des praticiens seniors, avec certification Bronze/Silver/Gold.",
+    "tagline": "Maîtrisez Claude AI pour votre métier",
+    "certifiantes_title": "Formations Certifiantes (3-6 jours)",
+    "certifiantes": [
+      {
+        "title": "Actuaires Vie",
+        "duration": "4-5 jours",
+        "audience": "Actuaires vie, IFRS 17, Solvabilité 2, ORSA",
+        "certification": "Bronze / Silver / Gold"
+      },
+      {
+        "title": "Actuaires Non-Vie",
+        "duration": "3-4 jours",
+        "audience": "Actuaires IARD, tarification, provisionnement",
+        "certification": "Bronze / Silver / Gold"
+      },
+      {
+        "title": "Analystes Financiers (CFA)",
+        "duration": "3-4 jours",
+        "audience": "Equity research, M&A, credit analysts",
+        "certification": "Bronze / Silver / Gold"
+      },
+      {
+        "title": "Gestionnaires d'Actifs",
+        "duration": "3-4 jours",
+        "audience": "Portfolio managers, buy-side analysts",
+        "certification": "Bronze / Silver / Gold"
+      },
+      {
+        "title": "AI & Data Ingénieurs",
+        "duration": "5-6 jours",
+        "audience": "Data engineers, ML engineers, data scientists",
+        "certification": "Bronze / Silver / Gold"
+      },
+      {
+        "title": "Développeurs IT",
+        "duration": "5-6 jours",
+        "audience": "Développeurs, tech leads, architectes",
+        "certification": "Bronze / Silver / Gold"
+      }
     ],
-    "cta": "Demander un devis",
+    "metier_title": "Formations Métier (1-2 jours)",
+    "metier": [
+      {
+        "title": "Souscripteurs Assurance",
+        "duration": "1-2 jours",
+        "audience": "Souscripteurs, analystes risques"
+      },
+      {
+        "title": "Risk Managers / ORSA",
+        "duration": "1-2 jours",
+        "audience": "Directeurs des risques, responsables ORSA"
+      },
+      {
+        "title": "Compliance / Contrôle Interne",
+        "duration": "1-2 jours",
+        "audience": "Responsables conformité, auditeurs"
+      },
+      {
+        "title": "Commerciaux & Forces de Vente",
+        "duration": "1-2 jours",
+        "audience": "Commerciaux, courtiers"
+      },
+      {
+        "title": "Gestionnaires Sinistres",
+        "duration": "1-2 jours",
+        "audience": "Gestionnaires, responsables indemnisation"
+      },
+      {
+        "title": "Comptables Assurance (IFRS 17)",
+        "duration": "1-2 jours",
+        "audience": "Comptables, contrôleurs financiers"
+      },
+      {
+        "title": "Contrôleurs de Gestion",
+        "duration": "1-2 jours",
+        "audience": "Contrôleurs, responsables reporting"
+      },
+      {
+        "title": "Reporting Réglementaire (SFCR/QRT)",
+        "duration": "2 jours",
+        "audience": "Équipes reporting, actuaires réglementaires"
+      },
+      {
+        "title": "ALM & Cash-Flow Projections",
+        "duration": "2 jours",
+        "audience": "Responsables ALM, actuaires financiers"
+      },
+      {
+        "title": "Portfolio Management & IA",
+        "duration": "1-2 jours",
+        "audience": "Gestionnaires de portefeuille, analystes"
+      },
+      {
+        "title": "Chatbots Métier & Dashboards",
+        "duration": "1-2 jours",
+        "audience": "Équipes data, responsables transformation"
+      },
+      {
+        "title": "Conformité AI Act & DORA",
+        "duration": "1 jour",
+        "audience": "DPO, juridique, compliance, direction"
+      },
+      {
+        "title": "Détection de Fraude par IA",
+        "duration": "1-2 jours",
+        "audience": "Équipes sinistres, compliance, audit"
+      }
+    ],
+    "executive_title": "Formation Executive",
+    "executive": {
+      "title": "Dirigeants (Executive)",
+      "duration": "1 jour",
+      "audience": "COMEX, directeurs, chief actuaries"
+    },
+    "backoffice_title": "Formation Back-office",
+    "backoffice": {
+      "title": "Back-office / Gestion Contrats",
+      "duration": "1 jour",
+      "audience": "Gestionnaires de contrats, assistants techniques"
+    },
+    "custom_title": "Formation Sur-Mesure",
+    "custom_text": "Votre métier n'est pas listé ? Nous concevons des formations IA adaptées à tout secteur et toute fonction.",
+    "custom_cta": "Contactez-nous pour un programme sur-mesure",
     "differentiators_title": "Ce qui nous différencie",
     "differentiators": [
       {
         "title": "Formateurs-praticiens",
-        "description": "Nos formateurs sont des actuaires seniors avec 15 ans d'expérience. Pas des théoriciens — des praticiens qui ont écrit des SFCR, calibré des SCR, et piloté des modèles ALM."
+        "description": "Nos formateurs sont des actuaires seniors avec 15 ans d'expérience terrain. Pas des théoriciens."
       },
       {
         "title": "Expertise CFA",
-        "description": "La certification CFA nous ouvre le monde de la gestion d'actifs et du portfolio management — une perspective unique pour vos équipes finance."
+        "description": "La certification CFA ouvre le monde de la gestion d'actifs et du portfolio management — une perspective unique."
       },
       {
         "title": "Cas d'usage concrets",
-        "description": "Chaque formation inclut des exercices pratiques sur vos propres données et processus. Pas de slides génériques — du concret applicable dès le lundi suivant."
+        "description": "Exercices pratiques sur vos propres données et processus. Du concret applicable dès le lundi suivant."
       },
       {
         "title": "Suivi post-formation",
-        "description": "Un mois d'accompagnement inclus après la formation pour répondre aux questions de mise en pratique de vos équipes."
+        "description": "Un mois d'accompagnement inclus après la formation pour la mise en pratique."
+      }
+    ],
+    "process_title": "Notre approche",
+    "process_steps": [
+      {
+        "title": "Cadrage",
+        "description": "Analyse de vos données, formats et contraintes. Définition du périmètre et des critères de succès."
+      },
+      {
+        "title": "Construction",
+        "description": "Développement et configuration adaptés à votre contexte. Tests itératifs avec votre équipe."
+      },
+      {
+        "title": "Déploiement",
+        "description": "Mise en production, formation de vos utilisateurs, documentation complète."
+      },
+      {
+        "title": "Suivi",
+        "description": "Support post-livraison, ajustements, accompagnement de la première campagne."
       }
     ],
     "target_profiles_title": "Pour qui ?",
@@ -387,8 +619,10 @@
       "Départements finance et gestion d'actifs",
       "Directions des risques et conformité",
       "Cabinets de conseil en actuariat",
-      "Directions générales et directions techniques"
-    ]
+      "Directions générales et directions techniques",
+      "Équipes IT et data"
+    ],
+    "cta": "Demander un devis"
   },
   "contact": {
     "title": "Contactez-nous",
@@ -399,7 +633,12 @@
       "company": "Entreprise *",
       "job_title": "Poste / Fonction",
       "subject": "Objet",
-      "subject_options": ["Formation", "Projet IA", "Conseil", "Autre"],
+      "subject_options": [
+        "Formation",
+        "Projet IA",
+        "Conseil",
+        "Autre"
+      ],
       "message": "Votre message",
       "submit": "Envoyer",
       "success": "Message envoyé ! Nous reviendrons vers vous sous 24h.",
@@ -430,7 +669,12 @@
       },
       "resources": {
         "title": "Ressources",
-        "links": ["Blog", "Newsletter", "Cas concrets", "FAQ"]
+        "links": [
+          "Blog",
+          "Newsletter",
+          "Cas concrets",
+          "FAQ"
+        ]
       },
       "contact": {
         "title": "Contact",
