@@ -22,7 +22,7 @@
   --color-cta-dark-hover: #1e293b;
   --color-surface-cta: #111827;
 
-  /* Fonts — inspired by URLab (Satoshi/Source Sans 3) */
+  /* Fonts */
   --font-sans: var(--font-body), "Source Sans 3", system-ui, sans-serif;
   --font-heading: var(--font-heading), "DM Sans", system-ui, sans-serif;
   --font-mono: ui-monospace, "SFMono-Regular", monospace;
