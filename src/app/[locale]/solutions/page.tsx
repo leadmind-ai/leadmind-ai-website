@@ -30,8 +30,9 @@ export default async function SolutionsPage({
 
   return (
     <>
-      <section className="pb-8 pt-28 md:pt-36">
-        <div className="mx-auto w-full px-6 md:px-12 lg:px-20 xl:px-28">
+      <section className="relative overflow-hidden pb-8 pt-28 md:pt-36">
+        <div className="absolute left-1/2 top-1/2 h-[800px] w-[800px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-teal/[0.15] blur-[180px]" />
+        <div className="relative z-10 mx-auto w-full px-6 md:px-12 lg:px-20 xl:px-28">
           <h1 className="gradient-hero-text text-3xl md:text-4xl lg:text-5xl">
             {dict.modules_ia.title}
           </h1>

@@ -18,7 +18,7 @@ type HeroProps = {
 export default function Hero({ hero, locale }: HeroProps) {
   return (
     <section className="relative overflow-hidden py-28 md:py-40">
-      <div className="absolute left-1/2 top-1/3 h-[600px] w-[600px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-accent/[0.12] blur-[140px]" />
+      <div className="absolute left-1/2 top-1/2 h-[800px] w-[800px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-teal/[0.15] blur-[180px]" />
       <Container className="relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
