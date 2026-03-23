@@ -17,7 +17,7 @@ export default function Mission({ title, text }: MissionProps) {
             <h1 className="text-4xl text-on-surface md:text-5xl">
               {title}
             </h1>
-            <p className="mt-6 text-lg leading-relaxed text-on-surface-muted">
+            <p className="mt-6 whitespace-pre-line text-lg leading-relaxed text-on-surface-muted">
               {text}
             </p>
           </div>
