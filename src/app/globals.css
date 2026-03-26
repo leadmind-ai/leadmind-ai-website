@@ -272,12 +272,12 @@ a, button, [class*="card"] {
   animation: scroll 20s linear infinite;
 }
 
-/* Floating cards — gentle up/down oscillation */
-@keyframes float-card {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-20px); }
+/* 3D Cube rotation — slow continuous spin */
+@keyframes cube-rotate {
+  0% { transform: rotateX(-15deg) rotateY(0deg); }
+  100% { transform: rotateX(-15deg) rotateY(360deg); }
 }
 
-.animate-float-card {
-  animation: float-card 7s ease-in-out infinite;
+.animate-cube-rotate {
+  animation: cube-rotate 20s linear infinite;
 }
