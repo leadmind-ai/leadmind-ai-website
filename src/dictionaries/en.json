@@ -1,6 +1,7 @@
 {
   "nav": {
     "home": "Home",
+    "services": "Services",
     "solutions": "Solutions",
     "formations": "Training",
     "pricing": "Pricing",
@@ -656,10 +657,9 @@
     "brand_description": "AI fluent in actuarial science and finance. Certified training, custom AI modules, end-to-end support.",
     "columns": {
       "solutions": {
-        "title": "Solutions",
+        "title": "Services",
         "links": [
-          { "label": "AI Modules", "href": "/solutions" },
-          { "label": "Training", "href": "/formations" },
+          { "label": "AI Modules & Training", "href": "/services" },
           { "label": "Pricing", "href": "/tarifs" }
         ]
       },

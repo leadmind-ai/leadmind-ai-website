@@ -1,6 +1,7 @@
 {
   "nav": {
     "home": "Accueil",
+    "services": "Services",
     "solutions": "Solutions",
     "formations": "Formations",
     "pricing": "Tarifs",
@@ -656,10 +657,9 @@
     "brand_description": "L'IA qui parle couramment actuariat et finance. Formations certifiantes, modules IA sur mesure, accompagnement de bout en bout.",
     "columns": {
       "solutions": {
-        "title": "Solutions",
+        "title": "Services",
         "links": [
-          { "label": "Modules IA", "href": "/solutions" },
-          { "label": "Formations", "href": "/formations" },
+          { "label": "Modules IA & Formations", "href": "/services" },
           { "label": "Tarifs", "href": "/tarifs" }
         ]
       },

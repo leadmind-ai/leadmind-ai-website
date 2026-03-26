@@ -8,8 +8,9 @@ import type { Locale } from "@/lib/i18n";
 
 type NavDict = {
   home: string;
-  solutions: string;
-  formations: string;
+  services: string;
+  solutions?: string;
+  formations?: string;
   pricing: string;
   about: string;
   contact: string;
@@ -27,8 +28,7 @@ export function Header({ nav, locale }: HeaderProps) {
 
   const leftLinks = [
     { label: nav.home, href: `/${locale}` },
-    { label: nav.solutions, href: `/${locale}/solutions` },
-    { label: nav.formations, href: `/${locale}/formations` },
+    { label: nav.services, href: `/${locale}/services` },
   ];
 
   const rightLinks = [
