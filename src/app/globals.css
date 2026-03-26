@@ -136,6 +136,12 @@ p, li, span, a, div {
     animation: none;
     opacity: 0;
   }
+
+  /* Disable scroll-linked transforms for sticky cards */
+  [data-sticky-top] {
+    transform: none !important;
+    opacity: 1 !important;
+  }
 }
 
 /* === Gradients (DESIGN.md Section 5) === */
