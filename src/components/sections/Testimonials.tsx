@@ -33,7 +33,7 @@ export default function Testimonials({ testimonials }: TestimonialsProps) {
         )}
         <StaggerChildren className="mt-12 grid gap-5 md:grid-cols-2">
           {testimonials.items.map((item, i) => (
-            <StaggerItem key={i}>
+            <StaggerItem key={i} className="h-full">
               <Card shine className="h-full">
                 <blockquote className="text-base italic leading-[1.45] text-[#818181]">
                   &ldquo;{item.quote}&rdquo;

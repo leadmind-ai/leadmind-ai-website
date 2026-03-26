@@ -26,7 +26,7 @@ export default function ProcessPhases({ phases }: ProcessPhasesProps) {
         </FadeIn>
         <StaggerChildren className="mt-16 grid gap-5 md:grid-cols-3">
           {phases.items.map((phase, i) => (
-            <StaggerItem key={i}>
+            <StaggerItem key={i} className="h-full">
               <Card className="flex h-full flex-col">
                 <span className="text-sm font-medium tracking-wider text-accent">
                   {phase.number}

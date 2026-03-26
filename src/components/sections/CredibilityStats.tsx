@@ -32,8 +32,8 @@ export default function CredibilityStats({
         {/* Stats grid */}
         <StaggerChildren className="mt-12 grid gap-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
           {credibility.stats.map((stat, i) => (
-            <StaggerItem key={i}>
-              <Card className="text-center">
+            <StaggerItem key={i} className="h-full">
+              <Card className="text-center h-full">
                 <div className="text-3xl text-accent">
                   {stat.value}
                 </div>
