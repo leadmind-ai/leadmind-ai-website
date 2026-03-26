@@ -31,8 +31,8 @@ export function Button({
 
   const wrapperClass = `shine relative overflow-hidden rounded-[20px] p-px transition-colors duration-200 ${
     variant === "primary"
-      ? "bg-[#002549] hover:bg-[#003d7a]"
-      : "bg-surface-container hover:bg-[#1a3a6b]"
+      ? "bg-[#0d9488] hover:bg-[#14b8a6]"
+      : "bg-[#0d9488]/60 hover:bg-[#14b8a6]"
   }`;
 
   const innerClass = `relative z-10 inline-flex items-center justify-center font-medium rounded-[19px] bg-[rgba(0,0,0,0.85)] backdrop-blur-[60px] text-white w-full ${sizes[size]} ${className}`;
