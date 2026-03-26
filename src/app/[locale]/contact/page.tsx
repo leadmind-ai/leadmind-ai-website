@@ -30,13 +30,14 @@ export default async function ContactPage({
 
   return (
     <>
-      <section className="py-20">
-        <Container>
+      <section className="relative overflow-hidden py-20">
+        <div className="absolute inset-0 pointer-events-none" style={{ background: "radial-gradient(ellipse 70% 50% at 50% 100%, rgba(0,122,244,0.15) 0%, transparent 70%)" }} />
+        <Container className="relative z-10">
           <div className="mx-auto max-w-2xl">
-            <h1 className="text-4xl text-on-surface">
+            <h1 className="font-heading text-4xl tracking-[-0.04em] text-white lg:text-[48px]">
               {dict.contact.title}
             </h1>
-            <p className="mt-4 text-lg text-on-surface-muted">
+            <p className="gradient-subtitle-text mt-4 text-lg">
               {dict.contact.subtitle}
             </p>
             <div className="mt-8">

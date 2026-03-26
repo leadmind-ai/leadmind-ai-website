@@ -39,7 +39,7 @@ export function Header({ nav, locale }: HeaderProps) {
   const mobileLinks = [...leftLinks, ...rightLinks];
 
   return (
-    <header className="fixed left-0 right-0 top-0 z-50 gradient-header-fade">
+    <header className="fixed left-0 right-0 top-0 z-50 bg-transparent">
       <div className="mx-auto flex h-[72px] w-full items-center justify-between px-6 md:px-12 lg:px-20 xl:px-28">
         <div className="flex items-center gap-8">
           <Link href={`/${locale}`} className="flex items-center">
@@ -57,7 +57,7 @@ export function Header({ nav, locale }: HeaderProps) {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-sm font-medium text-on-surface-muted transition-colors hover:text-on-surface"
+                className="text-sm text-[#818181] transition-colors hover:text-white"
               >
                 {link.label}
               </Link>
@@ -70,14 +70,14 @@ export function Header({ nav, locale }: HeaderProps) {
             <Link
               key={link.href}
               href={link.href}
-              className="text-sm font-medium text-on-surface-muted transition-colors hover:text-on-surface"
+              className="text-sm text-[#818181] transition-colors hover:text-white"
             >
               {link.label}
             </Link>
           ))}
           <Link
             href={`/${otherLocale}`}
-            className="text-sm font-medium text-on-surface-muted transition-colors hover:text-on-surface"
+            className="text-sm text-[#818181] transition-colors hover:text-white"
           >
             {otherLocale.toUpperCase()}
           </Link>
@@ -93,7 +93,7 @@ export function Header({ nav, locale }: HeaderProps) {
           aria-expanded={mobileOpen}
         >
           <svg
-            className="h-6 w-6"
+            className="h-6 w-6 text-white"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -118,12 +118,12 @@ export function Header({ nav, locale }: HeaderProps) {
       </div>
 
       {mobileOpen && (
-        <nav className="border-t border-surface-elevated bg-surface/95 px-6 py-4 md:hidden">
+        <nav className="border-t border-surface-elevated bg-black/95 backdrop-blur-[60px] px-6 py-4 md:hidden">
           {mobileLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
-              className="block py-2 text-sm font-medium text-on-surface-muted"
+              className="block py-2 text-sm text-[#818181]"
               onClick={() => setMobileOpen(false)}
             >
               {link.label}
@@ -131,7 +131,7 @@ export function Header({ nav, locale }: HeaderProps) {
           ))}
           <Link
             href={`/${otherLocale}`}
-            className="block py-2 text-sm font-medium text-on-surface-muted"
+            className="block py-2 text-sm text-[#818181]"
           >
             {otherLocale.toUpperCase()}
           </Link>

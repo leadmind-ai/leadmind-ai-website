@@ -35,9 +35,10 @@ export default async function MentionsLegalesPage({
   ];
 
   return (
-    <section className="py-20">
-      <Container>
-        <h1 className="text-3xl text-on-surface md:text-4xl">
+    <section className="relative overflow-hidden py-20">
+      <div className="absolute inset-0 pointer-events-none" style={{ background: "radial-gradient(ellipse 70% 50% at 50% 100%, rgba(0,122,244,0.15) 0%, transparent 70%)" }} />
+      <Container className="relative z-10">
+        <h1 className="font-heading text-3xl tracking-[-0.04em] text-white md:text-4xl lg:text-[48px]">
           {dict.legal.mentions_title}
         </h1>
         <div className="mt-12 max-w-3xl space-y-10">

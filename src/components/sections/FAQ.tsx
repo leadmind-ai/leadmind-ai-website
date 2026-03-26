@@ -1,7 +1,6 @@
 "use client";
 
-import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { useState, useRef, useEffect } from "react";
 import { Container } from "@/components/ui/Container";
 import { FadeIn } from "@/components/ui/FadeIn";
 
@@ -23,6 +22,17 @@ function FAQAccordion({ item, isOpen, onToggle, index }: {
   onToggle: () => void;
   index: number;
 }) {
+  const contentRef = useRef<HTMLDivElement>(null);
+  const [height, setHeight] = useState(0);
+
+  useEffect(() => {
+    if (isOpen && contentRef.current) {
+      setHeight(contentRef.current.scrollHeight);
+    } else {
+      setHeight(0);
+    }
+  }, [isOpen]);
+
   return (
     <div className="border-b border-surface-elevated">
       <button
@@ -31,7 +41,7 @@ function FAQAccordion({ item, isOpen, onToggle, index }: {
         aria-controls={`faq-answer-${index}`}
         className="flex w-full items-center justify-between py-5 text-left transition-colors hover:text-accent"
       >
-        <span className="pr-4 text-on-surface">{item.question}</span>
+        <span className="pr-4 text-white">{item.question}</span>
         <span className="flex-shrink-0 text-accent">
           {isOpen ? (
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
@@ -44,25 +54,23 @@ function FAQAccordion({ item, isOpen, onToggle, index }: {
           )}
         </span>
       </button>
-      <AnimatePresence>
-        {isOpen && (
-          <motion.div
-            initial={{ height: 0, opacity: 0 }}
-            animate={{ height: "auto", opacity: 1 }}
-            exit={{ height: 0, opacity: 0 }}
-            transition={{ duration: 0.3, ease: "easeInOut" }}
-            className="overflow-hidden"
-          >
-            <div
-              id={`faq-answer-${index}`}
-              role="region"
-              className="pb-5 text-sm leading-relaxed text-on-surface-muted whitespace-pre-line"
-            >
-              {item.answer}
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+      <div
+        style={{
+          height,
+          opacity: isOpen ? 1 : 0,
+          overflow: "hidden",
+          transition: "height 0.3s ease-in-out, opacity 0.3s ease-in-out",
+        }}
+      >
+        <div
+          ref={contentRef}
+          id={`faq-answer-${index}`}
+          role="region"
+          className="pb-5 text-base leading-[1.45] text-[#818181] whitespace-pre-line"
+        >
+          {item.answer}
+        </div>
+      </div>
     </div>
   );
 }
@@ -74,7 +82,7 @@ export default function FAQ({ faq }: FAQProps) {
     <section className="py-16 md:py-[var(--spacing-section)]">
       <Container>
         <FadeIn>
-          <h2 className="text-3xl text-on-surface md:text-4xl">
+          <h2 className="text-3xl text-white md:text-4xl lg:text-[48px]">
             {faq.title}
           </h2>
         </FadeIn>

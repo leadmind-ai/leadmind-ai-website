@@ -40,8 +40,8 @@ type FooterProps = {
 
 export function Footer({ footer, locale }: FooterProps) {
   return (
-    <footer className="border-t border-surface-elevated bg-surface text-on-surface">
-      <Container className="py-12">
+    <footer className="border-t border-surface-elevated bg-black text-white">
+      <Container className="py-16">
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
           {/* Column 1: Brand */}
           <div>
@@ -54,20 +54,20 @@ export function Footer({ footer, locale }: FooterProps) {
                 className="h-12 w-12 md:h-14 md:w-14"
               />
               <div>
-                <span className="text-xl font-bold text-on-surface md:text-2xl">
+                <span className="text-xl font-medium text-white md:text-2xl">
                   LeadMind<span className="text-accent">AI</span>
                 </span>
-                <p className="text-sm text-on-surface-muted">AI Training &amp; Solutions</p>
+                <p className="text-sm text-[#818181]">AI Training &amp; Solutions</p>
               </div>
             </div>
-            <p className="mt-4 text-sm leading-relaxed text-on-surface-muted">
+            <p className="mt-4 text-sm leading-relaxed text-[#818181]">
               {footer.brand_description}
             </p>
           </div>
 
           {/* Column 2: Solutions */}
           <div>
-            <h4 className="text-sm font-semibold uppercase tracking-wider text-on-surface-muted">
+            <h4 className="text-sm uppercase tracking-wider text-[#818181]">
               {footer.columns.solutions.title}
             </h4>
             <ul className="mt-3 space-y-2">
@@ -75,7 +75,7 @@ export function Footer({ footer, locale }: FooterProps) {
                 <li key={link.href}>
                   <Link
                     href={`/${locale}${link.href}`}
-                    className="text-sm text-on-surface-muted hover:text-on-surface"
+                    className="text-sm text-[#818181] hover:text-white"
                   >
                     {link.label}
                   </Link>
@@ -86,7 +86,7 @@ export function Footer({ footer, locale }: FooterProps) {
 
           {/* Column 3: Company */}
           <div>
-            <h4 className="text-sm font-semibold uppercase tracking-wider text-on-surface-muted">
+            <h4 className="text-sm uppercase tracking-wider text-[#818181]">
               {footer.columns.company.title}
             </h4>
             <ul className="mt-3 space-y-2">
@@ -94,7 +94,7 @@ export function Footer({ footer, locale }: FooterProps) {
                 <li key={link.href}>
                   <Link
                     href={`/${locale}${link.href}`}
-                    className="text-sm text-on-surface-muted hover:text-on-surface"
+                    className="text-sm text-[#818181] hover:text-white"
                   >
                     {link.label}
                   </Link>
@@ -105,14 +105,14 @@ export function Footer({ footer, locale }: FooterProps) {
 
           {/* Column 4: Contact */}
           <div>
-            <h4 className="text-sm font-semibold uppercase tracking-wider text-on-surface-muted">
+            <h4 className="text-sm uppercase tracking-wider text-[#818181]">
               {footer.columns.contact.title}
             </h4>
             <ul className="mt-3 space-y-2">
               <li>
                 <a
                   href={`mailto:${footer.columns.contact.email}`}
-                  className="text-sm text-on-surface-muted hover:text-on-surface"
+                  className="text-sm text-[#818181] hover:text-white"
                 >
                   {footer.columns.contact.email}
                 </a>
@@ -122,12 +122,12 @@ export function Footer({ footer, locale }: FooterProps) {
                   href={`https://linkedin.com/company/${footer.columns.contact.linkedin}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-sm text-on-surface-muted hover:text-on-surface"
+                  className="text-sm text-[#818181] hover:text-white"
                 >
                   LinkedIn: {footer.columns.contact.linkedin}
                 </a>
               </li>
-              <li className="text-sm text-on-surface-muted">
+              <li className="text-sm text-[#818181]">
                 {footer.columns.contact.location}
               </li>
             </ul>
@@ -136,18 +136,18 @@ export function Footer({ footer, locale }: FooterProps) {
 
         {/* Legal bar */}
         <div className="mt-8 flex flex-col items-center justify-between border-t border-surface-elevated pt-8 md:flex-row">
-          <p className="text-sm text-on-surface-muted">{footer.copyright}</p>
+          <p className="text-sm text-[#818181]">{footer.copyright}</p>
           <div className="mt-4 flex gap-4 md:mt-0">
             <Link
               href={`/${locale}/politique-confidentialite`}
-              className="text-sm text-on-surface-muted hover:text-on-surface"
+              className="text-sm text-[#818181] hover:text-white"
             >
               {footer.links.privacy}
             </Link>
-            <span className="text-on-surface-muted">|</span>
+            <span className="text-[#818181]">|</span>
             <Link
               href={`/${locale}/mentions-legales`}
-              className="text-sm text-on-surface-muted hover:text-on-surface"
+              className="text-sm text-[#818181] hover:text-white"
             >
               {footer.links.legal}
             </Link>

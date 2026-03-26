@@ -23,25 +23,25 @@ export default function Testimonials({ testimonials }: TestimonialsProps) {
   return (
     <section className="py-16 md:py-[var(--spacing-section)]">
       <Container>
-        <h2 className="text-3xl text-on-surface md:text-4xl">
+        <h2 className="text-3xl text-white md:text-4xl lg:text-[48px]">
           {testimonials.title}
         </h2>
         {testimonials.disclaimer && (
-          <p className="mt-2 text-sm text-on-surface-muted/60">
+          <p className="mt-2 text-base text-[#818181]/60">
             {testimonials.disclaimer}
           </p>
         )}
-        <StaggerChildren className="mt-12 grid gap-6 md:grid-cols-2">
+        <StaggerChildren className="mt-12 grid gap-5 md:grid-cols-2">
           {testimonials.items.map((item, i) => (
             <StaggerItem key={i}>
               <Card shine className="h-full">
-                <blockquote className="text-sm italic leading-relaxed text-on-surface-muted">
+                <blockquote className="text-base italic leading-[1.45] text-[#818181]">
                   &ldquo;{item.quote}&rdquo;
                 </blockquote>
                 <div className="mt-4 border-t border-surface-elevated pt-4">
-                  <p className="font-normal text-on-surface">{item.author}</p>
-                  <p className="text-sm text-accent">{item.company}</p>
-                  <p className="mt-1 text-xs text-on-surface-muted">
+                  <p className="text-white">{item.author}</p>
+                  <p className="text-base text-accent">{item.company}</p>
+                  <p className="mt-1 text-sm text-[#818181]">
                     {item.context}
                   </p>
                 </div>

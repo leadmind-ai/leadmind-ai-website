@@ -21,24 +21,24 @@ export default function UseCases({ useCases }: UseCasesProps) {
       <Container>
         <FadeIn>
           <div>
-            <h2 className="text-3xl text-on-surface md:text-4xl lg:text-5xl">
+            <h2 className="text-3xl text-white md:text-4xl lg:text-[48px]">
               {useCases.title}
             </h2>
             {useCases.subtitle && (
-              <p className="mt-4 max-w-3xl text-lg text-on-surface-muted">
+              <p className="mt-4 max-w-3xl text-lg text-[#818181]">
                 {useCases.subtitle}
               </p>
             )}
           </div>
         </FadeIn>
-        <StaggerChildren className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <StaggerChildren className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
           {useCases.items.map((item, i) => (
             <StaggerItem key={i}>
-              <Card className="flex h-full flex-col p-6">
-                <h3 className="text-base font-medium text-on-surface">
+              <Card className="flex h-full flex-col">
+                <h3 className="text-lg text-white">
                   {item.title}
                 </h3>
-                <p className="mt-3 text-sm leading-relaxed text-on-surface-muted">
+                <p className="mt-3 text-base leading-[1.45] text-[#818181]">
                   {item.description}
                 </p>
               </Card>

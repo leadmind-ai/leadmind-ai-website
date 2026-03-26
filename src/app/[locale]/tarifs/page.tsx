@@ -29,12 +29,12 @@ export default async function PricingPage({
   return (
     <>
       <section className="relative overflow-hidden pb-8 pt-28 md:pt-36">
-        <div className="absolute left-1/2 top-1/2 h-[800px] w-[800px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-teal/[0.15] blur-[180px]" />
+        <div className="absolute inset-0 pointer-events-none" style={{ background: "radial-gradient(ellipse 70% 50% at 50% 100%, rgba(0,122,244,0.15) 0%, transparent 70%)" }} />
         <div className="relative z-10 mx-auto w-full px-6 md:px-12 lg:px-20 xl:px-28">
-          <h1 className="gradient-hero-text text-3xl md:text-4xl lg:text-5xl">
+          <h1 className="font-heading text-3xl tracking-[-0.04em] text-white md:text-4xl lg:text-[48px]">
             {dict.pricing.title}
           </h1>
-          <p className="mt-4 max-w-2xl text-base text-on-surface-muted md:text-lg">
+          <p className="gradient-subtitle-text mt-4 max-w-2xl text-base md:text-lg">
             {dict.pricing.subtitle}
           </p>
         </div>

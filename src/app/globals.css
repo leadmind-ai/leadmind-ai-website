@@ -1,26 +1,27 @@
 @import "tailwindcss";
 
 @theme inline {
-  /* Surfaces */
-  --color-surface: #060D1F;
+  /* Surfaces — CodeWiki dark */
+  --color-surface: #000000;
   --color-surface-container: #1a2230;
   --color-surface-elevated: #253145;
   --color-surface-input: #070a0e;
+  --color-surface-card: rgba(0, 0, 0, 0.85);
 
-  /* Text */
+  /* Text — CodeWiki palette */
   --color-on-surface: #ffffff;
-  --color-on-surface-muted: #b0b8c4;
+  --color-on-surface-muted: #818181;
 
-  /* Accents */
-  --color-accent: #0d9488;
+  /* Accents — CodeWiki blue */
+  --color-accent: #007af4;
   --color-accent-soft: #253145;
-  --color-accent-glow: rgba(13, 148, 136, 0.25);
-  --color-teal: #0d9488;
-  --color-teal-light: #14b8a6;
+  --color-accent-glow: rgba(0, 122, 244, 0.25);
+  --color-teal: #007af4;
+  --color-teal-light: #44a2ff;
   --color-purple: #9e9eff;
-  --color-cta-dark: #0f172a;
-  --color-cta-dark-hover: #1e293b;
-  --color-surface-cta: #111827;
+  --color-cta-dark: #002549;
+  --color-cta-dark-hover: #003366;
+  --color-surface-cta: #0a1628;
 
   /* Fonts */
   --font-sans: var(--font-body), "Source Sans 3", system-ui, sans-serif;
@@ -46,9 +47,9 @@
   --leading-body-medium: 1.5rem;
   --leading-body-small: 1.25rem;
 
-  /* Layout */
-  --spacing-section: 120px;
-  --radius-card: 14px;
+  /* Layout — CodeWiki spacing */
+  --spacing-section: 160px;
+  --radius-card: 20px;
   --radius-input: 12px;
   --radius-button: 9999px;
 }
@@ -61,11 +62,11 @@ body {
 
 h1, h2, h3, h4 {
   font-family: var(--font-heading), system-ui, sans-serif;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 p, li, span, a, div {
-  font-weight: 500;
+  font-weight: 400;
 }
 
 /* === Shine Animation (CodeWiki border trail) === */
@@ -79,13 +80,13 @@ p, li, span, a, div {
 .shine::after {
   content: "";
   position: absolute;
-  width: 60px;
-  height: 60px;
+  width: 250px;
+  aspect-ratio: 2 / 1;
   background: radial-gradient(
     100% 100% at right,
     transparent,
-    rgba(255, 255, 255, 0.6) 5%,
-    rgba(135, 206, 235, 0.4) 40%,
+    rgba(255, 255, 255, 0.5) 5%,
+    rgba(66, 133, 244, 0.4) 40%,
     transparent 80%
   );
   offset-path: border-box;
@@ -93,24 +94,25 @@ p, li, span, a, div {
   animation: trail 15s infinite linear;
   z-index: 1;
   transition: opacity 0.2s ease;
-  filter: blur(8px);
+  filter: blur(6px);
   pointer-events: none;
   will-change: offset-distance;
+  contain: strict;
 }
 
 .shine::before {
-  opacity: 0.3;
+  opacity: 0.5;
 }
 
 .shine::after {
   animation: trail-offset 15s infinite linear;
   offset-distance: 50%;
-  opacity: 0.15;
+  opacity: 0.25;
 }
 
 /* Intensify shine on hover */
 .shine:hover::before {
-  opacity: 0.6;
+  opacity: 1;
   filter: blur(10px);
 }
 
@@ -138,7 +140,15 @@ p, li, span, a, div {
 
 /* === Gradients (DESIGN.md Section 5) === */
 .gradient-hero-text {
-  background: radial-gradient(circle at 50% 50%, #ffffff 30%, #5eead4 70%, #0d9488 100%);
+  background: radial-gradient(circle at 50% 50%, #ffffff 30%, #44a2ff 70%, #007af4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* CodeWiki subtitle gradient — blue-light center to blue-gray edges */
+.gradient-subtitle-text {
+  background: radial-gradient(circle, #93b8d7, #4a6a8a);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -159,15 +169,15 @@ p, li, span, a, div {
 }
 
 .gradient-icon-glow {
-  background: linear-gradient(135deg, rgba(13, 148, 136, 0.2), transparent 50%);
+  background: linear-gradient(135deg, rgba(0, 122, 244, 0.2), transparent 50%);
 }
 
 .gradient-blue-radial {
-  background: radial-gradient(circle, rgba(13, 148, 136, 0.3), transparent 90%);
+  background: radial-gradient(circle, rgba(0, 122, 244, 0.3), transparent 90%);
 }
 
 .gradient-cta-premium {
-  background: linear-gradient(to right, #14b8a6, #0d9488);
+  background: linear-gradient(to right, #44a2ff, #007af4);
 }
 
 .gradient-tag {
@@ -180,30 +190,64 @@ p, li, span, a, div {
 }
 
 .shadow-card {
-  box-shadow: rgba(13, 148, 136, 0.25) 0 34px 84px -30px;
+  box-shadow: rgba(66, 133, 244, 0.09) 0 34px 84px -30px;
 }
 
 .shadow-card-inner {
-  box-shadow: rgba(13, 148, 136, 0.09) 0 34px 84px -30px;
+  box-shadow: rgba(66, 133, 244, 0.06) 0 34px 84px -30px;
 }
 
 .shadow-hero {
-  box-shadow: rgba(13, 148, 136, 0.2) 0 -80px 100px 60px;
+  box-shadow: rgba(0, 122, 244, 0.15) 0 -80px 100px 60px;
 }
 
 .shadow-purple {
-  box-shadow: rgba(13, 148, 136, 0.3) 0 34px 84px -30px;
+  box-shadow: rgba(66, 133, 244, 0.15) 0 34px 84px -30px;
 }
 
 /* === Transitions (DESIGN.md Section 7) === */
 a, button, [class*="card"] {
-  transition: opacity 0.2s ease, color 0.2s ease, background-color 0.2s ease;
+  transition: opacity 0.15s ease, color 0.15s ease, background-color 0.15s ease;
+}
+
+[class*="card"] {
+  contain: layout style;
 }
 
 @keyframes scroll {
   0% { transform: translateX(0); }
   100% { transform: translateX(-50%); }
 }
+
+@keyframes fade-in-up {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.7s ease-out both;
+}
+
+/* Stagger children animations */
+.stagger-hidden .stagger-item {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.stagger-visible .stagger-item {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.stagger-visible .stagger-item:nth-child(1) { transition-delay: 0s; }
+.stagger-visible .stagger-item:nth-child(2) { transition-delay: 0.1s; }
+.stagger-visible .stagger-item:nth-child(3) { transition-delay: 0.2s; }
+.stagger-visible .stagger-item:nth-child(4) { transition-delay: 0.3s; }
+.stagger-visible .stagger-item:nth-child(5) { transition-delay: 0.4s; }
+.stagger-visible .stagger-item:nth-child(6) { transition-delay: 0.5s; }
+.stagger-visible .stagger-item:nth-child(7) { transition-delay: 0.6s; }
+.stagger-visible .stagger-item:nth-child(8) { transition-delay: 0.7s; }
 
 .animate-scroll {
   animation: scroll 20s linear infinite;

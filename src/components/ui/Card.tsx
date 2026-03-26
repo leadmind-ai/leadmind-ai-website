@@ -10,20 +10,23 @@ export function Card({
   children,
   className = "",
   hover = true,
-  shine = false,
-  diagonal = false,
+  shine = true,
 }: CardProps) {
   return (
     <div
-      className={`rounded-2xl border border-white/[0.08] p-6 ${
-        diagonal ? "gradient-card-diagonal" : "bg-surface-container"
-      } ${
+      className={`group/card relative overflow-hidden rounded-[var(--radius-card)] bg-surface-container p-px shadow-[0_34px_84px_-30px_rgba(66,133,244,0.09)] ${
         hover
-          ? "transition-all duration-300 hover:border-[#87CEEB]/30 hover:bg-[#0d1a2a] hover:shadow-[0_0_30px_rgba(135,206,235,0.15)]"
+          ? "transition-colors duration-200 hover:bg-[#003d7a]"
           : ""
-      } ${shine ? "shine" : ""} ${className}`}
+      } ${shine ? "shine" : ""}`}
     >
-      {children}
+      <div
+        className={`relative z-10 rounded-[calc(var(--radius-card)-1px)] bg-[rgba(0,0,0,0.85)] backdrop-blur-[60px] p-[37px_44px] h-full leading-[1.45] transition-colors duration-200 ${
+          hover ? "group-hover/card:bg-[rgba(0,0,0,0.75)]" : ""
+        } ${className}`}
+      >
+        {children}
+      </div>
     </div>
   );
 }

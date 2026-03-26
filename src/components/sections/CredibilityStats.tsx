@@ -24,20 +24,20 @@ export default function CredibilityStats({
     <section className="py-16 md:py-[var(--spacing-section)]">
       <Container>
         <FadeIn>
-          <h2 className="text-3xl text-on-surface md:text-4xl">
+          <h2 className="text-3xl text-white md:text-4xl lg:text-[48px]">
             {credibility.title}
           </h2>
         </FadeIn>
 
         {/* Stats grid */}
-        <StaggerChildren className="mt-12 grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
+        <StaggerChildren className="mt-12 grid gap-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
           {credibility.stats.map((stat, i) => (
             <StaggerItem key={i}>
               <Card className="text-center">
                 <div className="text-3xl text-accent">
                   {stat.value}
                 </div>
-                <p className="mt-2 text-sm text-on-surface-muted">{stat.label}</p>
+                <p className="mt-2 text-base text-[#818181]">{stat.label}</p>
               </Card>
             </StaggerItem>
           ))}
@@ -45,17 +45,14 @@ export default function CredibilityStats({
 
         {/* Founder card */}
         <FadeIn>
-          <Card
-            hover={false}
-            className="mt-12 border-t-4 border-t-accent"
-          >
-            <h3 className="text-xl text-on-surface">
+          <Card hover={false} className="mt-12">
+            <h3 className="text-xl text-white">
               {credibility.founder.name}
             </h3>
-            <p className="text-sm font-medium text-accent">
+            <p className="text-base font-medium text-accent">
               {credibility.founder.role}
             </p>
-            <p className="mt-4 text-sm leading-relaxed text-on-surface-muted whitespace-pre-line">
+            <p className="mt-4 text-base leading-[1.45] text-[#818181] whitespace-pre-line">
               {credibility.founder.bio}
             </p>
           </Card>
@@ -68,7 +65,7 @@ export default function CredibilityStats({
               {credibility.affiliations.map((aff, i) => (
                 <li
                   key={i}
-                  className="text-sm text-on-surface-muted"
+                  className="text-base text-[#818181]"
                 >
                   {aff}
                 </li>
