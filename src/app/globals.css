@@ -228,26 +228,26 @@ a, button, [class*="card"] {
   animation: fade-in-up 0.7s ease-out both;
 }
 
-/* Stagger children animations */
+/* Stagger children animations — cards appear one by one */
 .stagger-hidden .stagger-item {
   opacity: 0;
-  transform: translateY(20px);
+  transform: translateY(40px);
 }
 
 .stagger-visible .stagger-item {
   opacity: 1;
   transform: translateY(0);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
 }
 
-.stagger-visible .stagger-item:nth-child(1) { transition-delay: 0s; }
-.stagger-visible .stagger-item:nth-child(2) { transition-delay: 0.25s; }
-.stagger-visible .stagger-item:nth-child(3) { transition-delay: 0.5s; }
-.stagger-visible .stagger-item:nth-child(4) { transition-delay: 0.75s; }
-.stagger-visible .stagger-item:nth-child(5) { transition-delay: 1s; }
-.stagger-visible .stagger-item:nth-child(6) { transition-delay: 1.25s; }
-.stagger-visible .stagger-item:nth-child(7) { transition-delay: 1.5s; }
-.stagger-visible .stagger-item:nth-child(8) { transition-delay: 0.7s; }
+.stagger-visible .stagger-item:nth-child(1) { transition-delay: 0.1s; }
+.stagger-visible .stagger-item:nth-child(2) { transition-delay: 0.5s; }
+.stagger-visible .stagger-item:nth-child(3) { transition-delay: 0.9s; }
+.stagger-visible .stagger-item:nth-child(4) { transition-delay: 1.3s; }
+.stagger-visible .stagger-item:nth-child(5) { transition-delay: 1.7s; }
+.stagger-visible .stagger-item:nth-child(6) { transition-delay: 2.1s; }
+.stagger-visible .stagger-item:nth-child(7) { transition-delay: 2.5s; }
+.stagger-visible .stagger-item:nth-child(8) { transition-delay: 2.9s; }
 
 .animate-scroll {
   animation: scroll 20s linear infinite;
