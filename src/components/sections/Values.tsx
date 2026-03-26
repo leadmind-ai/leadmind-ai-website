@@ -16,10 +16,10 @@ export default function Values({ title, values }: ValuesProps) {
         <h2 className="text-3xl text-on-surface">
           {title}
         </h2>
-        <StaggerChildren className="mt-12 grid gap-6 md:grid-cols-3">
+        <StaggerChildren className="mt-12 grid gap-5 md:grid-cols-3 auto-rows-fr">
           {values.map((value, i) => (
-            <StaggerItem key={i}>
-              <Card className="text-center">
+            <StaggerItem key={i} className="h-full">
+              <Card className="text-center h-full">
                 <h3 className="text-lg text-on-surface">
                   {value.title}
                 </h3>

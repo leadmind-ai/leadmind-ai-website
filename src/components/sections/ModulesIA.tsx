@@ -31,9 +31,9 @@ export default function ModulesIA({ modules }: ModulesIAProps) {
             {modules.subtitle}
           </p>
         </FadeIn>
-        <StaggerChildren className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <StaggerChildren className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3 auto-rows-fr">
           {modules.items.map((item, i) => (
-            <StaggerItem key={i}>
+            <StaggerItem key={i} className="h-full">
               <Card className="flex h-full flex-col p-6">
                 {item.badge && (
                   <Badge variant="accent" className="mb-3 w-fit text-xs">

@@ -55,9 +55,9 @@ export default function FormationsCatalog({ formations }: FormationsCatalogProps
             {formations.certifiantes_title}
           </h2>
         </FadeIn>
-        <StaggerChildren className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+        <StaggerChildren className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3 auto-rows-fr">
           {formations.certifiantes.map((item, i) => (
-            <StaggerItem key={i}>
+            <StaggerItem key={i} className="h-full">
               <FormationCard item={item} />
             </StaggerItem>
           ))}
@@ -68,9 +68,9 @@ export default function FormationsCatalog({ formations }: FormationsCatalogProps
             {formations.metier_title}
           </h2>
         </FadeIn>
-        <StaggerChildren className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+        <StaggerChildren className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3 auto-rows-fr">
           {formations.metier.map((item, i) => (
-            <StaggerItem key={i}>
+            <StaggerItem key={i} className="h-full">
               <FormationCard item={item} />
             </StaggerItem>
           ))}

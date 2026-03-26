@@ -18,9 +18,9 @@ export default function Differentiators({ title, items }: DifferentiatorsProps) 
             {title}
           </h2>
         </FadeIn>
-        <StaggerChildren className="grid grid-cols-1 gap-6 md:grid-cols-2">
+        <StaggerChildren className="grid grid-cols-1 gap-6 md:grid-cols-2 auto-rows-fr">
           {items.map((item) => (
-            <StaggerItem key={item.title}>
+            <StaggerItem key={item.title} className="h-full">
               <Card shine className="h-full">
                 <h3 className="mb-2 text-lg font-medium">{item.title}</h3>
                 <p className="text-sm leading-relaxed text-white/70">

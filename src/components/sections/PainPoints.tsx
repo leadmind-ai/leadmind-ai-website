@@ -23,9 +23,9 @@ export default function PainPoints({ painPoints }: PainPointsProps) {
             {painPoints.headline}
           </h2>
         </FadeIn>
-        <StaggerChildren className="mt-16 grid gap-8 md:grid-cols-3">
+        <StaggerChildren className="mt-16 grid gap-8 md:grid-cols-3 auto-rows-fr">
           {painPoints.items.map((item, i) => (
-            <StaggerItem key={i}>
+            <StaggerItem key={i} className="h-full">
               <div className="group">
                 <span className="text-5xl font-light text-accent/30">
                   {item.number}

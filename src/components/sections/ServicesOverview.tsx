@@ -126,9 +126,9 @@ export default function ServicesOverview({ services, locale }: ServicesOverviewP
           </div>
         </FadeIn>
 
-        <StaggerChildren className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <StaggerChildren className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3 auto-rows-fr">
           {services.items.map((item, i) => (
-            <StaggerItem key={i}>
+            <StaggerItem key={i} className="h-full">
               <Card shine className="flex h-full flex-col p-8">
                 <ServiceIcon icon={item.icon} />
                 <Badge variant="accent" className={`text-xs${item.icon ? " mt-4" : ""}`}>{item.badge}</Badge>

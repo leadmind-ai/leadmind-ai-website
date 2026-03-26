@@ -28,9 +28,9 @@ export default function Accompagnement({ accompagnement }: AccompagnementProps) 
             {accompagnement.subtitle}
           </p>
         </FadeIn>
-        <StaggerChildren className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+        <StaggerChildren className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4 auto-rows-fr">
           {accompagnement.items.map((item, i) => (
-            <StaggerItem key={i}>
+            <StaggerItem key={i} className="h-full">
               <Card className="flex h-full flex-col p-6">
                 <span className="text-sm font-semibold text-accent">
                   {item.duration}

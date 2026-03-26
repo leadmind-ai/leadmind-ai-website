@@ -28,9 +28,9 @@ export default function PricingGrid({ pricing, locale }: PricingGridProps) {
             {pricing.formations_title}
           </h2>
         </FadeIn>
-        <StaggerChildren className="mt-8 grid gap-6 md:grid-cols-3">
+        <StaggerChildren className="mt-8 grid gap-6 md:grid-cols-3 auto-rows-fr">
           {pricing.formations_grid.map((item, i) => (
-            <StaggerItem key={i}>
+            <StaggerItem key={i} className="h-full">
               <Card className="flex h-full flex-col p-6 text-center">
                 <p className="text-sm text-on-surface-muted">{item.label}</p>
                 <p className="mt-4 text-2xl font-medium text-on-surface">
@@ -49,9 +49,9 @@ export default function PricingGrid({ pricing, locale }: PricingGridProps) {
             {pricing.modules_title}
           </h2>
         </FadeIn>
-        <StaggerChildren className="mt-8 grid gap-6 md:grid-cols-2">
+        <StaggerChildren className="mt-8 grid gap-6 md:grid-cols-2 auto-rows-fr">
           {pricing.modules_grid.map((item, i) => (
-            <StaggerItem key={i}>
+            <StaggerItem key={i} className="h-full">
               <Card className="flex h-full flex-col p-6 text-center">
                 <p className="text-sm text-on-surface-muted">{item.label}</p>
                 <p className="mt-4 text-2xl font-medium text-on-surface">
