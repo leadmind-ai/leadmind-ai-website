@@ -274,6 +274,10 @@ a, button, [class*="card"] {
 
 /* Floating cards — gentle up/down oscillation */
 @keyframes float-card {
-  0%, 100% { transform: translateY(0) rotate(var(--float-rotate, 0deg)); }
-  50% { transform: translateY(-20px) rotate(var(--float-rotate, 0deg)); }
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+.animate-float-card {
+  animation: float-card 7s ease-in-out infinite;
 }

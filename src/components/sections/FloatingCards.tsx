@@ -79,20 +79,24 @@ export default function FloatingCards() {
         <div
           key={i}
           className={`absolute ${card.size} ${card.position}`}
-          style={{
-            "--float-rotate": card.rotate,
-            animation: `float-card ${card.duration} ease-in-out infinite`,
-            animationDelay: card.delay,
-          } as React.CSSProperties}
+          style={{ transform: `rotate(${card.rotate})` }}
         >
           <div
-            className="w-full h-full rounded-xl border border-[#1a3a6b]/60 flex items-center justify-center text-[#2a6cb8]"
+            className="w-full h-full animate-float-card"
             style={{
-              background:
-                "linear-gradient(135deg, rgba(0,50,120,0.4) 0%, rgba(0,30,70,0.2) 100%)",
+              animationDuration: card.duration,
+              animationDelay: card.delay,
             }}
           >
-            {card.icon}
+            <div
+              className="w-full h-full rounded-xl border border-[#1a3a6b]/60 flex items-center justify-center text-[#2a6cb8]"
+              style={{
+                background:
+                  "linear-gradient(135deg, rgba(0,50,120,0.4) 0%, rgba(0,30,70,0.2) 100%)",
+              }}
+            >
+              {card.icon}
+            </div>
           </div>
         </div>
       ))}
