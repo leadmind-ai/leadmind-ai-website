@@ -9,7 +9,6 @@ import CredibilityStats from "@/components/sections/CredibilityStats";
 import Testimonials from "@/components/sections/Testimonials";
 import FAQ from "@/components/sections/FAQ";
 import CTASection from "@/components/sections/CTASection";
-import ProjectCards from "@/components/sections/ProjectCards";
 
 export async function generateMetadata({
   params,
@@ -54,7 +53,6 @@ export default async function HomePage({
       <UseCases useCases={dict.use_cases} />
       <CredibilityStats credibility={dict.credibility} />
       <Testimonials testimonials={dict.testimonials} />
-      <ProjectCards />
       <FAQ faq={dict.faq} />
       <CTASection cta={dict.cta_section} locale={locale as Locale} />
     </>
