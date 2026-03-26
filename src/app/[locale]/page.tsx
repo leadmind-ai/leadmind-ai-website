@@ -9,7 +9,7 @@ import CredibilityStats from "@/components/sections/CredibilityStats";
 import Testimonials from "@/components/sections/Testimonials";
 import FAQ from "@/components/sections/FAQ";
 import CTASection from "@/components/sections/CTASection";
-import FloatingCards from "@/components/sections/FloatingCards";
+
 
 export async function generateMetadata({
   params,
@@ -49,7 +49,6 @@ export default async function HomePage({
         }}
       />
       <Hero hero={dict.hero} locale={locale as Locale} />
-      <FloatingCards />
       <PainPoints painPoints={dict.pain_points} />
       <ProcessPhases phases={dict.process_phases} />
       <UseCases useCases={dict.use_cases} />
