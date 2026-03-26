@@ -15,7 +15,7 @@ export default function ProcessTimeline({
   return (
     <section className="py-16 md:py-[var(--spacing-section)]">
       <Container>
-        <h2 className="text-3xl text-on-surface">
+        <h2 className="mx-auto max-w-4xl text-center text-3xl text-on-surface md:text-4xl lg:text-[48px] lg:leading-tight">
           {title}
         </h2>
         <div className="mt-12 grid gap-8 md:grid-cols-4">

@@ -117,11 +117,11 @@ export default function ServicesOverview({ services, locale }: ServicesOverviewP
       <Container>
         <FadeIn>
           <div className="text-center">
-            <h2 className="text-3xl text-on-surface md:text-4xl">
+            <h2 className="mx-auto max-w-4xl text-3xl text-on-surface md:text-4xl lg:text-[48px] lg:leading-tight">
               {services.title}
             </h2>
             {services.subtitle && (
-              <p className="mt-4 text-lg text-on-surface-muted">{services.subtitle}</p>
+              <p className="mx-auto mt-4 max-w-3xl text-lg text-on-surface-muted">{services.subtitle}</p>
             )}
           </div>
         </FadeIn>
