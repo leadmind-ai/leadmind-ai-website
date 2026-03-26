@@ -20,11 +20,11 @@ export default function UseCases({ useCases }: UseCasesProps) {
       <Container>
         <FadeIn>
           <div>
-            <h2 className="text-3xl text-white md:text-4xl lg:text-[48px]">
+            <h2 className="mx-auto max-w-4xl text-center text-3xl text-white md:text-4xl lg:text-[48px] lg:leading-tight">
               {useCases.title}
             </h2>
             {useCases.subtitle && (
-              <p className="mt-4 max-w-3xl text-lg text-[#818181]">
+              <p className="mx-auto mt-4 max-w-3xl text-center text-lg text-[#818181]">
                 {useCases.subtitle}
               </p>
             )}

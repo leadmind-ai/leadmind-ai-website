@@ -23,11 +23,11 @@ export default function Testimonials({ testimonials }: TestimonialsProps) {
   return (
     <section className="py-16 md:py-[var(--spacing-section)]">
       <Container>
-        <h2 className="text-3xl text-white md:text-4xl lg:text-[48px]">
+        <h2 className="mx-auto max-w-4xl text-center text-3xl text-white md:text-4xl lg:text-[48px] lg:leading-tight">
           {testimonials.title}
         </h2>
         {testimonials.disclaimer && (
-          <p className="mt-2 text-base text-[#818181]/60">
+          <p className="mx-auto mt-2 max-w-2xl text-center text-base text-[#818181]/60">
             {testimonials.disclaimer}
           </p>
         )}

@@ -132,7 +132,7 @@ export default function ProcessPhases({ phases }: ProcessPhasesProps) {
     <section className="py-16 md:py-[var(--spacing-section)]">
       <Container>
         <FadeIn>
-          <h2 className="text-3xl text-white md:text-4xl lg:text-[48px]">
+          <h2 className="mx-auto max-w-4xl text-center text-3xl text-white md:text-4xl lg:text-[48px] lg:leading-tight">
             {phases.title}
           </h2>
         </FadeIn>
