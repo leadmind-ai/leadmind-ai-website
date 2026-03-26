@@ -272,12 +272,52 @@ a, button, [class*="card"] {
   animation: scroll 20s linear infinite;
 }
 
-/* 3D Cube rotation — slow continuous spin */
-@keyframes cube-rotate {
-  0% { transform: rotateX(-15deg) rotateY(0deg); }
-  100% { transform: rotateX(-15deg) rotateY(360deg); }
+/* Cube morph — container tilts and rotates slowly */
+@keyframes cube-morph {
+  0%   { transform: rotateX(-10deg) rotateY(0deg); }
+  100% { transform: rotateX(-10deg) rotateY(360deg); }
 }
 
-.animate-cube-rotate {
-  animation: cube-rotate 20s linear infinite;
+.animate-cube-morph {
+  animation: cube-morph 25s linear infinite;
 }
+
+/* Card 1 (left): spread out → fold in → spread out */
+@keyframes card-1 {
+  0%, 100% { transform: translateX(-40px) translateZ(20px) rotateY(-8deg); }
+  25%      { transform: translateX(60px) translateZ(100px) rotateY(0deg); }
+  50%      { transform: translateX(-40px) translateZ(20px) rotateY(8deg); }
+  75%      { transform: translateX(60px) translateZ(100px) rotateY(0deg); }
+}
+
+.animate-card-1 { animation: card-1 12s ease-in-out infinite; }
+
+/* Card 2 (center-left): slides forward and back */
+@keyframes card-2 {
+  0%, 100% { transform: translateZ(60px) rotateY(3deg); }
+  25%      { transform: translateZ(140px) rotateY(-2deg); }
+  50%      { transform: translateZ(60px) rotateY(-3deg); }
+  75%      { transform: translateZ(140px) rotateY(2deg); }
+}
+
+.animate-card-2 { animation: card-2 12s ease-in-out infinite 0.5s; }
+
+/* Card 3 (center-right): opposite motion */
+@keyframes card-3 {
+  0%, 100% { transform: translateX(30px) translateZ(40px) rotateY(6deg); }
+  25%      { transform: translateX(-40px) translateZ(120px) rotateY(0deg); }
+  50%      { transform: translateX(30px) translateZ(40px) rotateY(-6deg); }
+  75%      { transform: translateX(-40px) translateZ(120px) rotateY(0deg); }
+}
+
+.animate-card-3 { animation: card-3 12s ease-in-out infinite 1s; }
+
+/* Card 4 (right): spread out → fold in → spread out */
+@keyframes card-4 {
+  0%, 100% { transform: translateX(40px) translateZ(10px) rotateY(8deg); }
+  25%      { transform: translateX(-50px) translateZ(90px) rotateY(0deg); }
+  50%      { transform: translateX(40px) translateZ(10px) rotateY(-8deg); }
+  75%      { transform: translateX(-50px) translateZ(90px) rotateY(0deg); }
+}
+
+.animate-card-4 { animation: card-4 12s ease-in-out infinite 1.5s; }
