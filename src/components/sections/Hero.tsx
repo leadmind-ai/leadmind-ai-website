@@ -45,7 +45,7 @@ export default function Hero({ hero, locale }: HeroProps) {
             <Button href={`/${locale}/contact`} variant="primary" size="lg">
               {hero.cta_primary}
             </Button>
-            <Button href={`/${locale}/solutions`} variant="outline">
+            <Button href={`/${locale}/solutions`} variant="outline" size="lg">
               {hero.cta_secondary}
             </Button>
           </div>

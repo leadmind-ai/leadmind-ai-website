@@ -16,52 +16,30 @@ export function Button({
   className = "",
   ...props
 }: ButtonProps) {
-  const base =
-    "inline-flex items-center justify-center font-medium transition-all duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent";
-
   const sizes = {
-    default: "text-base",
-    lg: "text-lg",
-  };
-
-  const wrapperVariants = {
-    primary:
-      "rounded-[20px] bg-[#002549] p-px transition-colors duration-200 hover:bg-[#003d7a]",
-    outline:
-      "rounded-[20px] bg-surface-container p-px transition-colors duration-200 hover:bg-[#1a3a6b]",
-    ghost: "",
-  };
-
-  const innerVariants = {
-    primary:
-      "rounded-[19px] bg-[rgba(0,0,0,0.85)] backdrop-blur-[60px] px-8 py-3.5 text-white",
-    outline:
-      "rounded-[19px] bg-[rgba(0,0,0,0.85)] backdrop-blur-[60px] px-8 py-3.5 text-on-surface",
-    ghost:
-      "px-6 py-3 text-on-surface-muted hover:text-on-surface hover:bg-white/[0.06] rounded-full",
+    default: "px-8 py-3.5 text-base",
+    lg: "px-10 py-4 text-lg",
   };
 
   if (variant === "ghost") {
-    const classes = `${base} ${sizes[size]} ${innerVariants.ghost} ${className}`;
+    const classes = `inline-flex items-center justify-center font-medium transition-all duration-200 px-6 py-3 text-on-surface-muted hover:text-on-surface hover:bg-white/[0.06] rounded-full ${className}`;
     if (href) {
-      return (
-        <Link href={href} className={classes}>
-          {children}
-        </Link>
-      );
+      return <Link href={href} className={classes}>{children}</Link>;
     }
-    return (
-      <button className={classes} {...props}>
-        {children}
-      </button>
-    );
+    return <button className={classes} {...props}>{children}</button>;
   }
 
+  const wrapperClass = `shine relative overflow-hidden rounded-[20px] p-px transition-colors duration-200 ${
+    variant === "primary"
+      ? "bg-[#002549] hover:bg-[#003d7a]"
+      : "bg-surface-container hover:bg-[#1a3a6b]"
+  }`;
+
+  const innerClass = `relative z-10 inline-flex items-center justify-center font-medium rounded-[19px] bg-[rgba(0,0,0,0.85)] backdrop-blur-[60px] text-white w-full ${sizes[size]} ${className}`;
+
   const content = (
-    <div className={wrapperVariants[variant]}>
-      <span className={`${base} ${sizes[size]} ${innerVariants[variant]} w-full ${className}`}>
-        {children}
-      </span>
+    <div className={wrapperClass}>
+      <span className={innerClass}>{children}</span>
     </div>
   );
 
@@ -69,9 +47,5 @@ export function Button({
     return <Link href={href}>{content}</Link>;
   }
 
-  return (
-    <button {...props}>
-      {content}
-    </button>
-  );
+  return <button {...props}>{content}</button>;
 }
