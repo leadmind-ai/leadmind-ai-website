@@ -149,7 +149,7 @@ export default function ProjectCards() {
   return (
     <section className="py-[var(--spacing-section)]">
       <Container>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 auto-rows-fr">
           {projects.map((project) => (
             <div
               key={project.name}

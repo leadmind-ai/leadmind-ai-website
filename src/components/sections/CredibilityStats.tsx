@@ -30,7 +30,7 @@ export default function CredibilityStats({
         </FadeIn>
 
         {/* Stats grid */}
-        <StaggerChildren className="mt-12 grid gap-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
+        <StaggerChildren className="mt-12 grid gap-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 auto-rows-fr">
           {credibility.stats.map((stat, i) => (
             <StaggerItem key={i} className="h-full">
               <Card className="text-center h-full">

@@ -24,7 +24,7 @@ export default function ProcessPhases({ phases }: ProcessPhasesProps) {
             {phases.title}
           </h2>
         </FadeIn>
-        <StaggerChildren className="mt-16 grid gap-5 md:grid-cols-3">
+        <StaggerChildren className="mt-16 grid gap-5 md:grid-cols-3 auto-rows-fr">
           {phases.items.map((phase, i) => (
             <StaggerItem key={i} className="h-full">
               <Card className="flex h-full flex-col">

@@ -31,7 +31,7 @@ export default function Testimonials({ testimonials }: TestimonialsProps) {
             {testimonials.disclaimer}
           </p>
         )}
-        <StaggerChildren className="mt-12 grid gap-5 md:grid-cols-2">
+        <StaggerChildren className="mt-12 grid gap-5 md:grid-cols-2 auto-rows-fr">
           {testimonials.items.map((item, i) => (
             <StaggerItem key={i} className="h-full">
               <Card shine className="h-full">

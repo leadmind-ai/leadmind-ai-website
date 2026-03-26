@@ -31,7 +31,7 @@ export default function UseCases({ useCases }: UseCasesProps) {
             )}
           </div>
         </FadeIn>
-        <StaggerChildren className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+        <StaggerChildren className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3 auto-rows-fr">
           {useCases.items.map((item, i) => (
             <StaggerItem key={i} className="h-full">
               <Card className="flex h-full flex-col">
