@@ -81,13 +81,13 @@ function StickyPhaseCard({
 
       {/* Outer wrapper with shine border trail animation */}
       <div className="shine rounded-[var(--radius-card)] bg-surface-container p-px">
-        <div className="grid overflow-hidden rounded-[calc(var(--radius-card)-1px)] md:grid-cols-[1fr,minmax(200px,40%)]"
+        <div className="overflow-hidden rounded-[calc(var(--radius-card)-1px)] md:flex md:min-h-[340px] lg:min-h-[380px]"
           style={{
             background: "linear-gradient(135deg, #0a1225 0%, #000000 50%, #060d1a 100%)",
           }}
         >
-          {/* Left — text content */}
-          <div className="relative z-10 p-8 md:p-10 lg:px-14 lg:py-12">
+          {/* Left — text content (50%) */}
+          <div className="relative z-10 flex flex-col justify-center p-8 md:w-[55%] md:p-10 lg:px-14 lg:py-12">
             {/* Icon box + title row */}
             <div className="flex items-center gap-4">
               <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl border border-white/[0.08] bg-[rgba(0,122,244,0.08)]">
@@ -104,18 +104,18 @@ function StickyPhaseCard({
             </p>
           </div>
 
-          {/* Right — photo panel */}
-          <div className="relative hidden min-h-[240px] overflow-hidden md:block">
+          {/* Right — photo panel (45%) */}
+          <div className="relative hidden overflow-hidden md:block md:w-[45%]">
             <Image
               src={PHASE_IMAGES[phase.number]}
               alt={phase.title}
               fill
               className="object-cover"
-              sizes="(min-width: 768px) 40vw, 0px"
+              sizes="(min-width: 768px) 45vw, 0px"
             />
             {/* Left-edge fade to blend with text side */}
             <div
-              className="pointer-events-none absolute inset-y-0 left-0 z-10 w-20"
+              className="pointer-events-none absolute inset-y-0 left-0 z-10 w-24"
               style={{
                 background: "linear-gradient(to right, #000000, transparent)",
               }}
