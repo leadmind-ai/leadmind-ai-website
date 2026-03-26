@@ -17,11 +17,11 @@ export default function Mission({ title, text }: MissionProps) {
         }}
       />
       <Container className="relative z-10">
-        <div className="mx-auto max-w-5xl text-center animate-fade-in-up">
-          <h1 className="font-heading whitespace-pre-line text-[2.75rem] leading-[1] tracking-[-0.04em] text-white md:text-[4rem] lg:text-[6rem]">
+        <div className="mx-auto max-w-5xl text-center">
+          <h1 className="hero-animate-title font-heading whitespace-pre-line text-[2.75rem] leading-[1] tracking-[-0.04em] text-white md:text-[4rem] lg:text-[6rem]">
             {title}
           </h1>
-          <div className="relative mt-8">
+          <div className="hero-animate-subtitle relative mt-8">
             <div
               className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[200px] pointer-events-none"
               style={{

@@ -24,11 +24,11 @@ export default function Hero({ hero, locale }: HeroProps) {
         }}
       />
       <Container className="relative z-10">
-        <div className="mx-auto max-w-5xl text-center animate-fade-in-up">
-          <h1 className="font-heading text-[2.75rem] leading-[1] tracking-[-0.04em] text-white md:text-[4rem] lg:text-[6rem]">
+        <div className="mx-auto max-w-5xl text-center">
+          <h1 className="hero-animate-title font-heading text-[2.75rem] leading-[1] tracking-[-0.04em] text-white md:text-[4rem] lg:text-[6rem]">
             {hero.title}
           </h1>
-          <div className="relative mt-8">
+          <div className="hero-animate-subtitle relative mt-8">
             {/* Blue oval glow behind subtitle */}
             <div
               className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[200px] pointer-events-none"
@@ -41,7 +41,7 @@ export default function Hero({ hero, locale }: HeroProps) {
               {hero.subtitle}
             </p>
           </div>
-          <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
+          <div className="hero-animate-buttons mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
             <Button href={`/${locale}/contact`} variant="primary" size="lg">
               {hero.cta_primary}
             </Button>
