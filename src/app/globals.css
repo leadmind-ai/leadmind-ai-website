@@ -237,16 +237,16 @@ a, button, [class*="card"] {
 .stagger-visible .stagger-item {
   opacity: 1;
   transform: translateY(0);
-  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
 .stagger-visible .stagger-item:nth-child(1) { transition-delay: 0s; }
-.stagger-visible .stagger-item:nth-child(2) { transition-delay: 0.1s; }
-.stagger-visible .stagger-item:nth-child(3) { transition-delay: 0.2s; }
-.stagger-visible .stagger-item:nth-child(4) { transition-delay: 0.3s; }
-.stagger-visible .stagger-item:nth-child(5) { transition-delay: 0.4s; }
-.stagger-visible .stagger-item:nth-child(6) { transition-delay: 0.5s; }
-.stagger-visible .stagger-item:nth-child(7) { transition-delay: 0.6s; }
+.stagger-visible .stagger-item:nth-child(2) { transition-delay: 0.25s; }
+.stagger-visible .stagger-item:nth-child(3) { transition-delay: 0.5s; }
+.stagger-visible .stagger-item:nth-child(4) { transition-delay: 0.75s; }
+.stagger-visible .stagger-item:nth-child(5) { transition-delay: 1s; }
+.stagger-visible .stagger-item:nth-child(6) { transition-delay: 1.25s; }
+.stagger-visible .stagger-item:nth-child(7) { transition-delay: 1.5s; }
 .stagger-visible .stagger-item:nth-child(8) { transition-delay: 0.7s; }
 
 .animate-scroll {
