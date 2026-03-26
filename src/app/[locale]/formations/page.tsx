@@ -33,11 +33,11 @@ export default async function FormationsPage({
     <>
       <section className="relative overflow-hidden pb-8 pt-28 md:pt-36">
         <div className="absolute inset-0 pointer-events-none" style={{ background: "radial-gradient(ellipse 70% 50% at 50% 100%, rgba(0,122,244,0.15) 0%, transparent 70%)" }} />
-        <div className="relative z-10 mx-auto w-full px-6 md:px-12 lg:px-20 xl:px-28">
-          <h1 className="font-heading text-3xl tracking-[-0.04em] text-white md:text-4xl lg:text-[48px]">
+        <div className="relative z-10 mx-auto w-full px-6 md:px-12 lg:px-20 xl:px-28 text-center">
+          <h1 className="mx-auto max-w-4xl font-heading text-3xl tracking-[-0.04em] text-white md:text-4xl lg:text-[48px] lg:leading-tight">
             {dict.formations.hero_title}
           </h1>
-          <p className="gradient-subtitle-text mt-4 max-w-2xl text-base md:text-lg">
+          <p className="gradient-subtitle-text mx-auto mt-4 max-w-2xl text-base md:text-lg">
             {dict.formations.hero_subtitle}
           </p>
         </div>
