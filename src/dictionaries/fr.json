@@ -274,7 +274,7 @@
     "items": [
       { "number": "01", "title": "Diagnostic & Cadrage", "description": "Analyse de vos données, formats et contraintes. Identification des cas d'usage à fort ROI. Définition du périmètre et des critères de succès en 1 à 2 semaines." },
       { "number": "02", "title": "Construction & Déploiement", "description": "Développement de modules IA sur mesure ou formation intensive de vos équipes. Tests itératifs avec vos experts. Premiers résultats dès la semaine 4." },
-      { "number": "03", "title": "Autonomie & Transformation", "description": "Vos équipes sont formées et autonomes. Support post-déploiement inclus. Mesure d'impact documentée. Élargissement progressif à d'autres processus." }
+      { "number": "03", "title": "Autonomie & Transformation", "description": "Vos équipes formées et autonomes. Support post-déploiement et mesure d'impact inclus. Élargissement progressif à d'autres processus." }
     ]
   },
   "use_cases": {

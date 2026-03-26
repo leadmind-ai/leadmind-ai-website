@@ -274,7 +274,7 @@
     "items": [
       { "number": "01", "title": "Assessment & Scoping", "description": "Analysis of your data, formats, and constraints. Identification of high-ROI use cases. Scope and success criteria defined in 1 to 2 weeks." },
       { "number": "02", "title": "Build & Deploy", "description": "Development of custom AI modules or intensive team training. Iterative testing with your experts. First results by week 4." },
-      { "number": "03", "title": "Autonomy & Transformation", "description": "Your teams are trained and autonomous. Post-deployment support included. Documented impact measurement. Gradual expansion to other processes." }
+      { "number": "03", "title": "Autonomy & Transformation", "description": "Your teams trained and autonomous. Post-deployment support and impact measurement included. Gradual expansion to other processes." }
     ]
   },
   "use_cases": {
